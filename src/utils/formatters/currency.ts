@@ -1,10 +1,11 @@
 function parseDate(dateString: string): Date {
-    const parsedDate = new Date(dateString);
+    const [day, month, year] = dateString.split('-').map(Number);
+    const parsedDate = new Date(year, month - 1, day);
     if (isNaN(parsedDate.getTime())) {
       throw new Error("Invalid date string");
     }
     return parsedDate;
-   }
+  }
 
 export function formatDate_MonthDayYear(dateStr: string): string {
      const date = parseDate(dateStr);
