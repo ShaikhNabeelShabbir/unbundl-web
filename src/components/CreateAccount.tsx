@@ -4,6 +4,7 @@ import { CreateAccountForm } from "../components/forms/CreateAccountForm"; // Up
 import Navbar from "./navbar";
 const CreateAccount = () => {
   return (
+    
     <div className="main-div flex flex-col min-h-screen px-20">
       <div className="flex gap-6 px-14">
         <div className="flex flex-row py-3 font-semibold w-82 h-24">

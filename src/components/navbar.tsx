@@ -3,6 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <div>
+        
       <div className="flex justify-center flex-center gap-6 px-14 md:px-5 w-1240 h-hug">
         <div className="font-medium h-hug w-hug py-1">
           <button>Create Account</button>
