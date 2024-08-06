@@ -1,8 +1,6 @@
-"use client";
-
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { formSchema } from "/Users/nabeelshaikh/Documents/OCG/unbundl-web/src/definitions/SignupSchemas";
+import { formSchema } from "../../definitions/SignupSchemas"; // Shortened import path
 
 import { Button } from "@/components/ui/button";
 import {
@@ -36,10 +34,10 @@ export function CreateAccountForm() {
   }
 
   return (
-    <div className="h-406 w-560">
+    <div >
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-          <div className="w-560 h-45 py-30">
+          <div >
             <FormField
               control={form.control}
               name="name"

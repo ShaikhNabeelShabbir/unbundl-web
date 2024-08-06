@@ -1,6 +1,4 @@
 import React from "react";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { Ghost } from "lucide-react";
 
 const signup = () => {
   return (

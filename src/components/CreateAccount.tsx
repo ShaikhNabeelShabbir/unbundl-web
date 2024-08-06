@@ -1,11 +1,11 @@
 import React from "react";
 import { Button } from "./ui/button";
-import { CreateAccountForm } from "/Users/nabeelshaikh/Documents/OCG/unbundl-web/src/components/forms/CreateAccountForm";
-
+import { CreateAccountForm } from "../components/forms/CreateAccountForm"; // Updated import path
+import Navbar from "../components/Navbar";
 const CreateAccount = () => {
   return (
     <div className="main-div flex flex-col min-h-screen px-20">
-      <div className="flex gap-6 px-14 md:px-5">
+      <div className="flex gap-6 px-14">
         <div className="flex flex-row py-3 font-semibold w-82 h-24">
           Unbundl
           <div className="px-3 font-medium">
@@ -15,27 +15,7 @@ const CreateAccount = () => {
           </div>
         </div>
       </div>
-
-      <div className="flex justify-center flex-center gap-6 px-14 md:px-5 w-1240 h-hug">
-        <div className="font-medium h-hug w-hug py-1">
-          <button>Create Account</button>
-        </div>
-        <div className="font-medium h-hug w-hug py-1">
-          <button>General Company Information</button>
-        </div>
-        <div className="font-medium h-hug w-hug py-1">
-          <button>Project Information</button>
-        </div>
-        <div className="font-medium h-hug w-hug py-1">
-          <button>Fundraising Information</button>
-        </div>
-        <div className="font-medium h-hug w-hug py-1">
-          <button>Market Information</button>
-        </div>
-        <div className="font-medium h-hug w-hug py-1">
-          <button>Team</button>
-        </div>
-      </div>
+      <Navbar />
       <hr className="w-1240" />
 
       <div className="flex flex-row py-10 px-5 flex-grow">
@@ -47,7 +27,7 @@ const CreateAccount = () => {
           <br /> experience on the platform exclusive,
           <br /> where every member brings value
         </div>
-        <div className="px-20 justify-center h-406 w-560">
+        <div className="px-20 justify-center">
           <CreateAccountForm />
         </div>
       </div>
