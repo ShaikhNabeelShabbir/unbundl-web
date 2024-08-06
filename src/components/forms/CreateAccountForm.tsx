@@ -34,10 +34,19 @@ export function CreateAccountForm() {
   }
 
   return (
-    <div >
+    <div className="flex flex-row py-10 px-5 flex-grow">
+      <div className="w-260 h-168 font-normal text-justify">
+        Let us know a bit more about you, and
+        <br /> please provide some social links, so we <br /> can run a small
+        background check on <br /> you. <br /> It’s very important for us to
+        make the
+        <br /> experience on the platform exclusive,
+        <br /> where every member brings value
+      </div>
+      <div className="px-20 justify-center">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-          <div >
+          <div>
             <FormField
               control={form.control}
               name="name"
@@ -92,6 +101,7 @@ export function CreateAccountForm() {
           </div>
         </form>
       </Form>
+    </div>
     </div>
   );
 }
