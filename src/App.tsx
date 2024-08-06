@@ -17,6 +17,7 @@ import RaiseFunds from "./pages/startup/RaiseFunds";
 import SoftwareStash from "./pages/startup/SoftwareStash";
 import MyPortfolio from "./pages/startup/MyPortfolio";
 import ResearchLibrary from "./pages/startup/ResearchLibrary";
+import { GeneralCompanyInformationForm } from "./components/forms/GeneralCompanyInformationForm";
 
 const App: React.FC = () => {
   return (
@@ -38,6 +39,7 @@ const App: React.FC = () => {
           <Route path="/my-portfolio" element={<MyPortfolio />} />
           <Route path="/research-library" element={<ResearchLibrary />} />
           <Route path="/" element={<CreateAccount />} />
+          <Route path="/gci" element={<GeneralCompanyInformationForm />} />
         </Routes>
       </div>
     </Router>
