@@ -1,65 +1,82 @@
 import { Button } from "@/components/ui/button";
+import React, { useRef, useEffect, useState } from "react";
+
 type NavbarProps = {
   setStep: (step: number) => void;
   currentStep: number;
 };
+
 const Navbar: React.FC<NavbarProps> = ({ setStep, currentStep }) => {
+  const [underlineStyle, setUnderlineStyle] = useState({
+    width: 0,
+    left: 0,
+  });
+
+  const buttonRefs = [
+    useRef<HTMLDivElement>(null),
+    useRef<HTMLDivElement>(null),
+    useRef<HTMLDivElement>(null),
+    useRef<HTMLDivElement>(null),
+    useRef<HTMLDivElement>(null),
+    useRef<HTMLDivElement>(null),
+  ];
+
+  useEffect(() => {
+    const updateUnderline = () => {
+      const ref = buttonRefs[currentStep - 1].current;
+      if (ref) {
+        const { offsetWidth, offsetLeft } = ref;
+        setUnderlineStyle({
+          width: offsetWidth,
+          left: offsetLeft,
+        });
+      }
+    };
+
+    updateUnderline();
+    window.addEventListener("resize", updateUnderline);
+
+    return () => {
+      window.removeEventListener("resize", updateUnderline);
+    };
+  }, [currentStep]);
+
   return (
     <div>
-      <div className="flex justify-center flex-center gap-6 px-14 md:px-5 w-1240 h-hug">
-        <div className="font-medium h-hug w-hug py-1">
-          <Button
-            variant={currentStep === 1 ? "ghost" : "ghost"}
-            onClick={() => setStep(1)}
-            className={currentStep === 1 ? "font-bold underline" : ""}
-          >
-            Create Account
-          </Button>
+      <div className="relative">
+        <div className="flex justify-center gap-6 px-14 md:px-5 w-full">
+          {[
+            "Create Account",
+            "General Company Information",
+            "Project Information",
+            "Fundraising Information",
+            "Market Information",
+            "Team",
+          ].map((label, index) => (
+            <div
+              key={index}
+              ref={buttonRefs[index]}
+              className="font-medium py-1 cursor-pointer"
+            >
+              <Button
+                variant="ghost"
+                onClick={() => setStep(index + 1)}
+                className={currentStep === index + 1 ? "font-bold" : ""}
+              >
+                {label}
+              </Button>
+            </div>
+          ))}
         </div>
-        <div className="font-medium h-hug w-hug py-1">
-          <Button
-            variant={currentStep === 2 ? "ghost" : "ghost"}
-            onClick={() => setStep(2)}
-            className={currentStep === 2 ? "font-bold underline" : ""}
-          >
-            General Company Information
-          </Button>
-        </div>
-        <div className="font-medium h-hug w-hug py-1">
-          <Button
-            variant={currentStep === 3 ? "ghost" : "ghost"}
-            onClick={() => setStep(3)}
-            className={currentStep === 3 ? "font-bold underline" : ""}
-          >
-            Project Information
-          </Button>
-        </div>
-        <div className="font-medium h-hug w-hug py-1">
-          <Button
-            variant={currentStep === 4 ? "ghost" : "ghost"}
-            onClick={() => setStep(4)}
-            className={currentStep === 4 ? "font-bold underline" : ""}
-          >
-            Fundraising Information
-          </Button>
-        </div>
-        <div className="font-medium h-hug w-hug py-1">
-          <Button
-            variant={currentStep === 5 ? "ghost" : "ghost"}
-            onClick={() => setStep(5)}
-            className={currentStep === 5 ? "font-bold underline" : ""}
-          >
-            Market Information
-          </Button>
-        </div>
-        <div className="font-medium h-hug w-hug py-1">
-          <Button
-            variant={currentStep === 6 ? "ghost" : "ghost"}
-            onClick={() => setStep(6)}
-            className={currentStep === 6 ? "font-bold underline" : ""}
-          >
-            Team
-          </Button>
+        <div className="absolute bottom-0 left-0 right-0">
+          <hr className="border-t border-gray-300" />
+          <div
+            className="absolute bottom-0 h-0.5 bg-black transition-all duration-300"
+            style={{
+              width: underlineStyle.width,
+              left: underlineStyle.left,
+            }}
+          />
         </div>
       </div>
     </div>
