@@ -8,7 +8,7 @@ const Navbar = ({ setStep, currentStep }) => {
   return (
     <div>
       <div className="flex justify-center flex-center gap-6 px-14 md:px-5 w-1240 h-hug">
-        <div className="font-medium h-hug w-hug py-1">
+        <div className="font-medium h-hug w-hug py-1 ">
           <Button
             variant={Ghost}
             onClick={() => setStep(1)}
