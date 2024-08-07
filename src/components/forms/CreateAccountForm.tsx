@@ -1,6 +1,5 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { formSchema } from "../../definitions/SignupSchemas"; // Shortened import path
 
 import { Button } from "@/components/ui/button";
 import {
@@ -14,6 +13,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { z } from "zod";
+import { formSchema } from "@/schemas/SignupSchemas";
 
 // Define the form component
 export function CreateAccountForm() {

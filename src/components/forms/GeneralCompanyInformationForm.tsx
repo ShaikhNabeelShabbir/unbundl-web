@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import Navbar from "../navbar";
-import { generalCompanySchema } from "@/definitions/SignupSchemas";
+import { generalCompanySchema } from "@/schemas/generalCompanySchema";
 
 export function GeneralCompanyInformationForm() {
   // Set up the form using useForm hook
