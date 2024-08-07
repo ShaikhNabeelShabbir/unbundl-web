@@ -1,7 +1,6 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
@@ -11,13 +10,10 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import Navbar from "../navbar";
 import { projectInformationSchema } from "@/schemas/ProjectInformationSchema";
 
-// Define the schema for the new form
 
 export function ProjectInformationForm() {
-  // Set up the form using useForm hook
   const form = useForm<z.infer<typeof projectInformationSchema>>({
     resolver: zodResolver(projectInformationSchema),
     defaultValues: {

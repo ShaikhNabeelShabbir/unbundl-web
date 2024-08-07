@@ -11,7 +11,6 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import Navbar from "../navbar";
 import { generalCompanySchema } from "@/schemas/generalCompanySchema";
 
 export function GeneralCompanyInformationForm() {
@@ -170,7 +169,7 @@ export function GeneralCompanyInformationForm() {
                 <FormField
                   control={form.control}
                   name="usefulLinks"
-                  render={({ field }) => (
+                  render={() => (
                     <FormItem>
                       <FormLabel className="font-medium">
                         Add Useful Links or Files
