@@ -60,10 +60,10 @@ export function GeneralCompanyInformationForm() {
                   name="companyName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         Company Name
                       </FormLabel>
-                      <FormControl >
+                      <FormControl>
                         <Input
                           placeholder="Enter your company name"
                           {...field}
@@ -78,7 +78,7 @@ export function GeneralCompanyInformationForm() {
                   name="projectDescription"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         Describe Your Project
                       </FormLabel>
                       <FormControl>
@@ -93,7 +93,7 @@ export function GeneralCompanyInformationForm() {
                   name="websiteLink"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         Provide a Link to Your Website
                       </FormLabel>
                       <FormControl>
@@ -108,7 +108,7 @@ export function GeneralCompanyInformationForm() {
                   name="chain"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         On What Chain Are You Building On?
                       </FormLabel>
                       <FormControl>
@@ -123,7 +123,7 @@ export function GeneralCompanyInformationForm() {
                   name="category"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         What Is the Category of Your Web3 Startup?
                       </FormLabel>
                       <FormControl>
@@ -138,7 +138,7 @@ export function GeneralCompanyInformationForm() {
                   name="developmentStage"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         How Far Did You Move in the Development of Your Project?
                       </FormLabel>
                       <FormControl>
@@ -156,7 +156,7 @@ export function GeneralCompanyInformationForm() {
                   name="teamSize"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         What Is the Size of Your Team?
                       </FormLabel>
                       <FormControl>
@@ -171,7 +171,7 @@ export function GeneralCompanyInformationForm() {
                   name="usefulLinks"
                   render={() => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         Add Useful Links or Files
                       </FormLabel>
                       <div className="flex flex-row justify-center gap-4">
@@ -196,7 +196,7 @@ export function GeneralCompanyInformationForm() {
                   name="calendlyLink"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         Add Your Calendly Link
                       </FormLabel>
                       <FormControl>
@@ -211,7 +211,9 @@ export function GeneralCompanyInformationForm() {
                   name="timezone"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">Timezone</FormLabel>
+                      <FormLabel className="font-medium text-base">
+                        Timezone
+                      </FormLabel>
                       <FormControl>
                         <Input placeholder="Enter your timezone" {...field} />
                       </FormControl>

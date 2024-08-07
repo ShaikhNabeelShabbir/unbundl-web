@@ -55,7 +55,7 @@ export function FundraisingIformationForm() {
                   name="fundraisingStatus"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         Are you currently Fundraising?{" "}
                       </FormLabel>
                       <FormControl>
@@ -73,7 +73,7 @@ export function FundraisingIformationForm() {
                   name="tokenStatus"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         Is there a token or will one come in the future?{" "}
                       </FormLabel>
                       <FormControl>
@@ -88,7 +88,7 @@ export function FundraisingIformationForm() {
                   name="financingStage"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         What’s the stage of financing?{" "}
                       </FormLabel>
                       <FormControl>
@@ -103,7 +103,7 @@ export function FundraisingIformationForm() {
                   name="vcBackers"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         Add VC Backers{" "}
                       </FormLabel>
                       <FormControl>
@@ -118,7 +118,7 @@ export function FundraisingIformationForm() {
                   name="ticketSize"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         What’s the ticket size?{" "}
                       </FormLabel>
                       <FormControl>

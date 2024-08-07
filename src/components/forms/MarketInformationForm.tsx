@@ -55,7 +55,7 @@ export function MarketInformationForm() {
                   name="sector"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         Which sector/space are you building in?
                       </FormLabel>
                       <FormControl>
@@ -70,14 +70,11 @@ export function MarketInformationForm() {
                   name="targetAudience"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         Who is your target audience?
                       </FormLabel>
                       <FormControl>
-                        <Input
-                          placeholder="Enter target audience"
-                          {...field}
-                        />
+                        <Input placeholder="Enter target audience" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -88,7 +85,7 @@ export function MarketInformationForm() {
                   name="marketValidation"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         Have you validated the market? If so, how?
                       </FormLabel>
                       <FormControl>
@@ -106,14 +103,11 @@ export function MarketInformationForm() {
                   name="businessModel"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         What’s the business model of your product?
                       </FormLabel>
                       <FormControl>
-                        <Input
-                          placeholder="Enter business model"
-                          {...field}
-                        />
+                        <Input placeholder="Enter business model" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -124,7 +118,7 @@ export function MarketInformationForm() {
                   name="traction"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         Any traction/early users?
                       </FormLabel>
                       <FormControl>
@@ -142,7 +136,7 @@ export function MarketInformationForm() {
                   name="competitors"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         Who are your closest competitors?
                       </FormLabel>
                       <FormControl>
@@ -160,14 +154,12 @@ export function MarketInformationForm() {
                   name="uniqueInsight"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
-                        What is the unique insight that you have which others are not working on?
+                      <FormLabel className="font-medium text-base">
+                        What is the unique insight that you have which others
+                        are not working on?
                       </FormLabel>
                       <FormControl>
-                        <Input
-                          placeholder="Enter unique insight"
-                          {...field}
-                        />
+                        <Input placeholder="Enter unique insight" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>

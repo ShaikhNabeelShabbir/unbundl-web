@@ -52,7 +52,7 @@ export function ProjectInformationForm() {
                   name="problem"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         What Problem Are You Solving?
                       </FormLabel>
                       <FormControl>
@@ -67,7 +67,7 @@ export function ProjectInformationForm() {
                   name="startReason"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         Why Did You Start Working on This Idea?
                       </FormLabel>
                       <FormControl>
@@ -82,7 +82,7 @@ export function ProjectInformationForm() {
                   name="startDate"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         Since When Are You Working on This Idea?
                       </FormLabel>
                       <FormControl>
@@ -97,7 +97,7 @@ export function ProjectInformationForm() {
                   name="projectDescription"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         What Are You Building?
                       </FormLabel>
                       <FormControl>
@@ -112,7 +112,7 @@ export function ProjectInformationForm() {
                   name="demoLink"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium">
+                      <FormLabel className="font-medium text-base">
                         Provide a Link to Your Demo
                       </FormLabel>
                       <FormControl>
