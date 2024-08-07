@@ -34,7 +34,7 @@ export function CreateAccountForm() {
   return (
     <div className="main-div flex flex-col min-h-screen px-20">
       <div className="flex flex-row py-10 px-5 flex-grow">
-        <div className="w-260 h-168 font-normal text-justify text-16 text-rose-700">
+        <div className="w-260 h-168 font-normal text-justify text-16 text-gray-500">
           Let us know a bit more about you, and
           <br /> please provide some social links, so we <br /> can run a small
           background check on <br /> you. <br /> It’s very important for us to
@@ -42,15 +42,18 @@ export function CreateAccountForm() {
           <br /> experience on the platform exclusive,
           <br /> where every member brings value
         </div>
-        <div className="px-20 justify-center">
+        <div className="px-20 justify-center w-560">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+            <form
+              onSubmit={form.handleSubmit(onSubmit)}
+              className="space-y-8 w-max"
+            >
               <FormField
                 control={form.control}
                 name="name"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="font-medium">
+                    <FormLabel className="font-medium text-base">
                       Enter your name
                     </FormLabel>
                     <FormControl>
@@ -65,7 +68,7 @@ export function CreateAccountForm() {
                 name="username"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="font-medium">
+                    <FormLabel className="font-medium text-base">
                       Choose a Username
                     </FormLabel>
                     <FormControl>
@@ -80,7 +83,9 @@ export function CreateAccountForm() {
                 name="role"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="font-medium">I am a</FormLabel>
+                    <FormLabel className="font-medium text-base">
+                      I am a
+                    </FormLabel>
                     <FormControl>
                       <Input placeholder="Enter your role" {...field} />
                     </FormControl>

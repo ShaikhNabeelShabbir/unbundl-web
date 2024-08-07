@@ -35,7 +35,7 @@ export function FundraisingIformationForm() {
     <div>
       <div className="main-div flex flex-col min-h-screen px-20">
         <div className="flex flex-row py-10 px-5 flex-grow">
-          <div className="w-260 h-168 font-normal text-justify">
+          <div className="w-260 h-168 font-normal text-justify text-16 text-gray-500">
             We would like to know are you <br />
             fundraising or not, because Undundle
             <br /> is the best place to fundraise for web3

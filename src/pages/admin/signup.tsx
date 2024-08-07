@@ -50,7 +50,7 @@ const Signup = () => {
           </div>
         </div>
       </div>
-      <Navbar setStep={setStep} currentStep={step} />
+      <Navbar setStep={setStep} currentStep={step}  />
       <hr className="w-1240" />
       {renderForm()}
       <div className="flex justify-center gap-20 py-5 mt-auto">

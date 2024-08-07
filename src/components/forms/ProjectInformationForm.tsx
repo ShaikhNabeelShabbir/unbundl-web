@@ -12,7 +12,6 @@ import {
 import { Input } from "@/components/ui/input";
 import { projectInformationSchema } from "@/schemas/ProjectInformationSchema";
 
-
 export function ProjectInformationForm() {
   const form = useForm<z.infer<typeof projectInformationSchema>>({
     resolver: zodResolver(projectInformationSchema),
@@ -35,7 +34,7 @@ export function ProjectInformationForm() {
     <div>
       <div className="main-div flex flex-col min-h-screen px-20">
         <div className="flex flex-row py-10 px-5 flex-grow">
-          <div className="w-260 h-168 font-normal text-justify">
+          <div className="w-260 h-168 font-normal text-justify text-16 text-gray-500">
             The most important part about every <br /> startup is the
             information about your <br />
             product. <br />

@@ -41,7 +41,7 @@ export function GeneralCompanyInformationForm() {
     <div>
       <div className="main-div flex flex-col min-h-screen px-20">
         <div className="flex flex-row py-10 px-5 flex-grow">
-          <div className="w-260 h-168 font-normal text-justify">
+          <div className="w-260 h-168 font-normal text-justify text-16 text-gray-500">
             Tell us the general information about
             <br />
             your startup, this will help us to learn <br />
@@ -63,7 +63,7 @@ export function GeneralCompanyInformationForm() {
                       <FormLabel className="font-medium">
                         Company Name
                       </FormLabel>
-                      <FormControl>
+                      <FormControl >
                         <Input
                           placeholder="Enter your company name"
                           {...field}
