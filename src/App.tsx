@@ -6,17 +6,17 @@ import CreateAccount from "../src/components/CreateAccount";
 import Events from "./pages/startup/Events";
 import Invest from "./pages/startup/Invest";
 import Grants from "./pages/startup/Grants";
-import LegalRoom from "./pages/startup/LegalRoom";
-import CryptoEvents from "./pages/startup/CryptoEvents";
+import LegalRoom from "./pages/startup/leagal-room";
+import CryptoEvents from "./pages/startup/crypto-events";
 import Hire from "./pages/startup/Hire";
 import MyCompany from "./pages/startup/MyCompany";
 import Network from "./pages/startup/Network";
 import Services from "./pages/startup/Services";
 import MyCvs from "./pages/startup/MyCvs";
-import RaiseFunds from "./pages/startup/RaiseFunds";
-import SoftwareStash from "./pages/startup/SoftwareStash";
+import RaiseFunds from "./pages/startup/raise-funds";
+import SoftwareStash from "./pages/startup/software-stash";
 import MyPortfolio from "./pages/startup/MyPortfolio";
-import ResearchLibrary from "./pages/startup/ResearchLibrary";
+import ResearchLibrary from "./pages/startup/research-library";
 import { GeneralCompanyInformationForm } from "./components/forms/GeneralCompanyInformationForm";
 
 const App: React.FC = () => {
