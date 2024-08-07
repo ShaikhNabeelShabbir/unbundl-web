@@ -11,15 +11,17 @@ import SoftwareStash from "./pages/startup/software-stash";
 import MyPortfolio from "./pages/startup/my-portfolio";
 import ResearchLibrary from "./pages/startup/research-library";
 import { GeneralCompanyInformationForm } from "./components/forms/GeneralCompanyInformationForm";
-import Events from "./pages/startup/Events";
-import Hire from "./pages/startup/Hire";
-import Grants from "./pages/startup/Grants";
-import Invest from "./pages/startup/Invest";
-import Network from "./pages/startup/Network";
-import Services from "./pages/startup/Services";
+import Events from "./pages/startup/events";
+import Hire from "./pages/startup/hire";
+import Grants from "./pages/startup/grants";
+import Invest from "./pages/startup/invest";
+import Network from "./pages/startup/network";
+import Services from "./pages/startup/services";
 import { ProjectInformationForm } from "./components/forms/ProjectInformationForm";
 import Signup from "./pages/admin/signup";
 import { FundraisingIformationForm } from "./components/forms/FundraisingInformationForm";
+import { MarketInformationForm } from "./components/forms/MarketInformationForm";
+import { TeamsForm } from "./components/forms/TeamsForm";
 
 const App: React.FC = () => {
   return (
@@ -44,6 +46,8 @@ const App: React.FC = () => {
           <Route path="/gci" element={<GeneralCompanyInformationForm />} />
           <Route path="/pis" element={<ProjectInformationForm />} />
           <Route path="/fif" element={<FundraisingIformationForm />} />
+          <Route path="/mif" element={<MarketInformationForm />} />
+          <Route path="/teams" element={<TeamsForm />} />
         </Routes>
       </div>
     </Router>

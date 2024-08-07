@@ -3,8 +3,11 @@ import { CreateAccountForm } from "@/components/forms/CreateAccountForm";
 import { GeneralCompanyInformationForm } from "@/components/forms/GeneralCompanyInformationForm";
 import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
+import React from "react";
 import { ProjectInformationForm } from "@/components/forms/ProjectInformationForm";
 import { FundraisingIformationForm } from "@/components/forms/FundraisingInformationForm";
+import { MarketInformationForm } from "@/components/forms/MarketInformationForm";
+import { TeamsForm } from "@/components/forms/TeamsForm"; // Assuming you have a TeamForm component
 
 const Signup = () => {
   const [step, setStep] = useState(1);
@@ -19,6 +22,10 @@ const Signup = () => {
         return <ProjectInformationForm />;
       case 4:
         return <FundraisingIformationForm />;
+      case 5:
+        return <MarketInformationForm />;
+      case 6:
+        return <TeamsForm />;
       default:
         return <CreateAccountForm />;
     }
@@ -29,8 +36,6 @@ const Signup = () => {
   };
 
   const handleCancel = () => {
-    // Handle cancel action if needed
-    // For now, we reset to step 1
     setStep(1);
   };
 
@@ -46,7 +51,7 @@ const Signup = () => {
           </div>
         </div>
       </div>
-      <Navbar />
+      <Navbar setStep={setStep} currentStep={step} />
       <hr className="w-1240" />
       {renderForm()}
       <div className="flex justify-center gap-20 py-5 mt-auto">
