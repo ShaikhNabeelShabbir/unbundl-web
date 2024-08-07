@@ -3,7 +3,6 @@ import { CreateAccountForm } from "@/components/forms/CreateAccountForm";
 import { GeneralCompanyInformationForm } from "@/components/forms/GeneralCompanyInformationForm";
 import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
-import React from "react";
 import { ProjectInformationForm } from "@/components/forms/ProjectInformationForm";
 import { FundraisingIformationForm } from "@/components/forms/FundraisingInformationForm";
 import { MarketInformationForm } from "@/components/forms/MarketInformationForm";
