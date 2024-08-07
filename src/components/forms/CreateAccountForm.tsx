@@ -42,12 +42,9 @@ export function CreateAccountForm() {
           <br /> experience on the platform exclusive,
           <br /> where every member brings value
         </div>
-        <div className="px-20 justify-center w-560">
+        <div className="px-20 justify-center">
           <Form {...form}>
-            <form
-              onSubmit={form.handleSubmit(onSubmit)}
-              className="space-y-8 w-max"
-            >
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
               <FormField
                 control={form.control}
                 name="name"
