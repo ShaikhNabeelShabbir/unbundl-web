@@ -1,63 +1,62 @@
-import { Ghost } from "lucide-react";
-import { Button } from "./ui/button";
-
-const Navbar = ({ setStep, currentStep }) => {
-  const buttonClasses = (step) =>
-    step === currentStep ? "font-bold underline" : "";
-
+import { Button } from "@/components/ui/button";
+type NavbarProps = {
+  setStep: (step: number) => void;
+  currentStep: number;
+};
+const Navbar: React.FC<NavbarProps> = ({ setStep, currentStep }) => {
   return (
     <div>
       <div className="flex justify-center flex-center gap-6 px-14 md:px-5 w-1240 h-hug">
-        <div className="font-medium h-hug w-hug py-1 ">
+        <div className="font-medium h-hug w-hug py-1">
           <Button
-            variant={Ghost}
+            variant={currentStep === 1 ? "ghost" : "default"}
             onClick={() => setStep(1)}
-            className={buttonClasses(1)}
+            className={currentStep === 1 ? "font-bold underline" : ""}
           >
             Create Account
           </Button>
         </div>
         <div className="font-medium h-hug w-hug py-1">
           <Button
-            variant={Ghost}
+            variant={currentStep === 2 ? "ghost" : "default"}
             onClick={() => setStep(2)}
-            className={buttonClasses(2)}
+            className={currentStep === 2 ? "font-bold underline" : ""}
           >
             General Company Information
           </Button>
         </div>
         <div className="font-medium h-hug w-hug py-1">
           <Button
-            variant={Ghost}
+            variant={currentStep === 3 ? "ghost" : "default"}
             onClick={() => setStep(3)}
-            className={buttonClasses(3)}
+            className={currentStep === 3 ? "font-bold underline" : ""}
           >
             Project Information
           </Button>
         </div>
         <div className="font-medium h-hug w-hug py-1">
           <Button
-            variant={Ghost}
+            variant={currentStep === 4 ? "ghost" : "default"}
             onClick={() => setStep(4)}
-            className={buttonClasses(4)}
+            className={currentStep === 4 ? "font-bold underline" : ""}
           >
             Fundraising Information
           </Button>
         </div>
         <div className="font-medium h-hug w-hug py-1">
           <Button
-            variant={Ghost}
+            variant={currentStep === 5 ? "ghost" : "default"}
             onClick={() => setStep(5)}
-            className={buttonClasses(5)}
+            className={currentStep === 5 ? "font-bold underline" : ""}
           >
             Market Information
           </Button>
         </div>
         <div className="font-medium h-hug w-hug py-1">
           <Button
-            variant={Ghost}
+            variant={currentStep === 6 ? "ghost" : "default"}
             onClick={() => setStep(6)}
-            className={buttonClasses(6)}
+            className={currentStep === 6 ? "font-bold underline" : ""}
           >
             Team
           </Button>
