@@ -1,23 +1,25 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import CreateAccount from "../src/components/CreateAccount";
 
 // Import your other components here
-import Events from "./pages/startup/Events";
-import Invest from "./pages/startup/Invest";
-import Grants from "./pages/startup/Grants";
 import LegalRoom from "./pages/startup/leagal-room";
 import CryptoEvents from "./pages/startup/crypto-events";
-import Hire from "./pages/startup/Hire";
-import MyCompany from "./pages/startup/MyCompany";
-import Network from "./pages/startup/Network";
-import Services from "./pages/startup/Services";
-import MyCvs from "./pages/startup/MyCvs";
+import MyCompany from "./pages/startup/my-company";
+import MyCvs from "./pages/startup/my-cvs";
 import RaiseFunds from "./pages/startup/raise-funds";
 import SoftwareStash from "./pages/startup/software-stash";
-import MyPortfolio from "./pages/startup/MyPortfolio";
+import MyPortfolio from "./pages/startup/my-portfolio";
 import ResearchLibrary from "./pages/startup/research-library";
 import { GeneralCompanyInformationForm } from "./components/forms/GeneralCompanyInformationForm";
+import Events from "./pages/startup/events";
+import Hire from "./pages/startup/hire";
+import Grants from "./pages/startup/grants";
+import Invest from "./pages/startup/invest";
+import Network from "./pages/startup/network";
+import Services from "./pages/startup/services";
+import { ProjectInformationForm } from "./components/forms/ProjectInformationForm";
+import Signup from "./pages/admin/signup";
+import { FundraisingIformationForm } from "./components/forms/FundraisingInformationForm";
 
 const App: React.FC = () => {
   return (
@@ -38,8 +40,10 @@ const App: React.FC = () => {
           <Route path="/software-stash" element={<SoftwareStash />} />
           <Route path="/my-portfolio" element={<MyPortfolio />} />
           <Route path="/research-library" element={<ResearchLibrary />} />
-          <Route path="/" element={<CreateAccount />} />
+          <Route path="/" element={<Signup />} />
           <Route path="/gci" element={<GeneralCompanyInformationForm />} />
+          <Route path="/pis" element={<ProjectInformationForm />} />
+          <Route path="/fif" element={<FundraisingIformationForm />} />
         </Routes>
       </div>
     </Router>

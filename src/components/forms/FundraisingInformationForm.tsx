@@ -12,25 +12,23 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import Navbar from "../navbar";
-import { projectInformationSchema } from "@/schemas/ProjectInformationSchema";
+import { fundraisingSchema } from "@/schemas/fundraisingSchema";
 
-// Define the schema for the new form
-
-export function ProjectInformationForm() {
+export function FundraisingIformationForm() {
   // Set up the form using useForm hook
-  const form = useForm<z.infer<typeof projectInformationSchema>>({
-    resolver: zodResolver(projectInformationSchema),
+  const form = useForm<z.infer<typeof fundraisingSchema>>({
+    resolver: zodResolver(fundraisingSchema),
     defaultValues: {
-      problem: "",
-      startReason: "",
-      startDate: "",
-      projectDescription: "",
-      demoLink: "",
+      fundraisingStatus: "",
+      tokenStatus: "",
+      financingStage: "",
+      vcBackers: "",
+      ticketSize: "",
     },
   });
 
   // Define the submit handler
-  function onSubmit(values: z.infer<typeof projectInformationSchema>) {
+  function onSubmit(values: z.infer<typeof fundraisingSchema>) {
     // Handle form submission
     console.log(values);
   }
@@ -40,11 +38,13 @@ export function ProjectInformationForm() {
       <div className="main-div flex flex-col min-h-screen px-20">
         <div className="flex flex-row py-10 px-5 flex-grow">
           <div className="w-260 h-168 font-normal text-justify">
-            The most important part about every <br /> startup is the
-            information about your <br />
-            product. <br />
-            Answer these questions carefully, this
-            <br /> is what matters to investors.
+            We would like to know are you <br />
+            fundraising or not, because Undundle
+            <br /> is the best place to fundraise for web3
+            <br /> startups.
+            <br /> If you are fundraising, please provide
+            <br />
+            us with a cap table.
           </div>
           <div className="px-20 justify-center">
             <Form {...form}>
@@ -54,14 +54,17 @@ export function ProjectInformationForm() {
               >
                 <FormField
                   control={form.control}
-                  name="problem"
+                  name="fundraisingStatus"
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="font-medium">
-                        What Problem Are You Solving?
+                        Are you currently Fundraising?{" "}
                       </FormLabel>
                       <FormControl>
-                        <Input placeholder="Describe the problem" {...field} />
+                        <Input
+                          placeholder="Enter your company name"
+                          {...field}
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -69,41 +72,11 @@ export function ProjectInformationForm() {
                 />
                 <FormField
                   control={form.control}
-                  name="startReason"
+                  name="tokenStatus"
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="font-medium">
-                        Why Did You Start Working on This Idea?
-                      </FormLabel>
-                      <FormControl>
-                        <Input placeholder="Reason for starting" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="startDate"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="font-medium">
-                        Since When Are You Working on This Idea?
-                      </FormLabel>
-                      <FormControl>
-                        <Input placeholder="Enter the start date" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="projectDescription"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="font-medium">
-                        What Are You Building?
+                        Is there a token or will one come in the future?{" "}
                       </FormLabel>
                       <FormControl>
                         <Input placeholder="Describe your project" {...field} />
@@ -114,14 +87,44 @@ export function ProjectInformationForm() {
                 />
                 <FormField
                   control={form.control}
-                  name="demoLink"
+                  name="financingStage"
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="font-medium">
-                        Provide a Link to Your Demo
+                        What’s the stage of financing?{" "}
                       </FormLabel>
                       <FormControl>
-                        <Input placeholder="Enter demo link" {...field} />
+                        <Input placeholder="Enter website URL" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="vcBackers"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel className="font-medium">
+                        Add VC Backers{" "}
+                      </FormLabel>
+                      <FormControl>
+                        <Input placeholder="Enter blockchain" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="ticketSize"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel className="font-medium">
+                        What’s the ticket size?{" "}
+                      </FormLabel>
+                      <FormControl>
+                        <Input placeholder="Enter category" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>

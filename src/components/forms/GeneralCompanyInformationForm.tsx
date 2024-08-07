@@ -41,18 +41,6 @@ export function GeneralCompanyInformationForm() {
   return (
     <div>
       <div className="main-div flex flex-col min-h-screen px-20">
-        <div className="flex gap-6 px-14">
-          <div className="flex flex-row py-3 font-semibold w-82 h-24">
-            Unbundl
-            <div className="px-3 font-medium">
-              <a href="" className="py-5 text-gray-500">
-                SignUp for founders
-              </a>
-            </div>
-          </div>
-        </div>
-        <Navbar />
-        <hr />
         <div className="flex flex-row py-10 px-5 flex-grow">
           <div className="w-260 h-168 font-normal text-justify">
             Tell us the general information about
@@ -236,10 +224,6 @@ export function GeneralCompanyInformationForm() {
             </Form>
           </div>
         </div>
-      </div>
-      <div className="flex justify-center gap-20 py-5 mt-auto">
-        <Button className="flex">Cancel</Button>
-        <Button className="flex">Next Step</Button>
       </div>
     </div>
   );
