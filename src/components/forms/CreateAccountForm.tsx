@@ -95,12 +95,12 @@ export function CreateAccountForm() {
                       <FormControl>
                         <Select {...field}>
                           <SelectTrigger>
-                            <SelectValue placeholder="Theme" />
+                            <SelectValue placeholder="Founder" />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="light">Light</SelectItem>
-                            <SelectItem value="dark">Dark</SelectItem>
-                            <SelectItem value="system">System</SelectItem>
+                            <SelectItem value="light">Founder</SelectItem>
+                            <SelectItem value="dark">Engineer</SelectItem>
+                            <SelectItem value="system">developer</SelectItem>
                           </SelectContent>
                         </Select>
                       </FormControl>
