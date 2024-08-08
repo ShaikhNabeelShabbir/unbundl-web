@@ -52,8 +52,8 @@ const Signup = () => {
       </div>
       <Navbar setStep={setStep} currentStep={step} />
       {renderForm()}
-      <div className="fixed bottom-0 left-0 right-0 z-50 flex justify-center gap-20 bg-white">
-        <Button className="flex text-base" onClick={handleCancel}>
+      <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-20 bg-white">
+        <Button className="flex text-base bg-gray-500 " onClick={handleCancel}>
           Cancel
         </Button>
         <Button className="flex text-base" onClick={handleNext}>
