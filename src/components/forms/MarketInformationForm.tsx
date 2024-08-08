@@ -38,7 +38,7 @@ export function MarketInformationForm() {
     <div>
       <div className="main-div flex flex-col min-h-screen px-20">
         <div className="flex flex-row py-10 px-5 flex-grow">
-          <div className="w-260 h-168 font-normal text-justify text-base text-gray-500  border border-red-600 py-[59px]">
+          <div className="w-260 h-168 font-normal text-justify text-base text-gray-500 py-[59px]">
             Being in the right market at the right
             <br /> time is a big part of a startup's
             <br /> success. <br />
@@ -47,7 +47,7 @@ export function MarketInformationForm() {
             <br /> you are in the right market.
           </div>
           <div className="px-[80px] ">
-            <div className="justify-center border border-red-600 w-[560px] py-[40px]">
+            <div className="justify-center border w-[560px] py-[40px]">
               <Form {...form}>
                 <form
                   onSubmit={form.handleSubmit(onSubmit)}

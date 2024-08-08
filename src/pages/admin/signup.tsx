@@ -39,12 +39,12 @@ const Signup = () => {
   };
 
   return (
-    <div className="main-div flex flex-col min-h-screen px-20">
-      <div className="flex gap-6 px-14">
-        <div className="flex flex-row py-3 font-semibold w-82 h-24 text-lg">
+    <div className="main-div flex flex-col min-h-screen ">
+      <div className="flex gap-6 px-[100px] ">
+        <div className="flex flex-row py-[40px] px-[100px] font-semibold w-82 h-24 text-lg">
           Unbundl
           <div className="px-3 font-medium">
-            <a href="" className="py-5 text-gray-500 text-sm">
+            <a href="" className="py-[45px] text-gray-500 text-sm">
               SignUp for founders
             </a>
           </div>
@@ -52,7 +52,7 @@ const Signup = () => {
       </div>
       <Navbar setStep={setStep} currentStep={step} />
       {renderForm()}
-      <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-20 bg-white">
+      <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px] bg-white">
         <Button className="flex text-base bg-gray-500 " onClick={handleCancel}>
           Cancel
         </Button>
