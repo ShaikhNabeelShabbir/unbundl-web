@@ -15,6 +15,9 @@ module.exports = {
       lg: ["20px", "28px"],
       xl: ["24px", "32px"],
     },
+    fontFamily: {
+      sans: ["Inter", "sans-serif"],
+    },
     container: {
       center: true,
       padding: "2rem",
