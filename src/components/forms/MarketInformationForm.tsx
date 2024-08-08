@@ -45,7 +45,7 @@ export function MarketInformationForm() {
             Show your potential investors that
             <br /> you are in the right market.
           </div>
-          <div className="px-20 justify-center border border-red-600 w-[560px]">
+          <div className="px-20 justify-center w-[560px]">
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}

@@ -45,7 +45,7 @@ export function FundraisingIformationForm() {
             <br />
             us with a cap table.
           </div>
-          <div className="px-20 justify-center border border-red-600 w-[560px]">
+          <div className="px-20 justify-center w-[560px]">
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
