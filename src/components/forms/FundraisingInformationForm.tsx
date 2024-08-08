@@ -40,11 +40,12 @@ export function FundraisingIformationForm() {
             fundraising or not, because Undundle
             <br /> is the best place to fundraise for web3
             <br /> startups.
+            <br />
             <br /> If you are fundraising, please provide
             <br />
             us with a cap table.
           </div>
-          <div className="px-20 justify-center">
+          <div className="px-20 justify-center border border-red-600 w-[560px]">
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}

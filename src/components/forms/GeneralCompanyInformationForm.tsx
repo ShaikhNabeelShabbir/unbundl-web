@@ -49,7 +49,7 @@ export function GeneralCompanyInformationForm() {
             investors, advisors or <br />
             great talent for your company.
           </div>
-          <div className="px-20 justify-center">
+          <div className="px-20 justify-center border border-red-600 w-[560px]">
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}

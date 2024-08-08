@@ -38,10 +38,11 @@ export function ProjectInformationForm() {
             The most important part about every <br /> startup is the
             information about your <br />
             product. <br />
+            <br />
             Answer these questions carefully, this
             <br /> is what matters to investors.
           </div>
-          <div className="px-20 justify-center">
+          <div className="px-20 justify-center border border-red-600 w-[560px]">
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
@@ -52,7 +53,7 @@ export function ProjectInformationForm() {
                   name="problem"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium text-base">
+                      <FormLabel className="font-medium text-base ">
                         What Problem Are You Solving?
                       </FormLabel>
                       <FormControl>

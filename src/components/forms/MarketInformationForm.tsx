@@ -41,10 +41,11 @@ export function MarketInformationForm() {
             Being in the right market at the right
             <br /> time is a big part of a startup's
             <br /> success. <br />
+            <br />
             Show your potential investors that
             <br /> you are in the right market.
           </div>
-          <div className="px-20 justify-center">
+          <div className="px-20 justify-center border border-red-600 w-[560px]">
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
@@ -55,7 +56,7 @@ export function MarketInformationForm() {
                   name="sector"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium text-base">
+                      <FormLabel className="font-medium text-base ">
                         Which sector/space are you building in?
                       </FormLabel>
                       <FormControl>
