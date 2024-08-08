@@ -47,7 +47,7 @@ export function MarketInformationForm() {
             <br /> you are in the right market.
           </div>
           <div className="px-[80px] ">
-            <div className="justify-center border w-[560px] py-[40px]">
+            <div className="justify-center  w-[560px] py-[40px]">
               <Form {...form}>
                 <form
                   onSubmit={form.handleSubmit(onSubmit)}
