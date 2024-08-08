@@ -68,7 +68,7 @@ const Navbar: React.FC<NavbarProps> = ({ setStep, currentStep }) => {
             </div>
           ))}
         </div>
-        <div className="absolute bottom-0 left-0 right-0">
+        <div className="absolute bottom-0 left-0 right-0 px-[100px]">
           <hr className="border-t border-gray-300" />
           <div
             className="absolute bottom-0 h-0.5 bg-black transition-all duration-300"
