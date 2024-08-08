@@ -12,6 +12,13 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { generalCompanySchema } from "@/schemas/generalCompanySchema";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "../ui/select";
 
 export function GeneralCompanyInformationForm() {
   // Set up the form using useForm hook
@@ -123,83 +130,90 @@ export function GeneralCompanyInformationForm() {
                     )}
                   />
                   <FormField
-                    control={form.control}
                     name="category"
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="font-medium text-base">
-                          What Is the Category of Your Web3 Startup?
+                          What is the category of your Web3 Startup?{" "}
                         </FormLabel>
                         <FormControl>
-                          <Input placeholder="Enter category" {...field} />
+                          <Select {...field}>
+                            <SelectTrigger>
+                              <SelectValue placeholder="De-Fi" />
+                            </SelectTrigger>
+                            <SelectContent>
+                              <SelectItem value="light">De-Fi</SelectItem>
+                              <SelectItem value="dark">Banking</SelectItem>
+                              <SelectItem value="system">Finance</SelectItem>
+                            </SelectContent>
+                          </Select>
                         </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
                   />
                   <FormField
-                    control={form.control}
                     name="developmentStage"
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="font-medium text-base">
-                          How Far Did You Move in the Development of Your
-                          Project?
+                          How far did you move in the development of your
+                          project?{" "}
                         </FormLabel>
                         <FormControl>
-                          <Input
-                            placeholder="Enter development stage"
-                            {...field}
-                          />
+                          <Select {...field}>
+                            <SelectTrigger>
+                              <SelectValue placeholder="MVP" />
+                            </SelectTrigger>
+                            <SelectContent>
+                              <SelectItem value="light">MVP</SelectItem>
+                              <SelectItem value="dark">Development</SelectItem>
+                              <SelectItem value="system">Staging</SelectItem>
+                            </SelectContent>
+                          </Select>
                         </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
                   />
                   <FormField
-                    control={form.control}
                     name="teamSize"
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="font-medium text-base">
-                          What Is the Size of Your Team?
+                          What is the size of your team?
                         </FormLabel>
                         <FormControl>
-                          <Input placeholder="Enter team size" {...field} />
+                          <Select {...field}>
+                            <SelectTrigger>
+                              <SelectValue placeholder="0-5" />
+                            </SelectTrigger>
+                            <SelectContent>
+                              <SelectItem value="light">0-5</SelectItem>
+                              <SelectItem value="dark">5-10</SelectItem>
+                              <SelectItem value="system">10-20</SelectItem>
+                            </SelectContent>
+                          </Select>
                         </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
                   />
-                  <FormField
-                    control={form.control}
-                    name="usefulLinks"
-                    render={() => (
-                      <FormItem>
-                        <FormLabel className="font-medium text-base">
-                          Add Useful Links or Files
-                        </FormLabel>
-                        <div className="flex flex-row justify-center gap-4">
-                          <Button className="space-x-5 h-45 w-88">
-                            LinkedIn
-                          </Button>
-                          <Button className="space-x-5 h-45 w-88">
-                            Twitter
-                          </Button>
-                          <Button className="space-x-5 h-45 w-88">
-                            GitHub
-                          </Button>
-                          <Button className="space-x-5 h-45 w-88">
-                            Whitepaper
-                          </Button>
-                          <Button className="space-x-5 h-45 w-88">
-                            Pitch Deck
-                          </Button>
-                        </div>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
+                  <div className="flex flex-col justify-start gap-4">
+                    <p className="font-medium">Connect your social media</p>
+                    <div className="flex flex-row gap-4">
+                      <Button className="space-x-5 h-45 w-88">LinkedIn</Button>
+                      <Button className="space-x-5 h-45 w-88">Twitter</Button>
+                      <Button className="space-x-5 h-45 w-88">GitHub</Button>
+                      <Button className="space-x-5 h-45 w-88">
+                        Whitepaper
+                      </Button>
+                      <Button className="space-x-5 h-45 w-88">
+                        Pitch Deck
+                      </Button>
+                    </div>
+                  </div>
+
                   <FormField
                     control={form.control}
                     name="calendlyLink"

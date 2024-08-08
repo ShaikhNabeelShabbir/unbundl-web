@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { projectInformationSchema } from "@/schemas/ProjectInformationSchema";
+import { Textarea } from "../ui/textarea";
 
 export function ProjectInformationForm() {
   const form = useForm<z.infer<typeof projectInformationSchema>>({
@@ -58,7 +59,7 @@ export function ProjectInformationForm() {
                           What Problem Are You Solving?
                         </FormLabel>
                         <FormControl>
-                          <Input
+                          <Textarea
                             placeholder="Describe the problem"
                             {...field}
                           />
@@ -76,7 +77,10 @@ export function ProjectInformationForm() {
                           Why Did You Start Working on This Idea?
                         </FormLabel>
                         <FormControl>
-                          <Input placeholder="Reason for starting" {...field} />
+                          <Textarea
+                            placeholder="Reason for starting"
+                            {...field}
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -109,7 +113,7 @@ export function ProjectInformationForm() {
                           What Are You Building?
                         </FormLabel>
                         <FormControl>
-                          <Input
+                          <Textarea
                             placeholder="Describe your project"
                             {...field}
                           />
