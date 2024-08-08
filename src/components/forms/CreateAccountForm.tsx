@@ -12,7 +12,13 @@ import {
 import { Input } from "@/components/ui/input";
 import { formSchema } from "@/schemas/SignupSchemas";
 import { Button } from "@/components/ui/button";
-
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 // Define the form component
 export function CreateAccountForm() {
   // Set up the form using useForm hook
@@ -76,7 +82,6 @@ export function CreateAccountForm() {
                 )}
               />
               <FormField
-                control={form.control}
                 name="role"
                 render={({ field }) => (
                   <FormItem>
@@ -84,7 +89,16 @@ export function CreateAccountForm() {
                       I am a
                     </FormLabel>
                     <FormControl>
-                      <Input placeholder="Enter your role" {...field} />
+                      <Select {...field}>
+                        <SelectTrigger>
+                          <SelectValue placeholder="Theme" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="light">Light</SelectItem>
+                          <SelectItem value="dark">Dark</SelectItem>
+                          <SelectItem value="system">System</SelectItem>
+                        </SelectContent>
+                      </Select>
                     </FormControl>
                     <FormMessage />
                   </FormItem>
