@@ -66,7 +66,7 @@ export function OverviewForm() {
               <FormField
                 name="category"
                 control={form.control}
-                render={({ field }) => (
+                render={({}) => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
                       Category

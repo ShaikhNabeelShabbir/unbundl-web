@@ -10,6 +10,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { Button } from "../ui/button";
 
 // Define the schema using Zod
 const overviewSchema = z.object({
@@ -37,20 +38,23 @@ export function SkillsForm() {
 
   return (
     <div>
-      <div className="main-div ">
-        <div className="justify-center py-[32px] ">
+      <div className="main-div">
+        <div className="justify-center py-[32px] space-y-[30px]">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+            <form
+              onSubmit={form.handleSubmit(onSubmit)}
+              className="space-y-[30px]"
+            >
               <FormField
                 control={form.control}
                 name="serviceTitle"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
-                      Service Title
+                      Previous Clients
                     </FormLabel>
                     <FormControl>
-                      <Input placeholder="Enter Service Title" {...field} />
+                      <Button className="mt-2">Add work experience</Button>
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -62,10 +66,10 @@ export function SkillsForm() {
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
-                      Category
+                      Skills
                     </FormLabel>
                     <FormControl>
-                      <Input placeholder="Enter Category" {...field} />
+                      <Button className="mt-2">Add Skills</Button>
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -77,10 +81,25 @@ export function SkillsForm() {
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
-                      Enter Tags
+                      Languages
                     </FormLabel>
                     <FormControl>
-                      <Input placeholder="Enter Tags" {...field} />
+                      <Button className="mt-2">Add Languages</Button>
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="tags"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel className="font-medium text-base">
+                      Links to portfolio/Github/LinkedIn
+                    </FormLabel>
+                    <FormControl>
+                      <Button className="mt-2">Add Links</Button>
                     </FormControl>
                     <FormMessage />
                   </FormItem>
