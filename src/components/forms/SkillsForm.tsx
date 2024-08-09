@@ -9,7 +9,6 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
 import { Button } from "../ui/button";
 
 // Define the schema using Zod
@@ -54,7 +53,9 @@ export function SkillsForm() {
                       Previous Clients
                     </FormLabel>
                     <FormControl>
-                      <Button className="mt-2">Add work experience</Button>
+                      <div className="mt-2">
+                        <Button>Add work experience</Button>
+                      </div>
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -69,7 +70,9 @@ export function SkillsForm() {
                       Skills
                     </FormLabel>
                     <FormControl>
-                      <Button className="mt-2">Add Skills</Button>
+                      <div className="mt-2">
+                        <Button>Add Skills</Button>
+                      </div>
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -84,7 +87,9 @@ export function SkillsForm() {
                       Languages
                     </FormLabel>
                     <FormControl>
-                      <Button className="mt-2">Add Languages</Button>
+                      <div className="mt-2">
+                        <Button>Add Languages</Button>
+                      </div>
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -99,7 +104,9 @@ export function SkillsForm() {
                       Links to portfolio/Github/LinkedIn
                     </FormLabel>
                     <FormControl>
-                      <Button className="mt-2">Add Links</Button>
+                      <div className="mt-2">
+                        <Button>Add Links</Button>
+                      </div>
                     </FormControl>
                     <FormMessage />
                   </FormItem>
