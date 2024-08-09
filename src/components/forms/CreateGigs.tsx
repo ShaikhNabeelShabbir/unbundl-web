@@ -32,7 +32,9 @@ export function CreateGigs() {
                   </DialogTrigger>
                   <DialogContent className="sm:max-w-[600px]">
                     <DialogHeader>
-                      <DialogTitle>Create New Service</DialogTitle>
+                      <DialogTitle className="font-semibold text-xl">
+                        Create New Service
+                      </DialogTitle>
                     </DialogHeader>
                     <CreateNewService />
                   </DialogContent>
