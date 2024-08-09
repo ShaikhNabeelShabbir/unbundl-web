@@ -7,7 +7,7 @@ export const CreateNewService = () => {
   const [currentStep, setCurrentStep] = useState(1);
 
   return (
-    <div className="flex flex-col w-[600px] h-[582px]">
+    <div className="flex flex-col h-[582px]">
       <div className="flex flex-row justify-between items-center font-semibold text-xxl">
         <span>Create New Service</span>
         <button className="p-2">
