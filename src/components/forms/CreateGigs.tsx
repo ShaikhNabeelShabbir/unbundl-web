@@ -1,13 +1,10 @@
 import {
   AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
   AlertDialogContent,
-  AlertDialogFooter,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { Button } from "../ui/button";
-import Signup from "@/pages/admin/signup";
+import CreateNewService from "../CreateNewService";
 
 export function CreateGigs() {
   // Define the submit handler
@@ -30,13 +27,9 @@ export function CreateGigs() {
                     <Button className=" h-45 w-88 text-sm px-[15px]">
                       Add your service
                     </Button>
-                  </AlertDialogTrigger>{" "}
+                  </AlertDialogTrigger>
                   <AlertDialogContent>
-                    <Signup />
-                    <AlertDialogFooter>
-                      <AlertDialogCancel>Cancel</AlertDialogCancel>
-                      <AlertDialogAction>Continue</AlertDialogAction>
-                    </AlertDialogFooter>
+                    <CreateNewService />
                   </AlertDialogContent>
                 </AlertDialog>
               </div>
