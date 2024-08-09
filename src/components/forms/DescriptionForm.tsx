@@ -1,5 +1,5 @@
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import { z } from "zod";
 import {
   Form,
@@ -10,77 +10,44 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 
 // Define the schema using Zod
-const overviewSchema = z.object({
-  serviceTitle: z.string().min(1, "Service Title is required"),
-  category: z.string().min(1, "Category is required"),
-  tags: z.string().min(1, "Tags are required"),
+const descriptionSchema = z.object({
+  description: z.string().min(1, "Service Title is required"),
 });
 
-export function DescriptionForm() {
+export function OverviewForm() {
   // Set up the form using useForm hook
-  const form = useForm<z.infer<typeof overviewSchema>>({
-    resolver: zodResolver(overviewSchema),
+  const form = useForm<z.infer<typeof descriptionSchema>>({
+    resolver: zodResolver(descriptionSchema),
     defaultValues: {
-      serviceTitle: "",
-      category: "",
-      tags: "",
+      description: "",
     },
   });
 
   // Define the submit handler
-  function onSubmit(values: z.infer<typeof overviewSchema>) {
+  function onSubmit(values: z.infer<typeof descriptionSchema>) {
     // Handle form submission
     console.log(values);
   }
 
   return (
     <div>
-      <div className="main-div ">
-        <div className="justify-center py-[32px] ">
+      <div className="main-div">
+        <div className="justify-center py-[32px]">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
               <FormField
                 control={form.control}
-                name="serviceTitle"
+                name="description"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
-                      Service Title
+                      About You{" "}
                     </FormLabel>
                     <FormControl>
-                      <Input placeholder="Enter Service Title" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="category"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="font-medium text-base">
-                      Category
-                    </FormLabel>
-                    <FormControl>
-                      <Input placeholder="Enter Category" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="tags"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="font-medium text-base">
-                      Enter Tags
-                    </FormLabel>
-                    <FormControl>
-                      <Input placeholder="Enter Tags" {...field} />
+                      <Textarea placeholder="About Youekf" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -94,4 +61,4 @@ export function DescriptionForm() {
   );
 }
 
-export default DescriptionForm;
+export default OverviewForm;

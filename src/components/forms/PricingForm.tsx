@@ -1,5 +1,5 @@
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import { z } from "zod";
 import {
   Form,
@@ -10,12 +10,21 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import {
+  Select,
+  SelectTrigger,
+  SelectValue,
+  SelectContent,
+  SelectItem,
+} from "@/components/ui/select"; // Assuming you're using a custom wrapper around Radix UI's Select
 
 // Define the schema using Zod
 const overviewSchema = z.object({
-  serviceTitle: z.string().min(1, "Service Title is required"),
   category: z.string().min(1, "Category is required"),
-  tags: z.string().min(1, "Tags are required"),
+  minimumBudget: z
+    .string()
+    .min(1, "Minimum Budget is required")
+    .regex(/^\d+$/, "Minimum Budget must be a number"),
 });
 
 export function PricingForm() {
@@ -23,9 +32,8 @@ export function PricingForm() {
   const form = useForm<z.infer<typeof overviewSchema>>({
     resolver: zodResolver(overviewSchema),
     defaultValues: {
-      serviceTitle: "",
       category: "",
-      tags: "",
+      minimumBudget: "",
     },
   });
 
@@ -37,35 +45,40 @@ export function PricingForm() {
 
   return (
     <div>
-      <div className="main-div ">
-        <div className="justify-center py-[32px] ">
+      <div className="main-div">
+        <div className="justify-center py-[32px]">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
               <FormField
-                control={form.control}
-                name="serviceTitle"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="font-medium text-base">
-                      Service Title
-                    </FormLabel>
-                    <FormControl>
-                      <Input placeholder="Enter Service Title" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
                 name="category"
-                render={({ field }) => (
+                control={form.control}
+                render={({}) => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
-                      Category
+                      I am ready for
                     </FormLabel>
                     <FormControl>
-                      <Input placeholder="Enter Category" {...field} />
+                      <Controller
+                        control={form.control}
+                        name="category"
+                        render={({ field }) => (
+                          <Select
+                            onValueChange={field.onChange}
+                            value={field.value}
+                          >
+                            <SelectTrigger>
+                              <SelectValue placeholder="Select Category" />
+                            </SelectTrigger>
+                            <SelectContent>
+                              <SelectItem value="founder">Founder</SelectItem>
+                              <SelectItem value="engineer">Engineer</SelectItem>
+                              <SelectItem value="developer">
+                                Developer
+                              </SelectItem>
+                            </SelectContent>
+                          </Select>
+                        )}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -73,11 +86,11 @@ export function PricingForm() {
               />
               <FormField
                 control={form.control}
-                name="tags"
+                name="minimumBudget"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
-                      Enter Tags
+                      Minimum Budget{" "}
                     </FormLabel>
                     <FormControl>
                       <Input placeholder="Enter Tags" {...field} />
