@@ -10,19 +10,13 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import SoftwareStash from "./pages/startup/software-stash";
 // import MyPortfolio from "./pages/startup/my-portfolio";
 // import ResearchLibrary from "./pages/startup/research-library";
-import { GeneralCompanyInformationForm } from "./components/forms/GeneralCompanyInformationForm";
 // import Events from "./pages/startup/events";
 // import Hire from "./pages/startup/hire";
 // import Grants from "./pages/startup/grants";
 // import Invest from "./pages/startup/invest";
 // import Network from "./pages/startup/network";
 // import Services from "./pages/startup/services";
-import { ProjectInformationForm } from "./components/forms/ProjectInformationForm";
 import Signup from "./pages/admin/signup";
-import { FundraisingIformationForm } from "./components/forms/FundraisingInformationForm";
-import { MarketInformationForm } from "./components/forms/MarketInformationForm";
-import { TeamsForm } from "./components/forms/TeamsForm";
-import Thanks from "./components/thankyou";
 import Signupforserviceproviders from "./pages/admin/signupforserviceproviders";
 
 const App: React.FC = () => {
@@ -45,12 +39,6 @@ const App: React.FC = () => {
           {/* <Route path="/my-portfolio" element={<MyPortfolio />} /> */}
           {/* <Route path="/research-library" element={<ResearchLibrary />} /> */}
           <Route path="/" element={<Signup />} />
-          <Route path="/gci" element={<GeneralCompanyInformationForm />} />
-          <Route path="/pis" element={<ProjectInformationForm />} />
-          <Route path="/fif" element={<FundraisingIformationForm />} />
-          <Route path="/mif" element={<MarketInformationForm />} />
-          <Route path="/teams" element={<TeamsForm />} />
-          <Route path="/thanks" element={<Thanks />} />
           <Route
             path="/service-providers"
             element={<Signupforserviceproviders />}

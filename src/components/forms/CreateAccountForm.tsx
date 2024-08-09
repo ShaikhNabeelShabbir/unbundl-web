@@ -108,7 +108,7 @@ export function CreateAccountForm() {
                     </FormItem>
                   )}
                 />
-                <div className="flex flex-col justify-start gap-9">
+                <div className="flex flex-col justify-start gap-3">
                   <p className="font-medium">Connect your social media</p>
                   <div className="flex flex-row gap-14">
                     <Button className=" h-45 w-88 text-sm">LinkedIn</Button>

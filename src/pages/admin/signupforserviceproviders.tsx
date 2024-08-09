@@ -33,7 +33,7 @@ export const Signupforserviceproviders = () => {
           Unbundl
           <div className="px-3 font-medium">
             <a href="" className="py-[45px] text-gray-500 text-sm">
-              SignUp for founders
+              SignUp for Service Providers
             </a>
           </div>
         </div>
