@@ -1,4 +1,3 @@
-import { Button } from "./ui/button";
 
 export function Thankyou() {
   // Define the submit handler
