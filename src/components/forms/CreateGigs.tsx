@@ -2,7 +2,6 @@ import { Button } from "../ui/button";
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogFooter,
   DialogHeader,
   DialogTitle,
@@ -36,10 +35,6 @@ export function CreateGigs() {
                       <DialogTitle>Create New Service</DialogTitle>
                     </DialogHeader>
                     <CreateNewService />
-                    <DialogFooter>
-                      <Button type="button">Cancel</Button>
-                      <Button type="submit">Save</Button>
-                    </DialogFooter>
                   </DialogContent>
                 </Dialog>
               </div>

@@ -1,13 +1,11 @@
-import React, { useState } from "react";
-import CloseIcon from "@/assets/icons/close-icon.svg";
-import { Button } from "./ui/button";
+import { useState } from "react";
 import NavbarCreateService from "./navbarcreateservice";
 import OverviewForm from "./forms/OverviewForm";
-import { Description } from "@radix-ui/react-dialog";
 import DescriptionForm from "./forms/DescriptionForm";
 import SkillsForm from "./forms/SkillsForm";
 import PricingForm from "./forms/PricingForm";
 import PublishForm from "./forms/PublishForm";
+import { Button } from "./ui/button";
 
 export const CreateNewService = () => {
   const [step, setStep] = useState(1);
@@ -42,6 +40,18 @@ export const CreateNewService = () => {
     <div className="flex flex-col h-[582px]">
       <NavbarCreateService setStep={setStep} currentStep={step} />
       {renderForm()}
+      <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px]">
+        <Button
+          variant="link"
+          className="flex text-base"
+          onClick={handleCancel}
+        >
+          Cancel
+        </Button>
+        <Button className="flex text-base" onClick={handleNext}>
+          Next Step
+        </Button>
+      </div>
     </div>
   );
 };
