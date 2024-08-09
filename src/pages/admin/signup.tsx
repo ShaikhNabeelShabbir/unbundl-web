@@ -7,7 +7,6 @@ import { ProjectInformationForm } from "@/components/forms/ProjectInformationFor
 import { FundraisingIformationForm } from "@/components/forms/FundraisingInformationForm";
 import { MarketInformationForm } from "@/components/forms/MarketInformationForm";
 import { TeamsForm } from "@/components/forms/TeamsForm"; // Assuming you have a TeamForm component
-import { Thankyou } from "@/components/thankyou";
 
 const Signup = () => {
   const [step, setStep] = useState(1);
@@ -26,8 +25,6 @@ const Signup = () => {
         return <MarketInformationForm />;
       case 6:
         return <TeamsForm />;
-      case 7:
-        return <Thankyou />;
       default:
         return <CreateAccountForm />;
     }
