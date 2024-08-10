@@ -54,7 +54,7 @@ export function SkillsForm() {
                     </FormLabel>
                     <FormControl>
                       <div className="mt-2">
-                        <Button>Add work experience</Button>
+                        <Button type="button">Add work experience</Button>
                       </div>
                     </FormControl>
                     <FormMessage />
@@ -71,7 +71,7 @@ export function SkillsForm() {
                     </FormLabel>
                     <FormControl>
                       <div className="mt-2">
-                        <Button>Add Skills</Button>
+                        <Button type="button">Add Skills</Button>
                       </div>
                     </FormControl>
                     <FormMessage />
@@ -88,7 +88,7 @@ export function SkillsForm() {
                     </FormLabel>
                     <FormControl>
                       <div className="mt-2">
-                        <Button>Add Languages</Button>
+                        <Button type="button">Add Languages</Button>
                       </div>
                     </FormControl>
                     <FormMessage />
@@ -105,7 +105,7 @@ export function SkillsForm() {
                     </FormLabel>
                     <FormControl>
                       <div className="mt-2">
-                        <Button>Add Links</Button>
+                        <Button type="button">Add Links</Button>
                       </div>
                     </FormControl>
                     <FormMessage />

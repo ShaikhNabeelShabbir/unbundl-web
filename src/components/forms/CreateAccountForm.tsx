@@ -40,7 +40,7 @@ export function CreateAccountForm() {
   return (
     <div className="main-div flex flex-col min-h-screen px-20">
       <div className="flex flex-row py-10 px-5 flex-grow">
-        <div className="w-260 h-168 font-normal text-justify text-base text-gray-500   py-[59px]">
+        <div className="w-260 h-168 font-normal text-justify text-14 text-gray-500   py-[59px]">
           Let us know a bit more about you, and
           <br /> please provide some social links, so we <br /> can run a small
           background check on <br /> you. <br /> <br />
@@ -111,9 +111,15 @@ export function CreateAccountForm() {
                 <div className="flex flex-col justify-start gap-3">
                   <p className="font-medium">Connect your social media</p>
                   <div className="flex flex-row gap-14">
-                    <Button className=" h-45 w-88 text-sm">LinkedIn</Button>
-                    <Button className=" h-45 w-88 text-sm">Twitter</Button>
-                    <Button className="h-45 w-88 text-sm">GitHub</Button>
+                    <Button type="button" className=" h-45 w-88 text-sm">
+                      LinkedIn
+                    </Button>
+                    <Button type="button" className=" h-45 w-88 text-sm">
+                      Twitter
+                    </Button>
+                    <Button type="button" className="h-45 w-88 text-sm">
+                      GitHub
+                    </Button>
                   </div>
                 </div>
               </form>

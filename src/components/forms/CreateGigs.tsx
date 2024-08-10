@@ -25,7 +25,7 @@ export function CreateGigs() {
                 </p>
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Button className="h-45 w-88 text-sm px-[15px]">
+                    <Button type="button"  className="h-45 w-88 text-sm px-[15px]">
                       Add your service
                     </Button>
                   </DialogTrigger>

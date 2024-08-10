@@ -202,10 +202,16 @@ export function GeneralCompanyInformationForm() {
                   <div className="flex flex-col justify-start gap-4">
                     <p className="font-medium">Connect your social media</p>
                     <div className="flex flex-row gap-4">
-                      <Button className="space-x-5 h-45 w-88">LinkedIn</Button>
-                      <Button className="space-x-5 h-45 w-88">Twitter</Button>
-                      <Button className="space-x-5 h-45 w-88">GitHub</Button>
-                      <Button className="space-x-5 h-45 w-88">
+                      <Button type="button" className="space-x-5 h-45 w-88">
+                        LinkedIn
+                      </Button>
+                      <Button type="button" className="space-x-5 h-45 w-88">
+                        Twitter
+                      </Button>
+                      <Button type="button" className="space-x-5 h-45 w-88">
+                        GitHub
+                      </Button>
+                      <Button type="button" className="space-x-5 h-45 w-88">
                         Whitepaper
                       </Button>
                       <Button className="space-x-5 h-45 w-88">
