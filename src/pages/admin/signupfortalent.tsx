@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { CreateAccountForm } from "@/components/forms/CreateAccountForm";
 import { Button } from "@/components/ui/button";
-import NavbarServiceProvider from "@/components/navbar-service-provider";
-import { CreateGigs } from "@/components/forms/CreateGigs";
 import Navbartalent from "@/components/navbar-talent";
 import { CreateCVs } from "@/components/forms/CreateCvs";
 
