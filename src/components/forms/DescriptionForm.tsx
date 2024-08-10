@@ -1,5 +1,5 @@
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm, Controller } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { z } from "zod";
 import {
   Form,
@@ -9,7 +9,6 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 // Define the schema using Zod
@@ -41,7 +40,7 @@ export function OverviewForm() {
               <FormField
                 control={form.control}
                 name="description"
-                render={({ field }) => (
+                render={({ }) => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
                       About You{" "}

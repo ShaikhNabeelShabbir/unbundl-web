@@ -47,7 +47,7 @@ export function SkillsForm() {
               <FormField
                 control={form.control}
                 name="serviceTitle"
-                render={({ field }) => (
+                render={() => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
                       Previous Clients
@@ -64,7 +64,7 @@ export function SkillsForm() {
               <FormField
                 control={form.control}
                 name="category"
-                render={({ field }) => (
+                render={() => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
                       Skills
@@ -81,7 +81,7 @@ export function SkillsForm() {
               <FormField
                 control={form.control}
                 name="tags"
-                render={({ field }) => (
+                render={() => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
                       Languages
@@ -98,7 +98,7 @@ export function SkillsForm() {
               <FormField
                 control={form.control}
                 name="tags"
-                render={({ field }) => (
+                render={() => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
                       Links to portfolio/Github/LinkedIn
