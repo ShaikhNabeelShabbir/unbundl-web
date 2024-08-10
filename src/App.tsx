@@ -16,7 +16,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import Invest from "./pages/startup/invest";
 // import Network from "./pages/startup/network";
 // import Services from "./pages/startup/services";
-import Signup from "./pages/admin/signup";
+// import Signup from "./pages/admin/signup";
 import Signupforserviceproviders from "./pages/admin/signupforserviceproviders";
 
 const App: React.FC = () => {
@@ -38,7 +38,7 @@ const App: React.FC = () => {
           {/* <Route path="/software-stash" element={<SoftwareStash />} /> */}
           {/* <Route path="/my-portfolio" element={<MyPortfolio />} /> */}
           {/* <Route path="/research-library" element={<ResearchLibrary />} /> */}
-          <Route path="/" element={<Signup />} />
+          <Route path="/" element={<Signupforserviceproviders />} />
           <Route
             path="/service-providers"
             element={<Signupforserviceproviders />}
