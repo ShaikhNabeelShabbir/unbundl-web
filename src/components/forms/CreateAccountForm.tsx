@@ -38,9 +38,9 @@ export function CreateAccountForm() {
   }
 
   return (
-    <div className="main-div flex flex-col min-h-screen px-20">
+    <div className="main-div flex flex-col min-h-screen px-20 ">
       <div className="flex flex-row py-10 px-5 flex-grow">
-        <div className="w-260 h-168 font-normal text-justify text-14 text-gray-500   py-[59px]">
+        <div className="w-260 h-168 font-normal text-justify text-1 text-black/50 py-[59px]">
           Let us know a bit more about you, and
           <br /> please provide some social links, so we <br /> can run a small
           background check on <br /> you. <br /> <br />
