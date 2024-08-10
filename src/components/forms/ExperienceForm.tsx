@@ -1,5 +1,5 @@
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm, Controller } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { z } from "zod";
 import {
   Form,
@@ -10,13 +10,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import {
-  Select,
-  SelectTrigger,
-  SelectValue,
-  SelectContent,
-  SelectItem,
-} from "@/components/ui/select"; // Assuming you're using a custom wrapper around Radix UI's Select
+import { Button } from "../ui/button";
 
 // Define the schema using Zod
 const ExperienceSchema = z.object({
@@ -74,6 +68,23 @@ export function ExperienceForm() {
                     </FormLabel>
                     <FormControl>
                       <Input placeholder="Enter Expected Salary" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="tags"
+                render={() => (
+                  <FormItem>
+                    <FormLabel className="font-medium text-base">
+                      Work Experince{" "}
+                    </FormLabel>
+                    <FormControl>
+                      <div className="mt-2">
+                        <Button type="button">Add work expience</Button>
+                      </div>
                     </FormControl>
                     <FormMessage />
                   </FormItem>

@@ -17,12 +17,14 @@ import {
   SelectContent,
   SelectItem,
 } from "@/components/ui/select"; // Assuming you're using a custom wrapper around Radix UI's Select
+import { Button } from "../ui/button";
 
 // Define the schema using Zod
 const generalSchema = z.object({
   name: z.string().min(1, "Service Title is required"),
   country: z.string().min(1, "Category is required"),
   city: z.string().min(1, "Tags are required"),
+  linkedin: z.string().min(1, "Tags are required"),
 });
 
 export function GeneralForm() {
@@ -33,6 +35,7 @@ export function GeneralForm() {
       name: "",
       country: "",
       city: "",
+      linkedin: "",
     },
   });
 
@@ -124,6 +127,20 @@ export function GeneralForm() {
                           </Select>
                         )}
                       />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="linkedin"
+                render={() => (
+                  <FormItem>
+                    <FormControl>
+                      <div className="mt-2">
+                        <Button type="button">Connect LinkedIn</Button>
+                      </div>
                     </FormControl>
                     <FormMessage />
                   </FormItem>

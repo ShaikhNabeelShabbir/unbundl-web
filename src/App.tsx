@@ -39,7 +39,7 @@ const App: React.FC = () => {
           {/* <Route path="/software-stash" element={<SoftwareStash />} /> */}
           {/* <Route path="/my-portfolio" element={<MyPortfolio />} /> */}
           {/* <Route path="/research-library" element={<ResearchLibrary />} /> */}
-          <Route path="/" element={<Signupforserviceproviders />} />
+          <Route path="/" element={<Signupfortalent />} />
           <Route
             path="/service-providers"
             element={<Signupforserviceproviders />}
