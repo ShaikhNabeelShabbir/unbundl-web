@@ -19,6 +19,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+
 // Define the form component
 export function CreateAccountForm() {
   // Set up the form using useForm hook
@@ -38,8 +39,8 @@ export function CreateAccountForm() {
   }
 
   return (
-    <div className="main-div flex flex-col min-h-screen px-20 ">
-      <div className="flex flex-row py-10 px-5 flex-grow">
+    <div className="main-div flex flex-col px-20">
+      <div className="flex flex-row py-10 px-5">
         <div className="w-260 h-168 font-normal text-justify text-1 text-black/50 py-[59px]">
           Let us know a bit more about you, and
           <br /> please provide some social links, so we <br /> can run a small
@@ -49,7 +50,7 @@ export function CreateAccountForm() {
           <br /> where every member brings value
         </div>
         <div className="px-[80px] ">
-          <div className="justify-center  w-[560px] py-[40px]">
+          <div className="justify-center w-[560px] py-[40px]">
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
@@ -100,7 +101,7 @@ export function CreateAccountForm() {
                           <SelectContent>
                             <SelectItem value="light">Founder</SelectItem>
                             <SelectItem value="dark">Engineer</SelectItem>
-                            <SelectItem value="system">developer</SelectItem>
+                            <SelectItem value="system">Developer</SelectItem>
                           </SelectContent>
                         </Select>
                       </FormControl>
