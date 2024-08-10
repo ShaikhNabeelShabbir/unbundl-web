@@ -18,6 +18,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import Services from "./pages/startup/services";
 // import Signup from "./pages/admin/signup";
 import Signupforserviceproviders from "./pages/admin/signupforserviceproviders";
+import Signupfortalent from "./pages/admin/signupfortalent";
 
 const App: React.FC = () => {
   return (
@@ -43,6 +44,7 @@ const App: React.FC = () => {
             path="/service-providers"
             element={<Signupforserviceproviders />}
           />
+          <Route path="/talent" element={<Signupfortalent />} />
         </Routes>
       </div>
     </Router>
