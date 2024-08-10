@@ -1,5 +1,5 @@
 import { useState } from "react";
-import NavbarCreateService from "./navbarcreateservice";
+import NavbarCreateService from "./navbar-create-service";
 import OverviewForm from "./forms/OverviewForm";
 import DescriptionForm from "./forms/DescriptionForm";
 import SkillsForm from "./forms/SkillsForm";
@@ -42,8 +42,7 @@ export const CreateNewService = () => {
       {renderForm()}
       <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px]">
         <Button
-          variant="link"
-          className="flex text-base"
+          className="flex text-base bg-white text-black"
           onClick={handleCancel}
         >
           Cancel

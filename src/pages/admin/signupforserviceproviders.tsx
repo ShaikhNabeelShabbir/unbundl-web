@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { CreateAccountForm } from "@/components/forms/CreateAccountForm";
 import { Button } from "@/components/ui/button";
-import NavbarServiceProvider from "@/components/navbarserviceprovider";
+import NavbarServiceProvider from "@/components/navbar-service-provider";
 import { CreateGigs } from "@/components/forms/CreateGigs";
 
 export const Signupforserviceproviders = () => {
