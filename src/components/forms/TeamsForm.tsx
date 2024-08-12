@@ -49,7 +49,7 @@ export const TeamsForm = () => {
             ))}
           </TableBody>
         </Table>
-        <Button className="w-[165px]">Add Team Member</Button>
+        <Button>Add Team Member</Button>
       </div>
     </div>
   );

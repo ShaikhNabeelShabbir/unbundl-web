@@ -41,7 +41,7 @@ const App: React.FC = () => {
           {/* <Route path="/software-stash" element={<SoftwareStash />} /> */}
           {/* <Route path="/my-portfolio" element={<MyPortfolio />} /> */}
           {/* <Route path="/research-library" element={<ResearchLibrary />} /> */}
-          <Route path="/" element={<Signup />} />
+          <Route path="/" element={<Signupforinvestor />} />
           <Route
             path="/service-providers"
             element={<Signupforserviceproviders />}
