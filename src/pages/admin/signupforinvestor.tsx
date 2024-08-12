@@ -1,16 +1,11 @@
 import { useState } from "react";
 import { CreateAccountForm } from "@/components/forms/CreateAccountForm";
-import { GeneralCompanyInformationForm } from "@/components/forms/GeneralCompanyInformationForm";
-import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
-import { ProjectInformationForm } from "@/components/forms/ProjectInformationForm";
-import { FundraisingIformationForm } from "@/components/forms/FundraisingInformationForm";
-import { MarketInformationForm } from "@/components/forms/MarketInformationForm";
 import { TeamsForm } from "@/components/forms/TeamsForm"; // Assuming you have a TeamForm component
-import DealsForm from "@/components/forms/DealsForm";
 import PortfolioForm from "@/components/forms/PortfolioForm";
 import NavbarInvestor from "@/components/navbar-investor";
 import { GeneralInvestorInformationForm } from "@/components/forms/GeneralInvestorInformationForm";
+import { DealsForm } from "@/components/forms/DealsForm";
 
 const Signupforinvestor = () => {
   const [step, setStep] = useState(1);
