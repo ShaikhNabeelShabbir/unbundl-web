@@ -99,7 +99,7 @@ export function GeneralInvestorInformationForm() {
                 <FormField
                   control={form.control}
                   name="description"
-                  render={({ field }) => (
+                  render={({}) => (
                     <FormItem>
                       <FormLabel className="font-medium text-base">
                         Enter the description of your fund{" "}
