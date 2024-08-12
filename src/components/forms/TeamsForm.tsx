@@ -7,6 +7,14 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "../ui/dialog";
+import AddATeamMember from "./AddATeamMember";
 const teamMembers = [
   {
     name: "John Doe",
@@ -49,7 +57,21 @@ export const TeamsForm = () => {
             ))}
           </TableBody>
         </Table>
-        <Button className="w-[1063px]">Add Team Member</Button>
+        <Dialog>
+          <DialogTrigger asChild>
+            <Button type="button" className="h-45 w-[1063px] text-sm px-[15px]">
+              Add a team member{" "}
+            </Button>
+          </DialogTrigger>
+          <DialogContent className="sm:max-w-[600px]">
+            <DialogHeader>
+              <DialogTitle className="font-semibold text-xl">
+                Add a team member{" "}
+              </DialogTitle>
+            </DialogHeader>
+            <AddATeamMember />
+          </DialogContent>
+        </Dialog>{" "}
       </div>
     </div>
   );

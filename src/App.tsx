@@ -20,6 +20,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Signupforserviceproviders from "./pages/admin/signupforserviceproviders";
 import Signupfortalent from "./pages/admin/signupfortalent";
 import Signupforinvestor from "./pages/admin/signupforinvestor";
+import Signup from "./pages/admin/signup";
 //import Signup from "./pages/admin/signup";
 
 const App: React.FC = () => {
@@ -41,7 +42,7 @@ const App: React.FC = () => {
           {/* <Route path="/software-stash" element={<SoftwareStash />} /> */}
           {/* <Route path="/my-portfolio" element={<MyPortfolio />} /> */}
           {/* <Route path="/research-library" element={<ResearchLibrary />} /> */}
-          <Route path="/" element={<Signupforinvestor />} />
+          <Route path="/" element={<Signup />} />
           <Route
             path="/service-providers"
             element={<Signupforserviceproviders />}
