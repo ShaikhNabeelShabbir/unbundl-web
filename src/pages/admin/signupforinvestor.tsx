@@ -1,0 +1,70 @@
+import { useState } from "react";
+import { CreateAccountForm } from "@/components/forms/CreateAccountForm";
+import { GeneralCompanyInformationForm } from "@/components/forms/GeneralCompanyInformationForm";
+import Navbar from "@/components/navbar";
+import { Button } from "@/components/ui/button";
+import { ProjectInformationForm } from "@/components/forms/ProjectInformationForm";
+import { FundraisingIformationForm } from "@/components/forms/FundraisingInformationForm";
+import { MarketInformationForm } from "@/components/forms/MarketInformationForm";
+import { TeamsForm } from "@/components/forms/TeamsForm"; // Assuming you have a TeamForm component
+import DealsForm from "@/components/forms/DealsForm";
+import PortfolioForm from "@/components/forms/PortfolioForm";
+import NavbarInvestor from "@/components/navbar-investor";
+import { GeneralInvestorInformationForm } from "@/components/forms/GeneralInvestorInformationForm";
+
+const Signupforinvestor = () => {
+  const [step, setStep] = useState(1);
+
+  const renderForm = () => {
+    switch (step) {
+      case 1:
+        return <CreateAccountForm />;
+      case 2:
+        return <GeneralInvestorInformationForm />;
+      case 3:
+        return <DealsForm />;
+      case 4:
+        return <PortfolioForm />;
+      case 5:
+        return <TeamsForm />;
+
+      default:
+        return <CreateAccountForm />;
+    }
+  };
+
+  const handleNext = () => {
+    setStep((prevStep) => prevStep + 1);
+  };
+
+  const handleCancel = () => {
+    setStep(1);
+  };
+
+  return (
+    <div className="main-div flex flex-col min-h-screen ">
+      <div className="flex gap-6 px-[100px] ">
+        <div className="flex flex-row py-[40px] px-[100px] font-semibold w-82 h-24 text-lg">
+          Unbundl
+          <div className="px-3 font-medium">
+            <a href="" className="py-[45px] text-gray-500 text-sm">
+              SignUp for Investors
+            </a>
+          </div>
+        </div>
+      </div>
+      <NavbarInvestor setStep={setStep} currentStep={step} />
+      {renderForm()}
+      <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px] bg-white">
+        <Button className="flex text-base bg-gray-500 " onClick={handleCancel}>
+          Cancel
+        </Button>
+        <Button className="flex text-base" onClick={handleNext}>
+          Next Step
+        </Button>
+      </div>
+    </div>
+  );
+};
+
+export default Signupforinvestor;
