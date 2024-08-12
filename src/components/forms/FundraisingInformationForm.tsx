@@ -11,6 +11,15 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { fundraisingSchema } from "@/schemas/fundraisingSchema";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "../ui/dialog";
+import { Button } from "../ui/button";
+import CreateCapTableForm from "./CreateCapTableForm";
 
 export function FundraisingIformationForm() {
   // Set up the form using useForm hook
@@ -103,21 +112,27 @@ export function FundraisingIformationForm() {
                       </FormItem>
                     )}
                   />
-                  <FormField
-                    control={form.control}
-                    name="vcBackers"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="font-medium text-base">
-                          Add VC Backers{" "}
-                        </FormLabel>
-                        <FormControl>
-                          <Input placeholder="Enter blockchain" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
+                  <p className="font-medium text-base text-black py-0">
+                    Add VC Bakers
+                  </p>
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <Button
+                        type="button"
+                        className="h-45 w-88 text-sm px-[15px]"
+                      >
+                        Add Cap table{" "}
+                      </Button>
+                    </DialogTrigger>
+                    <DialogContent className="w-[780px] border border-red-500">
+                      <DialogHeader>
+                        <DialogTitle className="font-semibold text-xl">
+                          Create CAP table
+                        </DialogTitle>
+                      </DialogHeader>
+                      <CreateCapTableForm />
+                    </DialogContent>
+                  </Dialog>
                   <FormField
                     control={form.control}
                     name="ticketSize"

@@ -18,6 +18,7 @@ import {
   SelectItem,
 } from "@/components/ui/select"; // Assuming you're using a custom wrapper around Radix UI's Select
 import { addTeamMemberSchema } from "@/schemas/addTeamMemberSchema";
+import { Button } from "../ui/button";
 
 // Define the schema using Zod
 
@@ -150,6 +151,11 @@ export function AddATeamMember() {
               />
             </form>
           </Form>
+        </div>
+        <br />
+        <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px]">
+          <Button className="flex text-base bg-white text-black">Cancel</Button>
+          <Button className="flex text-base">Next Step</Button>
         </div>
       </div>
     </div>
