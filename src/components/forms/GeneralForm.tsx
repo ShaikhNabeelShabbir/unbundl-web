@@ -18,14 +18,8 @@ import {
   SelectItem,
 } from "@/components/ui/select"; // Assuming you're using a custom wrapper around Radix UI's Select
 import { Button } from "../ui/button";
+import { generalSchema } from "@/schemas/generalSchema";
 
-// Define the schema using Zod
-const generalSchema = z.object({
-  name: z.string().min(1, "Service Title is required"),
-  country: z.string().min(1, "Category is required"),
-  city: z.string().min(1, "Tags are required"),
-  linkedin: z.string().min(1, "Tags are required"),
-});
 
 export function GeneralForm() {
   // Set up the form using useForm hook

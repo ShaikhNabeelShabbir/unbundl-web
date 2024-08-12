@@ -11,7 +11,6 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { generalCompanySchema } from "@/schemas/generalCompanySchema";
 import {
   Select,
   SelectContent,
@@ -20,27 +19,23 @@ import {
   SelectValue,
 } from "../ui/select";
 import { Textarea } from "../ui/textarea";
+import { generalInvestorSchema } from "@/schemas/generalInvestorSchema";
 
 export function GeneralInvestorInformationForm() {
   // Set up the form using useForm hook
-  const form = useForm<z.infer<typeof generalCompanySchema>>({
-    resolver: zodResolver(generalCompanySchema),
+  const form = useForm<z.infer<typeof generalInvestorSchema>>({
+    resolver: zodResolver(generalInvestorSchema),
     defaultValues: {
-      companyName: "",
-      projectDescription: "",
+      fundName: "",
+      fundLegalName: "",
       websiteLink: "",
-      chain: "",
-      category: "",
-      developmentStage: "",
-      teamSize: "",
-      usefulLinks: "",
-      calendlyLink: "",
-      timezone: "",
+      description: "",
+      location: "",
     },
   });
 
   // Define the submit handler
-  function onSubmit(values: z.infer<typeof generalCompanySchema>) {
+  function onSubmit(values: z.infer<typeof generalInvestorSchema>) {
     // Handle form submission
     console.log(values);
   }
@@ -57,11 +52,27 @@ export function GeneralInvestorInformationForm() {
               >
                 <FormField
                   control={form.control}
-                  name="companyName"
+                  name="fundName"
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="font-medium text-base">
-                        Enter your Alias{" "}
+                        Enter your Fund Name{" "}
+                      </FormLabel>
+                      <FormControl>
+                        <Input placeholder="a16z crypto" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+
+                <FormField
+                  control={form.control}
+                  name="fundName"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel className="font-medium text-base">
+                        Enter your legal Fund Name{" "}
                       </FormLabel>
                       <FormControl>
                         <Input placeholder="a16z crypto" {...field} />
@@ -87,11 +98,11 @@ export function GeneralInvestorInformationForm() {
                 />
                 <FormField
                   control={form.control}
-                  name="chain"
+                  name="description"
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="font-medium text-base">
-                        Please give us some information about you, as an Angel{" "}
+                        Enter the description of your fund{" "}
                       </FormLabel>
                       <FormControl>
                         <Textarea placeholder="Lorem Ipsum" />
@@ -101,7 +112,7 @@ export function GeneralInvestorInformationForm() {
                   )}
                 />
                 <FormField
-                  name="category"
+                  name="location"
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="font-medium text-base">

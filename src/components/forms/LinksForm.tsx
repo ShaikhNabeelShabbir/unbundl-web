@@ -10,11 +10,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Textarea } from "@/components/ui/textarea";
-
-// Define the schema using Zod
-const linkSchema = z.object({
-  links: z.string().min(1, "Service Title is required"),
-});
+import { linkSchema } from "@/schemas/linkSchema";
 
 export function LinksForm() {
   // Set up the form using useForm hook

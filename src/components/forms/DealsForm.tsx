@@ -11,7 +11,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { generalCompanySchema } from "@/schemas/generalCompanySchema";
+import { dealsSchema } from "@/schemas/dealsSchema";
 import {
   Select,
   SelectContent,
@@ -23,24 +23,21 @@ import { Textarea } from "../ui/textarea";
 
 export function DealsForm() {
   // Set up the form using useForm hook
-  const form = useForm<z.infer<typeof generalCompanySchema>>({
-    resolver: zodResolver(generalCompanySchema),
+  const form = useForm<z.infer<typeof dealsSchema>>({
+    resolver: zodResolver(dealsSchema),
     defaultValues: {
-      companyName: "",
-      projectDescription: "",
-      websiteLink: "",
-      chain: "",
-      category: "",
-      developmentStage: "",
-      teamSize: "",
-      usefulLinks: "",
-      calendlyLink: "",
-      timezone: "",
+      investmentThesis: "",
+      dealsSource: "",
+      programm: "",
+      fundSize: 0,
+      months: 0,
+      uniqueLPS: 0,
+      stages: "",
     },
   });
 
   // Define the submit handler
-  function onSubmit(values: z.infer<typeof generalCompanySchema>) {
+  function onSubmit(values: z.infer<typeof dealsSchema>) {
     // Handle form submission
     console.log(values);
   }
@@ -57,7 +54,7 @@ export function DealsForm() {
               >
                 <FormField
                   control={form.control}
-                  name="companyName"
+                  name="investmentThesis"
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="font-medium text-base">
@@ -71,7 +68,7 @@ export function DealsForm() {
                   )}
                 />
                 <FormField
-                  name="category"
+                  name="dealsSource"
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="font-medium text-base">
@@ -80,12 +77,12 @@ export function DealsForm() {
                       <FormControl>
                         <Select {...field}>
                           <SelectTrigger>
-                            <SelectValue placeholder="Dubai" />
+                            <SelectValue placeholder="Network" />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="Dubai">Dubai</SelectItem>
-                            <SelectItem value="dark">USA</SelectItem>
-                            <SelectItem value="system">India</SelectItem>
+                            <SelectItem value="Network">Network</SelectItem>
+                            <SelectItem value="Reference">Reference</SelectItem>
+                            <SelectItem value="ADS">ADS</SelectItem>
                           </SelectContent>
                         </Select>
                       </FormControl>
@@ -94,7 +91,7 @@ export function DealsForm() {
                   )}
                 />
                 <FormField
-                  name="category"
+                  name="programm"
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="font-medium text-base">
@@ -103,12 +100,18 @@ export function DealsForm() {
                       <FormControl>
                         <Select {...field}>
                           <SelectTrigger>
-                            <SelectValue placeholder="Dubai" />
+                            <SelectValue placeholder="Incubation" />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="Dubai">Dubai</SelectItem>
-                            <SelectItem value="dark">USA</SelectItem>
-                            <SelectItem value="system">India</SelectItem>
+                            <SelectItem value="Incubation">
+                              Incubation
+                            </SelectItem>
+                            <SelectItem value="Acceleration">
+                              Acceleration
+                            </SelectItem>
+                            <SelectItem value="Acceleration">
+                              Acceleration
+                            </SelectItem>
                           </SelectContent>
                         </Select>
                       </FormControl>
@@ -119,7 +122,7 @@ export function DealsForm() {
 
                 <FormField
                   control={form.control}
-                  name="companyName"
+                  name="fundSize"
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="font-medium text-base">
@@ -135,7 +138,7 @@ export function DealsForm() {
 
                 <FormField
                   control={form.control}
-                  name="companyName"
+                  name="months"
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="font-medium text-base">
@@ -151,7 +154,7 @@ export function DealsForm() {
 
                 <FormField
                   control={form.control}
-                  name="companyName"
+                  name="uniqueLPS"
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="font-medium text-base">
@@ -165,7 +168,7 @@ export function DealsForm() {
                   )}
                 />
                 <FormField
-                  name="category"
+                  name="stages"
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="font-medium text-base">

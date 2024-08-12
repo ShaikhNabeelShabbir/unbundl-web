@@ -10,11 +10,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Textarea } from "@/components/ui/textarea";
-
-// Define the schema using Zod
-const descriptionSchema = z.object({
-  description: z.string().min(1, "Service Title is required"),
-});
+import { descriptionSchema } from "@/schemas/descriptionSchema";
 
 export function OverviewForm() {
   // Set up the form using useForm hook
@@ -40,7 +36,7 @@ export function OverviewForm() {
               <FormField
                 control={form.control}
                 name="description"
-                render={({ }) => (
+                render={({}) => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
                       About You{" "}

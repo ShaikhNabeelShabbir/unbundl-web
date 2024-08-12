@@ -11,13 +11,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "../ui/button";
-
-// Define the schema using Zod
-const ExperienceSchema = z.object({
-  wantedPosition: z.string().min(1, "Service Title is required"),
-  expectedSalary: z.number().min(1, "Category is required"),
-  tags: z.string().min(1, "Tags are required"),
-});
+import { ExperienceSchema } from "@/schemas/experineceSchema";
 
 export function ExperienceForm() {
   // Set up the form using useForm hook
@@ -26,7 +20,11 @@ export function ExperienceForm() {
     defaultValues: {
       wantedPosition: "",
       expectedSalary: 0,
-      tags: "",
+      workExperince: "",
+      education: "",
+      aboutYou: "",
+      languages: "",
+      relocate: "",
     },
   });
 

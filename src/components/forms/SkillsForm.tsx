@@ -10,27 +10,21 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Button } from "../ui/button";
-
-// Define the schema using Zod
-const overviewSchema = z.object({
-  serviceTitle: z.string().min(1, "Service Title is required"),
-  category: z.string().min(1, "Category is required"),
-  tags: z.string().min(1, "Tags are required"),
-});
+import { skillsSchema } from "@/schemas/skillsSchema";
 
 export function SkillsForm() {
   // Set up the form using useForm hook
-  const form = useForm<z.infer<typeof overviewSchema>>({
-    resolver: zodResolver(overviewSchema),
+  const form = useForm<z.infer<typeof skillsSchema>>({
+    resolver: zodResolver(skillsSchema),
     defaultValues: {
-      serviceTitle: "",
-      category: "",
-      tags: "",
+      previousClients: "",
+      skills: "",
+      languages: "",
     },
   });
 
   // Define the submit handler
-  function onSubmit(values: z.infer<typeof overviewSchema>) {
+  function onSubmit(values: z.infer<typeof skillsSchema>) {
     // Handle form submission
     console.log(values);
   }
@@ -46,7 +40,7 @@ export function SkillsForm() {
             >
               <FormField
                 control={form.control}
-                name="serviceTitle"
+                name="previousClients"
                 render={() => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
@@ -63,7 +57,7 @@ export function SkillsForm() {
               />
               <FormField
                 control={form.control}
-                name="category"
+                name="skills"
                 render={() => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
@@ -80,7 +74,7 @@ export function SkillsForm() {
               />
               <FormField
                 control={form.control}
-                name="tags"
+                name="languages"
                 render={() => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
@@ -97,7 +91,7 @@ export function SkillsForm() {
               />
               <FormField
                 control={form.control}
-                name="tags"
+                name="portfolioLinks"
                 render={() => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">

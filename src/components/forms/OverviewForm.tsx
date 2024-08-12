@@ -17,13 +17,9 @@ import {
   SelectContent,
   SelectItem,
 } from "@/components/ui/select"; // Assuming you're using a custom wrapper around Radix UI's Select
+import { overviewSchema } from "@/schemas/overviewSchema";
 
 // Define the schema using Zod
-const overviewSchema = z.object({
-  serviceTitle: z.string().min(1, "Service Title is required"),
-  category: z.string().min(1, "Category is required"),
-  tags: z.string().min(1, "Tags are required"),
-});
 
 export function OverviewForm() {
   // Set up the form using useForm hook

@@ -17,20 +17,12 @@ import {
   SelectContent,
   SelectItem,
 } from "@/components/ui/select"; // Assuming you're using a custom wrapper around Radix UI's Select
-
-// Define the schema using Zod
-const overviewSchema = z.object({
-  category: z.string().min(1, "Category is required"),
-  minimumBudget: z
-    .string()
-    .min(1, "Minimum Budget is required")
-    .regex(/^\d+$/, "Minimum Budget must be a number"),
-});
+import { pricingSchema } from "@/schemas/pricingSchema";
 
 export function PricingForm() {
   // Set up the form using useForm hook
-  const form = useForm<z.infer<typeof overviewSchema>>({
-    resolver: zodResolver(overviewSchema),
+  const form = useForm<z.infer<typeof pricingSchema>>({
+    resolver: zodResolver(pricingSchema),
     defaultValues: {
       category: "",
       minimumBudget: "",
@@ -38,7 +30,7 @@ export function PricingForm() {
   });
 
   // Define the submit handler
-  function onSubmit(values: z.infer<typeof overviewSchema>) {
+  function onSubmit(values: z.infer<typeof pricingSchema>) {
     // Handle form submission
     console.log(values);
   }
