@@ -18,17 +18,17 @@ const teamMembers = [
     name: "Jane Smith",
     position: "CTO",
     type: "Full-time",
-    rights: "Editor",
+    rights: "Managing partner",
   },
 ];
 export const TeamsForm = () => {
   return (
-    <div className="px-[100px] py-[40px]">
-      <div className="px-[165px]">
+    <div className="py-[40px] ">
+      <div className="px-[189px]">
         <Table>
           <TableHeader>
             <TableRow>
-              <TableHead className="w-[200px]">Name</TableHead>
+              <TableHead className="w-[1063px]">Name</TableHead>
               <TableHead>Position</TableHead>
               <TableHead>Type</TableHead>
               <TableHead className="text-right">Rights</TableHead>
@@ -49,7 +49,7 @@ export const TeamsForm = () => {
             ))}
           </TableBody>
         </Table>
-        <Button>Add Team Member</Button>
+        <Button className="w-[1063px]">Add Team Member</Button>
       </div>
     </div>
   );

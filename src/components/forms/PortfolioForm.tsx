@@ -36,12 +36,12 @@ const investments = [
 
 const PortfolioForm = () => {
   return (
-    <div className="px-[100px] py-[40px]">
+    <div className="py-[40px]">
       <div className="px-[165px]">
         <Table>
           <TableHeader>
             <TableRow>
-              <TableHead className="w-[200px]">Company/Fund</TableHead>
+              <TableHead className="w-[110px]">Company/Fund</TableHead>
               <TableHead>Status</TableHead>
               <TableHead>Invest Date</TableHead>
               <TableHead className="text-right">Invested</TableHead>
@@ -71,7 +71,7 @@ const PortfolioForm = () => {
         </Table>
         <Dialog>
           <DialogTrigger asChild>
-            <Button type="button" className="h-45 w-88 text-sm px-[15px]">
+            <Button type="button" className="w-[1110px]">
               Add Investment{" "}
             </Button>
           </DialogTrigger>
