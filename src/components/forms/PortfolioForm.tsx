@@ -1,15 +1,21 @@
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
-  TableFooter,
   TableHead,
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
 import { Button } from "@/components/ui/button"; // Assuming you have a Button component
 import { MoreHorizontal } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "../ui/dialog";
+import AddInvestmentForm from "./AddInvestmentForm";
 
 const investments = [
   {
@@ -63,7 +69,21 @@ const PortfolioForm = () => {
             ))}
           </TableBody>
         </Table>
-        <Button className="w-[165px]">Hello world</Button>
+        <Dialog>
+          <DialogTrigger asChild>
+            <Button type="button" className="h-45 w-88 text-sm px-[15px]">
+              Add Investment{" "}
+            </Button>
+          </DialogTrigger>
+          <DialogContent className="sm:max-w-[600px]">
+            <DialogHeader>
+              <DialogTitle className="font-semibold text-xl">
+                Add Investment Form{" "}
+              </DialogTitle>
+            </DialogHeader>
+            <AddInvestmentForm />
+          </DialogContent>
+        </Dialog>{" "}
       </div>
     </div>
   );
