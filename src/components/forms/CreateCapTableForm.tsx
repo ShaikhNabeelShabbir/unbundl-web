@@ -31,7 +31,7 @@ const investments = [
 const CreateCapTableForm = () => {
   return (
     <div>
-      <div className="w-[780px] h-[429px] border border-red-600">
+      <div className="w-[780px] h-[429px] border">
         <Table>
           <TableHeader>
             <TableRow>
