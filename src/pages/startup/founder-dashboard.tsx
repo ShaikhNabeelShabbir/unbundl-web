@@ -2,14 +2,14 @@ import { useState } from "react";
 import Sidebar from "@/components/sidebar";
 import { Network } from "lucide-react";
 import CryptoEvents from "./crypto-events";
-import Events from "./events";
-import Grants from "./grants";
-import Hire from "./hire";
 import LegalRoom from "./leagal-room";
 import MyCompany from "./my-company";
 import RaiseFunds from "./raise-funds";
 import ResearchLibrary from "./research-library";
 import SoftwareStash from "./software-stash";
+import Hire from "./hire";
+import Events from "./events";
+import Grants from "./grants";
 
 const Founderdashboard = () => {
   const [currentView, setCurrentView] = useState<string>("research-library");
