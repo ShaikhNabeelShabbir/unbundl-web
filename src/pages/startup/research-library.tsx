@@ -35,40 +35,73 @@ const ResearchLibrary: React.FC = () => {
         <div className="flex flex-row space-x-[20px]">
           <Card className="w-[370px] h-[260px]">
             <CardHeader>
-              <CardTitle>Card Title 1</CardTitle>
-              <CardDescription>Card Description</CardDescription>
+              <CardDescription>Nov. 27 2022</CardDescription>
+              <CardTitle>
+                How is Web3 going to transform the dating industry
+              </CardTitle>
+              <CardDescription>Published by Ramsy</CardDescription>
             </CardHeader>
-            <CardContent>
-              <p>Card Content</p>
+            <CardContent className="font-medium text-sm space-x-[10px]">
+              <Button className="p-[10px]">Blockchain</Button>
+              <Button className="p-[10px]">Web3</Button>
+              <Button className="p-[10px]">Dating</Button>
+              <Button className="p-[10px]">Marketing</Button>
             </CardContent>
-            <CardFooter>
-              <p>Card Footer</p>
+            <CardFooter className="font-medium text-sm space-x-[10px]">
+              <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]">
+                View
+              </Button>
+              <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]">
+                Download
+              </Button>
             </CardFooter>
           </Card>
 
           <Card className="w-[370px] h-[260px]">
             <CardHeader>
-              <CardTitle>Card Title 2</CardTitle>
-              <CardDescription>Card Description</CardDescription>
+              <CardDescription>Nov. 27 2022</CardDescription>
+              <CardTitle>
+                How is Web3 going to transform the dating industry
+              </CardTitle>
+              <CardDescription>Published by Ramsy</CardDescription>
             </CardHeader>
-            <CardContent>
-              <p>Card Content</p>
+            <CardContent className="font-medium text-sm space-x-[10px]">
+              <Button className="p-[10px]">Blockchain</Button>
+              <Button className="p-[10px]">Web3</Button>
+              <Button className="p-[10px]">Dating</Button>
+              <Button className="p-[10px]">Marketing</Button>
             </CardContent>
-            <CardFooter>
-              <p>Card Footer</p>
+            <CardFooter className="font-medium text-sm space-x-[10px]">
+              <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]">
+                View
+              </Button>
+              <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]">
+                Download
+              </Button>
             </CardFooter>
           </Card>
 
           <Card className="w-[370px] h-[260px]">
             <CardHeader>
-              <CardTitle>Card Title 3</CardTitle>
-              <CardDescription>Card Description</CardDescription>
+              <CardDescription>Nov. 27 2022</CardDescription>
+              <CardTitle>
+                How is Web3 going to transform the dating industry
+              </CardTitle>
+              <CardDescription>Published by Ramsy</CardDescription>
             </CardHeader>
-            <CardContent>
-              <p>Card Content</p>
+            <CardContent className="font-medium text-sm space-x-[10px]">
+              <Button className="p-[10px]">Blockchain</Button>
+              <Button className="p-[10px]">Web3</Button>
+              <Button className="p-[10px]">Dating</Button>
+              <Button className="p-[10px]">Marketing</Button>
             </CardContent>
-            <CardFooter>
-              <p>Card Footer</p>
+            <CardFooter className="font-medium text-sm space-x-[10px]">
+              <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]">
+                View
+              </Button>
+              <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]">
+                Download
+              </Button>
             </CardFooter>
           </Card>
         </div>
