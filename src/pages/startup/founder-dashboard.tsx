@@ -8,8 +8,8 @@ import RaiseFunds from "./raise-funds";
 import ResearchLibrary from "./research-library";
 import SoftwareStash from "./software-stash";
 import Hire from "./hire";
-import Events from "./events";
 import Grants from "./grants";
+import Events from "./events";
 const Founderdashboard = () => {
   const [currentView, setCurrentView] = useState<string>("research-library");
 
