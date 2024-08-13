@@ -52,10 +52,10 @@ const Events: React.FC = () => {
         </div>
         <div className="flex flex-col space-y-[20px]">
           <div className="flex flex-row space-x-[20px]">
-            <Card className="w-[372px] h-[142px]">
+            <Card className="w-[372px] h-[150px]">
               <CardHeader>
                 <CardDescription>Nov. 27 2022</CardDescription>
-                <CardTitle>
+                <CardTitle className="font-semibold text-base">
                   International Crypto Expo Dubai 2023(iCryptoExpo)
                 </CardTitle>
               </CardHeader>
@@ -63,10 +63,10 @@ const Events: React.FC = () => {
                 <p>Jumeirah Emirates Towers • Dubai</p>
               </CardContent>
             </Card>
-            <Card className="w-[372px] h-[142px]">
+            <Card className="w-[372px] h-[150px]">
               <CardHeader>
                 <CardDescription>Nov. 27 2022</CardDescription>
-                <CardTitle>
+                <CardTitle className="font-semibold text-base">
                   International Crypto Expo Dubai 2023(iCryptoExpo)
                 </CardTitle>
               </CardHeader>
@@ -74,10 +74,10 @@ const Events: React.FC = () => {
                 <p>Jumeirah Emirates Towers • Dubai</p>
               </CardContent>
             </Card>
-            <Card className="w-[372px] h-[142px]">
+            <Card className="w-[372px] h-[150px]">
               <CardHeader>
                 <CardDescription>Nov. 27 2022</CardDescription>
-                <CardTitle>
+                <CardTitle className="font-semibold text-base">
                   International Crypto Expo Dubai 2023(iCryptoExpo)
                 </CardTitle>
               </CardHeader>
@@ -87,10 +87,10 @@ const Events: React.FC = () => {
             </Card>
           </div>
           <div className="flex flex-row space-x-[20px] mr-[30px]">
-            <Card className="w-[372px] h-[142px]">
+            <Card className="w-[372px] h-[150px]">
               <CardHeader>
                 <CardDescription>Nov. 27 2022</CardDescription>
-                <CardTitle>
+                <CardTitle className="font-semibold text-base">
                   International Crypto Expo Dubai 2023(iCryptoExpo)
                 </CardTitle>
               </CardHeader>
@@ -98,10 +98,10 @@ const Events: React.FC = () => {
                 <p>Jumeirah Emirates Towers • Dubai</p>
               </CardContent>
             </Card>
-            <Card className="w-[372px] h-[142px]">
+            <Card className="w-[372px] h-[150px]">
               <CardHeader>
                 <CardDescription>Nov. 27 2022</CardDescription>
-                <CardTitle>
+                <CardTitle className="font-semibold text-base">
                   International Crypto Expo Dubai 2023(iCryptoExpo)
                 </CardTitle>
               </CardHeader>
@@ -109,10 +109,10 @@ const Events: React.FC = () => {
                 <p>Jumeirah Emirates Towers • Dubai</p>
               </CardContent>
             </Card>
-            <Card className="w-[372px] h-[142px]">
+            <Card className="w-[372px] h-[150px]">
               <CardHeader>
                 <CardDescription>Nov. 27 2022</CardDescription>
-                <CardTitle>
+                <CardTitle className="font-semibold text-base">
                   International Crypto Expo Dubai 2023(iCryptoExpo)
                 </CardTitle>
               </CardHeader>
