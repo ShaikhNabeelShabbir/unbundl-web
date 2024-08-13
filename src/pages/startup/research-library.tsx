@@ -42,13 +42,13 @@ const ResearchLibrary: React.FC = () => {
               <CardDescription>Published by Ramsy</CardDescription>
             </CardHeader>
             <CardContent className="font-medium text-sm space-x-[10px]">
-              <Button className="p-[10px]">Blockchain</Button>
-              <Button className="p-[10px]">Web3</Button>
-              <Button className="p-[10px]">Dating</Button>
-              <Button className="p-[10px]">Marketing</Button>
+              <Button className="p-[10px] bg-black/25">Blockchain</Button>
+              <Button className="p-[10px]  bg-black/25">Web3</Button>
+              <Button className="p-[10px]  bg-black/25">Dating</Button>
+              <Button className="p-[10px]  bg-black/25">Marketing</Button>
             </CardContent>
             <CardFooter className="font-medium text-sm space-x-[10px]">
-              <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]">
+              <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]  bg-black/50">
                 View
               </Button>
               <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]">
@@ -66,13 +66,13 @@ const ResearchLibrary: React.FC = () => {
               <CardDescription>Published by Ramsy</CardDescription>
             </CardHeader>
             <CardContent className="font-medium text-sm space-x-[10px]">
-              <Button className="p-[10px]">Blockchain</Button>
-              <Button className="p-[10px]">Web3</Button>
-              <Button className="p-[10px]">Dating</Button>
-              <Button className="p-[10px]">Marketing</Button>
+              <Button className="p-[10px]  bg-black/25">Blockchain</Button>
+              <Button className="p-[10px]  bg-black/25">Web3</Button>
+              <Button className="p-[10px]  bg-black/25">Dating</Button>
+              <Button className="p-[10px]  bg-black/25">Marketing</Button>
             </CardContent>
             <CardFooter className="font-medium text-sm space-x-[10px]">
-              <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]">
+              <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]  bg-black/50">
                 View
               </Button>
               <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]">
@@ -90,16 +90,16 @@ const ResearchLibrary: React.FC = () => {
               <CardDescription>Published by Ramsy</CardDescription>
             </CardHeader>
             <CardContent className="font-medium text-sm space-x-[10px]">
-              <Button className="p-[10px]">Blockchain</Button>
-              <Button className="p-[10px]">Web3</Button>
-              <Button className="p-[10px]">Dating</Button>
-              <Button className="p-[10px]">Marketing</Button>
+              <Button className="p-[10px]  bg-black/25">Blockchain</Button>
+              <Button className="p-[10px]  bg-black/25">Web3</Button>
+              <Button className="p-[10px]  bg-black/25">Dating</Button>
+              <Button className="p-[10px]  bg-black/25">Marketing</Button>
             </CardContent>
-            <CardFooter className="font-medium text-sm space-x-[10px]">
-              <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]">
+            <CardFooter className="font-medium text-sm space-x-[10px] ">
+              <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px] bg-black/50">
                 View
               </Button>
-              <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]">
+              <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px] bg-black">
                 Download
               </Button>
             </CardFooter>
