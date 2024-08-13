@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Sidebar from "@/components/sidebar";
 import { Network } from "lucide-react";
 import CryptoEvents from "./crypto-events";
