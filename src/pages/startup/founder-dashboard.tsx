@@ -1,15 +1,15 @@
 import { useState } from "react";
 import Sidebar from "@/components/sidebar";
-import { Network } from "lucide-react";
 import CryptoEvents from "./crypto-events";
 import LegalRoom from "./leagal-room";
 import MyCompany from "./my-company";
 import RaiseFunds from "./raise-funds";
 import ResearchLibrary from "./research-library";
 import SoftwareStash from "./software-stash";
-import Hire from "./hire";
 import Grants from "./grants";
 import Events from "./events";
+import Network from "./network";
+import Hire from "./hire";
 const Founderdashboard = () => {
   const [currentView, setCurrentView] = useState<string>("research-library");
 
@@ -19,7 +19,7 @@ const Founderdashboard = () => {
         return <MyCompany />;
       case "raise-funds":
         return <RaiseFunds />;
-      case "hire":
+      case "raise-funds":
         return <Hire />;
       case "network":
         return <Network />;
