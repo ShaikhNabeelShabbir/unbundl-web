@@ -21,6 +21,7 @@ import Signupfortalent from "./pages/admin/signupfortalent";
 import Signupforinvestor from "./pages/admin/signupforinvestor";
 import Signup from "./pages/admin/signup";
 import ResearchLibrary from "./pages/startup/research-library";
+import Founderdashboard from "./pages/startup/founder-dashboard";
 //import Signup from "./pages/admin/signup";
 
 const App: React.FC = () => {
@@ -42,7 +43,7 @@ const App: React.FC = () => {
           {/* <Route path="/software-stash" element={<SoftwareStash />} /> */}
           {/* <Route path="/my-portfolio" element={<MyPortfolio />} /> */}
           <Route path="/research-library" element={<ResearchLibrary />} />
-          <Route path="/" element={<Signup />} />
+          <Route path="/" element={<Founderdashboard />} />
           <Route
             path="/service-providers"
             element={<Signupforserviceproviders />}

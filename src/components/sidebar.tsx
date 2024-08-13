@@ -6,7 +6,7 @@ export const Sidebar: React.FC = () => {
       <div className="p-[30px]">
         <h1 className="text-lg font-semibold">Startup Name</h1>
       </div>
-      <ul className="w-[200px] h-[364px] py-[90px] px-[30px] text-black/50 space-y-[10px] ">
+      <ul className="w-[200px] h-[364px] px-[30px] text-black/50 space-y-[10px]">
         <li className="hover:text-black">
           <p>Dashboard</p>
         </li>
