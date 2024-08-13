@@ -30,80 +30,79 @@ const Events: React.FC = () => {
           </Button>
         </div>
         <div className="mt-[30px] mb-[20px] font-medium text-base">
-          Best Pics For your company
+          Best Crypto Events in Dubai{" "}
         </div>
-        <div className="flex flex-row space-x-[20px]">
-          <Card className="w-[370px] h-[260px]">
-            <CardHeader>
-              <CardDescription>Nov. 27 2022</CardDescription>
-              <CardTitle>
-                How is Web3 going to transform the dating industry
-              </CardTitle>
-              <CardDescription>Published by Ramsy</CardDescription>
-            </CardHeader>
-            <CardContent className="font-medium text-sm space-x-[10px]">
-              <Button className="p-[10px] bg-black/25">Blockchain</Button>
-              <Button className="p-[10px]  bg-black/25">Web3</Button>
-              <Button className="p-[10px]  bg-black/25">Dating</Button>
-              <Button className="p-[10px]  bg-black/25">Marketing</Button>
-            </CardContent>
-            <CardFooter className="font-medium text-sm space-x-[10px]">
-              <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]  bg-black/50">
-                View
-              </Button>
-              <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]">
-                Download
-              </Button>
-            </CardFooter>
-          </Card>
-
-          <Card className="w-[370px] h-[260px]">
-            <CardHeader>
-              <CardDescription>Nov. 27 2022</CardDescription>
-              <CardTitle>
-                How is Web3 going to transform the dating industry
-              </CardTitle>
-              <CardDescription>Published by Ramsy</CardDescription>
-            </CardHeader>
-            <CardContent className="font-medium text-sm space-x-[10px]">
-              <Button className="p-[10px]  bg-black/25">Blockchain</Button>
-              <Button className="p-[10px]  bg-black/25">Web3</Button>
-              <Button className="p-[10px]  bg-black/25">Dating</Button>
-              <Button className="p-[10px]  bg-black/25">Marketing</Button>
-            </CardContent>
-            <CardFooter className="font-medium text-sm space-x-[10px]">
-              <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]  bg-black/50">
-                View
-              </Button>
-              <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]">
-                Download
-              </Button>
-            </CardFooter>
-          </Card>
-
-          <Card className="w-[370px] h-[260px]">
-            <CardHeader>
-              <CardDescription>Nov. 27 2022</CardDescription>
-              <CardTitle>
-                How is Web3 going to transform the dating industry
-              </CardTitle>
-              <CardDescription>Published by Ramsy</CardDescription>
-            </CardHeader>
-            <CardContent className="font-medium text-sm space-x-[10px]">
-              <Button className="p-[10px]  bg-black/25">Blockchain</Button>
-              <Button className="p-[10px]  bg-black/25">Web3</Button>
-              <Button className="p-[10px]  bg-black/25">Dating</Button>
-              <Button className="p-[10px]  bg-black/25">Marketing</Button>
-            </CardContent>
-            <CardFooter className="font-medium text-sm space-x-[10px] ">
-              <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px] bg-black/50">
-                View
-              </Button>
-              <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px] bg-black">
-                Download
-              </Button>
-            </CardFooter>
-          </Card>
+        <div className="flex flex-col space-y-[20px]">
+          <div className="flex flex-row space-x-[20px]">
+            <Card className="w-[372px] h-[142px]">
+              <CardHeader>
+                <CardDescription>Nov. 27 2022</CardDescription>
+                <CardTitle>
+                  International Crypto Expo Dubai 2023(iCryptoExpo)
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Jumeirah Emirates Towers • Dubai</p>
+              </CardContent>
+            </Card>
+            <Card className="w-[372px] h-[142px]">
+              <CardHeader>
+                <CardDescription>Nov. 27 2022</CardDescription>
+                <CardTitle>
+                  International Crypto Expo Dubai 2023(iCryptoExpo)
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Jumeirah Emirates Towers • Dubai</p>
+              </CardContent>
+            </Card>
+            <Card className="w-[372px] h-[142px]">
+              <CardHeader>
+                <CardDescription>Nov. 27 2022</CardDescription>
+                <CardTitle>
+                  International Crypto Expo Dubai 2023(iCryptoExpo)
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Jumeirah Emirates Towers • Dubai</p>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="flex flex-row space-x-[20px]">
+            <Card className="w-[372px] h-[142px]">
+              <CardHeader>
+                <CardDescription>Nov. 27 2022</CardDescription>
+                <CardTitle>
+                  International Crypto Expo Dubai 2023(iCryptoExpo)
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Jumeirah Emirates Towers • Dubai</p>
+              </CardContent>
+            </Card>
+            <Card className="w-[372px] h-[142px]">
+              <CardHeader>
+                <CardDescription>Nov. 27 2022</CardDescription>
+                <CardTitle>
+                  International Crypto Expo Dubai 2023(iCryptoExpo)
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Jumeirah Emirates Towers • Dubai</p>
+              </CardContent>
+            </Card>
+            <Card className="w-[372px] h-[142px]">
+              <CardHeader>
+                <CardDescription>Nov. 27 2022</CardDescription>
+                <CardTitle>
+                  International Crypto Expo Dubai 2023(iCryptoExpo)
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Jumeirah Emirates Towers • Dubai</p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </div>
