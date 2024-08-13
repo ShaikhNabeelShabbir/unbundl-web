@@ -9,7 +9,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import RaiseFunds from "./pages/startup/raise-funds";
 // import SoftwareStash from "./pages/startup/software-stash";
 // import MyPortfolio from "./pages/startup/my-portfolio";
-// import ResearchLibrary from "./pages/startup/research-library";
 // import Events from "./pages/startup/events";
 // import Hire from "./pages/startup/hire";
 // import Grants from "./pages/startup/grants";
@@ -21,6 +20,7 @@ import Signupforserviceproviders from "./pages/admin/signupforserviceproviders";
 import Signupfortalent from "./pages/admin/signupfortalent";
 import Signupforinvestor from "./pages/admin/signupforinvestor";
 import Signup from "./pages/admin/signup";
+import ResearchLibrary from "./pages/startup/research-library";
 //import Signup from "./pages/admin/signup";
 
 const App: React.FC = () => {
@@ -41,7 +41,7 @@ const App: React.FC = () => {
           {/* <Route path="/raise-funds" element={<RaiseFunds />} /> */}
           {/* <Route path="/software-stash" element={<SoftwareStash />} /> */}
           {/* <Route path="/my-portfolio" element={<MyPortfolio />} /> */}
-          {/* <Route path="/research-library" element={<ResearchLibrary />} /> */}
+          <Route path="/research-library" element={<ResearchLibrary />} />
           <Route path="/" element={<Signup />} />
           <Route
             path="/service-providers"
