@@ -4,4 +4,4 @@ const Hire = () => {
   return <div>hire</div>;
 };
 
-export default hire;
+export default Hire;
