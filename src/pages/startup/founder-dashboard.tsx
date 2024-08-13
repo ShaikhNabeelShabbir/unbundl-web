@@ -7,6 +7,9 @@ import MyCompany from "./my-company";
 import RaiseFunds from "./raise-funds";
 import ResearchLibrary from "./research-library";
 import SoftwareStash from "./software-stash";
+import Hire from "./hire";
+import Events from "./events";
+import Grants from "./grants";
 const Founderdashboard = () => {
   const [currentView, setCurrentView] = useState<string>("research-library");
 
@@ -16,8 +19,8 @@ const Founderdashboard = () => {
         return <MyCompany />;
       case "raise-funds":
         return <RaiseFunds />;
-      //   case "hire":
-      //     return <Hire />;
+      case "hire":
+        return <Hire />;
       case "network":
         return <Network />;
       case "legal-room":
@@ -28,10 +31,10 @@ const Founderdashboard = () => {
         return <ResearchLibrary />;
       case "crypto-events":
         return <CryptoEvents />;
-      //   case "events":
-      //     return <Events />;
-      //   case "grants":
-      //     return <Grants />;
+      case "events":
+        return <Events />;
+      case "grants":
+        return <Grants />;
       default:
         return <ResearchLibrary />;
     }
