@@ -1,5 +1,4 @@
 import Sidebar from "@/components/sidebar";
-import React from "react";
 import ResearchLibrary from "./research-library";
 
 const Founderdashboard = () => {

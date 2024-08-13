@@ -43,13 +43,14 @@ const App: React.FC = () => {
           {/* <Route path="/software-stash" element={<SoftwareStash />} /> */}
           {/* <Route path="/my-portfolio" element={<MyPortfolio />} /> */}
           <Route path="/research-library" element={<ResearchLibrary />} />
-          <Route path="/" element={<Founderdashboard />} />
+          <Route path="/" element={<Signup />} />
           <Route
             path="/service-providers"
             element={<Signupforserviceproviders />}
           />
           <Route path="/talent" element={<Signupfortalent />} />
           <Route path="/investor" element={<Signupforinvestor />} />
+          <Route path="/founder-dashboard" element={<Founderdashboard />} />
         </Routes>
       </div>
     </Router>
