@@ -19,7 +19,7 @@ const Founderdashboard = () => {
         return <MyCompany />;
       case "raise-funds":
         return <RaiseFunds />;
-      case "raise-funds":
+      case "hire":
         return <Hire />;
       case "network":
         return <Network />;
