@@ -14,6 +14,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { Search } from "lucide-react";
 
 const Events: React.FC = () => {
   return (
@@ -24,7 +25,8 @@ const Events: React.FC = () => {
           <Button className="w-[178px] h-[42px] mr-[30px]">Add Event</Button>
         </div>
         <div className="flex items-center justify-between mt-[21px]">
-          <div className="flex w-[770px] h-[46px] border">
+          <div className="flex items-center w-[770px] h-[46px] border rounded-[4px]">
+            <Search className="ml-4 text-gray-500" />
             <input
               type="text"
               className="w-full px-4 py-2 outline-none"

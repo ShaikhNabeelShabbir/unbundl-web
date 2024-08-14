@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Search } from "lucide-react";
 
 const ResearchLibrary: React.FC = () => {
   return (
@@ -18,7 +19,8 @@ const ResearchLibrary: React.FC = () => {
           <Button className="w-[178px] h-[42px] mr-[30px]">Publish</Button>
         </div>
         <div className="flex items-center justify-between mt-[21px]">
-          <div className="flex w-[950px] h-[46px] border rounded-[4px]">
+          <div className="flex items-center w-[950px] h-[46px] border rounded-[4px]">
+            <Search className="ml-4 text-gray-500" />
             <input
               type="text"
               className="w-full px-4 py-2 outline-none"

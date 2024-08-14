@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import ExistingTemplates from "./existing-templates";
 import VoteFornewTemplates from "./vote-for-new-templates";
 import NavbarLegalRoom from "@/components/navbar-legal-room";
+import { Search } from "lucide-react";
 
 const LegalRoom: React.FC = () => {
   const [step, setStep] = useState(1);
@@ -35,7 +36,8 @@ const LegalRoom: React.FC = () => {
           </Button>
         </div>
         <div className="flex items-center justify-between mt-[21px]">
-          <div className="flex w-[1150px] h-[46px] border rounded-[4px]">
+          <div className="flex items-center w-[1150px] h-[46px] border rounded-[4px]">
+            <Search className="ml-4 text-gray-500" />
             <input
               type="text"
               className="w-full px-4 py-2 outline-none"
