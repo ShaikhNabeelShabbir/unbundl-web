@@ -91,7 +91,7 @@ const SoftwareStash: React.FC = () => {
         </div>
         <div className="flex flex-col space-y-[20px]">
           <div className="flex flex-row space-x-[20px]">
-            <Card className="w-[370px] h-[200px]">
+            <Card className="w-[370px] h-[220px]">
               <CardHeader>
                 <CardTitle>Figma </CardTitle>
                 <CardDescription>Published by Ramsy</CardDescription>
@@ -105,12 +105,16 @@ const SoftwareStash: React.FC = () => {
                 <Button className=" w-[97px] h-[35px]  bg-black/50">
                   UI/UX Design
                 </Button>
-                <Button className=" w-[97px] h-[35px]">Web Design</Button>
-                <Button className=" w-[97px] h-[35px]">Mobile Design</Button>
+                <Button className=" w-[97px] h-[35px] bg-black/50">
+                  Web Design
+                </Button>
+                <Button className=" w-[97px] h-[35px] bg-black/50">
+                  Mobile Design
+                </Button>
               </CardFooter>
             </Card>
 
-            <Card className="w-[370px] h-[200px]">
+            <Card className="w-[370px] h-[220px]">
               <CardHeader>
                 <CardTitle>Figma </CardTitle>
                 <CardDescription>Published by Ramsy</CardDescription>
@@ -124,12 +128,16 @@ const SoftwareStash: React.FC = () => {
                 <Button className=" w-[97px] h-[35px]  bg-black/50">
                   UI/UX Design
                 </Button>
-                <Button className=" w-[97px] h-[35px]">Web Design</Button>
-                <Button className=" w-[97px] h-[35px]">Mobile Design</Button>
+                <Button className=" w-[97px] h-[35px] bg-black/50">
+                  Web Design
+                </Button>
+                <Button className=" w-[97px] h-[35px] bg-black/50">
+                  Mobile Design
+                </Button>
               </CardFooter>
             </Card>
 
-            <Card className="w-[370px] h-[200px]">
+            <Card className="w-[370px] h-[220px]">
               <CardHeader>
                 <CardTitle>Figma </CardTitle>
                 <CardDescription>Published by Ramsy</CardDescription>
@@ -143,17 +151,17 @@ const SoftwareStash: React.FC = () => {
                 <Button className=" w-[97px] h-[35px] bg-black/50">
                   UI/UX Design
                 </Button>
-                <Button className=" w-[97px] h-[35px] bg-black">
+                <Button className=" w-[97px] h-[35px] bg-black/50">
                   Web Design
                 </Button>
-                <Button className=" w-[97px] h-[35px] bg-black">
+                <Button className=" w-[97px] h-[35px] bg-black/50">
                   Mobile Design
                 </Button>
               </CardFooter>
             </Card>
           </div>
           <div className="flex flex-row space-x-[20px]">
-            <Card className="w-[370px] h-[200px]">
+            <Card className="w-[370px] h-[220px]">
               <CardHeader>
                 <CardTitle>Figma </CardTitle>
                 <CardDescription>Published by Ramsy</CardDescription>
@@ -167,12 +175,16 @@ const SoftwareStash: React.FC = () => {
                 <Button className=" w-[97px] h-[35px]  bg-black/50">
                   UI/UX Design
                 </Button>
-                <Button className=" w-[97px] h-[35px]">Web Design</Button>
-                <Button className=" w-[97px] h-[35px]">Mobile Design</Button>
+                <Button className=" w-[97px] h-[35px] bg-black/50">
+                  Web Design
+                </Button>
+                <Button className=" w-[97px] h-[35px] bg-black/50">
+                  Mobile Design
+                </Button>
               </CardFooter>
             </Card>
 
-            <Card className="w-[370px] h-[200px]">
+            <Card className="w-[370px] h-[220px]">
               <CardHeader>
                 <CardTitle>Figma </CardTitle>
                 <CardDescription>Published by Ramsy</CardDescription>
@@ -186,12 +198,16 @@ const SoftwareStash: React.FC = () => {
                 <Button className=" w-[97px] h-[35px]  bg-black/50">
                   UI/UX Design
                 </Button>
-                <Button className=" w-[97px] h-[35px]">Web Design</Button>
-                <Button className=" w-[97px] h-[35px]">Mobile Design</Button>
+                <Button className=" w-[97px] h-[35px] bg-black/50">
+                  Web Design
+                </Button>
+                <Button className=" w-[97px] h-[35px] bg-black/50">
+                  Mobile Design
+                </Button>
               </CardFooter>
             </Card>
 
-            <Card className="w-[370px] h-[200px]">
+            <Card className="w-[370px] h-[220px]">
               <CardHeader>
                 <CardTitle>Figma </CardTitle>
                 <CardDescription>Published by Ramsy</CardDescription>
@@ -205,10 +221,10 @@ const SoftwareStash: React.FC = () => {
                 <Button className=" w-[97px] h-[35px] bg-black/50">
                   UI/UX Design
                 </Button>
-                <Button className=" w-[97px] h-[35px] bg-black">
+                <Button className=" w-[97px] h-[35px] bg-black/50">
                   Web Design
                 </Button>
-                <Button className=" w-[97px] h-[35px] bg-black">
+                <Button className=" w-[97px] h-[35px] bg-black/50">
                   Mobile Design
                 </Button>
               </CardFooter>
