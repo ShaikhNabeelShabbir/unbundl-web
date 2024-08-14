@@ -17,33 +17,41 @@ const Dashboard: React.FC = () => {
         </div>
         <div className="flex flex-row">
           <div className="mt-[20px] mb-[20px] font-medium text-base w-[370px] h-[250px] bg-red-900"></div>
-          <div className="mt-[20px] mb-[20px] font-medium text-base ml-[20px] w-[760px] h-[250px] bg-red-950"></div>
+          <div className="mt-[20px] mb-[20px] font-medium text-base ml-[20px] w-[760px] h-[250px] border flex items-center justify-center">
+            Analytics:
+            <br /> How many investors viewed profile, how many sent request in
+            the last amount of time
+          </div>
         </div>
         <div className="mt-[30px] mb-[20px] border mr-[30px] font-semibold text-lg">
           Find people
         </div>
         <div className="flex flex-row mr-[30px] font-semibold text-lg space-x-[10px]">
           <div className="border w-[272.5px] h-[100px] font-semibold text-[15px]">
-            Investors{" "}
-            <div className="text-[12px] font-medium">
+            <div className="flex items-center justify-center">Investors </div>
+            <div className="text-[12px] font-medium flex items-center justify-center">
               52 companies got funding this week on the platform
             </div>
           </div>
           <div className="border w-[272.5px] h-[100px] font-semibold text-[15px]">
-            Employees and Advisors{" "}
-            <div className="text-[12px] font-medium">
+            <div className="flex items-center justify-center">
+              Employees and Advisors{" "}
+            </div>
+            <div className="text-[12px] font-medium flex items-center justify-center">
               158 candidates got jobs last week on the platform
             </div>{" "}
           </div>
           <div className="border w-[272.5px] h-[100px] font-semibold text-[15px] ">
-            Service Providers{" "}
-            <div className="text-[12px] font-medium">
+            <div className="flex items-center justify-center">
+              Service Providers{" "}
+            </div>
+            <div className="text-[12px] font-medium flex items-center justify-center">
               458 Service Providers provided services last week on the platform
             </div>
           </div>
           <div className="border w-[272.5px] h-[100px] font-semibold text-[15px]">
-            Network{" "}
-            <div className="text-[12px] font-medium">
+            <div className="flex items-center justify-center">Network </div>
+            <div className="text-[12px] font-medium flex items-center justify-center ">
               2152 people maid new connections last week on the platform
             </div>
           </div>
