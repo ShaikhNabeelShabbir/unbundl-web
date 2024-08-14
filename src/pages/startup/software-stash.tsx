@@ -20,7 +20,7 @@ import AddSoftwareForm from "@/components/forms/AddSoftwareForm";
 
 const SoftwareStash: React.FC = () => {
   return (
-    <div className="flex ml-[30px]">
+    <div className="flex ml-[30px] mr-[30px]">
       <div className="flex-1 py-[97px]">
         <div className="flex items-center justify-between">
           <p className="font-semibold text-[20px]">Tool Stash</p>

@@ -49,10 +49,10 @@ const Events: React.FC = () => {
             Advanced Search
           </Button>
         </div>
-        <div className="mt-[30px] mb-[20px] font-medium text-base">
+        <div className="mt-[30px] mb-[20px] font-medium text-base mr-[30px]">
           Best Crypto Events in Dubai{" "}
         </div>
-        <div className="flex flex-col space-y-[20px]">
+        <div className="flex flex-col space-y-[20px] mr-[30px]">
           <div className="flex flex-row space-x-[20px]">
             <Card className="w-[372px] h-[150px]">
               <CardHeader>

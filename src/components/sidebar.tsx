@@ -1,5 +1,5 @@
 import React from "react";
-import { Search } from "lucide-react";
+import { Bell, Search } from "lucide-react";
 
 interface SidebarProps {
   setCurrentView: (view: string) => void;
@@ -12,8 +12,9 @@ export const Sidebar: React.FC<SidebarProps> = ({ setCurrentView }) => {
         <h1 className="text-lg font-semibold">Startup Name</h1>
         <div className="absolute right-0 flex items-center mr-[30px]">
           <u>24 Points</u>
-          <div className="bg-black/50 rounded-full w-[30px] h-[30px] ml-2"></div>
+          <Bell className="ml-2" />
           <Search className="ml-2" />
+          <div className="bg-black/50 rounded-full w-[30px] h-[30px] ml-2"></div>
         </div>
       </div>
       <div className="w-[200px] h-full px-[30px]">

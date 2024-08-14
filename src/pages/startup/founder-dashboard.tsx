@@ -10,11 +10,14 @@ import Grants from "./grants";
 import Events from "./events";
 import Network from "./network";
 import Hire from "./hire";
+import Dashboard from "./dashboard";
 const Founderdashboard = () => {
   const [currentView, setCurrentView] = useState<string>("research-library");
 
   const renderForm = () => {
     switch (currentView) {
+      case "dashboard":
+        return <Dashboard />;
       case "my-company":
         return <MyCompany />;
       case "raise-funds":
