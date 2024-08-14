@@ -59,7 +59,35 @@ const Dashboard: React.FC = () => {
         <div className="flex flex-row mb-[10px]">
           <div className="mt-[30px] mb-[20px] w-[760px] h-[24px] border mr-[30px] font-semibold text-lg">
             Upcoming Meetings{" "}
-            <div className="w-[760px] h-[250px] border ">upcoming meetings</div>
+            <div className="w-[760px] h-[250px] border flex flex-row ">
+              <div className="w-[233px] h-[32px] border mt-[20px] ml-[20px] mr-[10px] flex flex-col ">
+                Today
+                <div className="w-[230px] h-[27px] border mt-[15px] mb-[10px] font-medium text-[6px]">
+                  Investor a16z crypto at 6:30 PM view request
+                </div>
+                <div className="w-[230px] h-[27px] border mt-[15px] mb-[10px] font-medium text-[6px]">
+                  Potential Advisor Robert Maclarence at 7:00 PM
+                </div>
+              </div>
+              <div className="w-[233px] h-[32px] border mt-[20px] ml-[10px] mr-[10px] flex flex-col">
+                Tommorrow
+                <div className="w-[230px] h-[27px] border mt-[15px] mb-[10px] font-medium text-[6px]">
+                  Investor a16z crypto at 6:30 PM view request
+                </div>
+                <div className="w-[230px] h-[27px] border mt-[15px] mb-[10px] font-medium text-[6px]">
+                  Potential Advisor Robert Maclarence at 7:00 PM
+                </div>
+              </div>
+              <div className="w-[233px] h-[32px] border mt-[20px] ml-[10px] mr-[10px] flex flex-col">
+                Later
+                <div className="w-[230px] h-[27px] border mt-[15px] mb-[10px] font-medium text-[6px]">
+                  Investor a16z crypto at 6:30 PM view request
+                </div>
+                <div className="w-[230px] h-[27px] border mt-[15px] mb-[10px] font-medium text-[6px]">
+                  Potential Advisor Robert Maclarence at 7:00 PM
+                </div>
+              </div>
+            </div>
           </div>
           <div className="mt-[30px] mb-[20px] w-[360px] h-[24px] border mr-[30px] font-semibold text-lg">
             Company profile completion{" "}
