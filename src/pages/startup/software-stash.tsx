@@ -91,147 +91,125 @@ const SoftwareStash: React.FC = () => {
         </div>
         <div className="flex flex-col space-y-[20px]">
           <div className="flex flex-row space-x-[20px]">
-            <Card className="w-[370px] h-[260px]">
+            <Card className="w-[370px] h-[200px]">
               <CardHeader>
-                <CardDescription>Nov. 27 2022</CardDescription>
-                <CardTitle>
-                  How is Web3 going to transform the dating industry
-                </CardTitle>
+                <CardTitle>Figma </CardTitle>
                 <CardDescription>Published by Ramsy</CardDescription>
               </CardHeader>
-              <CardContent className="font-medium text-sm space-x-[10px]">
-                <Button className="p-[10px] bg-black/25">Blockchain</Button>
-                <Button className="p-[10px]  bg-black/25">Web3</Button>
-                <Button className="p-[10px]  bg-black/25">Dating</Button>
-                <Button className="p-[10px]  bg-black/25">Marketing</Button>
+              <CardContent className="font-medium text-[12px] space-x-[10px]">
+                Figma is a collaborative web application for interface design,
+                with additional offline features enabled by desktop applications
+                for macOS and Windows.
               </CardContent>
               <CardFooter className="font-medium text-sm space-x-[10px]">
-                <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]  bg-black/50">
-                  View
+                <Button className=" w-[97px] h-[35px]  bg-black/50">
+                  UI/UX Design
                 </Button>
-                <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]">
-                  Download
-                </Button>
+                <Button className=" w-[97px] h-[35px]">Web Design</Button>
+                <Button className=" w-[97px] h-[35px]">Mobile Design</Button>
               </CardFooter>
             </Card>
 
-            <Card className="w-[370px] h-[260px]">
+            <Card className="w-[370px] h-[200px]">
               <CardHeader>
-                <CardDescription>Nov. 27 2022</CardDescription>
-                <CardTitle>
-                  How is Web3 going to transform the dating industry
-                </CardTitle>
+                <CardTitle>Figma </CardTitle>
                 <CardDescription>Published by Ramsy</CardDescription>
               </CardHeader>
-              <CardContent className="font-medium text-sm space-x-[10px]">
-                <Button className="p-[10px]  bg-black/25">Blockchain</Button>
-                <Button className="p-[10px]  bg-black/25">Web3</Button>
-                <Button className="p-[10px]  bg-black/25">Dating</Button>
-                <Button className="p-[10px]  bg-black/25">Marketing</Button>
+              <CardContent className="font-medium text-[12px] space-x-[10px]">
+                Figma is a collaborative web application for interface design,
+                with additional offline features enabled by desktop applications
+                for macOS and Windows.
               </CardContent>
               <CardFooter className="font-medium text-sm space-x-[10px]">
-                <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]  bg-black/50">
-                  View
+                <Button className=" w-[97px] h-[35px]  bg-black/50">
+                  UI/UX Design
                 </Button>
-                <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]">
-                  Download
-                </Button>
+                <Button className=" w-[97px] h-[35px]">Web Design</Button>
+                <Button className=" w-[97px] h-[35px]">Mobile Design</Button>
               </CardFooter>
             </Card>
 
-            <Card className="w-[370px] h-[260px]">
+            <Card className="w-[370px] h-[200px]">
               <CardHeader>
-                <CardDescription>Nov. 27 2022</CardDescription>
-                <CardTitle>
-                  How is Web3 going to transform the dating industry
-                </CardTitle>
+                <CardTitle>Figma </CardTitle>
                 <CardDescription>Published by Ramsy</CardDescription>
               </CardHeader>
-              <CardContent className="font-medium text-sm space-x-[10px]">
-                <Button className="p-[10px]  bg-black/25">Blockchain</Button>
-                <Button className="p-[10px]  bg-black/25">Web3</Button>
-                <Button className="p-[10px]  bg-black/25">Dating</Button>
-                <Button className="p-[10px]  bg-black/25">Marketing</Button>
+              <CardContent className="font-medium text-[12px] space-x-[10px]">
+                Figma is a collaborative web application for interface design,
+                with additional offline features enabled by desktop applications
+                for macOS and Windows.
               </CardContent>
               <CardFooter className="font-medium text-sm space-x-[10px] ">
-                <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px] bg-black/50">
-                  View
+                <Button className=" w-[97px] h-[35px] bg-black/50">
+                  UI/UX Design
                 </Button>
-                <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px] bg-black">
-                  Download
+                <Button className=" w-[97px] h-[35px] bg-black">
+                  Web Design
+                </Button>
+                <Button className=" w-[97px] h-[35px] bg-black">
+                  Mobile Design
                 </Button>
               </CardFooter>
             </Card>
           </div>
           <div className="flex flex-row space-x-[20px]">
-            <Card className="w-[370px] h-[260px]">
+            <Card className="w-[370px] h-[200px]">
               <CardHeader>
-                <CardDescription>Nov. 27 2022</CardDescription>
-                <CardTitle>
-                  How is Web3 going to transform the dating industry
-                </CardTitle>
+                <CardTitle>Figma </CardTitle>
                 <CardDescription>Published by Ramsy</CardDescription>
               </CardHeader>
-              <CardContent className="font-medium text-sm space-x-[10px]">
-                <Button className="p-[10px] bg-black/25">Blockchain</Button>
-                <Button className="p-[10px]  bg-black/25">Web3</Button>
-                <Button className="p-[10px]  bg-black/25">Dating</Button>
-                <Button className="p-[10px]  bg-black/25">Marketing</Button>
+              <CardContent className="font-medium text-[12px] space-x-[10px]">
+                Figma is a collaborative web application for interface design,
+                with additional offline features enabled by desktop applications
+                for macOS and Windows.
               </CardContent>
               <CardFooter className="font-medium text-sm space-x-[10px]">
-                <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]  bg-black/50">
-                  View
+                <Button className=" w-[97px] h-[35px]  bg-black/50">
+                  UI/UX Design
                 </Button>
-                <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]">
-                  Download
-                </Button>
+                <Button className=" w-[97px] h-[35px]">Web Design</Button>
+                <Button className=" w-[97px] h-[35px]">Mobile Design</Button>
               </CardFooter>
             </Card>
 
-            <Card className="w-[370px] h-[260px]">
+            <Card className="w-[370px] h-[200px]">
               <CardHeader>
-                <CardDescription>Nov. 27 2022</CardDescription>
-                <CardTitle>
-                  How is Web3 going to transform the dating industry
-                </CardTitle>
+                <CardTitle>Figma </CardTitle>
                 <CardDescription>Published by Ramsy</CardDescription>
               </CardHeader>
-              <CardContent className="font-medium text-sm space-x-[10px]">
-                <Button className="p-[10px]  bg-black/25">Blockchain</Button>
-                <Button className="p-[10px]  bg-black/25">Web3</Button>
-                <Button className="p-[10px]  bg-black/25">Dating</Button>
-                <Button className="p-[10px]  bg-black/25">Marketing</Button>
+              <CardContent className="font-medium text-[12px] space-x-[10px]">
+                Figma is a collaborative web application for interface design,
+                with additional offline features enabled by desktop applications
+                for macOS and Windows.
               </CardContent>
               <CardFooter className="font-medium text-sm space-x-[10px]">
-                <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]  bg-black/50">
-                  View
+                <Button className=" w-[97px] h-[35px]  bg-black/50">
+                  UI/UX Design
                 </Button>
-                <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px]">
-                  Download
-                </Button>
+                <Button className=" w-[97px] h-[35px]">Web Design</Button>
+                <Button className=" w-[97px] h-[35px]">Mobile Design</Button>
               </CardFooter>
             </Card>
 
-            <Card className="w-[370px] h-[260px]">
+            <Card className="w-[370px] h-[200px]">
               <CardHeader>
-                <CardDescription>Nov. 27 2022</CardDescription>
-                <CardTitle>
-                  How is Web3 going to transform the dating industry
-                </CardTitle>
+                <CardTitle>Figma </CardTitle>
                 <CardDescription>Published by Ramsy</CardDescription>
               </CardHeader>
-              <CardContent className="font-medium text-sm space-x-[10px]">
-                <Button className="p-[10px]  bg-black/25">Blockchain</Button>
-                <Button className="p-[10px]  bg-black/25">Web3</Button>
-                <Button className="p-[10px]  bg-black/25">Dating</Button>
-                <Button className="p-[10px]  bg-black/25">Marketing</Button>
+              <CardContent className="font-medium text-[12px] space-x-[10px]">
+                Figma is a collaborative web application for interface design,
+                with additional offline features enabled by desktop applications
+                for macOS and Windows.
               </CardContent>
               <CardFooter className="font-medium text-sm space-x-[10px] ">
-                <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px] bg-black/50">
-                  View
+                <Button className=" w-[97px] h-[35px] bg-black/50">
+                  UI/UX Design
                 </Button>
-                <Button className="p-[10px] w-[160px] h-[42px] py-[15px] px-[55px] bg-black">
-                  Download
+                <Button className=" w-[97px] h-[35px] bg-black">
+                  Web Design
+                </Button>
+                <Button className=" w-[97px] h-[35px] bg-black">
+                  Mobile Design
                 </Button>
               </CardFooter>
             </Card>
