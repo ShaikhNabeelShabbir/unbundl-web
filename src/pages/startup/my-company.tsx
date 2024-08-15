@@ -29,6 +29,10 @@ const MyCompany: React.FC = () => {
                             <div className="w-[30px] h-[30px] bg-black/25"></div>
                             <div className="w-[30px] h-[30px] bg-black/25"></div>
                           </div>
+                          <div>
+                            Fund Raising
+                            <Switch />
+                          </div>
                           <div className="flex space-x-[10px] mt-[10px]">
                             <Button className="bg-black/25 w-[80px] h-[30px]">
                               Round A
