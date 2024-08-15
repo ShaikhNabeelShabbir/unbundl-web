@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Switch } from "@/components/ui/switch";
 import React from "react";
 
 const MyCompany: React.FC = () => {
@@ -10,20 +11,51 @@ const MyCompany: React.FC = () => {
             <div className="Overview w-[760px]  ">
               <p className="font-semibold text-[20px]">Overview</p>
               <div className="flex flex-row border w-[760px]">
-                <div className="border w-[520px] h-[250px] mr-[20px] flex flex-col">
-                  <div className="flex flex-row mt-[20px] ml-[20px]">
-                    <div className="w-[49px] h-[49px] border"></div>
-                    <div className="ml-[10px]">
-                      <p> Startup Name</p>
-                      <p className="mt-[10px]"> startupname.io </p>
+                <div className="border border-red-950 w-[520px] h-[250px] mr-[20px] ml-[20px] flex flex-col p-0">
+                  <div className="flex flex-row mt-[20px] justify-between p-0">
+                    <div className="flex flex-row">
+                      <div className="w-[49px] h-[49px] border"></div>
+                      <div className="flex flex-col justify-between">
+                        <div>
+                          <p className="text-lg font-semibold">Startup Name</p>
+                          <p className="text-gray-500">startupname.io</p>
+                        </div>
+                        <div className="flex flex-col">
+                          <div className="flex flex-row space-x-[10px]">
+                            <div className="w-[30px] h-[30px] bg-black/25"></div>
+                            <div className="w-[30px] h-[30px] bg-black/25"></div>
+                            <div className="w-[30px] h-[30px] bg-black/25"></div>
+                            <div className="w-[30px] h-[30px] bg-black/25"></div>
+                            <div className="w-[30px] h-[30px] bg-black/25"></div>
+                            <div className="w-[30px] h-[30px] bg-black/25"></div>
+                          </div>
+                          <div className="flex space-x-[10px] mt-[10px]">
+                            <Button className="bg-black/25 w-[80px] h-[30px]">
+                              Round A
+                            </Button>
+                            <Button className="bg-black/25 w-[80px] h-[30px]">
+                              Hiring
+                            </Button>
+                            <Button className="bg-black/25 w-[80px] h-[30px]">
+                              Fundraising
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div className="ml-[20px]">
-                    <Button></Button>
-                    <Button></Button>
-                    <Button></Button>
-                    <Button></Button>
-                    <Button></Button>
+
+                    {/* Right Section */}
+                    <div className="">
+                      <div className="flex items-center">
+                        <div className="text-[18px] font-semibold ">
+                          Project Description
+                        </div>
+                        <Button className="ml-[10px]">Edit</Button>
+                      </div>
+                      <p className="text-gray-500 mt-[10px]">
+                        Lorem ipsum dolor sit amet...
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <div className=" w-[220px] h-[250px] border bg-black/5 rounded-[4px]">
