@@ -5,11 +5,16 @@ import {
   Table,
   TableBody,
   TableCell,
-  TableFooter,
   TableHead,
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import {
+  Card,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 const invoices = [
   {
@@ -18,6 +23,30 @@ const invoices = [
     alreadyRaised: "$800,000",
     Postmoneyvaluation: "$10,000,000",
     MinimumTicketSize: "$100,000",
+  },
+];
+const investments = [
+  {
+    Investor: "CFounders + ESOP",
+    Invested: "n/a",
+    Existing_Shares: "1,000,000",
+    Preferred_Shares: "n/a",
+    Price_per_share: "n/a",
+    Ownership: "80.00%",
+  },
+];
+const teamMembers = [
+  {
+    name: "John Doe",
+    position: "CEO",
+    type: "Full-time",
+    rights: "Admin",
+  },
+  {
+    name: "Jane Smith",
+    position: "CTO",
+    type: "Full-time",
+    rights: "Managing partner",
   },
 ];
 
@@ -144,19 +173,52 @@ const MyCompany: React.FC = () => {
               <div className="mt-[30px]">
                 {" "}
                 <p>Team</p>
+                <Table className="border">
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead className="w-[1063px]">Name</TableHead>
+                      <TableHead>Position</TableHead>
+                      <TableHead>Type</TableHead>
+                      <TableHead className="text-right">Rights</TableHead>
+                      <TableHead></TableHead>{" "}
+                      {/* Empty header for the dropdown */}
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {teamMembers.map((member) => (
+                      <TableRow key={member.name}>
+                        <TableCell className="font-medium">
+                          {member.name}
+                        </TableCell>
+                        <TableCell>{member.position}</TableCell>
+                        <TableCell>{member.type}</TableCell>
+                        <TableCell className="text-right">
+                          {member.rights}
+                        </TableCell>
+                        <TableCell className="text-right">
+                          <Button
+                            variant="ghost"
+                            className="h-8 w-8 p-0"
+                          ></Button>
+                        </TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
               </div>
-              ----------------------------------------------------------------
-              ----------------------------------------------------------------
               <div className="pt-[30px]">
                 {" "}
                 <p>Current Round Information</p>
                 <Table className="border">
                   <TableHeader>
                     <TableRow>
-                      <TableHead className="w-[100px]">Invoice</TableHead>
-                      <TableHead>Status</TableHead>
-                      <TableHead>Method</TableHead>
-                      <TableHead className="text-right">Amount</TableHead>
+                      <TableHead className="w-[100px]">Round</TableHead>
+                      <TableHead>Amount Raising</TableHead>
+                      <TableHead>Already Raised</TableHead>
+                      <TableHead>Post-Money Valuation</TableHead>
+                      <TableHead className="text-right">
+                        Minimum Ticket Size
+                      </TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
@@ -166,25 +228,104 @@ const MyCompany: React.FC = () => {
                           {invoice.round}
                         </TableCell>
                         <TableCell>{invoice.amountRaising}</TableCell>
+                        <TableCell>{invoice.alreadyRaised}</TableCell>
                         <TableCell>{invoice.Postmoneyvaluation}</TableCell>
                         <TableCell className="text-right">
-                          {invoice.alreadyRaised}
+                          {invoice.MinimumTicketSize}
                         </TableCell>
                       </TableRow>
                     ))}
                   </TableBody>
-                  <TableFooter>
-                    <TableRow>
-                      <TableCell colSpan={3}>Total</TableCell>
-                      <TableCell className="text-right">$2,500.00</TableCell>
-                    </TableRow>
-                  </TableFooter>
                 </Table>
               </div>
-              ----------------------------------------------------------------
-              ----------------------------------------------------------------
-              <div>Hello world</div>
-              ----------------------------------------------------------------
+              <div className="mt-[30px]">
+                {" "}
+                <p>Cap Table</p>
+                <Table className="border">
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead>Investor</TableHead>
+                      <TableHead>Invested</TableHead>
+                      <TableHead>Existing_Shares</TableHead>
+                      <TableHead className="text-right">
+                        Preferred_Shares
+                      </TableHead>
+                      <TableHead>Price_per_share</TableHead>
+                      <TableHead>Ownership</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {investments.map((investment) => (
+                      <TableRow key={investment.Investor}>
+                        <TableCell className="font-medium">
+                          {investment.Investor}
+                        </TableCell>
+                        <TableCell>{investment.Invested}</TableCell>
+                        <TableCell>{investment.Existing_Shares}</TableCell>
+                        <TableCell className="text-right">
+                          {investment.Preferred_Shares}
+                        </TableCell>
+                        <TableCell>{investment.Price_per_share}</TableCell>
+                        <TableCell>{investment.Ownership}</TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </div>
+              <div>
+                <p className="font-semibold text-[20px]">Product Information</p>
+                <div className="w-[760px] h-[159px] border px-[20px] py-[20px]">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Fugit ullam ab fugiat illo sed qui sequi eius! Temporibus
+                  consequuntur consequatur doloribus, quam blanditiis, ex odio
+                  quibusdam, fuga vero rerum explicabo!
+                </div>
+                <div className="w-[760px] h-[80px] mt-[20px] border font-semibold text-[16px] px-[30px] py-[20px]">
+                  Answer 3 missing questions to increase your chance of getting
+                  funded
+                </div>{" "}
+              </div>
+              <div>
+                <p className="font-semibold text-[20px]">Tech Information</p>
+                <div className="w-[760px] h-[159px] border px-[20px] py-[20px]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  quibusdam, veniam voluptate molestias placeat ratione aliquam
+                  porro labore nemo aspernatur debitis culpa quisquam minus
+                  corrupti illo similique voluptas rem voluptatem?
+                </div>{" "}
+                <div className="w-[760px] h-[80px] mt-[20px] border font-semibold text-[16px] px-[30px] py-[20px]">
+                  Answer 2 missing questions to increase your chance of getting
+                  funded
+                </div>{" "}
+              </div>
+              <div>
+                <p className="font-semibold text-[20px]">Market Information</p>
+                <div className="w-[760px] h-[159px] border px-[20px] py-[20px]">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nobis, numquam repellat! Dolore in quidem sunt odit commodi
+                  aliquid dicta blanditiis placeat cupiditate explicabo, eos
+                  eius nam culpa, harum voluptas aspernatur.
+                </div>{" "}
+                <div className="w-[760px] h-[80px] mt-[20px] border font-semibold text-[16px] px-[30px] py-[20px]">
+                  Answer 2 missing questions to increase your chance of getting
+                  funded
+                </div>{" "}
+              </div>
+              <div>
+                <p className="font-semibold text-[20px]">
+                  Fundraising Information
+                </p>
+                <div className="w-[760px] h-[159px] border px-[20px] py-[20px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                  doloribus nostrum labore praesentium sit non dignissimos
+                  saepe, ipsum totam facere quaerat tenetur maiores error odio
+                  laborum minus distinctio nihil mollitia?
+                </div>{" "}
+                <div className="w-[760px] h-[80px] mt-[20px] border font-semibold text-[16px] px-[30px] py-[20px]">
+                  Answer 3 missing questions to increase your chance of getting
+                  funded
+                </div>{" "}
+              </div>
               {/* {DND} */}
             </div>
             <div className="Company-Updates ml-[20px] w-[370px] flex flex-col space-y-[20px]">
@@ -192,13 +333,190 @@ const MyCompany: React.FC = () => {
                 Company Updates
               </p>
               <div className="w-[370px] space-y-[20px]">
-                <div className="bg-black/25">
+                <div className="bg-black/5 border">
                   Connect your company Twitter account to your Unbundl Feed
                 </div>
-                <div className="bg-black/25">hello 1</div>
-                <div className="bg-black/25">hello 1</div>
-                <div className="bg-black/25">hello 1</div>
-                <div className="bg-black/25">hello 1</div>
+                <div className="bg-black/25">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="font-medium text-[14px] text-black/50">
+                        Nov. 27 2022
+                      </CardTitle>
+                      <CardDescription>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ducimus aliquid, sunt repudiandae ab obcaecati
+                        blanditiis maxime nobis? Repellendus delectus est,
+                        asperiores, vel reiciendis dignissimos voluptatum
+                        suscipit sit eligendi ipsam explicabo?
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+                </div>
+                <div className="bg-black/25">
+                  {" "}
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="font-medium text-[14px] text-black/50">
+                        Nov. 27 2022
+                      </CardTitle>
+                      <CardDescription>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ducimus aliquid, sunt repudiandae ab obcaecati
+                        blanditiis maxime nobis? Repellendus delectus est,
+                        asperiores, vel reiciendis dignissimos voluptatum
+                        suscipit sit eligendi ipsam explicabo?
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+                </div>
+                <div className="bg-black/25">
+                  {" "}
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="font-medium text-[14px] text-black/50">
+                        Nov. 27 2022
+                      </CardTitle>
+                      <CardDescription>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ducimus aliquid, sunt repudiandae ab obcaecati
+                        blanditiis maxime nobis? Repellendus delectus est,
+                        asperiores, vel reiciendis dignissimos voluptatum
+                        suscipit sit eligendi ipsam explicabo?
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+                </div>
+                <div className="bg-black/25">
+                  {" "}
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="font-medium text-[14px] text-black/50">
+                        Nov. 27 2022
+                      </CardTitle>
+                      <CardDescription>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ducimus aliquid, sunt repudiandae ab obcaecati
+                        blanditiis maxime nobis? Repellendus delectus est,
+                        asperiores, vel reiciendis dignissimos voluptatum
+                        suscipit sit eligendi ipsam explicabo?
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+                </div>{" "}
+                <div className="bg-black/25">
+                  {" "}
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="font-medium text-[14px] text-black/50">
+                        Nov. 27 2022
+                      </CardTitle>
+                      <CardDescription>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ducimus aliquid, sunt repudiandae ab obcaecati
+                        blanditiis maxime nobis? Repellendus delectus est,
+                        asperiores, vel reiciendis dignissimos voluptatum
+                        suscipit sit eligendi ipsam explicabo?
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+                </div>
+                <div className="bg-black/25">
+                  {" "}
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="font-medium text-[14px] text-black/50">
+                        Nov. 27 2022
+                      </CardTitle>
+                      <CardDescription>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ducimus aliquid, sunt repudiandae ab obcaecati
+                        blanditiis maxime nobis? Repellendus delectus est,
+                        asperiores, vel reiciendis dignissimos voluptatum
+                        suscipit sit eligendi ipsam explicabo?
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+                </div>
+                <div className="bg-black/25">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="font-medium text-[14px] text-black/50">
+                        Nov. 27 2022
+                      </CardTitle>
+                      <CardDescription>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ducimus aliquid, sunt repudiandae ab obcaecati
+                        blanditiis maxime nobis? Repellendus delectus est,
+                        asperiores, vel reiciendis dignissimos voluptatum
+                        suscipit sit eligendi ipsam explicabo?
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+                </div>
+                <div className="bg-black/25">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="font-medium text-[14px] text-black/50">
+                        Nov. 27 2022
+                      </CardTitle>
+                      <CardDescription>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ducimus aliquid, sunt repudiandae ab obcaecati
+                        blanditiis maxime nobis? Repellendus delectus est,
+                        asperiores, vel reiciendis dignissimos voluptatum
+                        suscipit sit eligendi ipsam explicabo?
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+                </div>
+                <div className="bg-black/25">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="font-medium text-[14px] text-black/50">
+                        Nov. 27 2022
+                      </CardTitle>
+                      <CardDescription>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ducimus aliquid, sunt repudiandae ab obcaecati
+                        blanditiis maxime nobis? Repellendus delectus est,
+                        asperiores, vel reiciendis dignissimos voluptatum
+                        suscipit sit eligendi ipsam explicabo?
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+                </div>
+                <div className="bg-black/25">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="font-medium text-[14px] text-black/50">
+                        Nov. 27 2022
+                      </CardTitle>
+                      <CardDescription>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ducimus aliquid, sunt repudiandae ab obcaecati
+                        blanditiis maxime nobis? Repellendus delectus est,
+                        asperiores, vel reiciendis dignissimos voluptatum
+                        suscipit sit eligendi ipsam explicabo?
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+                </div>
+                <div className="bg-black/25">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="font-medium text-[14px] text-black/50">
+                        Nov. 27 2022
+                      </CardTitle>
+                      <CardDescription>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ducimus aliquid, sunt repudiandae ab obcaecati
+                        blanditiis maxime nobis? Repellendus delectus est,
+                        asperiores, vel reiciendis dignissimos voluptatum
+                        suscipit sit eligendi ipsam explicabo?
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+                </div>
               </div>
             </div>
           </div>
