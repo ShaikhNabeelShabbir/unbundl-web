@@ -1,6 +1,25 @@
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
 import React from "react";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableFooter,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+
+const invoices = [
+  {
+    round: "Seed",
+    amountRaising: "$1,250,000",
+    alreadyRaised: "$800,000",
+    Postmoneyvaluation: "$10,000,000",
+    MinimumTicketSize: "$100,000",
+  },
+];
 
 const MyCompany: React.FC = () => {
   return (
@@ -74,8 +93,99 @@ const MyCompany: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <div>Hello world</div> <div>Hello world</div>
+              <div className="flex flex-row mt-[20px]">
+                <div className="w-[220px] h-[240px] border">
+                  <p className="mt-[20px] ml-[20px] font-semibold text-[18px]">
+                    Main Links
+                  </p>
+                  <br />
+                  <div className="flex flex-col w-[180px] ml-[20px] space-y-[10px]">
+                    <Button className="h-[32px]">Whitepaper</Button>
+                    <Button className="h-[32px]">Tokenomics</Button>
+                    <Button className="h-[32px]">Pitch Deck</Button>
+                    <Button className="h-[32px]">Calendly</Button>
+                  </div>
+                </div>
+                <div className="ml-[20px] w-[520px] h-[240px] border p-[20px] bg-gray-100 rounded-md">
+                  <div className="flex flex-wrap justify-between">
+                    <div className="flex flex-col">
+                      <div className="font-semibold mb-[10px]">Chains Used</div>
+                      <div className="flex space-x-[10px]">
+                        <Button className="h-[32px]">Ethereum</Button>
+                        <Button className="h-[32px]">Polygon</Button>
+                        <Button className="h-[32px]">BSC</Button>
+                      </div>
+                    </div>
+
+                    <div className="flex flex-col">
+                      <div className="font-semibold mb-[10px]">Category</div>
+                      <Button className="h-[32px]">De-Fi</Button>
+                    </div>
+
+                    <div className="flex flex-col">
+                      <div className="font-semibold mb-[10px]">Location</div>
+                      <div className="flex space-x-[10px]">
+                        <Button className="h-[32px]">Dubai, UAE</Button>
+                        <Button className="h-[32px]">
+                          Singapore, Singapore
+                        </Button>
+                      </div>
+                    </div>
+
+                    <div className="flex flex-col">
+                      <div className="font-semibold mb-[10px]">
+                        Level of Completion
+                      </div>
+                      <Button className="h-[32px]">Mainnet</Button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-[30px]">
+                {" "}
+                <p>Team</p>
+              </div>
+              ----------------------------------------------------------------
+              ----------------------------------------------------------------
+              <div className="pt-[30px]">
+                {" "}
+                <p>Current Round Information</p>
+                <Table className="border">
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead className="w-[100px]">Invoice</TableHead>
+                      <TableHead>Status</TableHead>
+                      <TableHead>Method</TableHead>
+                      <TableHead className="text-right">Amount</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {invoices.map((invoice) => (
+                      <TableRow key={invoice.round}>
+                        <TableCell className="font-medium">
+                          {invoice.round}
+                        </TableCell>
+                        <TableCell>{invoice.amountRaising}</TableCell>
+                        <TableCell>{invoice.Postmoneyvaluation}</TableCell>
+                        <TableCell className="text-right">
+                          {invoice.alreadyRaised}
+                        </TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                  <TableFooter>
+                    <TableRow>
+                      <TableCell colSpan={3}>Total</TableCell>
+                      <TableCell className="text-right">$2,500.00</TableCell>
+                    </TableRow>
+                  </TableFooter>
+                </Table>
+              </div>
+              ----------------------------------------------------------------
+              ----------------------------------------------------------------
               <div>Hello world</div>
+              ----------------------------------------------------------------
+              {/* {DND} */}
             </div>
             <div className="Company-Updates ml-[20px] w-[370px] flex flex-col space-y-[20px]">
               <p className="font-semibold text-[20px] border">
