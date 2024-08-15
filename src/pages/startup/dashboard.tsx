@@ -33,15 +33,25 @@ const Dashboard: React.FC = () => {
                 Public
                 <Switch className="ml-[10px] " />
               </div>
-              <div className="font-medium text-[16px] text-black/30 mt-[61px]">
+              <br />
+              <div className="font-medium text-[16px] text-black/30">
                 Fundraising <Switch className="ml-[10px] " />
+              </div>
+              <div className="mt-[15px] space-x-[10px]">
+                <Button className="bg-black/25">Round A</Button>
+                <Button className="bg-black/25">Hiring</Button>
+                <Button className="bg-black/25">Fundaising</Button>
               </div>
             </div>
           </div>
-          <div className="mt-[20px] mb-[20px] font-medium text-base ml-[20px] w-[760px] h-[250px] border flex items-center justify-center  bg-black/5 ">
-            Analytics:
-            <br /> How many investors viewed profile, how many sent request in
-            the last amount of time
+          <div className="mt-[20px] mb-[20px] font-medium text-base ml-[20px] w-[760px] h-[250px] border flex flex-col items-center justify-center bg-black/5">
+            <span className="flex items-center justify-center text-center">
+              Analytics:
+            </span>
+            <span className="text-center">
+              How many investors viewed profile, how many sent request in the
+              last amount of time
+            </span>
           </div>
         </div>
         <div className="mt-[30px] mb-[20px]  mr-[30px] font-semibold text-lg">

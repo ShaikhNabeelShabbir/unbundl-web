@@ -11,8 +11,9 @@ import Events from "./events";
 import Network from "./network";
 import Hire from "./hire";
 import Dashboard from "./dashboard";
+
 const Founderdashboard = () => {
-  const [currentView, setCurrentView] = useState<string>("research-library");
+  const [currentView, setCurrentView] = useState<string>("");
 
   const renderForm = () => {
     switch (currentView) {
@@ -39,7 +40,7 @@ const Founderdashboard = () => {
       case "grants":
         return <Grants />;
       default:
-        return <ResearchLibrary />;
+        return <Dashboard />;
     }
   };
 
