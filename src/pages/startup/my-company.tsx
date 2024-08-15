@@ -10,60 +10,50 @@ const MyCompany: React.FC = () => {
           <div className="flex flex-row">
             <div className="Overview w-[760px]  ">
               <p className="font-semibold text-[20px]">Overview</p>
-              <div className="flex flex-row border w-[760px]">
-                <div className="border border-red-950 w-[520px] h-[250px] mr-[20px] ml-[20px] flex flex-col p-0">
-                  <div className="flex flex-row mt-[20px] justify-between p-0">
-                    <div className="flex flex-row">
+              <div className="flex flex-row  w-[760px]">
+                <div className="flex flex-row  w-[520px] h-[250px] border mr-[20px]">
+                  <div className=" flex flex-col">
+                    <div className="flex flex-row mt-[20px] ml-[20px]">
                       <div className="w-[49px] h-[49px] border"></div>
-                      <div className="flex flex-col justify-between">
-                        <div>
-                          <p className="text-lg font-semibold">Startup Name</p>
-                          <p className="text-gray-500">startupname.io</p>
-                        </div>
-                        <div className="flex flex-col">
-                          <div className="flex flex-row space-x-[10px]">
-                            <div className="w-[30px] h-[30px] bg-black/25"></div>
-                            <div className="w-[30px] h-[30px] bg-black/25"></div>
-                            <div className="w-[30px] h-[30px] bg-black/25"></div>
-                            <div className="w-[30px] h-[30px] bg-black/25"></div>
-                            <div className="w-[30px] h-[30px] bg-black/25"></div>
-                            <div className="w-[30px] h-[30px] bg-black/25"></div>
-                          </div>
-                          <div>
-                            Fund Raising
-                            <Switch />
-                          </div>
-                          <div className="flex space-x-[10px] mt-[10px]">
-                            <Button className="bg-black/25 w-[80px] h-[30px]">
-                              Round A
-                            </Button>
-                            <Button className="bg-black/25 w-[80px] h-[30px]">
-                              Hiring
-                            </Button>
-                            <Button className="bg-black/25 w-[80px] h-[30px]">
-                              Fundraising
-                            </Button>
-                          </div>
-                        </div>
+                      <div className="ml-[10px]">
+                        <p> Startup Name</p>
+                        <p className="mt-[10px]"> startupname.io </p>
                       </div>
                     </div>
-
-                    {/* Right Section */}
-                    <div className="">
-                      <div className="flex items-center">
-                        <div className="text-[18px] font-semibold ">
-                          Project Description
-                        </div>
-                        <Button className="ml-[10px]">Edit</Button>
-                      </div>
-                      <p className="text-gray-500 mt-[10px]">
-                        Lorem ipsum dolor sit amet...
-                      </p>
+                    <br />
+                    <div className="ml-[20px] flex flex-row space-x-[10px]">
+                      <div className="w-[30px] h-[30px] bg-black/25">2</div>
+                      <div className="w-[30px] h-[30px] bg-black/25">2</div>
+                      <div className="w-[30px] h-[30px] bg-black/25">2</div>
+                      <div className="w-[30px] h-[30px] bg-black/25">2</div>
+                      <div className="w-[30px] h-[30px] bg-black/25">2</div>
+                    </div>
+                    <br />
+                    <div className="ml-[20px]">
+                      Fund Raising
+                      <Switch />
+                    </div>
+                    <div className="ml-[20px] flex flex-row space-x-[10px]">
+                      <Button>Round A</Button>
+                      <Button>Fund Raising</Button>
+                      <Button>Hiring</Button>
+                    </div>
+                  </div>
+                  <div className=" ml-[25px] ">
+                    Project Description
+                    <br />
+                    <br />
+                    <div className="font-normal text-[12px]">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Magni, eos architecto et impedit sed assumenda,
+                      voluptates, ipsum a quod quas aliquam nesciunt eligendi
+                      quaerat debitis molestiae laborum pariatur accusantium
+                      provident?
                     </div>
                   </div>
                 </div>
                 <div className=" w-[220px] h-[250px] border bg-black/5 rounded-[4px]">
-                  <p className="font-semibold text-[12px] mx-[20px] mt-[20px]">
+                  <p className="font-semibold text-[12px] mt-[20px]">
                     Complete your profile to increase your in-platform ranking
                   </p>
                   <div className="progress-bar relative w-[180px] h-[30px] mx-[20px] mt-[11px] border rounded-full bg-black/50 ">
@@ -84,11 +74,22 @@ const MyCompany: React.FC = () => {
                   </div>
                 </div>
               </div>
+              <div>Hello world</div> <div>Hello world</div>
+              <div>Hello world</div>
             </div>
-            <div className="Company-Updates ml-[10px] w-[370px] ">
+            <div className="Company-Updates ml-[20px] w-[370px] flex flex-col space-y-[20px]">
               <p className="font-semibold text-[20px] border">
                 Company Updates
               </p>
+              <div className="w-[370px] space-y-[20px]">
+                <div className="bg-black/25">
+                  Connect your company Twitter account to your Unbundl Feed
+                </div>
+                <div className="bg-black/25">hello 1</div>
+                <div className="bg-black/25">hello 1</div>
+                <div className="bg-black/25">hello 1</div>
+                <div className="bg-black/25">hello 1</div>
+              </div>
             </div>
           </div>
         </div>
