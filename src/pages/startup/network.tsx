@@ -1,8 +1,23 @@
 import { Button } from "@/components/ui/button";
-import React from "react";
+import React, { useState } from "react";
 import { Search } from "lucide-react";
+import NavbarMyNetwork from "@/components/navbar-my-network";
+import ExpandYourNetwork from "./expand-your-network";
+import RequestForNewConnections from "./request-for-new-connections";
 
 const Network: React.FC = () => {
+  const [step, setStep] = useState(1);
+
+  const renderForm = () => {
+    switch (step) {
+      case 1:
+        return <ExpandYourNetwork />;
+      case 2:
+        return <RequestForNewConnections />;
+      default:
+        return <ExpandYourNetwork />;
+    }
+  };
   return (
     <div className="flex ml-[30px] mr-[30px]">
       <div className="flex-1 py-[97px]">
@@ -24,21 +39,9 @@ const Network: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="mt-[30px] mb-[20px] font-medium text-base">
-          Best Pics For your company
-        </div>
-        <div className="flex items-center justify-between mt-[21px]">
-          <div className="flex items-center w-[950px] h-[46px] border rounded-[4px]">
-            <Search className="ml-4 text-gray-500" />
-            <input
-              type="text"
-              className="w-full px-4 py-2 outline-none"
-              placeholder="Search..."
-            />
-          </div>
-          <Button className="w-[190px] h-[46px] mr-[30px]">
-            Advanced Search
-          </Button>
+        <div className="w-[1150px] h-[650px] border mt-[20px] bg-black/5">
+          <NavbarMyNetwork setStep={setStep} currentStep={step} />
+          {renderForm()}
         </div>
       </div>
     </div>
