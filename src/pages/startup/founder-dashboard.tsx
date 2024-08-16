@@ -10,7 +10,7 @@ import Grants from "./grants";
 import Events from "./events";
 import Network from "./network";
 import Hire from "./hire";
-import Dashboard from "./dashboard";
+import Dashboard from "./company-dashboard";
 import HireTalent from "./hire-talent";
 import HireServiceProviders from "./hire-service-providers";
 
