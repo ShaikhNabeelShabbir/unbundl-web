@@ -20,7 +20,7 @@ import Signupforserviceproviders from "./pages/admin/signupforserviceproviders";
 import Signupfortalent from "./pages/admin/signupfortalent";
 import Signupforinvestor from "./pages/admin/signupforinvestor";
 import Signup from "./pages/admin/signup";
-import Founderdashboard from "./pages/startup/founder-dashboard";
+import Founderdashboard from "./pages/startup/founder";
 //import Signup from "./pages/admin/signup";
 
 const App: React.FC = () => {
