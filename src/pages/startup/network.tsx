@@ -1,6 +1,4 @@
-import { Button } from "@/components/ui/button";
 import React, { useState } from "react";
-import { Search } from "lucide-react";
 import NavbarMyNetwork from "@/components/navbar-my-network";
 import ExpandYourNetwork from "./expand-your-network";
 import RequestForNewConnections from "./request-for-new-connections";
