@@ -11,7 +11,7 @@ export const SidebarServiceProvider: React.FC<SidebarProps> = ({
   return (
     <div>
       <div className="mb-[30px] mt-[30px] ml-[30px] flex items-center">
-        <h1 className="text-lg font-semibold">Startup Name</h1>
+        <h1 className="text-lg font-semibold">Service Provider Name</h1>
         <div className="absolute right-0 flex items-center mr-[30px]">
           <u>24 Points</u>
           <Bell className="ml-2" />
