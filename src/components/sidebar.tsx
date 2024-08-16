@@ -1,11 +1,13 @@
-import React from "react";
-import { Bell, Search } from "lucide-react";
+import React, { useState } from "react";
+import { Bell, Search, ChevronDown } from "lucide-react";
 
 interface SidebarProps {
   setCurrentView: (view: string) => void;
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({ setCurrentView }) => {
+  const [isHireDropdownOpen, setIsHireDropdownOpen] = useState(false);
+
   return (
     <div>
       <div className="mb-[30px] mt-[30px] ml-[30px] flex items-center">
@@ -34,9 +36,29 @@ export const Sidebar: React.FC<SidebarProps> = ({ setCurrentView }) => {
               Raise Funds
             </button>
           </li>
-          <li className="hover:text-black">
-            <button onClick={() => setCurrentView("hire")}>Hire</button>
+          <li
+            className="hover:text-black flex items-center justify-between"
+            onClick={() => setIsHireDropdownOpen(!isHireDropdownOpen)}
+          >
+            <button>Hire</button>
+            <ChevronDown
+              className={`ml-2 transform ${isHireDropdownOpen ? "rotate-180" : ""}`}
+            />
           </li>
+          {isHireDropdownOpen && (
+            <ul className="ml-4 mt-2 space-y-[8px]">
+              <li className="hover:text-black">
+                <button onClick={() => setCurrentView("HireTalent")}>
+                  Talent
+                </button>
+              </li>
+              <li className="hover:text-black">
+                <button onClick={() => setCurrentView("HireServiceProviders")}>
+                  Service Providers
+                </button>
+              </li>
+            </ul>
+          )}
           <li className="hover:text-black">
             <button onClick={() => setCurrentView("network")}>Network</button>
           </li>

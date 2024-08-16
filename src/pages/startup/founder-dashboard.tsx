@@ -11,6 +11,8 @@ import Events from "./events";
 import Network from "./network";
 import Hire from "./hire";
 import Dashboard from "./dashboard";
+import HireTalent from "./hire-talent";
+import HireServiceProviders from "./hire-service-providers";
 
 const Founderdashboard = () => {
   const [currentView, setCurrentView] = useState<string>("");
@@ -39,6 +41,10 @@ const Founderdashboard = () => {
         return <Events />;
       case "grants":
         return <Grants />;
+      case "HireTalent":
+        return <HireTalent />;
+      case "HireServiceProviders":
+        return <HireServiceProviders />;
       default:
         return <Dashboard />;
     }
