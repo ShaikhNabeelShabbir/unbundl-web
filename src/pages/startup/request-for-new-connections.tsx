@@ -82,7 +82,7 @@ const RequestForNewConnections = () => {
               <TableCell>{organization.location}</TableCell>
               <TableCell>{organization.mutualConnections}</TableCell>
               <TableCell>
-                <Button variant="link">Request Introduction</Button>
+                <Button variant="link">Request Connection</Button>
               </TableCell>
             </TableRow>
           ))}

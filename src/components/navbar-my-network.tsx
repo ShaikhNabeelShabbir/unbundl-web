@@ -59,8 +59,8 @@ const NavbarMyNetwork: React.FC<NavbarProps> = ({ setStep, currentStep }) => {
             ),
           )}
         </div>
-        <div className="absolute bottom-0 left-0 right-0 px-[100px]">
-          <hr className="border-t border-gray-300 w-[1049px]" />
+        <div className="absolute bottom-0 left-0 right-0">
+          <hr className="border-t border-gray-300 w-[1150px]" />
           <div
             className="absolute bottom-0 h-0.5 bg-black transition-all duration-300"
             style={{
