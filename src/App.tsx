@@ -23,6 +23,7 @@ import Signup from "./pages/admin/signup";
 import Founderdashboard from "./pages/startup/founder";
 import ServiceProvider from "./pages/startup/service-provider";
 import Talentdashboard from "./pages/startup/talent";
+import Investor from "./pages/startup/investor";
 //import Signup from "./pages/admin/signup";
 
 const App: React.FC = () => {
@@ -56,6 +57,7 @@ const App: React.FC = () => {
             element={<ServiceProvider />}
           />
           <Route path="/talent-dashboard" element={<Talentdashboard />} />
+          <Route path="/investor-dashboard" element={<Investor />} />
         </Routes>
       </div>
     </Router>
