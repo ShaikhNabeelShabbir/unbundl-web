@@ -16,6 +16,8 @@ import {
 } from "@/components/ui/select";
 import React from "react";
 import { MoreHorizontal } from "lucide-react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import CreateNewService from "@/components/create-new-service";
 
 const investments = [
   {
@@ -59,7 +61,24 @@ const Services: React.FC = () => {
                 </Button>
               </div>
               <div className="pt-[13px] ml-[452px]">
-                <Button>Create new Service</Button>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button
+                      type="button"
+                      className="h-45 w-88 text-sm px-[15px]"
+                    >
+                      Add your service
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent className="sm:max-w-[600px]">
+                    <DialogHeader>
+                      <DialogTitle className="font-semibold text-xl">
+                        Create New Service
+                      </DialogTitle>
+                    </DialogHeader>
+                    <CreateNewService />
+                  </DialogContent>
+                </Dialog>
               </div>
             </div>
             <div className="mt-[15px] mx-[20px] w-[1110px] h-[32px]  font-semibold text-[18px] flex flex-row">
