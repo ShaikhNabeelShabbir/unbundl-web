@@ -49,41 +49,125 @@ const FindDeals = () => {
           Best Pics for your fund
         </p>
       </div>
-      <div className="flex flex-row">
-        <Card>
+      <div className="flex flex-row space-x-[20px]">
+        <Card className="w-[370px] h-[246px]">
           <CardHeader>
-            <CardTitle>Card Title</CardTitle>
-            <CardDescription>Card Description</CardDescription>
+            <CardTitle>Startupname</CardTitle>
+            <CardDescription>startupname.io</CardDescription>
           </CardHeader>
           <CardContent>
-            <p>Card Content</p>
+            <p className="font-medium text-[12px]">
+              XYZ is a fintech startup that is revolutionizing the way people in
+              the MENA region access and manage their finance.
+            </p>
+            <div>
+              <Button className="font-medium text-[12px]">
+                Ethereum Chain
+              </Button>
+              <Button className="font-medium text-[12px]">De-fi</Button>
+              <Button className="font-medium text-[12px]">MVP</Button>
+              <Button className="font-medium text-[12px]">Dubai</Button>
+            </div>
           </CardContent>
           <CardFooter>
-            <p>Card Footer</p>
+            <div className="w-[308px] h-[35px]  flex flex-row text-[12px] space-x-[8px]">
+              <div>
+                <p>Round</p>
+                <p>Seed</p>
+              </div>
+              <div>
+                <p>Amount Raising</p>
+                <p>$1,250,000</p>
+              </div>
+              <div>
+                <p>Amount Raised</p>
+                <p>$800,000</p>
+              </div>
+              <div>
+                <p>Valuation</p>
+                <p>$10,000,000</p>
+              </div>
+            </div>
           </CardFooter>
         </Card>{" "}
-        <Card>
+        <Card className="w-[370px] h-[246px]">
           <CardHeader>
-            <CardTitle>Card Title</CardTitle>
-            <CardDescription>Card Description</CardDescription>
+            <CardTitle>Startupname</CardTitle>
+            <CardDescription>startupname.io</CardDescription>
           </CardHeader>
           <CardContent>
-            <p>Card Content</p>
+            <p className="font-medium text-[12px]">
+              XYZ is a fintech startup that is revolutionizing the way people in
+              the MENA region access and manage their finance.
+            </p>
+            <div>
+              <Button className="font-medium text-[12px]">
+                Ethereum Chain
+              </Button>
+              <Button className="font-medium text-[12px]">De-fi</Button>
+              <Button className="font-medium text-[12px]">MVP</Button>
+              <Button className="font-medium text-[12px]">Dubai</Button>
+            </div>
           </CardContent>
           <CardFooter>
-            <p>Card Footer</p>
+            <div className="w-[308px] h-[35px]  flex flex-row text-[12px] space-x-[8px]">
+              <div>
+                <p>Round</p>
+                <p>Seed</p>
+              </div>
+              <div>
+                <p>Amount Raising</p>
+                <p>$1,250,000</p>
+              </div>
+              <div>
+                <p>Amount Raised</p>
+                <p>$800,000</p>
+              </div>
+              <div>
+                <p>Valuation</p>
+                <p>$10,000,000</p>
+              </div>
+            </div>
           </CardFooter>
         </Card>{" "}
-        <Card>
+        <Card className="w-[370px] h-[250px]">
           <CardHeader>
-            <CardTitle>Card Title</CardTitle>
-            <CardDescription>Card Description</CardDescription>
+            <CardTitle>Startupname</CardTitle>
+            <CardDescription>startupname.io</CardDescription>
           </CardHeader>
           <CardContent>
-            <p>Card Content</p>
+            <p className="font-medium text-[12px]">
+              XYZ is a fintech startup that is revolutionizing the way people in
+              the MENA region access and manage their finance.
+            </p>
+            <div>
+              <Button className="font-medium text-[12px]">
+                Ethereum Chain
+              </Button>
+              <Button className="font-medium text-[12px]">De-fi</Button>
+              <Button className="font-medium text-[12px]">MVP</Button>
+              <Button className="font-medium text-[12px]">Dubai</Button>
+            </div>
           </CardContent>
           <CardFooter>
-            <p>Card Footer</p>
+            <div className="w-[308px] h-[35px]  flex flex-row text-[12px] space-x-[8px]">
+              <div>
+                <p>Round</p>
+                <p>Seed</p>
+              </div>
+              <div>
+                <p>Amount Raising</p>
+                <p>$1,250,000</p>
+              </div>
+              <div>
+                <p>Amount Raised</p>
+                <p>$800,000</p>
+              </div>
+              <div>
+                <p>Valuation</p>
+                <p>$10,000,000</p>
+              </div>
+            </div>
           </CardFooter>
         </Card>{" "}
       </div>
