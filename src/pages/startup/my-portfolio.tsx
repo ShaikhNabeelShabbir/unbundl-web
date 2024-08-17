@@ -10,7 +10,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Card, CardHeader } from "@/components/ui/card";
-import { MoreHorizontal } from "lucide-react";
+import { MoreHorizontal, Search } from "lucide-react";
 
 const investmentTeam = [
   {
@@ -167,6 +167,25 @@ const MyPortfolio: React.FC = () => {
               <div className="mt-[30px]">
                 {" "}
                 <p>Investments</p>
+                <div className="flex items-center justify-between mt-[21px]">
+                  <div className="flex items-center w-[650px] h-[46px] border rounded-[4px]">
+                    <Search className="ml-4 text-gray-500" />
+                    <input
+                      type="text"
+                      className="w-full px-4 py-2 outline-none"
+                      placeholder="Search..."
+                    />
+                  </div>
+                  <Button className="w-[140px] h-[46px] mr-[10px]">
+                    Advanced Search
+                  </Button>
+                  <Button className="w-[140px] h-[46px] mr-[10px]">
+                    Advanced Search
+                  </Button>
+                  <Button className="w-[140px] h-[46px] mr-[10px]">
+                    Advanced Search
+                  </Button>
+                </div>
                 <Table>
                   <TableHeader>
                     <TableRow>
@@ -202,6 +221,25 @@ const MyPortfolio: React.FC = () => {
               <div className="pt-[30px]">
                 {" "}
                 <p>Investment Team</p>
+                <div className="flex items-center justify-between mt-[21px]">
+                  <div className="flex items-center w-[650px] h-[46px] border rounded-[4px]">
+                    <Search className="ml-4 text-gray-500" />
+                    <input
+                      type="text"
+                      className="w-full px-4 py-2 outline-none"
+                      placeholder="Search..."
+                    />
+                  </div>
+                  <Button className="w-[140px] h-[46px] mr-[10px]">
+                    Advanced Search
+                  </Button>
+                  <Button className="w-[140px] h-[46px] mr-[10px]">
+                    Advanced Search
+                  </Button>
+                  <Button className="w-[140px] h-[46px] mr-[10px]">
+                    Advanced Search
+                  </Button>
+                </div>
                 <Table className="border">
                   <TableHeader>
                     <TableRow>
