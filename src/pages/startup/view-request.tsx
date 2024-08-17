@@ -1,5 +1,37 @@
 import { Button } from "@/components/ui/button";
 import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+
+const expand_you_network = [
+  {
+    investorName: "Polychain Capital",
+    location: "Dubai,UAE",
+    Tags: ["De-fi", "MVP", "Dubai"],
+    stagedFocus: "Seed",
+    timeOfCall: "Fri, Dec 13, 6 PM",
+  },
+  {
+    investorName: "Sequoia Capital",
+    location: "San Francisco, USA",
+    Tags: ["De-fi", "MVP", "Dubai"],
+    stagedFocus: "Seed",
+    timeOfCall: "Fri, Dec 13, 6 PM",
+  },
+  {
+    investorName: "Andreessen Horowitz",
+    location: "Menlo Park, USA",
+    Tags: ["De-fi", "MVP", "Dubai"],
+    stagedFocus: "Seed",
+    timeOfCall: "Fri, Dec 13, 6 PM",
+  },
+];
+import {
   Select,
   SelectContent,
   SelectItem,
@@ -36,7 +68,36 @@ const ViewRequest = () => {
           Advanced Search
         </Button>
       </div>
-      <div>Hello world</div>
+      <div>
+        <Table className="border">
+          <TableHeader>
+            <TableRow>
+              <TableHead>Investor Name</TableHead>
+              <TableHead>Location</TableHead>
+              <TableHead>Tags</TableHead>
+              <TableHead>Staged focus</TableHead>
+              <TableHead>Time of Call</TableHead>
+              <TableHead>Action button</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {expand_you_network.map((organization, index) => (
+              <TableRow key={index}>
+                <TableCell className="font-semibold text-[14px]">
+                  {organization.investorName}
+                </TableCell>
+                <TableCell>{organization.location}</TableCell>
+                <TableCell>{organization.Tags}</TableCell>
+                <TableCell>{organization.stagedFocus}</TableCell>
+                <TableCell>{organization.timeOfCall}</TableCell>
+                <TableCell>
+                  <Button variant="link">Request Connection</Button>
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </div>
     </div>
   );
 };
