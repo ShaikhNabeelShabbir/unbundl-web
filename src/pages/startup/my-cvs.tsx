@@ -23,7 +23,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import CreateNewService from "@/components/create-new-service";
 import { CreateCV } from "@/components/create-cv";
 
 const investments = [
