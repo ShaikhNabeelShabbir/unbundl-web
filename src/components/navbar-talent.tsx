@@ -15,6 +15,8 @@ const Navbartalent: React.FC<NavbarProps> = ({ setStep, currentStep }) => {
   const buttonRefs = [
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
+    useRef<HTMLDivElement>(null),
+
   ];
 
   useEffect(() => {

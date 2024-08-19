@@ -3,6 +3,7 @@ import { CreateAccountForm } from "@/components/forms/CreateAccountForm";
 import { Button } from "@/components/ui/button";
 import Navbartalent from "@/components/navbar-talent";
 import { CreateCVs } from "@/components/forms/CreateCvs";
+import { Thankyou } from "@/components/thank-you";
 
 export const Signupfortalent = () => {
   const [step, setStep] = useState(1);
@@ -13,6 +14,8 @@ export const Signupfortalent = () => {
         return <CreateAccountForm />;
       case 2:
         return <CreateCVs />;
+      case 3:
+        return <Thankyou />;
       default:
         return <CreateAccountForm />;
     }

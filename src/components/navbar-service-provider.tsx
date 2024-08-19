@@ -18,6 +18,7 @@ const NavbarServiceProvider: React.FC<NavbarProps> = ({
   const buttonRefs = [
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
+    useRef<HTMLDivElement>(null),
   ];
 
   useEffect(() => {
