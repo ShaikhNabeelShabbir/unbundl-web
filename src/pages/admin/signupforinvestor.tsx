@@ -7,6 +7,7 @@ import NavbarInvestor from "@/components/navbar-investor";
 import { GeneralInvestorInformationForm } from "@/components/forms/GeneralInvestorInformationForm";
 import { DealsForm } from "@/components/forms/DealsForm";
 import { Thankyou } from "@/components/thank-you";
+import { CreateAccountForm2 } from "@/components/forms/CreateAccountForm2";
 
 const Signupforinvestor = () => {
   const [step, setStep] = useState(1);
@@ -14,7 +15,7 @@ const Signupforinvestor = () => {
   const renderForm = () => {
     switch (step) {
       case 1:
-        return <CreateAccountForm />;
+        return <CreateAccountForm2 />;
       case 2:
         return <GeneralInvestorInformationForm />;
       case 3:
