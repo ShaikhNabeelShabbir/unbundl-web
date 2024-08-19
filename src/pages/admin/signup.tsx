@@ -7,6 +7,7 @@ import { ProjectInformationForm } from "@/components/forms/ProjectInformationFor
 import { FundraisingIformationForm } from "@/components/forms/FundraisingInformationForm";
 import { MarketInformationForm } from "@/components/forms/MarketInformationForm";
 import { TeamsForm } from "@/components/forms/TeamsForm"; // Assuming you have a TeamForm component
+import { Thankyou } from "@/components/thank-you";
 
 const Signup = () => {
   const [step, setStep] = useState(1);
@@ -25,6 +26,8 @@ const Signup = () => {
         return <MarketInformationForm />;
       case 6:
         return <TeamsForm />;
+      case 7:
+        return <Thankyou />;
       default:
         return <CreateAccountForm />;
     }
@@ -50,16 +53,23 @@ const Signup = () => {
           </div>
         </div>
       </div>
-      <Navbar setStep={setStep} currentStep={step} />
+      {/* Conditionally render the navbar based on the step */}
+      {step !== 7 && <Navbar setStep={setStep} currentStep={step} />}
       {renderForm()}
-      <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px] bg-white">
-        <Button className="flex text-base bg-gray-500 " onClick={handleCancel}>
-          Cancel
-        </Button>
-        <Button className="flex text-base" onClick={handleNext}>
-          Next Step
-        </Button>
-      </div>
+      {/* Conditionally render the buttons based on the step */}
+      {step !== 7 && (
+        <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px] bg-white">
+          <Button
+            className="flex text-base bg-gray-500 "
+            onClick={handleCancel}
+          >
+            Cancel
+          </Button>
+          <Button className="flex text-base" onClick={handleNext}>
+            Next Step
+          </Button>
+        </div>
+      )}
     </div>
   );
 };

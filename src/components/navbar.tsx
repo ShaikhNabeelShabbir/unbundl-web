@@ -19,6 +19,7 @@ const Navbar: React.FC<NavbarProps> = ({ setStep, currentStep }) => {
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
+    useRef<HTMLDivElement>(null),
   ];
 
   useEffect(() => {
