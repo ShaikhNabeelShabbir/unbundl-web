@@ -6,6 +6,7 @@ import PortfolioForm from "@/components/forms/PortfolioForm";
 import NavbarInvestor from "@/components/navbar-investor";
 import { GeneralInvestorInformationForm } from "@/components/forms/GeneralInvestorInformationForm";
 import { DealsForm } from "@/components/forms/DealsForm";
+import { Thankyou } from "@/components/thank-you";
 
 const Signupforinvestor = () => {
   const [step, setStep] = useState(1);
@@ -20,6 +21,8 @@ const Signupforinvestor = () => {
         return <DealsForm />;
       case 4:
         return <PortfolioForm />;
+      case 6:
+        return <Thankyou />;
       case 5:
         return <TeamsForm />;
 
