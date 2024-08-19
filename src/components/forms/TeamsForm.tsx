@@ -60,7 +60,7 @@ export const TeamsForm = () => {
         <br />
         <Dialog>
           <DialogTrigger asChild>
-            <Button type="button" className="h-45 w-[720px] text-sm px-[15px]">
+            <Button type="button" className="h-45 w-full text-sm px-[15px]">
               Add a team member{" "}
             </Button>
           </DialogTrigger>
