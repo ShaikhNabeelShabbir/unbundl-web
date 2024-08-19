@@ -4,6 +4,7 @@ import { Button } from "./ui/button";
 import GeneralForm from "./forms/GeneralForm";
 import ExperienceForm from "./forms/ExperienceForm";
 import LinksForm from "./forms/LinksForm";
+import ReviewCV from "./forms/ReviewCV";
 
 export const CreateCV = () => {
   const [step, setStep] = useState(1);
@@ -16,6 +17,8 @@ export const CreateCV = () => {
         return <ExperienceForm />;
       case 3:
         return <LinksForm />;
+      case 4:
+        return <ReviewCV />;
       default:
         return <GeneralForm />;
     }
@@ -31,7 +34,8 @@ export const CreateCV = () => {
 
   return (
     <div className="flex flex-col h-[582px]">
-      <Navbarcreatecvs setStep={setStep} currentStep={step} />
+      {/* Conditionally render the navbar based on the step */}
+      {step !== 4 && <Navbarcreatecvs setStep={setStep} currentStep={step} />}
       {renderForm()}
       <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px]">
         <Button

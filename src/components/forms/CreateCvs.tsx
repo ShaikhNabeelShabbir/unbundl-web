@@ -1,11 +1,5 @@
 import { Button } from "../ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import CreateCV from "../create-cv";
 
 export function CreateCVs() {
@@ -31,11 +25,6 @@ export function CreateCVs() {
                     </Button>
                   </DialogTrigger>
                   <DialogContent className="sm:max-w-[600px]">
-                    <DialogHeader>
-                      <DialogTitle className="font-semibold text-xl">
-                        Create your CV
-                      </DialogTitle>
-                    </DialogHeader>
                     <CreateCV />
                   </DialogContent>
                 </Dialog>

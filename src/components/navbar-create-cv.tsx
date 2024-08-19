@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Button } from "./ui/button";
+import { DialogHeader, DialogTitle } from "./ui/dialog";
 
 type NavbarProps = {
   setStep: (step: number) => void;
@@ -13,6 +14,7 @@ const Navbarcreatecvs: React.FC<NavbarProps> = ({ setStep, currentStep }) => {
   });
 
   const buttonRefs = [
+    useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
@@ -41,6 +43,11 @@ const Navbarcreatecvs: React.FC<NavbarProps> = ({ setStep, currentStep }) => {
   return (
     <div>
       <div className="relative">
+        <DialogHeader>
+          <DialogTitle className="font-semibold text-xl">
+            Create your CV
+          </DialogTitle>
+        </DialogHeader>
         <div className="flex gap-0">
           {["General", "Experience", "Links"].map((label, index) => (
             <div

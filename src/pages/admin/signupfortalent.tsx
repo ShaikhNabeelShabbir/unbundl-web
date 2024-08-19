@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { CreateAccountForm } from "@/components/forms/CreateAccountForm";
 import { Button } from "@/components/ui/button";
 import Navbartalent from "@/components/navbar-talent";
 import { CreateCVs } from "@/components/forms/CreateCvs";
@@ -18,7 +17,7 @@ export const Signupfortalent = () => {
       case 3:
         return <Thankyou />;
       default:
-        return <CreateAccountForm />;
+        return <CreateAccountForm2 />;
     }
   };
 
