@@ -37,6 +37,8 @@ export const CreateCV = () => {
       {/* Conditionally render the navbar based on the step */}
       {step !== 4 && <Navbarcreatecvs setStep={setStep} currentStep={step} />}
       {renderForm()}
+      <br />
+      <br />
       <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px]">
         <Button
           className="flex text-base bg-white text-blacka"
