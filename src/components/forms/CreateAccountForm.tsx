@@ -112,13 +112,19 @@ export function CreateAccountForm() {
                 <div className="flex flex-col justify-start gap-3">
                   <p className="font-medium">Connect your social media</p>
                   <div className="flex flex-row gap-[15px]">
-                    <Button type="button" className=" h-45 w-88 text-sm">
+                    <Button
+                      type="button"
+                      className=" h-[45px] w-[88px] text-sm"
+                    >
                       LinkedIn
                     </Button>
-                    <Button type="button" className=" h-45 w-88 text-sm">
+                    <Button
+                      type="button"
+                      className=" h-[45px] w-[80px] text-sm"
+                    >
                       Twitter
                     </Button>
-                    <Button type="button" className="h-45 w-88 text-sm">
+                    <Button type="button" className="h-[45px] w-[80px] text-sm">
                       GitHub
                     </Button>
                   </div>

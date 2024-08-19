@@ -1,5 +1,7 @@
+import { DialogHeader, DialogTitle } from "../ui/dialog";
+
 const PublishForm = () => {
-  return <div>PublishForm</div>;
+  return <div>Publish Form</div>;
 };
 
 export default PublishForm;

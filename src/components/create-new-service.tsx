@@ -22,7 +22,6 @@ export const CreateNewService = () => {
         return <PricingForm />;
       case 5:
         return <PublishForm />;
-
       default:
         return <OverviewForm />;
     }
@@ -38,7 +37,9 @@ export const CreateNewService = () => {
 
   return (
     <div className="flex flex-col h-[582px]">
-      <NavbarCreateService setStep={setStep} currentStep={step} />
+      {step !== 5 && (
+        <NavbarCreateService setStep={setStep} currentStep={step} />
+      )}
       {renderForm()}
       <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px]">
         <Button
