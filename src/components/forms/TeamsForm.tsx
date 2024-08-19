@@ -32,8 +32,8 @@ const teamMembers = [
 export const TeamsForm = () => {
   return (
     <div className="py-[40px] ">
-      <div className="px-[189px]">
-        <Table>
+      <div className="mx-[360px]">
+        <Table className="w-[720px]">
           <TableHeader>
             <TableRow>
               <TableHead className="w-[1063px]">Name</TableHead>
@@ -57,9 +57,10 @@ export const TeamsForm = () => {
             ))}
           </TableBody>
         </Table>
+        <br />
         <Dialog>
           <DialogTrigger asChild>
-            <Button type="button" className="h-45 w-[1063px] text-sm px-[15px]">
+            <Button type="button" className="h-45 w-[720px] text-sm px-[15px]">
               Add a team member{" "}
             </Button>
           </DialogTrigger>

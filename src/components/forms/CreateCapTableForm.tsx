@@ -10,7 +10,23 @@ import { Button } from "@/components/ui/button"; // Assuming you have a Button c
 
 const investments = [
   {
-    Investor: "CFounders + ESOP",
+    Investor: "Founders + ESOP",
+    Invested: "n/a",
+    Existing_Shares: "1,000,000",
+    Preferred_Shares: "n/a",
+    Price_per_share: "n/a",
+    Ownership: "80.00%",
+  },
+  {
+    Investor: "Investor A",
+    Invested: "n/a",
+    Existing_Shares: "1,000,000",
+    Preferred_Shares: "n/a",
+    Price_per_share: "n/a",
+    Ownership: "80.00%",
+  },
+  {
+    Investor: "Investor B",
     Invested: "n/a",
     Existing_Shares: "1,000,000",
     Preferred_Shares: "n/a",
@@ -22,7 +38,7 @@ const investments = [
 const CreateCapTableForm = () => {
   return (
     <div>
-      <div className="w-[780px] h-[429px] border">
+      <div className="w-[780px] h-[429px] ">
         <Table>
           <TableHeader>
             <TableRow>
@@ -51,10 +67,11 @@ const CreateCapTableForm = () => {
             ))}
           </TableBody>
         </Table>
+        <Button className="w-[780px]">Add investor</Button>
       </div>
       <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px]">
         <Button className="flex text-base bg-white text-black">Cancel</Button>
-        <Button className="flex text-base">Next Step</Button>
+        <Button className="flex text-base">Save</Button>
       </div>
     </div>
   );
