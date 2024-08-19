@@ -12,6 +12,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "../ui/button";
 import { ExperienceSchema } from "@/schemas/experineceSchema";
+import { Textarea } from "../ui/textarea";
 
 export function ExperienceForm() {
   // Set up the form using useForm hook
@@ -35,21 +36,70 @@ export function ExperienceForm() {
   }
 
   return (
-    <div>
-      <div className="main-div">
-        <div className="justify-center py-[32px]">
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+    <div className="main-div overflow-auto max-h-[80vh]">
+      <div className="justify-center py-[32px]">
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+            <FormField
+              control={form.control}
+              name="wantedPosition"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="font-medium text-base">
+                    Wanted Position{" "}
+                  </FormLabel>
+                  <FormControl>
+                    <Input placeholder="Enter wanted Position" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="expectedSalary"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="font-medium text-base">
+                    Expected Salary{" "}
+                  </FormLabel>
+                  <FormControl>
+                    <Input placeholder="Enter Expected Salary" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="aboutYou"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="font-medium text-base">
+                    About You
+                  </FormLabel>
+                  <FormControl>
+                    <Textarea placeholder="Tell us about yourself" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <div className="flex gap-4">
               <FormField
                 control={form.control}
-                name="wantedPosition"
-                render={({ field }) => (
+                name="workExperince"
+                render={() => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
-                      Wanted Position{" "}
+                      Work Experience
                     </FormLabel>
+                    <br />
                     <FormControl>
-                      <Input placeholder="Enter wanted Position" {...field} />
+                      <Button type="button">Add Work Experience</Button>
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -58,39 +108,59 @@ export function ExperienceForm() {
 
               <FormField
                 control={form.control}
-                name="expectedSalary"
-                render={({ field }) => (
-                  <FormItem>
+                name="education"
+                render={() => (
+                  <FormItem className="ml-[131px]">
                     <FormLabel className="font-medium text-base">
-                      Expected Salary{" "}
+                      Education
                     </FormLabel>
+                    <br />
                     <FormControl>
-                      <Input placeholder="Enter Expected Salary" {...field} />
+                      <Button type="button">Add Education</Button>
                     </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
               />
+            </div>
+
+            <div className="flex gap-4">
               <FormField
                 control={form.control}
-                name="tags"
+                name="languages"
                 render={() => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
-                      Work Experince{" "}
+                      Languages
                     </FormLabel>
+                    <br />
                     <FormControl>
-                      <div className="mt-2">
-                        <Button type="button">Add work expience</Button>
-                      </div>
+                      <Button type="button">Add Languages</Button>
                     </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
               />
-            </form>
-          </Form>
-        </div>
+
+              <FormField
+                control={form.control}
+                name="relocate"
+                render={({ field }) => (
+                  <FormItem className="ml-[131px]">
+                    <FormLabel className="font-medium text-base">
+                      Are you able to relocate?
+                    </FormLabel>
+                    <FormControl>
+                      <Input placeholder="Yes/No" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
+          </form>
+        </Form>
+        <br />
       </div>
     </div>
   );
