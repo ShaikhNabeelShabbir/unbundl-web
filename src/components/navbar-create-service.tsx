@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Button } from "./ui/button";
+import { DialogHeader, DialogTitle } from "./ui/dialog";
 
 type NavbarProps = {
   setStep: (step: number) => void;
@@ -45,6 +46,11 @@ const NavbarCreateService: React.FC<NavbarProps> = ({
 
   return (
     <div>
+      <DialogHeader>
+        <DialogTitle className="font-semibold text-xl">
+          Create New Service
+        </DialogTitle>
+      </DialogHeader>
       <div className="relative">
         <div className="flex gap-0">
           {["Overview", "Skills", "Description", "Pricing", "Publish"].map(
