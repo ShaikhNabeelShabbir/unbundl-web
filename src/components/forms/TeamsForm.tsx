@@ -15,6 +15,7 @@ import {
   DialogTrigger,
 } from "../ui/dialog";
 import AddATeamMember from "./AddATeamMember";
+
 const teamMembers = [
   {
     name: "John Doe",
@@ -29,23 +30,23 @@ const teamMembers = [
     rights: "Managing partner",
   },
 ];
+
 export const TeamsForm = () => {
   return (
-    <div className="py-[40px] ">
+    <div className="py-[40px]">
       <div className="mx-[360px]">
         <Table className="w-[720px]">
           <TableHeader>
-            <TableRow>
-              <TableHead className="w-[1063px]">Name</TableHead>
+            <TableRow className="grid grid-cols-5 gap-4">
+              <TableHead>Name</TableHead>
               <TableHead>Position</TableHead>
               <TableHead>Type</TableHead>
               <TableHead className="text-right">Rights</TableHead>
-              <TableHead></TableHead> {/* Empty header for the dropdown */}
             </TableRow>
           </TableHeader>
           <TableBody>
             {teamMembers.map((member) => (
-              <TableRow key={member.name}>
+              <TableRow key={member.name} className="grid grid-cols-5 gap-4">
                 <TableCell className="font-medium">{member.name}</TableCell>
                 <TableCell>{member.position}</TableCell>
                 <TableCell>{member.type}</TableCell>
@@ -61,18 +62,18 @@ export const TeamsForm = () => {
         <Dialog>
           <DialogTrigger asChild>
             <Button type="button" className="h-45 w-full text-sm px-[15px]">
-              Add a team member{" "}
+              Add a team member
             </Button>
           </DialogTrigger>
           <DialogContent className="sm:max-w-[600px]">
             <DialogHeader>
               <DialogTitle className="font-semibold text-xl">
-                Add a team member{" "}
+                Add a team member
               </DialogTitle>
             </DialogHeader>
             <AddATeamMember />
           </DialogContent>
-        </Dialog>{" "}
+        </Dialog>
       </div>
     </div>
   );
