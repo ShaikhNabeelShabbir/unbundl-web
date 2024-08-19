@@ -11,7 +11,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ setCurrentView }) => {
   return (
     <div>
       <div className="mb-[30px] mt-[30px] ml-[30px] flex items-center">
-        <h1 className="text-lg font-semibold">Startup Name</h1>
+        <h1 className="text-lg font-semibold flex items-center">
+          Startup Name
+          <ChevronDown className="ml-2" />
+        </h1>{" "}
         <div className="absolute right-0 flex items-center mr-[30px]">
           <u>24 Points</u>
           <Bell className="ml-2" />
