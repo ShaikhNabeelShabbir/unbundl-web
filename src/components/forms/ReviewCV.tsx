@@ -9,12 +9,11 @@ const ReviewCV = () => {
           Review your CV{" "}
         </DialogTitle>
       </DialogHeader>
-      <div className="mt-[40px]">
-        <span className="font-semibold text-[18px]">UI/UX Designer</span>
-        <span className="ml-[10px] font-medium text-[14px] text-black/25">
-          Dubai, UAE
+      <div className="mt-[40px] flex flex-row">
+        <span className="font-semibold text-[18px] w-[219px] ">
+          <p>UI/UX Designer</p>
         </span>
-        <span className="ml-[200px] font-bold text-[18px]">U$10,000/month</span>
+        <span className=" font-bold text-[18px]">U$10,000/month</span>
       </div>
       <div className="mt-[40px]">
         <p className="font-semibold text-[18px]">
