@@ -19,6 +19,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../ui/select";
+import { Textarea } from "../ui/textarea";
 
 export function GeneralCompanyInformationForm() {
   // Set up the form using useForm hook
@@ -90,7 +91,7 @@ export function GeneralCompanyInformationForm() {
                           Describe Your Project
                         </FormLabel>
                         <FormControl>
-                          <Input
+                          <Textarea
                             placeholder="Describe your project"
                             {...field}
                           />

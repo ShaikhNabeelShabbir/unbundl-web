@@ -20,6 +20,13 @@ import {
 } from "../ui/dialog";
 import { Button } from "../ui/button";
 import CreateCapTableForm from "./CreateCapTableForm";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "../ui/select";
 
 export function FundraisingIformationForm() {
   // Set up the form using useForm hook
@@ -62,51 +69,67 @@ export function FundraisingIformationForm() {
                   className="space-y-8"
                 >
                   <FormField
-                    control={form.control}
-                    name="fundraisingStatus"
+                    name="teamSize"
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="font-medium text-base">
                           Are you currently Fundraising?{" "}
                         </FormLabel>
                         <FormControl>
-                          <Input
-                            placeholder="Enter your company name"
-                            {...field}
-                          />
+                          <Select {...field}>
+                            <SelectTrigger>
+                              <SelectValue placeholder="Yes" />
+                            </SelectTrigger>
+                            <SelectContent>
+                              <SelectItem value="yes">Yes</SelectItem>
+                              <SelectItem value="no">No</SelectItem>
+                            </SelectContent>
+                          </Select>
                         </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
                   />
                   <FormField
-                    control={form.control}
-                    name="tokenStatus"
+                    name="teamSize"
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="font-medium text-base">
                           Is there a token or will one come in the future?{" "}
                         </FormLabel>
                         <FormControl>
-                          <Input
-                            placeholder="Describe your project"
-                            {...field}
-                          />
+                          <Select {...field}>
+                            <SelectTrigger>
+                              <SelectValue placeholder="Yes" />
+                            </SelectTrigger>
+                            <SelectContent>
+                              <SelectItem value="yes">Yes</SelectItem>
+                              <SelectItem value="no">No</SelectItem>
+                            </SelectContent>
+                          </Select>
                         </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
                   />
                   <FormField
-                    control={form.control}
-                    name="financingStage"
+                    name="teamSize"
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="font-medium text-base">
                           What’s the stage of financing?{" "}
                         </FormLabel>
                         <FormControl>
-                          <Input placeholder="Enter website URL" {...field} />
+                          <Select {...field}>
+                            <SelectTrigger>
+                              <SelectValue placeholder="Seed" />
+                            </SelectTrigger>
+                            <SelectContent>
+                              <SelectItem value="seed">Seed</SelectItem>
+                              <SelectItem value="mid">Mid</SelectItem>
+                              <SelectItem value="Large">Large</SelectItem>
+                            </SelectContent>
+                          </Select>
                         </FormControl>
                         <FormMessage />
                       </FormItem>
