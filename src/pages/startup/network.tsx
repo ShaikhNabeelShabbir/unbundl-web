@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import NavbarMyNetwork from "@/components/navbar-my-network";
 import ExpandYourNetwork from "./expand-your-network";
 import RequestForNewConnections from "./request-for-new-connections";
+import { Dialog, DialogTrigger, DialogContent } from "@/components/ui/dialog";
+import SuggestPeople from "./suggest-people";
 
 const Network: React.FC = () => {
   const [step, setStep] = useState(1);
@@ -16,6 +18,7 @@ const Network: React.FC = () => {
         return <ExpandYourNetwork />;
     }
   };
+
   return (
     <div className="flex ml-[30px] mr-[30px]">
       <div className="flex-1 py-[97px]">
@@ -29,10 +32,17 @@ const Network: React.FC = () => {
           <div className="w-[370px] border flex items-center justify-center font-medium text-[18px] text-center">
             <div>
               <p>
-                Suggest new people to the platfrom and increase your in-platfrom
+                Suggest new people to the platform and increase your in-platform
                 ranking <br />
                 <br />
-                <u>Invite </u>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <u className="cursor-pointer">Invite</u>
+                  </DialogTrigger>
+                  <DialogContent className="sm:max-w-[600px]">
+                    <SuggestPeople />
+                  </DialogContent>
+                </Dialog>
               </p>
             </div>
           </div>

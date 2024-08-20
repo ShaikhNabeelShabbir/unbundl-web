@@ -9,6 +9,7 @@ import Founderdashboard from "./pages/startup/founder";
 import ServiceProvider from "./pages/startup/service-provider";
 import Talentdashboard from "./pages/startup/talent";
 import Investor from "./pages/startup/investor";
+import AccountSettings from "./pages/startup/account-settings";
 
 const App: React.FC = () => {
   return (
@@ -29,6 +30,7 @@ const App: React.FC = () => {
           />
           <Route path="/talent-dashboard" element={<Talentdashboard />} />
           <Route path="/investor-dashboard" element={<Investor />} />
+          <Route path="/account-setting" element={<AccountSettings />} />
         </Routes>
       </div>
     </Router>
