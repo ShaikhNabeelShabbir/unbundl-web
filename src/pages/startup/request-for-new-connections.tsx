@@ -15,6 +15,8 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import RequestIntroduction from "./request-introduction";
 
 const expand_you_network = [
   {
@@ -82,7 +84,14 @@ const RequestForNewConnections = () => {
               <TableCell>{organization.location}</TableCell>
               <TableCell>{organization.mutualConnections}</TableCell>
               <TableCell>
-                <Button variant="link">Request Connection</Button>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <u className="cursor-pointer">Request Introduction</u>
+                  </DialogTrigger>
+                  <DialogContent className="sm:max-w-[600px]">
+                    <RequestIntroduction />
+                  </DialogContent>
+                </Dialog>{" "}
               </TableCell>
             </TableRow>
           ))}

@@ -15,6 +15,14 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import Update from "./update";
 
 const invoices = [
   {
@@ -376,7 +384,18 @@ const MyCompany: React.FC = () => {
               {/* {DND} */}
             </div>
             <div className="Company-Updates ml-[20px] w-[370px] flex flex-col space-y-[20px]">
-              <p className="font-semibold text-[20px] ">Company Updates</p>
+              <div className="flex items-center space-x-[10px]">
+                <p className="font-semibold text-[20px]">Company Updates</p>
+                <Dialog>
+                  <DialogHeader></DialogHeader>
+                  <DialogTrigger>
+                    <Button>Create Update</Button>
+                  </DialogTrigger>
+                  <DialogContent>
+                    <Update />
+                  </DialogContent>
+                </Dialog>{" "}
+              </div>
               <div className="w-[370px] space-y-[20px]">
                 <div className="bg-black/5 border w-[370px] h-[122px]">
                   <p className="p-[40px] text-[14px] font-bold text-center">
