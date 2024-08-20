@@ -120,7 +120,16 @@ const ReachOutToInvestors = () => {
                         </DialogTrigger>
                         <DialogContent>
                           <DialogHeader>a16z crypto venture fund</DialogHeader>{" "}
-                          <p>Call Booked</p>
+                          <DialogContent className="w-[600px] h-[366px] ">
+                            <DialogHeader>
+                              <DialogTitle className="font-semibold text-xl">
+                                Talent profile{" "}
+                              </DialogTitle>
+                            </DialogHeader>
+                            <p className="text-[24px] font-bold px-[100px]">
+                              Call Booked
+                            </p>
+                          </DialogContent>{" "}
                         </DialogContent>
                       </Dialog>
                     </div>

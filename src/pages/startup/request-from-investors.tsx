@@ -142,7 +142,16 @@ const RequsetFromInvestors = () => {
                           <DialogTrigger>
                             <Button>Book a call for $10,000</Button>
                           </DialogTrigger>
-                          <DialogContent>Call Booked</DialogContent>
+                          <DialogContent className="w-[600px] h-[366px] ">
+                            <DialogHeader>
+                              <DialogTitle className="font-semibold text-xl">
+                                Talent profile{" "}
+                              </DialogTitle>
+                            </DialogHeader>
+                            <p className="text-[24px] font-bold px-[100px]">
+                              Call Booked
+                            </p>
+                          </DialogContent>{" "}
                         </Dialog>
                       </div>
                     </DialogContent>
