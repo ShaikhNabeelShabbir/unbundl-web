@@ -15,6 +15,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Ghost } from "lucide-react";
 
 const invoices = [
   {
@@ -87,6 +88,7 @@ const MyCompany: React.FC = () => {
                       <Button>Hiring</Button>
                     </div>
                   </div>
+
                   <div className=" ml-[25px] ">
                     <div className="mt-[20px] font-semibold text-[18px]">
                       Project Description
@@ -176,6 +178,35 @@ const MyCompany: React.FC = () => {
                 {" "}
                 <p className="font-semibold text-[20px]">Team</p>
                 <br />
+                <div className="w-[760px] border">
+                  <Button
+                    className="p-[20px] font-medium text-[16px]"
+                    variant="ghost"
+                  >
+                    Full Team
+                  </Button>
+                  <Button
+                    className="p-[20px] font-medium text-[16px]"
+                    variant="ghost"
+                  >
+                    Founders
+                  </Button>
+                  <Button
+                    className="p-[20px] font-medium text-[16px]"
+                    variant="ghost"
+                  >
+                    Employees
+                  </Button>
+                  <Button
+                    className="p-[20px] font-medium text-[16px]"
+                    variant="ghost"
+                  >
+                    Advisors
+                  </Button>
+                  <Button className="p-[20px] font-medium text-[16px]">
+                    Add a Member
+                  </Button>
+                </div>
                 <Table className="border">
                   <TableHeader>
                     <TableRow>
