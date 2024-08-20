@@ -40,7 +40,7 @@ const NavbarLegalRoom: React.FC<NavbarProps> = ({ setStep, currentStep }) => {
   return (
     <div>
       <div className="relative">
-        <div className="flex justify-center gap-0 px-14 md:px-5 w-full">
+        <div className="flex justify-start gap-0 px-14 md:px-5 w-full">
           {["Existing Templates", "Vote for new Templates"].map(
             (label, index) => (
               <div
@@ -59,8 +59,8 @@ const NavbarLegalRoom: React.FC<NavbarProps> = ({ setStep, currentStep }) => {
             ),
           )}
         </div>
-        <div className="absolute bottom-0 left-0 right-0 px-[100px]">
-          <hr className="border-t border-gray-300" />
+        <div className="absolute bottom-0 left-0 right-0 ">
+          <hr className="w-[1150px] border-gray-300" />
           <div
             className="absolute bottom-0 h-0.5 bg-black transition-all duration-300"
             style={{

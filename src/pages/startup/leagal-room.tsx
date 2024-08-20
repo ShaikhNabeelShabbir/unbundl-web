@@ -27,7 +27,7 @@ const LegalRoom: React.FC = () => {
           <p className="font-semibold text-[20px]">Legal Room</p>
           <Button
             variant="secondary"
-            className="w-[178px] h-[42px] mr-[15px] ml-auto bg-white border"
+            className="w-[178px] h-[42px] ml-[666px] mr-[15px]  bg-white border"
           >
             Connect with a lawyer{" "}
           </Button>
