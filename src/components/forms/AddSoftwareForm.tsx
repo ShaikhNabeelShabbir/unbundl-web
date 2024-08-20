@@ -19,6 +19,13 @@ import {
 } from "@/components/ui/select"; // Assuming you're using a custom wrapper around Radix UI's Select
 import { addSoftwareSchema } from "@/schemas/addSoftwareSchema";
 import { Button } from "../ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "../ui/dialog";
 
 // Define the schema using Zod
 
@@ -144,7 +151,33 @@ export function AddSoftwareForm() {
       <br />
       <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px]">
         <Button className="flex text-base bg-white text-black">Cancel</Button>
-        <Button className="flex text-base">Send Request</Button>
+        <Dialog>
+          <DialogTrigger asChild>
+            <Button
+              type="button"
+              className="h-[42px] w-[178px] text-sm mr-[30px]"
+            >
+              Request to add software{" "}
+            </Button>
+          </DialogTrigger>
+          <DialogContent className="sm:max-w-[600px]">
+            <DialogHeader>
+              <DialogTitle className="font-semibold text-xl">
+                Request to add software{" "}
+              </DialogTitle>
+            </DialogHeader>
+            <p className="font-bold text-[24px] text-center">Request Sent</p>
+            <p className="text-center text-[16px] font-medium text-black/50">
+              You suggested to add figma.com to the tool stash, you’ll get an
+              email notification if your request gets approved.Every time
+              someone will use or download the software you proposed, you’ll get
+              points.
+            </p>
+            <p className="text-center text-[16px] font-medium">
+              <u>Close </u>
+            </p>
+          </DialogContent>
+        </Dialog>{" "}
       </div>
     </div>
   );
