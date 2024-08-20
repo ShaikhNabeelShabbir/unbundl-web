@@ -1,4 +1,11 @@
 import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 const ApplyGrant = () => {
   return (
@@ -35,10 +42,37 @@ const ApplyGrant = () => {
       <br />
       <br />
       <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px]">
-        <Button className="flex text-base text-black" variant="link">
-          Cancel
-        </Button>
-        <Button className="flex text-base">Next Step</Button>
+        <br />
+        <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px]">
+          <Button className="flex text-base bg-white text-black">Cancel</Button>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button
+                type="button"
+                className="h-[42px] w-[178px] text-sm mr-[30px]"
+              >
+                Request to add software{" "}
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-[600px]">
+              <DialogHeader>
+                <DialogTitle className="font-semibold text-xl">
+                  Apply for Grant Name Grant{" "}
+                </DialogTitle>
+              </DialogHeader>
+              <p className="font-bold text-[24px] text-center">
+                Application Sent
+              </p>
+              <p className="text-center text-[16px] font-medium text-black/50">
+                You’ll get an email notification, with the results of your
+                application.
+              </p>
+              <p className="text-center text-[16px] font-medium">
+                <u>Close </u>
+              </p>
+            </DialogContent>
+          </Dialog>{" "}
+        </div>{" "}
       </div>
     </div>
   );
