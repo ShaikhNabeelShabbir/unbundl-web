@@ -388,7 +388,9 @@ const MyCompany: React.FC = () => {
                 <Dialog>
                   <DialogHeader></DialogHeader>
                   <DialogTrigger>
-                    <Button>Create Update</Button>
+                    <Button variant="link" className="pl-[70px]">
+                      Create Update
+                    </Button>
                   </DialogTrigger>
                   <DialogContent>
                     <Update />
