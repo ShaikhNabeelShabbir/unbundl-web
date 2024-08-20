@@ -24,7 +24,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import TalentProfile from "./talent-profile";
+import Talentprofile from "./talent-profile";
 
 const HireTalent: React.FC = () => {
   return (
@@ -104,9 +104,21 @@ const HireTalent: React.FC = () => {
                     <Card className="text-[12px] ml-[10px] font-medium p-[10px]">
                       Meta
                     </Card>
-                    <Button className="ml-[85px] w-[97px] h-[35px] bg-black/50">
-                      View profile{" "}
-                    </Button>
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button type="button" className="ml-[85px] px-[15px]">
+                          View profile{" "}
+                        </Button>
+                      </DialogTrigger>
+                      <DialogContent className="max-w-fit border border-red-500">
+                        <DialogHeader>
+                          <DialogTitle className="font-semibold text-xl">
+                            Talent profile{" "}
+                          </DialogTitle>
+                        </DialogHeader>
+                        <Talentprofile />
+                      </DialogContent>
+                    </Dialog>
                   </div>
                 </div>
               </CardFooter>
@@ -146,7 +158,7 @@ const HireTalent: React.FC = () => {
                             Talent profile{" "}
                           </DialogTitle>
                         </DialogHeader>
-                        <TalentProfile />
+                        <Talentprofile />
                       </DialogContent>
                     </Dialog>
                   </div>
@@ -176,13 +188,25 @@ const HireTalent: React.FC = () => {
                     <Card className="text-[12px] ml-[10px] font-medium p-[10px]">
                       Meta
                     </Card>
-                    <Button className="ml-[85px] w-[97px] h-[35px] bg-black/50">
-                      View profile{" "}
-                    </Button>
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button type="button" className="ml-[85px] px-[15px]">
+                          View profile{" "}
+                        </Button>
+                      </DialogTrigger>
+                      <DialogContent className="max-w-fit border border-red-500">
+                        <DialogHeader>
+                          <DialogTitle className="font-semibold text-xl">
+                            Talent profile{" "}
+                          </DialogTitle>
+                        </DialogHeader>
+                        <Talentprofile />
+                      </DialogContent>
+                    </Dialog>
                   </div>
                 </div>
               </CardFooter>
-            </Card>{" "}
+            </Card>
           </div>
           <div className="flex flex-row space-x-[20px]">
             <Card className="w-[370px] h-[250px]">
@@ -208,9 +232,21 @@ const HireTalent: React.FC = () => {
                     <Card className="text-[12px] ml-[10px] font-medium p-[10px]">
                       Meta
                     </Card>
-                    <Button className="ml-[85px] w-[97px] h-[35px] bg-black/50">
-                      View profile{" "}
-                    </Button>
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button type="button" className="ml-[85px] px-[15px]">
+                          View profile{" "}
+                        </Button>
+                      </DialogTrigger>
+                      <DialogContent className="max-w-fit border border-red-500">
+                        <DialogHeader>
+                          <DialogTitle className="font-semibold text-xl">
+                            Talent profile{" "}
+                          </DialogTitle>
+                        </DialogHeader>
+                        <Talentprofile />
+                      </DialogContent>
+                    </Dialog>
                   </div>
                 </div>
               </CardFooter>
@@ -238,9 +274,21 @@ const HireTalent: React.FC = () => {
                     <Card className="text-[12px] ml-[10px] font-medium p-[10px]">
                       Meta
                     </Card>
-                    <Button className="ml-[85px] w-[97px] h-[35px] bg-black/50">
-                      View profile{" "}
-                    </Button>
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button type="button" className="ml-[85px] px-[15px]">
+                          View profile{" "}
+                        </Button>
+                      </DialogTrigger>
+                      <DialogContent className="max-w-fit border border-red-500">
+                        <DialogHeader>
+                          <DialogTitle className="font-semibold text-xl">
+                            Talent profile{" "}
+                          </DialogTitle>
+                        </DialogHeader>
+                        <Talentprofile />
+                      </DialogContent>
+                    </Dialog>
                   </div>
                 </div>
               </CardFooter>
@@ -268,9 +316,21 @@ const HireTalent: React.FC = () => {
                     <Card className="text-[12px] ml-[10px] font-medium p-[10px]">
                       Meta
                     </Card>
-                    <Button className="ml-[85px] w-[97px] h-[35px] bg-black/50">
-                      View profile{" "}
-                    </Button>
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button type="button" className="ml-[85px] px-[15px]">
+                          View profile{" "}
+                        </Button>
+                      </DialogTrigger>
+                      <DialogContent className="max-w-fit border border-red-500">
+                        <DialogHeader>
+                          <DialogTitle className="font-semibold text-xl">
+                            Talent profile{" "}
+                          </DialogTitle>
+                        </DialogHeader>
+                        <Talentprofile />
+                      </DialogContent>
+                    </Dialog>
                   </div>
                 </div>
               </CardFooter>
