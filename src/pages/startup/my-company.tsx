@@ -15,7 +15,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Ghost } from "lucide-react";
 
 const invoices = [
   {
