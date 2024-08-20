@@ -60,11 +60,14 @@ const Services: React.FC = () => {
                   Paused
                 </Button>
               </div>
-              <div className="pt-[13px] ml-[452px] border flex justify-end">
+              <div className="pt-[13px] ml-[452px] border ">
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Button type="button" className="h-45 w-88 text-sm mr-0">
-                      Create new service
+                    <Button
+                      type="button"
+                      className="h-45 w-88 text-sm mr-[100px] ml-auto"
+                    >
+                      Add your service
                     </Button>
                   </DialogTrigger>
                   <DialogContent className="sm:max-w-[600px]">
