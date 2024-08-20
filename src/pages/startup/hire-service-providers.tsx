@@ -12,7 +12,6 @@ import {
   Dialog,
   DialogContent,
   DialogHeader,
-  DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Search } from "lucide-react";
@@ -315,24 +314,6 @@ const HireServiceProviders: React.FC = () => {
               </CardFooter>
             </Card>
           </div>
-        </div>
-        <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center">
-          <Button className="flex text-base bg-white text-black">Cancel</Button>
-          <Dialog>
-            <DialogTrigger asChild>
-              <Button type="button" className="ml-[85px] px-[15px]">
-                View profile{" "}
-              </Button>
-            </DialogTrigger>
-            <DialogContent className="w-[600px] h-[366px] border border-red-500">
-              <DialogHeader>
-                <DialogTitle className="font-semibold text-xl">
-                  Talent profile{" "}
-                </DialogTitle>
-              </DialogHeader>
-              <p className="text-[24px] font-bold px-[100px]">Call Booked</p>
-            </DialogContent>
-          </Dialog>
         </div>
       </div>
     </div>

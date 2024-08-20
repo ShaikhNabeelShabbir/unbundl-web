@@ -98,7 +98,7 @@ const HireTalent: React.FC = () => {
                           View profile{" "}
                         </Button>
                       </DialogTrigger>
-                      <DialogContent className="max-w-fit border border-red-500">
+                      <DialogContent className="max-w-fit border">
                         <DialogHeader>
                           <DialogTitle className="font-semibold text-xl">
                             Talent profile{" "}
@@ -140,7 +140,7 @@ const HireTalent: React.FC = () => {
                           View profile{" "}
                         </Button>
                       </DialogTrigger>
-                      <DialogContent className="max-w-fit border border-red-500">
+                      <DialogContent className="max-w-fit border">
                         <DialogHeader>
                           <DialogTitle className="font-semibold text-xl">
                             Talent profile{" "}
@@ -182,7 +182,7 @@ const HireTalent: React.FC = () => {
                           View profile{" "}
                         </Button>
                       </DialogTrigger>
-                      <DialogContent className="max-w-fit border border-red-500">
+                      <DialogContent className="max-w-fit">
                         <DialogHeader>
                           <DialogTitle className="font-semibold text-xl">
                             Talent profile{" "}
@@ -226,7 +226,7 @@ const HireTalent: React.FC = () => {
                           View profile{" "}
                         </Button>
                       </DialogTrigger>
-                      <DialogContent className="max-w-fit border border-red-500">
+                      <DialogContent className="max-w-fit">
                         <DialogHeader>
                           <DialogTitle className="font-semibold text-xl">
                             Talent profile{" "}
@@ -268,7 +268,7 @@ const HireTalent: React.FC = () => {
                           View profile{" "}
                         </Button>
                       </DialogTrigger>
-                      <DialogContent className="max-w-fit border border-red-500">
+                      <DialogContent className="max-w-fit ">
                         <DialogHeader>
                           <DialogTitle className="font-semibold text-xl">
                             Talent profile{" "}
@@ -310,7 +310,7 @@ const HireTalent: React.FC = () => {
                           View profile{" "}
                         </Button>
                       </DialogTrigger>
-                      <DialogContent className="max-w-fit border border-red-500">
+                      <DialogContent className="max-w-fit ">
                         <DialogHeader>
                           <DialogTitle className="font-semibold text-xl">
                             Talent profile{" "}

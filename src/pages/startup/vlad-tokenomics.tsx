@@ -1,6 +1,13 @@
 import { Card } from "@/components/ui/card";
-import { DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { DialogTitle } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 const VladTokenomics = () => {
   return (
     <div className="flex flex-col overflow-auto max-h-[80vh] h-[959px]">
@@ -109,6 +116,26 @@ const VladTokenomics = () => {
         </div>
         <br />
         <br />
+        <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center  bg-white">
+          <Button className="flex text-base bg-white  text-black">
+            Cancel
+          </Button>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button type="button" className="ml-[280px] px-[15px] ">
+                Accept and Interview{" "}
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="w-[600px] h-[366px] ">
+              <DialogHeader>
+                <DialogTitle className="font-semibold text-xl">
+                  Talent profile{" "}
+                </DialogTitle>
+              </DialogHeader>
+              <p className="text-[24px] font-bold px-[100px]">Call Booked</p>
+            </DialogContent>
+          </Dialog>
+        </div>
       </div>
     </div>
   );
