@@ -16,7 +16,6 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Search } from "lucide-react";
-import AddSoftwareForm from "@/components/forms/AddSoftwareForm";
 import {
   Select,
   SelectContent,
@@ -32,24 +31,13 @@ const HireTalent: React.FC = () => {
       <div className="flex-1 py-[97px]">
         <div className="flex items-center justify-between">
           <p className="font-semibold text-[20px]">Hire talent for your team</p>
-          <Dialog>
-            <DialogTrigger asChild>
-              <Button
-                type="button"
-                className="h-[42px] w-[178px] text-sm mr-[30px]"
-              >
-                Propose Talent{" "}
-              </Button>
-            </DialogTrigger>
-            <DialogContent className="sm:max-w-[600px]">
-              <DialogHeader>
-                <DialogTitle className="font-semibold text-xl">
-                  Request to add software{" "}
-                </DialogTitle>
-              </DialogHeader>
-              <AddSoftwareForm />
-            </DialogContent>
-          </Dialog>
+
+          <Button
+            type="button"
+            className="h-[42px] w-[178px] text-sm mr-[30px]"
+          >
+            Propose Talent{" "}
+          </Button>
         </div>
         <div className=" flex flex-col font-semibold text-[16px] mr-[30px] mt-[21px] space-y-[10px]"></div>
         <div className="flex items-center justify-between ">

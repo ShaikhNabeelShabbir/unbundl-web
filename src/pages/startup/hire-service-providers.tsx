@@ -16,7 +16,6 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Search } from "lucide-react";
-import AddSoftwareForm from "@/components/forms/AddSoftwareForm";
 import {
   Select,
   SelectContent,
@@ -24,6 +23,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import VladTokenomics from "./vlad-tokenomics";
 
 const HireServiceProviders: React.FC = () => {
   return (
@@ -33,24 +33,13 @@ const HireServiceProviders: React.FC = () => {
           <p className="font-semibold text-[20px]">
             Hire freelancers and agencies
           </p>
-          <Dialog>
-            <DialogTrigger asChild>
-              <Button
-                type="button"
-                className="h-[42px] w-[178px] text-sm mr-[30px]"
-              >
-                Propose Talent{" "}
-              </Button>
-            </DialogTrigger>
-            <DialogContent className="sm:max-w-[600px]">
-              <DialogHeader>
-                <DialogTitle className="font-semibold text-xl">
-                  Request to add software{" "}
-                </DialogTitle>
-              </DialogHeader>
-              <AddSoftwareForm />
-            </DialogContent>
-          </Dialog>
+
+          <Button
+            type="button"
+            className="h-[42px] w-[178px] text-sm mr-[30px]"
+          >
+            View Service{" "}
+          </Button>
         </div>
         <div className=" flex flex-col font-semibold text-[16px] mr-[30px] mt-[21px] space-y-[10px]">
           <div className="flex flex-row w-[1150pxs] space-x-[10px] ">
@@ -124,9 +113,20 @@ const HireServiceProviders: React.FC = () => {
                   <p>Top rated project</p>
                   <p>Binance Tokenomics</p>
                 </div>
-                <Button className="ml-[85px] w-[97px] h-[35px] bg-black/50">
-                  Mobile Design
-                </Button>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button
+                      type="button"
+                      className="h-[42px] w-[178px] text-sm mr-[30px]"
+                    >
+                      View Service{" "}
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent className="sm:max-w-[600px]">
+                    <DialogHeader></DialogHeader>
+                    <VladTokenomics />
+                  </DialogContent>
+                </Dialog>
               </CardFooter>
             </Card>
 
@@ -150,9 +150,19 @@ const HireServiceProviders: React.FC = () => {
                   <p>Top rated project</p>
                   <p>Binance Tokenomics</p>
                 </div>
-                <Button className="ml-[85px] w-[97px] h-[35px] bg-black/50">
-                  Mobile Design
-                </Button>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button
+                      type="button"
+                      className="h-[42px] w-[178px] text-sm mr-[30px]"
+                    >
+                      View Service{" "}
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent className="sm:max-w-[600px]">
+                    <VladTokenomics />
+                  </DialogContent>
+                </Dialog>
               </CardFooter>
             </Card>
 
@@ -176,14 +186,25 @@ const HireServiceProviders: React.FC = () => {
                   <p>Top rated project</p>
                   <p>Binance Tokenomics</p>
                 </div>
-                <Button className="ml-[85px] w-[97px] h-[35px] bg-black/50">
-                  Mobile Design
-                </Button>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button
+                      type="button"
+                      className="h-[42px] w-[178px] text-sm mr-[30px]"
+                    >
+                      View Service{" "}
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent className="sm:max-w-[600px]">
+                    <DialogHeader></DialogHeader>
+                    <VladTokenomics />
+                  </DialogContent>
+                </Dialog>
               </CardFooter>
             </Card>
           </div>
           <div className="flex flex-row space-x-[20px]">
-          <Card className="w-[370px] h-[250px]">
+            <Card className="w-[370px] h-[250px]">
               <CardHeader>
                 <CardTitle>
                   Stani - Tokenomics{" "}
@@ -203,9 +224,20 @@ const HireServiceProviders: React.FC = () => {
                   <p>Top rated project</p>
                   <p>Binance Tokenomics</p>
                 </div>
-                <Button className="ml-[85px] w-[97px] h-[35px] bg-black/50">
-                  Mobile Design
-                </Button>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button
+                      type="button"
+                      className="h-[42px] w-[178px] text-sm mr-[30px]"
+                    >
+                      View Service{" "}
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent className="sm:max-w-[600px]">
+                    <DialogHeader></DialogHeader>
+                    <VladTokenomics />
+                  </DialogContent>
+                </Dialog>
               </CardFooter>
             </Card>
 
@@ -229,9 +261,20 @@ const HireServiceProviders: React.FC = () => {
                   <p>Top rated project</p>
                   <p>Binance Tokenomics</p>
                 </div>
-                <Button className="ml-[85px] w-[97px] h-[35px] bg-black/50">
-                  Mobile Design
-                </Button>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button
+                      type="button"
+                      className="h-[42px] w-[178px] text-sm mr-[30px]"
+                    >
+                      View Service{" "}
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent className="sm:max-w-[600px]">
+                    <DialogHeader></DialogHeader>
+                    <VladTokenomics />
+                  </DialogContent>
+                </Dialog>
               </CardFooter>
             </Card>
 
@@ -255,12 +298,41 @@ const HireServiceProviders: React.FC = () => {
                   <p>Top rated project</p>
                   <p>Binance Tokenomics</p>
                 </div>
-                <Button className="ml-[85px] w-[97px] h-[35px] bg-black/50">
-                  Mobile Design
-                </Button>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button
+                      type="button"
+                      className="h-[42px] w-[178px] text-sm mr-[30px]"
+                    >
+                      View Service{" "}
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent className="sm:max-w-[600px]">
+                    <DialogHeader></DialogHeader>
+                    <VladTokenomics />
+                  </DialogContent>
+                </Dialog>
               </CardFooter>
             </Card>
           </div>
+        </div>
+        <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center">
+          <Button className="flex text-base bg-white text-black">Cancel</Button>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button type="button" className="ml-[85px] px-[15px]">
+                View profile{" "}
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="w-[600px] h-[366px] border border-red-500">
+              <DialogHeader>
+                <DialogTitle className="font-semibold text-xl">
+                  Talent profile{" "}
+                </DialogTitle>
+              </DialogHeader>
+              <p className="text-[24px] font-bold px-[100px]">Call Booked</p>
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
     </div>
