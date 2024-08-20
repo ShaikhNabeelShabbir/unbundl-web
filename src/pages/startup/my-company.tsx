@@ -59,7 +59,7 @@ const MyCompany: React.FC = () => {
             <div className="Overview w-[760px]  ">
               <p className="font-semibold text-[20px]">Overview</p>
               <div className="flex flex-row  w-[760px]">
-                <div className="flex flex-row  w-[520px] h-[250px] border mr-[20px]">
+                <div className="flex flex-row  w-[520px] h-[250px] bg-black/5 border mr-[20px]">
                   <div className=" flex flex-col">
                     <div className="flex flex-row mt-[20px] ml-[20px]">
                       <div className="w-[49px] h-[49px] border"></div>
@@ -70,11 +70,11 @@ const MyCompany: React.FC = () => {
                     </div>
                     <br />
                     <div className="ml-[20px] flex flex-row space-x-[10px]">
-                      <div className="w-[30px] h-[30px] bg-black/25">2</div>
-                      <div className="w-[30px] h-[30px] bg-black/25">2</div>
-                      <div className="w-[30px] h-[30px] bg-black/25">2</div>
-                      <div className="w-[30px] h-[30px] bg-black/25">2</div>
-                      <div className="w-[30px] h-[30px] bg-black/25">2</div>
+                      <div className="w-[30px] h-[30px] bg-black/25"></div>
+                      <div className="w-[30px] h-[30px] bg-black/25"></div>
+                      <div className="w-[30px] h-[30px] bg-black/25"></div>
+                      <div className="w-[30px] h-[30px] bg-black/25"></div>
+                      <div className="w-[30px] h-[30px] bg-black/25"></div>
                     </div>
                     <br />
                     <div className="ml-[20px]">
@@ -88,8 +88,9 @@ const MyCompany: React.FC = () => {
                     </div>
                   </div>
                   <div className=" ml-[25px] ">
-                    Project Description
-                    <br />
+                    <div className="mt-[20px] font-semibold text-[18px]">
+                      Project Description
+                    </div>
                     <br />
                     <div className="font-normal text-[12px]">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -101,7 +102,7 @@ const MyCompany: React.FC = () => {
                   </div>
                 </div>
                 <div className=" w-[220px] h-[250px] border bg-black/5 rounded-[4px]">
-                  <p className="font-semibold text-[12px] mt-[20px]">
+                  <p className="font-semibold text-[12px] mt-[20px] px-[20px]">
                     Complete your profile to increase your in-platform ranking
                   </p>
                   <div className="progress-bar relative w-[180px] h-[30px] mx-[20px] mt-[11px] border rounded-full bg-black/50 ">
@@ -123,7 +124,7 @@ const MyCompany: React.FC = () => {
                 </div>
               </div>
               <div className="flex flex-row mt-[20px]">
-                <div className="w-[220px] h-[240px] border">
+                <div className="w-[220px] h-[240px] border  bg-black/5">
                   <p className="mt-[20px] ml-[20px] font-semibold text-[18px]">
                     Main Links
                   </p>
@@ -170,9 +171,11 @@ const MyCompany: React.FC = () => {
                   </div>
                 </div>
               </div>
+              <br />
               <div className="mt-[30px]">
                 {" "}
-                <p>Team</p>
+                <p className="font-semibold text-[20px]">Team</p>
+                <br />
                 <Table className="border">
                   <TableHeader>
                     <TableRow>
@@ -208,8 +211,11 @@ const MyCompany: React.FC = () => {
               </div>
               <div className="pt-[30px]">
                 {" "}
-                <p>Current Round Information</p>
-                <Table className="border">
+                <p className="font-semibold text-[20px] ">
+                  Current Round Information
+                </p>
+                <br />
+                <Table className="border  bg-black/5">
                   <TableHeader>
                     <TableRow>
                       <TableHead className="w-[100px]">Round</TableHead>
@@ -240,8 +246,9 @@ const MyCompany: React.FC = () => {
               </div>
               <div className="mt-[30px]">
                 {" "}
-                <p>Cap Table</p>
-                <Table className="border">
+                <p className="font-semibold text-[20px] ">Cap Table</p>
+                <br />
+                <Table className="border bg-black/5">
                   <TableHeader>
                     <TableRow>
                       <TableHead>Investor</TableHead>
@@ -272,56 +279,66 @@ const MyCompany: React.FC = () => {
                   </TableBody>
                 </Table>
               </div>
+              <br />
               <div>
-                <p className="font-semibold text-[20px]">Product Information</p>
-                <div className="w-[760px] h-[159px] border px-[20px] py-[20px]">
+                <p className="font-semibold text-[20px] ">
+                  Product Information
+                </p>
+                <br />
+                <div className="w-[760px] h-[159px] border px-[20px] py-[20px] bg-black/5">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Fugit ullam ab fugiat illo sed qui sequi eius! Temporibus
                   consequuntur consequatur doloribus, quam blanditiis, ex odio
                   quibusdam, fuga vero rerum explicabo!
                 </div>
-                <div className="w-[760px] h-[80px] mt-[20px] border font-semibold text-[16px] px-[30px] py-[20px]">
+                <div className="w-[760px] h-[80px] mt-[20px] border font-semibold text-[16px] px-[30px] py-[20px] bg-black/5">
                   Answer 3 missing questions to increase your chance of getting
                   funded
                 </div>{" "}
               </div>
+              <br />
               <div>
                 <p className="font-semibold text-[20px]">Tech Information</p>
-                <div className="w-[760px] h-[159px] border px-[20px] py-[20px]">
+                <br />
+                <div className="w-[760px] h-[159px] border px-[20px] py-[20px] bg-black/5">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. At
                   quibusdam, veniam voluptate molestias placeat ratione aliquam
                   porro labore nemo aspernatur debitis culpa quisquam minus
                   corrupti illo similique voluptas rem voluptatem?
                 </div>{" "}
-                <div className="w-[760px] h-[80px] mt-[20px] border font-semibold text-[16px] px-[30px] py-[20px]">
+                <div className="w-[760px] h-[80px] mt-[20px] bg-black/5 border font-semibold text-[16px] px-[30px] py-[20px]">
                   Answer 2 missing questions to increase your chance of getting
                   funded
                 </div>{" "}
               </div>
+              <br />
               <div>
-                <p className="font-semibold text-[20px]">Market Information</p>
-                <div className="w-[760px] h-[159px] border px-[20px] py-[20px]">
+                <p className="font-semibold text-[20px]">Market Information</p>{" "}
+                <br />
+                <div className="w-[760px] h-[159px] border px-[20px] py-[20px] bg-black/5">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Nobis, numquam repellat! Dolore in quidem sunt odit commodi
                   aliquid dicta blanditiis placeat cupiditate explicabo, eos
                   eius nam culpa, harum voluptas aspernatur.
                 </div>{" "}
-                <div className="w-[760px] h-[80px] mt-[20px] border font-semibold text-[16px] px-[30px] py-[20px]">
+                <div className="w-[760px] h-[80px] mt-[20px] bg-black/5 border font-semibold text-[16px] px-[30px] py-[20px]">
                   Answer 2 missing questions to increase your chance of getting
                   funded
                 </div>{" "}
               </div>
+              <br />
               <div>
                 <p className="font-semibold text-[20px]">
                   Fundraising Information
                 </p>
-                <div className="w-[760px] h-[159px] border px-[20px] py-[20px]">
+                <br />
+                <div className="w-[760px] h-[159px] border px-[20px] py-[20px] bg-black/5">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
                   doloribus nostrum labore praesentium sit non dignissimos
                   saepe, ipsum totam facere quaerat tenetur maiores error odio
                   laborum minus distinctio nihil mollitia?
                 </div>{" "}
-                <div className="w-[760px] h-[80px] mt-[20px] border font-semibold text-[16px] px-[30px] py-[20px]">
+                <div className="w-[760px] h-[80px] mt-[20px] border bg-black/5 font-semibold text-[16px] px-[30px] py-[20px]">
                   Answer 3 missing questions to increase your chance of getting
                   funded
                 </div>{" "}
@@ -329,15 +346,15 @@ const MyCompany: React.FC = () => {
               {/* {DND} */}
             </div>
             <div className="Company-Updates ml-[20px] w-[370px] flex flex-col space-y-[20px]">
-              <p className="font-semibold text-[20px] border">
-                Company Updates
-              </p>
+              <p className="font-semibold text-[20px] ">Company Updates</p>
               <div className="w-[370px] space-y-[20px]">
-                <div className="bg-black/5 border">
-                  Connect your company Twitter account to your Unbundl Feed
+                <div className="bg-black/5 border w-[370px] h-[122px]">
+                  <p className="p-[40px] text-[14px] font-bold text-center">
+                    Connect your company Twitter account to your Unbundl Feed
+                  </p>
                 </div>
-                <div className="bg-black/25">
-                  <Card>
+                <div>
+                  <Card className="bg-black/5">
                     <CardHeader>
                       <CardTitle className="font-medium text-[14px] text-black/50">
                         Nov. 27 2022
@@ -352,9 +369,9 @@ const MyCompany: React.FC = () => {
                     </CardHeader>
                   </Card>
                 </div>
-                <div className="bg-black/25">
+                <div>
                   {" "}
-                  <Card>
+                  <Card className="bg-black/5">
                     <CardHeader>
                       <CardTitle className="font-medium text-[14px] text-black/50">
                         Nov. 27 2022
@@ -369,9 +386,9 @@ const MyCompany: React.FC = () => {
                     </CardHeader>
                   </Card>
                 </div>
-                <div className="bg-black/25">
+                <div>
                   {" "}
-                  <Card>
+                  <Card className="bg-black/5">
                     <CardHeader>
                       <CardTitle className="font-medium text-[14px] text-black/50">
                         Nov. 27 2022
@@ -386,9 +403,9 @@ const MyCompany: React.FC = () => {
                     </CardHeader>
                   </Card>
                 </div>
-                <div className="bg-black/25">
+                <div>
                   {" "}
-                  <Card>
+                  <Card className="bg-black/5">
                     <CardHeader>
                       <CardTitle className="font-medium text-[14px] text-black/50">
                         Nov. 27 2022
@@ -403,9 +420,9 @@ const MyCompany: React.FC = () => {
                     </CardHeader>
                   </Card>
                 </div>{" "}
-                <div className="bg-black/25">
+                <div>
                   {" "}
-                  <Card>
+                  <Card className="bg-black/5">
                     <CardHeader>
                       <CardTitle className="font-medium text-[14px] text-black/50">
                         Nov. 27 2022
@@ -420,9 +437,9 @@ const MyCompany: React.FC = () => {
                     </CardHeader>
                   </Card>
                 </div>
-                <div className="bg-black/25">
+                <div>
                   {" "}
-                  <Card>
+                  <Card className="bg-black/5">
                     <CardHeader>
                       <CardTitle className="font-medium text-[14px] text-black/50">
                         Nov. 27 2022
@@ -437,8 +454,8 @@ const MyCompany: React.FC = () => {
                     </CardHeader>
                   </Card>
                 </div>
-                <div className="bg-black/25">
-                  <Card>
+                <div>
+                  <Card className="bg-black/5">
                     <CardHeader>
                       <CardTitle className="font-medium text-[14px] text-black/50">
                         Nov. 27 2022
@@ -453,8 +470,8 @@ const MyCompany: React.FC = () => {
                     </CardHeader>
                   </Card>
                 </div>
-                <div className="bg-black/25">
-                  <Card>
+                <div>
+                  <Card className="bg-black/5">
                     <CardHeader>
                       <CardTitle className="font-medium text-[14px] text-black/50">
                         Nov. 27 2022
@@ -469,8 +486,8 @@ const MyCompany: React.FC = () => {
                     </CardHeader>
                   </Card>
                 </div>
-                <div className="bg-black/25">
-                  <Card>
+                <div>
+                  <Card className="bg-black/5">
                     <CardHeader>
                       <CardTitle className="font-medium text-[14px] text-black/50">
                         Nov. 27 2022
@@ -485,8 +502,8 @@ const MyCompany: React.FC = () => {
                     </CardHeader>
                   </Card>
                 </div>
-                <div className="bg-black/25">
-                  <Card>
+                <div>
+                  <Card className="bg-black/5">
                     <CardHeader>
                       <CardTitle className="font-medium text-[14px] text-black/50">
                         Nov. 27 2022
@@ -501,8 +518,8 @@ const MyCompany: React.FC = () => {
                     </CardHeader>
                   </Card>
                 </div>
-                <div className="bg-black/25">
-                  <Card>
+                <div>
+                  <Card className="bg-black/5">
                     <CardHeader>
                       <CardTitle className="font-medium text-[14px] text-black/50">
                         Nov. 27 2022
