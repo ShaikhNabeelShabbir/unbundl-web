@@ -80,142 +80,186 @@ const HireTalent: React.FC = () => {
         </div>
         <div className="flex flex-col space-y-[20px]">
           <div className="flex flex-row space-x-[20px]">
-            <Card className="w-[370px] h-[220px]">
+            <Card className="w-[370px] h-[250px]">
               <CardHeader>
-                <CardTitle>Figma </CardTitle>
-                <CardDescription>Published by Ramsy</CardDescription>
+                <CardTitle>
+                  UI/UX Designer{" "}
+                  <span className="ml-[85px]  w-[72px] h-[35px]">
+                    Part time
+                  </span>{" "}
+                </CardTitle>
+                <CardDescription>$10,000/month</CardDescription>
               </CardHeader>
               <CardContent className="font-medium text-[12px] space-x-[10px]">
-                Figma is a collaborative web application for interface design,
-                with additional offline features enabled by desktop applications
-                for macOS and Windows.
+                Work experience <br />5 years 8 months
               </CardContent>
               <CardFooter className="font-medium text-sm space-x-[10px]">
-                <Button className=" w-[97px] h-[35px]  bg-black/50">
-                  UI/UX Design
-                </Button>
-                <Button className=" w-[97px] h-[35px] bg-black/50">
-                  Web Design
-                </Button>
-                <Button className=" w-[97px] h-[35px] bg-black/50">
-                  Mobile Design
-                </Button>
+                <div className="w-[140px] h-[40px]">
+                  <p>Work places</p>
+                  <div className="flex flex-row ">
+                    <Card className="text-[12px] font-medium p-[10px]">
+                      Google
+                    </Card>
+                    <Card className="text-[12px] ml-[10px] font-medium p-[10px]">
+                      Meta
+                    </Card>
+                    <Button className="ml-[85px] w-[97px] h-[35px] bg-black/50">
+                      View profile{" "}
+                    </Button>
+                  </div>
+                </div>
               </CardFooter>
             </Card>
-
-            <Card className="w-[370px] h-[220px]">
+            <Card className="w-[370px] h-[250px]">
               <CardHeader>
-                <CardTitle>Figma </CardTitle>
-                <CardDescription>Published by Ramsy</CardDescription>
+                <CardTitle>
+                  UI/UX Designer{" "}
+                  <span className="ml-[85px]  w-[72px] h-[35px]">
+                    Part time
+                  </span>{" "}
+                </CardTitle>
+                <CardDescription>$10,000/month</CardDescription>
               </CardHeader>
               <CardContent className="font-medium text-[12px] space-x-[10px]">
-                Figma is a collaborative web application for interface design,
-                with additional offline features enabled by desktop applications
-                for macOS and Windows.
+                Work experience <br />5 years 8 months
               </CardContent>
               <CardFooter className="font-medium text-sm space-x-[10px]">
-                <Button className=" w-[97px] h-[35px]  bg-black/50">
-                  UI/UX Design
-                </Button>
-                <Button className=" w-[97px] h-[35px] bg-black/50">
-                  Web Design
-                </Button>
-                <Button className=" w-[97px] h-[35px] bg-black/50">
-                  Mobile Design
-                </Button>
+                <div className="w-[140px] h-[40px]">
+                  <p>Work places</p>
+                  <div className="flex flex-row ">
+                    <Card className="text-[12px] font-medium p-[10px]">
+                      Google
+                    </Card>
+                    <Card className="text-[12px] ml-[10px] font-medium p-[10px]">
+                      Meta
+                    </Card>
+                    <Button className="ml-[85px] w-[97px] h-[35px] bg-black/50">
+                      View profile{" "}
+                    </Button>
+                  </div>
+                </div>
               </CardFooter>
             </Card>
-
-            <Card className="w-[370px] h-[220px]">
+            <Card className="w-[370px] h-[250px]">
               <CardHeader>
-                <CardTitle>Figma </CardTitle>
-                <CardDescription>Published by Ramsy</CardDescription>
+                <CardTitle>
+                  UI/UX Designer{" "}
+                  <span className="ml-[85px]  w-[72px] h-[35px]">
+                    Part time
+                  </span>{" "}
+                </CardTitle>
+                <CardDescription>$10,000/month</CardDescription>
               </CardHeader>
               <CardContent className="font-medium text-[12px] space-x-[10px]">
-                Figma is a collaborative web application for interface design,
-                with additional offline features enabled by desktop applications
-                for macOS and Windows.
+                Work experience <br />5 years 8 months
               </CardContent>
-              <CardFooter className="font-medium text-sm space-x-[10px] ">
-                <Button className=" w-[97px] h-[35px] bg-black/50">
-                  UI/UX Design
-                </Button>
-                <Button className=" w-[97px] h-[35px] bg-black/50">
-                  Web Design
-                </Button>
-                <Button className=" w-[97px] h-[35px] bg-black/50">
-                  Mobile Design
-                </Button>
+              <CardFooter className="font-medium text-sm space-x-[10px]">
+                <div className="w-[140px] h-[40px]">
+                  <p>Work places</p>
+                  <div className="flex flex-row ">
+                    <Card className="text-[12px] font-medium p-[10px]">
+                      Google
+                    </Card>
+                    <Card className="text-[12px] ml-[10px] font-medium p-[10px]">
+                      Meta
+                    </Card>
+                    <Button className="ml-[85px] w-[97px] h-[35px] bg-black/50">
+                      View profile{" "}
+                    </Button>
+                  </div>
+                </div>
               </CardFooter>
-            </Card>
+            </Card>{" "}
           </div>
           <div className="flex flex-row space-x-[20px]">
-            <Card className="w-[370px] h-[220px]">
+            <Card className="w-[370px] h-[250px]">
               <CardHeader>
-                <CardTitle>Figma </CardTitle>
-                <CardDescription>Published by Ramsy</CardDescription>
+                <CardTitle>
+                  UI/UX Designer{" "}
+                  <span className="ml-[85px]  w-[72px] h-[35px]">
+                    Part time
+                  </span>{" "}
+                </CardTitle>
+                <CardDescription>$10,000/month</CardDescription>
               </CardHeader>
               <CardContent className="font-medium text-[12px] space-x-[10px]">
-                Figma is a collaborative web application for interface design,
-                with additional offline features enabled by desktop applications
-                for macOS and Windows.
+                Work experience <br />5 years 8 months
               </CardContent>
               <CardFooter className="font-medium text-sm space-x-[10px]">
-                <Button className=" w-[97px] h-[35px]  bg-black/50">
-                  UI/UX Design
-                </Button>
-                <Button className=" w-[97px] h-[35px] bg-black/50">
-                  Web Design
-                </Button>
-                <Button className=" w-[97px] h-[35px] bg-black/50">
-                  Mobile Design
-                </Button>
+                <div className="w-[140px] h-[40px]">
+                  <p>Work places</p>
+                  <div className="flex flex-row ">
+                    <Card className="text-[12px] font-medium p-[10px]">
+                      Google
+                    </Card>
+                    <Card className="text-[12px] ml-[10px] font-medium p-[10px]">
+                      Meta
+                    </Card>
+                    <Button className="ml-[85px] w-[97px] h-[35px] bg-black/50">
+                      View profile{" "}
+                    </Button>
+                  </div>
+                </div>
               </CardFooter>
             </Card>
-
-            <Card className="w-[370px] h-[220px]">
+            <Card className="w-[370px] h-[250px]">
               <CardHeader>
-                <CardTitle>Figma </CardTitle>
-                <CardDescription>Published by Ramsy</CardDescription>
+                <CardTitle>
+                  UI/UX Designer{" "}
+                  <span className="ml-[85px]  w-[72px] h-[35px]">
+                    Part time
+                  </span>{" "}
+                </CardTitle>
+                <CardDescription>$10,000/month</CardDescription>
               </CardHeader>
               <CardContent className="font-medium text-[12px] space-x-[10px]">
-                Figma is a collaborative web application for interface design,
-                with additional offline features enabled by desktop applications
-                for macOS and Windows.
+                Work experience <br />5 years 8 months
               </CardContent>
               <CardFooter className="font-medium text-sm space-x-[10px]">
-                <Button className=" w-[97px] h-[35px]  bg-black/50">
-                  UI/UX Design
-                </Button>
-                <Button className=" w-[97px] h-[35px] bg-black/50">
-                  Web Design
-                </Button>
-                <Button className=" w-[97px] h-[35px] bg-black/50">
-                  Mobile Design
-                </Button>
+                <div className="w-[140px] h-[40px]">
+                  <p>Work places</p>
+                  <div className="flex flex-row ">
+                    <Card className="text-[12px] font-medium p-[10px]">
+                      Google
+                    </Card>
+                    <Card className="text-[12px] ml-[10px] font-medium p-[10px]">
+                      Meta
+                    </Card>
+                    <Button className="ml-[85px] w-[97px] h-[35px] bg-black/50">
+                      View profile{" "}
+                    </Button>
+                  </div>
+                </div>
               </CardFooter>
             </Card>
-
-            <Card className="w-[370px] h-[220px]">
+            <Card className="w-[370px] h-[250px]">
               <CardHeader>
-                <CardTitle>Figma </CardTitle>
-                <CardDescription>Published by Ramsy</CardDescription>
+                <CardTitle>
+                  UI/UX Designer{" "}
+                  <span className="ml-[85px]  w-[72px] h-[35px]">
+                    Part time
+                  </span>{" "}
+                </CardTitle>
+                <CardDescription>$10,000/month</CardDescription>
               </CardHeader>
               <CardContent className="font-medium text-[12px] space-x-[10px]">
-                Figma is a collaborative web application for interface design,
-                with additional offline features enabled by desktop applications
-                for macOS and Windows.
+                Work experience <br />5 years 8 months
               </CardContent>
-              <CardFooter className="font-medium text-sm space-x-[10px] ">
-                <Button className=" w-[97px] h-[35px] bg-black/50">
-                  UI/UX Design
-                </Button>
-                <Button className=" w-[97px] h-[35px] bg-black/50">
-                  Web Design
-                </Button>
-                <Button className=" w-[97px] h-[35px] bg-black/50">
-                  Mobile Design
-                </Button>
+              <CardFooter className="font-medium text-sm space-x-[10px]">
+                <div className="w-[140px] h-[40px]">
+                  <p>Work places</p>
+                  <div className="flex flex-row ">
+                    <Card className="text-[12px] font-medium p-[10px]">
+                      Google
+                    </Card>
+                    <Card className="text-[12px] ml-[10px] font-medium p-[10px]">
+                      Meta
+                    </Card>
+                    <Button className="ml-[85px] w-[97px] h-[35px] bg-black/50">
+                      View profile{" "}
+                    </Button>
+                  </div>
+                </div>
               </CardFooter>
             </Card>
           </div>
