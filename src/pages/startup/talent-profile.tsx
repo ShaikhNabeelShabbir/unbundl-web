@@ -63,23 +63,18 @@ const Talentprofile = () => {
         </span>
       </div>
       <div>
-        <p className="font-semibold text-[12px] mt-[20px]">Key Skills</p>
-        <div className=" flex flex-row space-x-[10px]">
-          <Card className="p-[10px] rounded-none text-white bg-black/25">
-            Web Design
-          </Card>
-          <Card className="p-[10px] rounded-none text-white bg-black/25">
-            UI/UX Design
-          </Card>
-          <Card className="p-[10px] rounded-none text-white bg-black/25">
-            Mobile Design
-          </Card>
-          <Card className="p-[10px] rounded-none text-white bg-black/25">
-            Figma
-          </Card>
-          <Card className="p-[10px] rounded-none text-white bg-black/25">
-            Adobe XD
-          </Card>
+        <p className="font-semibold text-[18px] mt-[20px]">Key Skills</p>
+        <div className=" flex flex-row space-x-[10px] border w-[560px] h-[150px]">
+          <ul className="font-medium text-[12px] px-[10px]">
+            <li>UI/UX Design</li>
+            <li>Photoshop</li>
+            <li>Figma</li>
+            <li>Motion Design</li>
+            <li>Web Design</li>
+            <li>Mobile App Design</li>
+            <li>Adobe After Effects</li>
+            <li>Adobe Illustrator</li>
+          </ul>
         </div>
         <div className="mt-[20px]">
           <p className="font-semibold text-[18px]">About me</p>
