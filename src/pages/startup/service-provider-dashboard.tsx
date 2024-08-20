@@ -56,8 +56,8 @@ const SeeviceProviderDashboard: React.FC = () => {
           </div>
         </div>
         <div className="flex flex-row mb-[10px]">
-          <div className="mt-[30px] mb-[20px] w-[760px] h-[24px] mr-[30px] font-semibold text-lg">
-            Upcoming Meetings{" "}
+          <div className="mt-[30px]  w-[760px] h-[24px] mr-[30px] font-semibold text-lg ">
+            <p className="mb-[30px]"> Upcoming Meetings </p>
             <div className="w-[760px] h-[250px] border flex flex-row bg-black/5 ">
               <div className="w-[233px] h-[32px] border mt-[20px] ml-[20px] mr-[10px] flex flex-col font-bold text-[10px] items-center  bg-black/10">
                 Today
@@ -98,7 +98,7 @@ const SeeviceProviderDashboard: React.FC = () => {
             </div>
           </div>
           <div className="mt-[30px] mb-[20px] w-[360px] h-[24px] mr-[30px] font-semibold text-lg ">
-            Company profile completion{" "}
+            <p className="mb-[30px]"> Company profile completion </p>
             <div className="w-[360px] h-[250px] border font-semibold text-[18px] px-[20px] pt-[20px] bg-black/5">
               Complete your profile to increase your in-platform ranking{" "}
               <div className="relative w-[330px] h-[30px] border rounded-full bg-black/50">
@@ -122,6 +122,8 @@ const SeeviceProviderDashboard: React.FC = () => {
             </div>
           </div>
         </div>
+        <br />
+        <br />
       </div>
     </div>
   );
