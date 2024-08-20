@@ -17,6 +17,13 @@ import {
 } from "@/components/ui/dialog";
 import { Search } from "lucide-react";
 import AddSoftwareForm from "@/components/forms/AddSoftwareForm";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 const HireTalent: React.FC = () => {
   return (
@@ -43,24 +50,9 @@ const HireTalent: React.FC = () => {
             </DialogContent>
           </Dialog>
         </div>
-        <div className=" flex flex-col font-semibold text-[16px] mr-[30px] mt-[21px] space-y-[10px]">
-          <div className="flex flex-row  space-x-[10px] ">
-            <Card className="w-[280px] h-[76px] rounded-[4px] flex items-center justify-center  bg-black/25 text-black/50">
-              Design
-            </Card>
-            <Card className="w-[280px] h-[76px] rounded-[4px] flex items-center justify-center  bg-black/25 text-black/50">
-              Development
-            </Card>
-            <Card className="w-[280px] h-[76px] rounded-[4px] flex items-center justify-center  bg-black/25 text-black/50">
-              Finance
-            </Card>
-            <Card className="w-[280px] h-[76px] rounded-[4px] flex items-center justify-center  bg-black/25 text-black/50">
-              Launching
-            </Card>
-          </div>
-        </div>
-        <div className="flex items-center justify-between mt-[21px]">
-          <div className="flex items-center w-[950px] h-[46px] border rounded-[4px]">
+        <div className=" flex flex-col font-semibold text-[16px] mr-[30px] mt-[21px] space-y-[10px]"></div>
+        <div className="flex items-center justify-between ">
+          <div className="flex items-center w-[760px] h-[46px] border rounded-[4px]">
             <Search className="ml-4 text-gray-500" />
             <input
               type="text"
@@ -68,6 +60,17 @@ const HireTalent: React.FC = () => {
               placeholder="Search..."
             />
           </div>
+          <Select>
+            <SelectTrigger className="w-[170px] h-[45px] bg-transparent">
+              <SelectValue placeholder="Choose Category" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="Founder">Founder</SelectItem>
+              <SelectItem value="CEO">CEO</SelectItem>
+              <SelectItem value="CTO">CTO</SelectItem>
+              <SelectItem value="COO">COO</SelectItem>
+            </SelectContent>
+          </Select>
           <Button className="w-[190px] h-[46px] mr-[30px]">
             Advanced Search
           </Button>
