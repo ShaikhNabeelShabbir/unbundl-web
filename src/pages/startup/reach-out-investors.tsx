@@ -8,6 +8,14 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Card, CardDescription, CardTitle } from "@/components/ui/card";
 
 const expand_you_network = [
   {
@@ -70,7 +78,54 @@ const ReachOutToInvestors = () => {
               <TableCell>{organization.stagedFocus}</TableCell>
               <TableCell>{organization.priceOfCall}</TableCell>
               <TableCell>
-                <Button variant="link">Request Connection</Button>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <u className="cursor-pointer">Book A call</u>
+                  </DialogTrigger>
+                  <DialogContent className="sm:max-w-[600px]">
+                    <DialogHeader>
+                      <DialogTitle>a16z crypto venture fund</DialogTitle>
+                      <p>Investor overview</p>
+                      <p>
+                        a16z crypto is a $300M venture fund that will invest in
+                        crypto companies and protocols. Their fund is designed
+                        to include the best features of traditional venture
+                        capital, updated to the modern crypto world.
+                      </p>
+                      <br />
+                      <div className="flex flex-row space-x-[10px]">
+                        <Card className="w-[105px] h-[39px] border-none rounded-none">
+                          <CardTitle>Type</CardTitle>
+                          <CardDescription>Venture Capital </CardDescription>
+                        </Card>
+                        <Card className="w-[105px] h-[39px] border-none rounded-none">
+                          <CardTitle>Type</CardTitle>
+                          <CardDescription>Venture Capital </CardDescription>
+                        </Card>
+                        <Card className="w-[105px] h-[39px] border-none rounded-none">
+                          <CardTitle>Type</CardTitle>
+                          <CardDescription>Venture Capital </CardDescription>
+                        </Card>
+                        <Card className="w-[105px] h-[39px] border-none rounded-none">
+                          <CardTitle>Type</CardTitle>
+                          <CardDescription>Venture Capital </CardDescription>
+                        </Card>
+                      </div>
+                    </DialogHeader>
+                    <div className="flex flex-row space-x-[300px]">
+                      <Button variant="ghost">Cancel</Button>
+                      <Dialog>
+                        <DialogTrigger>
+                          <Button>Book a call for $10,000</Button>
+                        </DialogTrigger>
+                        <DialogContent>
+                          <DialogHeader>a16z crypto venture fund</DialogHeader>{" "}
+                          <p>Call Booked</p>
+                        </DialogContent>
+                      </Dialog>
+                    </div>
+                  </DialogContent>
+                </Dialog>{" "}
               </TableCell>
             </TableRow>
           ))}

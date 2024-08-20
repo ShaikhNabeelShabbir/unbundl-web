@@ -5,7 +5,7 @@ import { DialogHeader } from "@/components/ui/dialog";
 import { Textarea } from "@/components/ui/textarea";
 const SuggestPeople = () => {
   return (
-    <div className="flex flex-col overflow-auto max-h-[80vh] ">
+    <div className="flex flex-col overflow-auto max-h-[80vh] w-[500px] ">
       <DialogHeader>
         <DialogTitle className="font-semibold text-xl">
           Suggest new people to the platfrom{" "}
