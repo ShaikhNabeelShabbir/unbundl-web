@@ -58,7 +58,7 @@ const NavbarInvest: React.FC<NavbarProps> = ({ setStep, currentStep }) => {
           ))}
         </div>
         <div className="absolute bottom-0 left-0 right-0">
-          <hr className="border-t border-gray-300 w-[1150px]" />
+          <hr className="border-t border-gray-300 w-full" />
           <div
             className="absolute bottom-0 h-0.5 bg-black transition-all duration-300"
             style={{
