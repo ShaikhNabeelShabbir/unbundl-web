@@ -43,10 +43,10 @@ const expand_you_network = [
 
 const RequsetFromInvestors = () => {
   return (
-    <div className="w-[1150px] h-[650px] px-5">
-      <div className="flex flex-row space-x-[10px] mb-4">
-        <div className="flex items-center w-[984px] h-[46px] border rounded-[4px] mt-5">
-          <Search className=" text-gray-500 mt-[10px]" />
+    <div className="w-full h-fit px-5">
+      <div className="flex flex-row space-x-3 mb-4">
+        <div className="flex items-center w-full h-12 border rounded-1 mt-5">
+          <Search className=" text-gray-500 mt-3" />
           <input
             type="text"
             className="w-full px-4 py-2 outline-black bg-transparent"
@@ -54,17 +54,17 @@ const RequsetFromInvestors = () => {
           />
         </div>
 
-        <Button className="w-[170px] h-[45px] mt-5">Filters</Button>
+        <Button className="w-[170px] h-11 mt-5">Filters</Button>
       </div>
-      <Table className="">
+      <Table className="w-full">
         <TableHeader>
           <TableRow>
-            <TableHead>Investor Name</TableHead>
-            <TableHead>Location</TableHead>
-            <TableHead>Assets managed</TableHead>
-            <TableHead>Staged focus</TableHead>
-            <TableHead>Time of Call</TableHead>
-            <TableHead>Action button</TableHead>
+            <TableHead className="text-base">Investor Name</TableHead>
+            <TableHead className="text-base">Location</TableHead>
+            <TableHead className="text-base">Assets managed</TableHead>
+            <TableHead className="text-base">Staged focus</TableHead>
+            <TableHead className="text-base">Time of Call</TableHead>
+            <TableHead className="text-base">Action button</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -73,11 +73,19 @@ const RequsetFromInvestors = () => {
               <TableCell className="font-semibold text-base">
                 {organization.investorName}
               </TableCell>
-              <TableCell>{organization.location}</TableCell>
-              <TableCell>{organization.assetsManaged}</TableCell>
-              <TableCell>{organization.stagedFocus}</TableCell>
-              <TableCell>{organization.timeOfCall}</TableCell>
-              <TableCell>
+              <TableCell className="text-base">
+                {organization.location}
+              </TableCell>
+              <TableCell className="text-base">
+                {organization.assetsManaged}
+              </TableCell>
+              <TableCell className="text-base">
+                {organization.stagedFocus}
+              </TableCell>
+              <TableCell className="text-base">
+                {organization.timeOfCall}
+              </TableCell>
+              <TableCell className="text-base">
                 <TableCell>
                   <Dialog>
                     <DialogTrigger asChild>
@@ -94,26 +102,26 @@ const RequsetFromInvestors = () => {
                           venture capital, updated to the modern crypto world.
                         </p>
                         <br />
-                        <div className="flex flex-row space-x-[10px]">
-                          <Card className="w-[105px] h-[39px] border-none rounded-none">
+                        <div className="flex flex-row space-x-3">
+                          <Card className="w-26 h-10 border-none rounded-none">
                             <CardTitle>Type</CardTitle>
                             <CardDescription>Venture Capital </CardDescription>
                           </Card>
-                          <Card className="w-[105px] h-[39px] border-none rounded-none">
+                          <Card className="w-26 h-10 border-none rounded-none">
                             <CardTitle>Type</CardTitle>
                             <CardDescription>Venture Capital </CardDescription>
                           </Card>
-                          <Card className="w-[105px] h-[39px] border-none rounded-none">
+                          <Card className="w-26 h-10 border-none rounded-none">
                             <CardTitle>Type</CardTitle>
                             <CardDescription>Venture Capital </CardDescription>
                           </Card>
-                          <Card className="w-[105px] h-[39px] border-none rounded-none">
+                          <Card className="w-26 h-10 border-none rounded-none">
                             <CardTitle>Type</CardTitle>
                             <CardDescription>Venture Capital </CardDescription>
                           </Card>
                         </div>
-                        <div>
-                          <p>Message</p>
+                        <div className="pt-10">
+                          <p className="font-bold text-5 pb-4">Message</p>
                           <p>
                             Dear Startup Team, <br />I hope this message finds
                             you well. My name is Alex and I am a Venture
@@ -135,6 +143,18 @@ const RequsetFromInvestors = () => {
                           </p>
                         </div>
                       </DialogHeader>
+                      <div className="flex flex-row space-x-3 pt-3">
+                        <Card className="w-26 h-10 border-none rounded-none">
+                          <CardTitle>Day</CardTitle>
+                          <CardDescription>
+                            Friday, December 13{" "}
+                          </CardDescription>
+                        </Card>
+                        <Card className="w-26 h-10 border-none rounded-none">
+                          <CardTitle>Time</CardTitle>
+                          <CardDescription>6 PM Dubai Time </CardDescription>
+                        </Card>{" "}
+                      </div>
                       <div className="flex flex-row space-x-[300px]">
                         <Button variant="ghost">Cancel</Button>
                         <Dialog>
@@ -142,13 +162,13 @@ const RequsetFromInvestors = () => {
                           <DialogTrigger>
                             <Button>Book a call for $10,000</Button>
                           </DialogTrigger>
-                          <DialogContent className="w-[600px] h-[366px] ">
+                          <DialogContent className="w-full h-full ">
                             <DialogHeader>
                               <DialogTitle className="font-semibold text-xl">
                                 Talent profile{" "}
                               </DialogTitle>
                             </DialogHeader>
-                            <p className="font-bold text-[24px] text-center">
+                            <p className="font-bold text-xl text-center">
                               Call Booked{" "}
                             </p>
                             <p className="text-center text-md font-medium text-black/50">

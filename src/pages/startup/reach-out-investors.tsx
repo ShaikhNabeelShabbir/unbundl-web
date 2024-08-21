@@ -43,9 +43,9 @@ const expand_you_network = [
 
 const ReachOutToInvestors = () => {
   return (
-    <div className="w-[1150px] h-[650px] px-5">
+    <div className="w-full h-fit px-5">
       <div className="flex flex-row space-x-[10px] mb-4">
-        <div className="flex items-center w-[984px] h-[46px] border rounded-[4px] mt-5">
+        <div className="flex items-center w-full h-[46px] border rounded-[4px] mt-5">
           <Search className=" text-gray-500 mt-[10px]" />
           <input
             type="text"
@@ -59,12 +59,12 @@ const ReachOutToInvestors = () => {
       <Table className="">
         <TableHeader>
           <TableRow>
-            <TableHead>Investor Name</TableHead>
-            <TableHead>Location</TableHead>
-            <TableHead>Assets managed</TableHead>
-            <TableHead>Staged focus</TableHead>
-            <TableHead>Price of Call</TableHead>
-            <TableHead>Action button</TableHead>
+            <TableHead className="text-base">Investor Name</TableHead>
+            <TableHead className="text-base">Location</TableHead>
+            <TableHead className="text-base">Assets managed</TableHead>
+            <TableHead className="text-base">Staged focus</TableHead>
+            <TableHead className="text-base">Price of Call</TableHead>
+            <TableHead className="text-base">Action button</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -73,14 +73,22 @@ const ReachOutToInvestors = () => {
               <TableCell className="font-semibold text-base">
                 {organization.investorName}
               </TableCell>
-              <TableCell>{organization.location}</TableCell>
-              <TableCell>{organization.assetsManaged}</TableCell>
-              <TableCell>{organization.stagedFocus}</TableCell>
-              <TableCell>{organization.priceOfCall}</TableCell>
-              <TableCell>
+              <TableCell className="text-base">
+                {organization.location}
+              </TableCell>
+              <TableCell className="text-base">
+                {organization.assetsManaged}
+              </TableCell>
+              <TableCell className="text-base">
+                {organization.stagedFocus}
+              </TableCell>
+              <TableCell className="text-base">
+                {organization.priceOfCall}
+              </TableCell>
+              <TableCell className="text-base">
                 <Dialog>
                   <DialogTrigger asChild>
-                    <u className="cursor-pointer">Book A call</u>
+                    <u className="cursor-pointer text-base">Book A call</u>
                   </DialogTrigger>
                   <DialogContent className="sm:max-w-[600px]">
                     <DialogHeader>
