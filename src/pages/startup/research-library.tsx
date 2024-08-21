@@ -12,14 +12,14 @@ import { Search } from "lucide-react";
 
 const ResearchLibrary: React.FC = () => {
   return (
-    <div className="flex ml-[30px]">
+    <div className="flex flex-wrap m-8">
       <div className="flex-1 py-[97px]">
         <div className="flex items-center justify-between">
           <p className="font-semibold text-5">Research Library</p>
-          <Button className="w-[178px] h-[42px] mr-[30px]">Publish</Button>
+          <Button className="w-[178px] h-[42px] ">Publish</Button>
         </div>
         <div className="flex items-center justify-between mt-[21px]">
-          <div className="flex items-center w-[950px] h-[46px] border rounded-1">
+          <div className="flex items-center w-full h-[46px] border rounded-1">
             <Search className="ml-4 text-gray-500" />
             <input
               type="text"
@@ -27,15 +27,13 @@ const ResearchLibrary: React.FC = () => {
               placeholder="Search..."
             />
           </div>
-          <Button className="w-[190px] h-[46px] mr-[30px]">
-            Advanced Search
-          </Button>
+          <Button className="w-[190px] h-[46px] ml-5 ">Advanced Search</Button>
         </div>
         <div className="mt-[30px] mb-5 font-medium text-base">
           Best Pics For your company
         </div>
-        <div className="flex flex-row space-x-5">
-          <Card className="w-[370px] h-[260px]">
+        <div className="flex flex-row w-full space-x-5">
+          <Card className="w-full h-[260px]">
             <CardHeader>
               <CardDescription>Nov. 27 2022</CardDescription>
               <CardTitle>
@@ -59,7 +57,7 @@ const ResearchLibrary: React.FC = () => {
             </CardFooter>
           </Card>
 
-          <Card className="w-[370px] h-[260px]">
+          <Card className="w-full h-[260px]">
             <CardHeader>
               <CardDescription>Nov. 27 2022</CardDescription>
               <CardTitle>
@@ -83,7 +81,7 @@ const ResearchLibrary: React.FC = () => {
             </CardFooter>
           </Card>
 
-          <Card className="w-[370px] h-[260px]">
+          <Card className="w-full h-[260px]">
             <CardHeader>
               <CardDescription>Nov. 27 2022</CardDescription>
               <CardTitle>
