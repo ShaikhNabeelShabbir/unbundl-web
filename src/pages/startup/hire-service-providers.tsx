@@ -26,42 +26,39 @@ import VladTokenomics from "./vlad-tokenomics";
 
 const HireServiceProviders: React.FC = () => {
   return (
-    <div className="flex ml-[30px] mr-[30px]">
+    <div className="flex flex-wrap m-8">
       <div className="flex-1 py-[97px]">
         <div className="flex items-center justify-between">
           <p className="font-semibold text-5">Hire freelancers and agencies</p>
 
-          <Button
-            type="button"
-            className="h-[42px] w-[178px] text-sm mr-[30px]"
-          >
+          <Button type="button" className="h-11 w-45 text-sm">
             View Service{" "}
           </Button>
         </div>
-        <div className=" flex flex-col font-semibold text-md mr-[30px] mt-[21px] space-y-[10px]">
-          <div className="flex flex-row w-[1150pxs] space-x-[10px] ">
-            <Card className="w-[183px] h-[76px] rounded-[4px] flex items-center justify-center  bg-black/25 text-black/50">
+        <div className=" flex flex-col font-semibold text-md  mt-[21px] space-y-[10px]">
+          <div className="flex flex-row w-full space-x-3 ">
+            <Card className="w-full h-[76px] rounded-[4px] flex items-center justify-center  bg-black/25 text-black/50">
               All
             </Card>
-            <Card className="w-[183px] h-[76px] rounded-[4px] flex items-center justify-center  bg-black/25 text-black/50">
+            <Card className="w-full h-[76px] rounded-[4px] flex items-center justify-center  bg-black/25 text-black/50">
               Devs
             </Card>
-            <Card className="w-[183px] h-[76px] rounded-[4px] flex items-center justify-center  bg-black/25 text-black/50">
+            <Card className="w-full h-[76px] rounded-[4px] flex items-center justify-center  bg-black/25 text-black/50">
               Design
             </Card>
-            <Card className="w-[183px] h-[76px] rounded-[4px] flex items-center justify-center  bg-black/25 text-black/50">
+            <Card className="w-full h-[76px] rounded-[4px] flex items-center justify-center  bg-black/25 text-black/50">
               Marketing
             </Card>
-            <Card className="w-[183px] h-[76px] rounded-[4px] flex items-center justify-center  bg-black/25 text-black/50">
+            <Card className="w-full h-[76px] rounded-[4px] flex items-center justify-center  bg-black/25 text-black/50">
               Business
             </Card>
-            <Card className="w-[183px] h-[76px] rounded-[4px] flex items-center justify-center  bg-black/25 text-black/50">
+            <Card className="w-full h-[76px] rounded-[4px] flex items-center justify-center  bg-black/25 text-black/50">
               Experts
             </Card>
           </div>
         </div>
         <div className="flex items-center justify-between mt-[21px]">
-          <div className="flex items-center w-[760px] h-[46px] border rounded-[4px]">
+          <div className="flex items-center w-full h-[46px] border rounded-[4px]">
             <Search className="ml-4 text-gray-500" />
             <input
               type="text"
@@ -69,7 +66,7 @@ const HireServiceProviders: React.FC = () => {
               placeholder="Search..."
             />
           </div>
-          <div className="w-[170px] h-[45px]">
+          <div className="w-[170px] h-[45px] px-5">
             <Select>
               <SelectTrigger className="w-[170px] h-[45px]">
                 <SelectValue placeholder="Dubai" />
@@ -81,7 +78,7 @@ const HireServiceProviders: React.FC = () => {
               </SelectContent>
             </Select>
           </div>
-          <Button className="w-[190px] h-[46px] mr-[30px]">
+          <Button className="w-[190px] h-[46px]  ml-8 px-5">
             Advanced Search
           </Button>
         </div>
@@ -89,12 +86,12 @@ const HireServiceProviders: React.FC = () => {
           Best Picks For your company
         </div>
         <div className="flex flex-col space-y-5">
-          <div className="flex flex-row space-x-5">
-            <Card className="w-[370px] h-[250px]">
+          <div className="flex flex-row space-x-5 w-full">
+            <Card className="w-full h-[250px]">
               <CardHeader>
                 <CardTitle>
                   Stani - Tokenomics{" "}
-                  <Button className="ml-[85px]  w-[72px] h-[35px]">
+                  <Button className="ml-[85px] w-[72px] h-[35px]">
                     Business
                   </Button>{" "}
                 </CardTitle>
@@ -127,7 +124,7 @@ const HireServiceProviders: React.FC = () => {
               </CardFooter>
             </Card>
 
-            <Card className="w-[370px] h-[250px]">
+            <Card className="w-full h-[250px]">
               <CardHeader>
                 <CardTitle>
                   Stani - Tokenomics{" "}
@@ -163,7 +160,7 @@ const HireServiceProviders: React.FC = () => {
               </CardFooter>
             </Card>
 
-            <Card className="w-[370px] h-[250px]">
+            <Card className="w-full h-[250px]">
               <CardHeader>
                 <CardTitle>
                   Stani - Tokenomics{" "}
@@ -201,7 +198,7 @@ const HireServiceProviders: React.FC = () => {
             </Card>
           </div>
           <div className="flex flex-row space-x-5">
-            <Card className="w-[370px] h-[250px]">
+            <Card className="w-full h-[250px]">
               <CardHeader>
                 <CardTitle>
                   Stani - Tokenomics{" "}
@@ -238,7 +235,7 @@ const HireServiceProviders: React.FC = () => {
               </CardFooter>
             </Card>
 
-            <Card className="w-[370px] h-[250px]">
+            <Card className="w-full h-[250px]">
               <CardHeader>
                 <CardTitle>
                   Stani - Tokenomics{" "}
@@ -275,7 +272,7 @@ const HireServiceProviders: React.FC = () => {
               </CardFooter>
             </Card>
 
-            <Card className="w-[370px] h-[250px]">
+            <Card className="w-full h-[250px]">
               <CardHeader>
                 <CardTitle>
                   Stani - Tokenomics{" "}

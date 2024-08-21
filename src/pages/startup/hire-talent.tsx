@@ -32,13 +32,13 @@ const HireTalent: React.FC = () => {
         <div className="flex items-center justify-between">
           <p className="font-semibold text-5">Hire talent for your team</p>
 
-          <Button type="button" className="h-11 w-45 text-sm mr-8">
+          <Button type="button" className="h-11 w-45 text-sm">
             Propose Talent{" "}
           </Button>
         </div>
         <div className=" flex flex-col font-semibold text-md mr-8 mt-5 space-y-3"></div>
         <div className="flex items-center justify-between ">
-          <div className="flex items-center w-full h-12 border rounded-1">
+          <div className="flex items-center w-full h-12 border rounded-1 space-x-3">
             <Search className="ml-4 text-gray-500" />
             <input
               type="text"
@@ -47,7 +47,7 @@ const HireTalent: React.FC = () => {
             />
           </div>
           <Select>
-            <SelectTrigger className="w-43 h-12 bg-transparent mx-3">
+            <SelectTrigger className="w-43 h-12 bg-transparent mx-8 ">
               <SelectValue placeholder="Choose Category" />
             </SelectTrigger>
             <SelectContent>
@@ -57,35 +57,33 @@ const HireTalent: React.FC = () => {
               <SelectItem value="COO">COO</SelectItem>
             </SelectContent>
           </Select>
-          <Button className="w-48 h-12 mr-8">Advanced Search</Button>
+          <Button className="w-48 h-12">Advanced Search</Button>
         </div>
         <div className="mt-8 mb-5 font-medium text-base">
           Best Pics For your company
         </div>
         <div className="flex flex-col space-y-5">
           <div className="flex flex-row space-x-5 w-ful">
-            <Card className="w-[370px] h-[250px]">
+            <Card className="w-full h-[250px]">
               <CardHeader>
                 <CardTitle>
                   UI/UX Designer{" "}
-                  <span className="ml-21  w-18 h-9">Part time</span>{" "}
+                  <span className="ml-[85px]  w-18 h-9">Part time</span>{" "}
                 </CardTitle>
                 <CardDescription>$10,000/month</CardDescription>
               </CardHeader>
               <CardContent className="font-medium text-sm space-x-[10px]">
                 Work experience <br />5 years 8 months
               </CardContent>
-              <CardFooter className="font-medium text-sm space-x-[10px]">
-                <div className="w-[140px] h-[40px]">
+              <CardFooter className="font-medium text-sm space-x-3">
+                <div className="w-[140px] h-10">
                   <p>Work places</p>
                   <div className="flex flex-row ">
-                    <Card className="text-sm font-medium p-[10px]">Google</Card>
-                    <Card className="text-sm ml-[10px] font-medium p-[10px]">
-                      Meta
-                    </Card>
+                    <Card className="text-sm font-medium p-3">Google</Card>
+                    <Card className="text-sm ml-3 font-medium p-3">Meta</Card>
                     <Dialog>
                       <DialogTrigger asChild>
-                        <Button type="button" className="ml-[85px] px-[15px]">
+                        <Button type="button" className="ml-[85px] px-4">
                           View profile{" "}
                         </Button>
                       </DialogTrigger>
@@ -102,30 +100,26 @@ const HireTalent: React.FC = () => {
                 </div>
               </CardFooter>
             </Card>
-            <Card className="w-[370px] h-[250px]">
+            <Card className="w-full h-[250px]">
               <CardHeader>
                 <CardTitle>
                   UI/UX Designer{" "}
-                  <span className="ml-[85px]  w-[72px] h-[35px]">
-                    Part time
-                  </span>{" "}
+                  <span className="ml-[85px]  w-18 h-9">Part time</span>{" "}
                 </CardTitle>
                 <CardDescription>$10,000/month</CardDescription>
               </CardHeader>
-              <CardContent className="font-medium text-sm space-x-[10px]">
+              <CardContent className="font-medium text-sm space-x-3">
                 Work experience <br />5 years 8 months
               </CardContent>
-              <CardFooter className="font-medium text-sm space-x-[10px]">
-                <div className="w-[140px] h-[40px]">
+              <CardFooter className="font-medium text-sm space-x-3">
+                <div className="w-[140px] h-10">
                   <p>Work places</p>
                   <div className="flex flex-row ">
-                    <Card className="text-sm font-medium p-[10px]">Google</Card>
-                    <Card className="text-sm ml-[10px] font-medium p-[10px]">
-                      Meta
-                    </Card>
+                    <Card className="text-sm font-medium p-3">Google</Card>
+                    <Card className="text-sm ml-3 font-medium p-3">Meta</Card>
                     <Dialog>
                       <DialogTrigger asChild>
-                        <Button type="button" className="ml-[85px] px-[15px]">
+                        <Button type="button" className="ml-[85px] px-4">
                           View profile{" "}
                         </Button>
                       </DialogTrigger>
@@ -142,30 +136,26 @@ const HireTalent: React.FC = () => {
                 </div>
               </CardFooter>
             </Card>
-            <Card className="w-[370px] h-[250px]">
+            <Card className="w-full h-[250px]">
               <CardHeader>
                 <CardTitle>
                   UI/UX Designer{" "}
-                  <span className="ml-[85px]  w-[72px] h-[35px]">
-                    Part time
-                  </span>{" "}
+                  <span className="ml-[85px]  w-18 h-9">Part time</span>{" "}
                 </CardTitle>
                 <CardDescription>$10,000/month</CardDescription>
               </CardHeader>
-              <CardContent className="font-medium text-sm space-x-[10px]">
+              <CardContent className="font-medium text-sm space-x-3">
                 Work experience <br />5 years 8 months
               </CardContent>
-              <CardFooter className="font-medium text-sm space-x-[10px]">
-                <div className="w-[140px] h-[40px]">
+              <CardFooter className="font-medium text-sm space-x-3">
+                <div className="w-[140px] h-10">
                   <p>Work places</p>
                   <div className="flex flex-row ">
-                    <Card className="text-sm font-medium p-[10px]">Google</Card>
-                    <Card className="text-sm ml-[10px] font-medium p-[10px]">
-                      Meta
-                    </Card>
+                    <Card className="text-sm font-medium p-3">Google</Card>
+                    <Card className="text-sm ml-3 font-medium p-3">Meta</Card>
                     <Dialog>
                       <DialogTrigger asChild>
-                        <Button type="button" className="ml-[85px] px-[15px]">
+                        <Button type="button" className="ml-[85px] px-3">
                           View profile{" "}
                         </Button>
                       </DialogTrigger>
@@ -184,30 +174,26 @@ const HireTalent: React.FC = () => {
             </Card>
           </div>
           <div className="flex flex-row space-x-5">
-            <Card className="w-[370px] h-[250px]">
+            <Card className="w-full h-[250px]">
               <CardHeader>
                 <CardTitle>
                   UI/UX Designer{" "}
-                  <span className="ml-[85px]  w-[72px] h-[35px]">
-                    Part time
-                  </span>{" "}
+                  <span className="ml-[85px]  w-18 h-9">Part time</span>{" "}
                 </CardTitle>
                 <CardDescription>$10,000/month</CardDescription>
               </CardHeader>
-              <CardContent className="font-medium text-sm space-x-[10px]">
+              <CardContent className="font-medium text-sm space-x-3">
                 Work experience <br />5 years 8 months
               </CardContent>
-              <CardFooter className="font-medium text-sm space-x-[10px]">
+              <CardFooter className="font-medium text-sm space-x-3">
                 <div className="w-[140px] h-[40px]">
                   <p>Work places</p>
                   <div className="flex flex-row ">
-                    <Card className="text-sm font-medium p-[10px]">Google</Card>
-                    <Card className="text-sm ml-[10px] font-medium p-[10px]">
-                      Meta
-                    </Card>
+                    <Card className="text-sm font-medium p-3">Google</Card>
+                    <Card className="text-sm ml-3 font-medium p-3">Meta</Card>
                     <Dialog>
                       <DialogTrigger asChild>
-                        <Button type="button" className="ml-[85px] px-[15px]">
+                        <Button type="button" className="ml-[85px] px-4">
                           View profile{" "}
                         </Button>
                       </DialogTrigger>
@@ -224,30 +210,26 @@ const HireTalent: React.FC = () => {
                 </div>
               </CardFooter>
             </Card>
-            <Card className="w-[370px] h-[250px]">
+            <Card className="w-full h-[250px]">
               <CardHeader>
                 <CardTitle>
                   UI/UX Designer{" "}
-                  <span className="ml-[85px]  w-[72px] h-[35px]">
-                    Part time
-                  </span>{" "}
+                  <span className="ml-[85px]  w-18 h-9">Part time</span>{" "}
                 </CardTitle>
                 <CardDescription>$10,000/month</CardDescription>
               </CardHeader>
-              <CardContent className="font-medium text-sm space-x-[10px]">
+              <CardContent className="font-medium text-sm space-x-3">
                 Work experience <br />5 years 8 months
               </CardContent>
-              <CardFooter className="font-medium text-sm space-x-[10px]">
-                <div className="w-[140px] h-[40px]">
+              <CardFooter className="font-medium text-sm space-x-3">
+                <div className="w-[140px] h-10">
                   <p>Work places</p>
                   <div className="flex flex-row ">
-                    <Card className="text-sm font-medium p-[10px]">Google</Card>
-                    <Card className="text-sm ml-[10px] font-medium p-[10px]">
-                      Meta
-                    </Card>
+                    <Card className="text-sm font-medium p-3">Google</Card>
+                    <Card className="text-sm ml-3 font-medium p-3">Meta</Card>
                     <Dialog>
                       <DialogTrigger asChild>
-                        <Button type="button" className="ml-[85px] px-[15px]">
+                        <Button type="button" className="ml-[85px] px-4">
                           View profile{" "}
                         </Button>
                       </DialogTrigger>
@@ -264,30 +246,26 @@ const HireTalent: React.FC = () => {
                 </div>
               </CardFooter>
             </Card>
-            <Card className="w-[370px] h-[250px]">
+            <Card className="w-full h-[250px]">
               <CardHeader>
                 <CardTitle>
                   UI/UX Designer{" "}
-                  <span className="ml-[85px]  w-[72px] h-[35px]">
-                    Part time
-                  </span>{" "}
+                  <span className="ml-[85px]  w-18 h-9">Part time</span>{" "}
                 </CardTitle>
                 <CardDescription>$10,000/month</CardDescription>
               </CardHeader>
-              <CardContent className="font-medium text-sm space-x-[10px]">
+              <CardContent className="font-medium text-sm space-x-3">
                 Work experience <br />5 years 8 months
               </CardContent>
-              <CardFooter className="font-medium text-sm space-x-[10px]">
+              <CardFooter className="font-medium text-sm space-x-3">
                 <div className="w-[140px] h-[40px]">
                   <p>Work places</p>
                   <div className="flex flex-row ">
-                    <Card className="text-sm font-medium p-[10px]">Google</Card>
-                    <Card className="text-sm ml-[10px] font-medium p-[10px]">
-                      Meta
-                    </Card>
+                    <Card className="text-sm font-medium p-3">Google</Card>
+                    <Card className="text-sm ml-3 font-medium p-3">Meta</Card>
                     <Dialog>
                       <DialogTrigger asChild>
-                        <Button type="button" className="ml-[85px] px-[15px]">
+                        <Button type="button" className="ml-[85px] px-4">
                           View profile{" "}
                         </Button>
                       </DialogTrigger>
