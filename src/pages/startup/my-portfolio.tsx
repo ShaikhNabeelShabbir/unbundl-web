@@ -11,6 +11,15 @@ import {
 } from "@/components/ui/table";
 import { Card, CardHeader } from "@/components/ui/card";
 import { MoreHorizontal, Search } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import AddATeamMember from "@/components/forms/AddATeamMember";
+import AddInvestmentForm from "@/components/forms/AddInvestmentForm";
 
 const investmentTeam = [
   {
@@ -194,15 +203,25 @@ const MyPortfolio: React.FC = () => {
                       placeholder="Search..."
                     />
                   </div>
+                  <Button className="w-[140px] h-[46px] mr-3">Filter </Button>
                   <Button className="w-[140px] h-[46px] mr-3">
-                    Advanced Search
+                    Export CSV{" "}
                   </Button>
-                  <Button className="w-[140px] h-[46px] mr-3">
-                    Advanced Search
-                  </Button>
-                  <Button className="w-[140px] h-[46px] mr-3">
-                    Advanced Search
-                  </Button>
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <Button type="button" className="w-[140px] h-[46px] mr-3">
+                        Add Investment
+                      </Button>
+                    </DialogTrigger>
+                    <DialogContent className="sm:max-w-[600px]">
+                      <DialogHeader>
+                        <DialogTitle className="font-semibold text-xl">
+                          Add Investment Form
+                        </DialogTitle>
+                      </DialogHeader>
+                      <AddInvestmentForm />
+                    </DialogContent>
+                  </Dialog>
                 </div>
                 <Table>
                   <TableHeader>
@@ -248,15 +267,25 @@ const MyPortfolio: React.FC = () => {
                       placeholder="Search..."
                     />
                   </div>
+                  <Button className="w-[140px] h-[46px] mr-3">Filter </Button>
                   <Button className="w-[140px] h-[46px] mr-3">
-                    Advanced Search
+                    Export CSV{" "}
                   </Button>
-                  <Button className="w-[140px] h-[46px] mr-3">
-                    Advanced Search
-                  </Button>
-                  <Button className="w-[140px] h-[46px] mr-3">
-                    Advanced Search
-                  </Button>
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <Button type="button" className="w-[140px] h-[46px] mr-3">
+                        Add a team member
+                      </Button>
+                    </DialogTrigger>
+                    <DialogContent className="sm:max-w-[600px]">
+                      <DialogHeader>
+                        <DialogTitle className="font-semibold text-xl">
+                          Add a team member
+                        </DialogTitle>
+                      </DialogHeader>
+                      <AddATeamMember />
+                    </DialogContent>
+                  </Dialog>
                 </div>
                 <Table className="border">
                   <TableHeader>
