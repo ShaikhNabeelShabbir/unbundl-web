@@ -15,7 +15,7 @@ const ResearchLibrary: React.FC = () => {
     <div className="flex ml-[30px]">
       <div className="flex-1 py-[97px]">
         <div className="flex items-center justify-between">
-          <p className="font-semibold text-[20px]">Research Library</p>
+          <p className="font-semibold text-5">Research Library</p>
           <Button className="w-[178px] h-[42px] mr-[30px]">Publish</Button>
         </div>
         <div className="flex items-center justify-between mt-[21px]">
@@ -31,10 +31,10 @@ const ResearchLibrary: React.FC = () => {
             Advanced Search
           </Button>
         </div>
-        <div className="mt-[30px] mb-[20px] font-medium text-base">
+        <div className="mt-[30px] mb-5 font-medium text-base">
           Best Pics For your company
         </div>
-        <div className="flex flex-row space-x-[20px]">
+        <div className="flex flex-row space-x-5">
           <Card className="w-[370px] h-[260px]">
             <CardHeader>
               <CardDescription>Nov. 27 2022</CardDescription>

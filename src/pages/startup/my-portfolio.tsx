@@ -63,11 +63,11 @@ const MyPortfolio: React.FC = () => {
         <div className="flex items-center justify-between">
           <div className="flex flex-row">
             <div className="Overview w-[760px]  ">
-              <p className="font-semibold text-[20px]">Overview</p>
+              <p className="font-semibold text-5">Overview</p>
               <div className="flex flex-row  w-[760px]">
-                <div className="flex flex-row  w-[520px] h-[250px] border mr-[20px]">
+                <div className="flex flex-row  w-[520px] h-[250px] border mr-5">
                   <div className=" flex flex-col">
-                    <div className="flex flex-row mt-[20px] ml-[20px]">
+                    <div className="flex flex-row mt-5 ml-5">
                       <div className="w-[49px] h-[49px] border"></div>
                       <div className="ml-[10px]">
                         <p> Startup Name</p>
@@ -75,7 +75,7 @@ const MyPortfolio: React.FC = () => {
                       </div>
                     </div>
                     <br />
-                    <div className="ml-[20px] flex flex-row space-x-[10px]">
+                    <div className="ml-5 flex flex-row space-x-[10px]">
                       <div className="w-[30px] h-[30px] bg-black/5">2</div>
                       <div className="w-[30px] h-[30px] bg-black/5">2</div>
                       <div className="w-[30px] h-[30px] bg-black/5">2</div>
@@ -83,11 +83,11 @@ const MyPortfolio: React.FC = () => {
                       <div className="w-[30px] h-[30px] bg-black/5">2</div>
                     </div>
                     <br />
-                    <div className="ml-[20px]">
+                    <div className="ml-5">
                       Fund Raising
                       <Switch />
                     </div>
-                    <div className="ml-[20px] flex flex-row space-x-[10px]">
+                    <div className="ml-5 flex flex-row space-x-[10px]">
                       <Button>Round A</Button>
                       <Button>Fund Raising</Button>
                       <Button>Hiring</Button>
@@ -107,10 +107,10 @@ const MyPortfolio: React.FC = () => {
                   </div>
                 </div>
                 <div className=" w-[220px] h-[250px] border bg-black/5 rounded-[4px]">
-                  <p className="font-semibold text-[12px] mt-[20px]">
+                  <p className="font-semibold text-[12px] mt-5">
                     Complete your profile to increase your in-platform ranking
                   </p>
-                  <div className="progress-bar relative w-[180px] h-[30px] mx-[20px] mt-[11px] border rounded-full bg-black/50 ">
+                  <div className="progress-bar relative w-[180px] h-[30px] mx-5 mt-[11px] border rounded-full bg-black/50 ">
                     <div
                       className="absolute top-0 left-0 h-full bg-black/50 rounded-full"
                       style={{ width: "75%" }}
@@ -119,17 +119,17 @@ const MyPortfolio: React.FC = () => {
                       75%
                     </span>
                   </div>
-                  <div className="w-[180px] h-[30px] mx-[20px] mt-[11px] border bg-black text-white font-normal text-[10px] rounded-[4px] flex items-center justify-center">
+                  <div className="w-[180px] h-[30px] mx-5 mt-[11px] border bg-black text-white font-normal text-[10px] rounded-[4px] flex items-center justify-center">
                     Add the blockchain
                   </div>
 
-                  <div className="w-[180px] h-[30px] mx-[20px] mt-[11px] border bg-black text-white font-normal text-[10px] rounded-[4px] flex items-center justify-center">
+                  <div className="w-[180px] h-[30px] mx-5 mt-[11px] border bg-black text-white font-normal text-[10px] rounded-[4px] flex items-center justify-center">
                     Add the blockchain
                   </div>
                 </div>
               </div>
-              <div className="flex flex-row mt-[20px]">
-                <div className="ml-[20px] w-[760px] h-[240px] border p-[20px] bg-gray-100 rounded-md">
+              <div className="flex flex-row mt-5">
+                <div className="ml-5 w-[760px] h-[240px] border p-5 bg-gray-100 rounded-md">
                   <div className="flex flex-wrap justify-between">
                     <div className="flex flex-col">
                       <div className="font-semibold mb-[10px]">Chains Used</div>
@@ -265,8 +265,8 @@ const MyPortfolio: React.FC = () => {
               </div>
               {/* {DND} */}
             </div>
-            <div className="Company-Updates ml-[20px] w-[370px] flex flex-col space-y-[20px]">
-              <div className="w-[370px] space-y-[20px] mt-[30px]">
+            <div className="Company-Updates ml-5 w-[370px] flex flex-col space-y-5">
+              <div className="w-[370px] space-y-5 mt-[30px]">
                 <div className="bg-black/5 border">
                   <p>Investment Thesis</p>
                   <br />

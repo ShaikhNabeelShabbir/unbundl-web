@@ -9,8 +9,8 @@ import {
 const ExistingTemplates = () => {
   return (
     <div>
-      <div className="flex flex-col space-y-[20px] mt-[20px]">
-        <div className="flex flex-row space-x-[20px]">
+      <div className="flex flex-col space-y-5 mt-5">
+        <div className="flex flex-row space-x-5">
           <Card className="w-[370px] h-[200px] flex flex-col justify-between">
             <CardHeader>
               <CardTitle className="w-[330px] h-[19px]">
@@ -63,7 +63,7 @@ const ExistingTemplates = () => {
             </CardFooter>
           </Card>
         </div>
-        <div className="flex flex-row space-x-[20px]">
+        <div className="flex flex-row space-x-5">
           <Card className="w-[370px] h-[200px] flex flex-col justify-between">
             <CardHeader>
               <CardTitle className="w-[330px] h-[19px]">

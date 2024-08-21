@@ -20,7 +20,7 @@ const RaiseFunds: React.FC = () => {
     <div className="flex ml-[30px] mr-[30px]">
       <div className="flex-1 py-[97px]">
         <div className="flex items-center justify-between"></div>
-        <div className="w-[1150px] h-[650px] border mt-[20px] bg-black/5">
+        <div className="w-[1150px] h-[650px] border mt-5 bg-black/5">
           <NavbarRaiseFunds setStep={setStep} currentStep={step} />
           {renderForm()}
         </div>

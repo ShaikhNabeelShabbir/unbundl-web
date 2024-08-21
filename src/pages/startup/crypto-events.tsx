@@ -21,7 +21,7 @@ const CryptoEvents: React.FC = () => {
     <div className="flex ml-[30px]">
       <div className="flex-1 py-[97px]">
         <div className="flex items-center justify-between">
-          <p className="font-semibold text-[20px]">Crypto Events</p>
+          <p className="font-semibold text-5">Crypto Events</p>
           <Button className="w-[178px] h-[42px] mr-[30px]">Add Event</Button>
         </div>
         <div className="flex items-center justify-between mt-[21px]">
@@ -49,11 +49,11 @@ const CryptoEvents: React.FC = () => {
             Advanced Search
           </Button>
         </div>
-        <div className="mt-[30px] mb-[20px] font-medium text-base mr-[30px]">
+        <div className="mt-[30px] mb-5 font-medium text-base mr-[30px]">
           Best Crypto Events in Dubai{" "}
         </div>
-        <div className="flex flex-col space-y-[20px] mr-[30px]">
-          <div className="flex flex-row space-x-[20px]">
+        <div className="flex flex-col space-y-5 mr-[30px]">
+          <div className="flex flex-row space-x-5">
             <Card className="w-[372px] h-[150px]">
               <CardHeader>
                 <CardDescription>Nov. 27 2022</CardDescription>
@@ -88,7 +88,7 @@ const CryptoEvents: React.FC = () => {
               </CardContent>
             </Card>
           </div>
-          <div className="flex flex-row space-x-[20px] mr-[30px]">
+          <div className="flex flex-row space-x-5 mr-[30px]">
             <Card className="w-[372px] h-[150px]">
               <CardHeader>
                 <CardDescription>Nov. 27 2022</CardDescription>

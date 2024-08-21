@@ -43,9 +43,9 @@ const expand_you_network = [
 
 const RequsetFromInvestors = () => {
   return (
-    <div className="w-[1150px] h-[650px] px-[20px]">
+    <div className="w-[1150px] h-[650px] px-5">
       <div className="flex flex-row space-x-[10px] mb-4">
-        <div className="flex items-center w-[984px] h-[46px] border rounded-[4px] mt-[20px]">
+        <div className="flex items-center w-[984px] h-[46px] border rounded-[4px] mt-5">
           <Search className=" text-gray-500 mt-[10px]" />
           <input
             type="text"
@@ -54,7 +54,7 @@ const RequsetFromInvestors = () => {
           />
         </div>
 
-        <Button className="w-[170px] h-[45px] mt-[20px]">Filters</Button>
+        <Button className="w-[170px] h-[45px] mt-5">Filters</Button>
       </div>
       <Table className="">
         <TableHeader>
@@ -70,7 +70,7 @@ const RequsetFromInvestors = () => {
         <TableBody>
           {expand_you_network.map((organization, index) => (
             <TableRow key={index}>
-              <TableCell className="font-semibold text-[14px]">
+              <TableCell className="font-semibold text-base">
                 {organization.investorName}
               </TableCell>
               <TableCell>{organization.location}</TableCell>

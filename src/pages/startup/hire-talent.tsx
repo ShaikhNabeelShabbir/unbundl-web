@@ -30,7 +30,7 @@ const HireTalent: React.FC = () => {
     <div className="flex ml-[30px] mr-[30px]">
       <div className="flex-1 py-[97px]">
         <div className="flex items-center justify-between">
-          <p className="font-semibold text-[20px]">Hire talent for your team</p>
+          <p className="font-semibold text-5">Hire talent for your team</p>
 
           <Button
             type="button"
@@ -64,11 +64,11 @@ const HireTalent: React.FC = () => {
             Advanced Search
           </Button>
         </div>
-        <div className="mt-[30px] mb-[20px] font-medium text-base">
+        <div className="mt-[30px] mb-5 font-medium text-base">
           Best Pics For your company
         </div>
-        <div className="flex flex-col space-y-[20px]">
-          <div className="flex flex-row space-x-[20px]">
+        <div className="flex flex-col space-y-5">
+          <div className="flex flex-row space-x-5">
             <Card className="w-[370px] h-[250px]">
               <CardHeader>
                 <CardTitle>
@@ -196,7 +196,7 @@ const HireTalent: React.FC = () => {
               </CardFooter>
             </Card>
           </div>
-          <div className="flex flex-row space-x-[20px]">
+          <div className="flex flex-row space-x-5">
             <Card className="w-[370px] h-[250px]">
               <CardHeader>
                 <CardTitle>

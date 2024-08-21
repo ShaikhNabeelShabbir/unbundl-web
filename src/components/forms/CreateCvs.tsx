@@ -9,7 +9,7 @@ export function CreateCVs() {
         <div className="py-[40px]">
           <div className="justify-center">
             <div className="flex px-[440px] justify-center">
-              <div className="text-[14px] text-black/50">
+              <div className="text-base text-black/50">
                 Create CVs that your potential employers can find. You’ll be
                 matched with startups where you can work based on your CVs
                 <br />

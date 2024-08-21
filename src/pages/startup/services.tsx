@@ -32,29 +32,29 @@ const Services: React.FC = () => {
     <div className="flex ml-[30px] mr-[30px] mb-[30px]">
       <div className="flex-1 py-[97px]">
         <div className="flex flex-row">
-          <div className="mt-[20px] mb-[20px] font-medium text-base w-[1150px] h-[296px]  bg-black/5 ">
+          <div className="mt-5 mb-5 font-medium text-base w-[1150px] h-[296px]  bg-black/5 ">
             <div className="w-[1150px] h-[60px] border flex flex-row">
-              <div className="ml-[20px] mt-[20px]">
+              <div className="ml-5 mt-5">
                 <Button
-                  className="p-[20px] hover:underline font-medium text-[16px]"
+                  className="p-5 hover:underline font-medium text-[16px]"
                   variant="ghost"
                 >
                   Active
                 </Button>
                 <Button
-                  className="p-[20px] hover:underline font-medium text-[16px]"
+                  className="p-5 hover:underline font-medium text-[16px]"
                   variant="ghost"
                 >
                   Pending Approval
                 </Button>
                 <Button
-                  className="p-[20px] hover:underline font-medium text-[16px]"
+                  className="p-5 hover:underline font-medium text-[16px]"
                   variant="ghost"
                 >
                   Draft
                 </Button>
                 <Button
-                  className="p-[20px] hover:underline font-medium text-[16px]"
+                  className="p-5 hover:underline font-medium text-[16px]"
                   variant="ghost"
                 >
                   Paused
@@ -76,7 +76,7 @@ const Services: React.FC = () => {
                 </Dialog>
               </div>
             </div>
-            <div className="mt-[15px] mx-[20px] w-[1110px] h-[32px]  font-semibold text-[18px] flex flex-row">
+            <div className="mt-[15px] mx-5 w-[1110px] h-[32px]  font-semibold text-[18px] flex flex-row">
               <div>Active Services </div>
               <div className="ml-[770px]">
                 <Select>
@@ -91,7 +91,7 @@ const Services: React.FC = () => {
                 </Select>
               </div>
             </div>
-            <div className="mt-[30px] mx-[20px] w-[1110px] h-[130px] border">
+            <div className="mt-[30px] mx-5 w-[1110px] h-[130px] border">
               <Table>
                 <TableHeader>
                   <TableRow>

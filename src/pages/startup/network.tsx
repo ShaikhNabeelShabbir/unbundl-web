@@ -23,9 +23,9 @@ const Network: React.FC = () => {
     <div className="flex ml-[30px] mr-[30px]">
       <div className="flex-1 py-[97px]">
         <div className="flex items-center justify-between">
-          <p className="font-semibold text-[20px]">My Network</p>
+          <p className="font-semibold text-5">My Network</p>
         </div>
-        <div className="flex flex-row w-[1150px] h-[300px] space-x-[20px]">
+        <div className="flex flex-row w-[1150px] h-[300px] space-x-5">
           <div className="w-[760px] border flex items-center justify-center font-medium text-[18px]">
             Network visualisation
           </div>
@@ -47,7 +47,7 @@ const Network: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="w-[1150px] h-[650px] border mt-[20px] bg-black/5">
+        <div className="w-[1150px] h-[650px] border mt-5 bg-black/5">
           <NavbarMyNetwork setStep={setStep} currentStep={step} />
           {renderForm()}
         </div>

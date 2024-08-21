@@ -19,7 +19,7 @@ const Invest: React.FC = () => {
   return (
     <div className="flex ml-[30px] mr-[30px]">
       <div className="flex-1 py-[97px]">
-        <div className="w-[1150px] h-[650px]  mt-[20px]">
+        <div className="w-[1150px] h-[650px]  mt-5">
           <NavbarInvest setStep={setStep} currentStep={step} />
           {renderForm()}
         </div>

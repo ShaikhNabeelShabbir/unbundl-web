@@ -18,7 +18,7 @@ const VladTokenomics = () => {
       </DialogHeader>
       <div className="flex-1 overflow-auto p-4">
         <p>Design Web Design </p>
-        <div className="mt-[20px]">
+        <div className="mt-5">
           <span>Bob Alice </span>
           <span className="mx-[10px]">5 stars (26)</span>
           <span>4 Orders in Queue</span>

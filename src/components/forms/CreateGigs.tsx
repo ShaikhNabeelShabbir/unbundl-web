@@ -1,9 +1,5 @@
 import { Button } from "../ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import CreateNewService from "../create-new-service";
 
 export function CreateGigs() {
@@ -13,7 +9,7 @@ export function CreateGigs() {
         <div className="py-[40px]">
           <div className="justify-center">
             <div className="flex px-[440px] justify-center">
-              <div className="text-[14px] text-black/50">
+              <div className="text-base text-black/50">
                 Add services that you provide, like “Token Design”, or “I will
                 give you a 30-minute consultation on tokenomics”
                 <br />
@@ -25,7 +21,7 @@ export function CreateGigs() {
                   <DialogTrigger asChild>
                     <Button
                       type="button"
-                      className="h-[45px] w-[136px] mt-[15px] text-[12px] font-normal px-[20px] py-[15px]"
+                      className="h-[45px] w-[136px] mt-[15px] text-[12px] font-normal px-5 py-[15px]"
                     >
                       Add your service
                     </Button>

@@ -28,7 +28,7 @@ const FindDeals = () => {
             placeholder="Search..."
           />
         </div>
-        <div className="w-[170px] h-[45px] ml-[20px]">
+        <div className="w-[170px] h-[45px] ml-5">
           <Select>
             <SelectTrigger className="w-[170px] h-[45px]">
               <SelectValue placeholder="Dubai" />
@@ -40,16 +40,16 @@ const FindDeals = () => {
             </SelectContent>
           </Select>
         </div>
-        <Button className="w-[190px] h-[46px] mr-[30px] ml-[20px]">
+        <Button className="w-[190px] h-[46px] mr-[30px] ml-5">
           Advanced Search
         </Button>
       </div>
       <div>
-        <p className="font-medium text-[16px] mt-[30px] mb-[20px]">
+        <p className="font-medium text-[16px] mt-[30px] mb-5">
           Best Pics for your fund
         </p>
       </div>
-      <div className="flex flex-row space-x-[20px]">
+      <div className="flex flex-row space-x-5">
         <Card className="w-[370px] h-[246px]">
           <CardHeader>
             <CardTitle>Startupname</CardTitle>

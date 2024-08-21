@@ -21,7 +21,7 @@ const Talentprofile = () => {
           Work Experience 5 years 8 months
         </p>
       </div>
-      <div className="mt-[20px] flex flex-row font-medium text-[12px]">
+      <div className="mt-5 flex flex-row font-medium text-[12px]">
         <span className="w-[160px] h-[45px]">
           <p>April 2022 — To this day </p>
           <p>9 moths</p>
@@ -31,7 +31,7 @@ const Talentprofile = () => {
           <p>UI/UX Designer</p>
         </span>
       </div>
-      <div className="mt-[20px] flex flex-row font-medium text-[12px]">
+      <div className="mt-5 flex flex-row font-medium text-[12px]">
         <span className="w-[160px] h-[45px]">
           <p>April 2022 — To this day </p>
           <p>9 moths</p>
@@ -41,7 +41,7 @@ const Talentprofile = () => {
           <p>UI/UX Designer</p>
         </span>
       </div>
-      <div className="mt-[20px] flex flex-row font-medium text-[12px]">
+      <div className="mt-5 flex flex-row font-medium text-[12px]">
         <span className="w-[160px] h-[45px]">
           <p>April 2022 — To this day </p>
           <p>9 moths</p>
@@ -51,7 +51,7 @@ const Talentprofile = () => {
           <p>UI/UX Designer</p>
         </span>
       </div>
-      <div className="mt-[20px] flex flex-row font-medium text-[12px]">
+      <div className="mt-5 flex flex-row font-medium text-[12px]">
         <span className="w-[160px] h-[45px]">
           <p>April 2022 — To this day </p>
           <p>9 moths</p>
@@ -62,7 +62,7 @@ const Talentprofile = () => {
         </span>
       </div>
       <div>
-        <p className="font-semibold text-[18px] mt-[20px]">Key Skills</p>
+        <p className="font-semibold text-[18px] mt-5">Key Skills</p>
         <div className=" flex flex-row space-x-[10px] border w-[560px] h-[150px]">
           <ul className="font-medium text-[12px] px-[10px]">
             <li>UI/UX Design</li>
@@ -75,7 +75,7 @@ const Talentprofile = () => {
             <li>Adobe Illustrator</li>
           </ul>
         </div>
-        <div className="mt-[20px]">
+        <div className="mt-5">
           <p className="font-semibold text-[18px]">About me</p>
           <p className="text-[12px] font-medium">
             As a UI/UX Designer with a focus on Web3 and Blockchain projects, I
@@ -109,7 +109,7 @@ const Talentprofile = () => {
             </div>
           </div>
         </div>
-        <p className="font-semibold text-[18px] mt-[20px]">Languages</p>
+        <p className="font-semibold text-[18px] mt-5">Languages</p>
         <div className="flex flex-row">
           <div>
             <div>English</div>
@@ -118,7 +118,7 @@ const Talentprofile = () => {
             <div>Native</div>
           </div>
         </div>
-        <p className="font-semibold text-[18px] mt-[20px]">Portfolio</p>
+        <p className="font-semibold text-[18px] mt-5">Portfolio</p>
         <div className="flex flex-row">
           <div>
             <div>Behance</div>

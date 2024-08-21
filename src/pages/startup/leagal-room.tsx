@@ -24,7 +24,7 @@ const LegalRoom: React.FC = () => {
     <div className="flex ml-[30px]">
       <div className="flex-1 py-[97px]">
         <div className="flex items-center justify-between">
-          <p className="font-semibold text-[20px]">Legal Room</p>
+          <p className="font-semibold text-5">Legal Room</p>
           <Button
             variant="secondary"
             className="w-[178px] h-[42px] ml-[666px] mr-[15px]  bg-white border"
@@ -45,7 +45,7 @@ const LegalRoom: React.FC = () => {
             />
           </div>
         </div>
-        <div className="mt-[30px] mb-[20px] font-medium text-base">
+        <div className="mt-[30px] mb-5 font-medium text-base">
           <NavbarLegalRoom setStep={setStep} currentStep={step} />
           {renderForm()}
         </div>

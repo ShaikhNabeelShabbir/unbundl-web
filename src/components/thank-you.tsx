@@ -5,7 +5,7 @@ export function Thankyou() {
         <p className="h-[39px] font-semibold text-[32px] text-center">
           Thank you for creating an account!
         </p>
-        <p className="mt-[20px] text-center font-medium text-[24px]">
+        <p className="mt-5 text-center font-medium text-[24px]">
           Your information is under review. We select startups very carefully,
           as we want to keep the quality top notch on Unbundl.
           <br /> You are going to get a confirmation email in the next 24 hours.

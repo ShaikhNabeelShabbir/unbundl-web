@@ -52,7 +52,7 @@ const ViewRequest = () => {
             placeholder="Search..."
           />
         </div>
-        <div className="w-[170px] h-[45px] ml-[20px]">
+        <div className="w-[170px] h-[45px] ml-5">
           <Select>
             <SelectTrigger className="w-[170px] h-[45px]">
               <SelectValue placeholder="Dubai" />
@@ -64,7 +64,7 @@ const ViewRequest = () => {
             </SelectContent>
           </Select>
         </div>
-        <Button className="w-[190px] h-[46px] mr-[30px] ml-[20px]">
+        <Button className="w-[190px] h-[46px] mr-[30px] ml-5">
           Advanced Search
         </Button>
       </div>
@@ -83,7 +83,7 @@ const ViewRequest = () => {
           <TableBody>
             {expand_you_network.map((organization, index) => (
               <TableRow key={index}>
-                <TableCell className="font-semibold text-[14px]">
+                <TableCell className="font-semibold text-base">
                   {organization.investorName}
                 </TableCell>
                 <TableCell>{organization.location}</TableCell>
