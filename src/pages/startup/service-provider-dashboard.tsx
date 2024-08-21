@@ -10,7 +10,7 @@ const SeeviceProviderDashboard: React.FC = () => {
           <Button
             type="button"
             variant="link"
-            className="h-[42px] w-[178px] text-base"
+            className="h-11 w-[178px] text-base"
           >
             Open Profile Setting{" "}
           </Button>

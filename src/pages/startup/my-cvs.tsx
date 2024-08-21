@@ -32,7 +32,7 @@ const MyCvs: React.FC = () => {
     <div className="flex flex-wrap m-8">
       <div className="flex-1 py-[97px]">
         <div className="flex flex-row">
-          <div className="mt-5 mb-5 font-medium text-base w-full h-[296px]  bg-black/5 ">
+          <div className="mt-5 mb-5 font-medium text-base w-full h-full  bg-black/5 ">
             <div className="w-full h-15 border flex flex-row">
               <div className="ml-5 mt-5">
                 <Button
@@ -65,7 +65,7 @@ const MyCvs: React.FC = () => {
               <div>Active Services </div>
               <div className="ml-auto mr-5">
                 <Select>
-                  <SelectTrigger className="w-[200px] h-[32px] bg-transparent">
+                  <SelectTrigger className="w-[200px] h-8 bg-transparent">
                     <SelectValue placeholder="Dubai" />
                   </SelectTrigger>
                   <SelectContent>
