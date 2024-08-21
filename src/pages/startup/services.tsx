@@ -29,11 +29,11 @@ const investments = [
 ];
 const Services: React.FC = () => {
   return (
-    <div className="flex ml-[30px] mr-[30px] mb-[30px]">
+    <div className="flex flex-wrap m-8">
       <div className="flex-1 py-[97px]">
         <div className="flex flex-row">
-          <div className="mt-5 mb-5 font-medium text-base w-[1150px] h-[296px]  bg-black/5 ">
-            <div className="w-[1150px] h-[60px] border flex flex-row">
+          <div className="mt-5 mb-5 font-medium text-base w-full h-[296px]  bg-black/5 ">
+            <div className="w-full h-15 border flex flex-row">
               <div className="ml-5 mt-5">
                 <Button
                   className="p-5 hover:underline font-medium text-md"
@@ -60,12 +60,12 @@ const Services: React.FC = () => {
                   Paused
                 </Button>
               </div>
-              <div className="pt-[13px] ml-[452px] border ">
+              <div className="pt-3 ml-auto border ">
                 <Dialog>
                   <DialogTrigger asChild>
                     <Button
                       type="button"
-                      className="h-45 w-88 text-sm mr-[100px] ml-auto"
+                      className="h-11 w-22 text-sm mr-25 ml-auto"
                     >
                       Add your service
                     </Button>
@@ -76,9 +76,9 @@ const Services: React.FC = () => {
                 </Dialog>
               </div>
             </div>
-            <div className="mt-[15px] mx-5 w-[1110px] h-[32px]  font-semibold text-[18px] flex flex-row">
+            <div className="mt-4 w-full h-8 font-semibold text-lg flex flex-row">
               <div>Active Services </div>
-              <div className="ml-[770px]">
+              <div className="ml-auto">
                 <Select>
                   <SelectTrigger className="w-[200px] h-[32px] bg-transparent">
                     <SelectValue placeholder="Dubai" />
@@ -91,7 +91,7 @@ const Services: React.FC = () => {
                 </Select>
               </div>
             </div>
-            <div className="mt-[30px] mx-5 w-[1110px] h-[130px] border">
+            <div className="mt-8  w-full h-[130px] border">
               <Table>
                 <TableHeader>
                   <TableRow>

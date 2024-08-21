@@ -17,7 +17,7 @@ const SeeviceProviderDashboard: React.FC = () => {
         </div>
         <div className="flex flex-row w-full">
           <div className="mt-5 mb-5 font-medium text-base w-fit shrink-0 h-[250px]  bg-black/5 ">
-            <div className="font-semibold text-[18px] mt-5 ml-5">
+            <div className="font-semibold text-lg mt-5 ml-5">
               Bob Alice{" "}
               <Button
                 variant="link"
@@ -33,13 +33,13 @@ const SeeviceProviderDashboard: React.FC = () => {
               <br />
               <br />
               <div className=" mb-5 space-x-[10px]">
-                <Button className="bg-black/25 w-[97px] h-[35px]">
+                <Button className="bg-black/25 w-[97px] h-9">
                   UI/UX Design
                 </Button>
-                <Button className="bg-black/25 w-[89px] h-[35px] ">
+                <Button className="bg-black/25 w-[89px] h-9 ">
                   Web Design
                 </Button>
-                <Button className="bg-black/25 w-[128px] h-[35px]">
+                <Button className="bg-black/25 w-[128px] h-9">
                   Mobile App Design
                 </Button>
               </div>
@@ -103,7 +103,7 @@ const SeeviceProviderDashboard: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="mt-8 mb-5 w-fit h-fit mr-8 font-semibold text-lg ">
+          <div className="mt-8 mb-5 w-fit h-fit font-semibold text-lg ">
             Company profile completion{" "}
             <div className="w-full h-fit border font-semibold text-lg p-5 mt-5 bg-black/5 space-y-5">
               Complete your profile to increase your in-platform ranking <br />
