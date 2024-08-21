@@ -147,7 +147,7 @@ export function FundraisingIformationForm() {
                         Add Cap table{" "}
                       </Button>
                     </DialogTrigger>
-                    <DialogContent className="max-w-fit border border-red-500">
+                    <DialogContent className="max-w-fit ">
                       <DialogHeader>
                         <DialogTitle className="font-semibold text-xl">
                           Create CAP table
