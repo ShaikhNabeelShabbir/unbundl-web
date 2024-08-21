@@ -22,7 +22,7 @@ const CryptoEvents: React.FC = () => {
       <div className="flex-1 py-[97px]">
         <div className="flex items-center justify-between">
           <p className="font-semibold text-5">Crypto Events</p>
-          <Button className="w-[178px] h-11 mr-8">Add Event</Button>
+          <Button className="w-[178px] h-11 ">Add Event</Button>
         </div>
         <div className="flex items-center justify-between mt-5">
           <div className="flex items-center w-full h-12 border rounded-1">
@@ -45,12 +45,12 @@ const CryptoEvents: React.FC = () => {
               </SelectContent>
             </Select>
           </div>
-          <Button className="w-[190px] h-12 mr-8 ml-3">Advanced Search</Button>
+          <Button className="w-[190px] h-12 ml-3">Advanced Search</Button>
         </div>
-        <div className="mt-8 mb-5 font-medium text-base mr-8">
+        <div className="mt-8 mb-5 font-medium text-base">
           Best Crypto Events in Dubai{" "}
         </div>
-        <div className="flex flex-col space-y-5 mr-8">
+        <div className="flex flex-col space-y-5 ">
           <div className="flex flex-row space-x-5 w-full">
             <Card className="w-full h-[150px]">
               <CardHeader>
@@ -86,7 +86,7 @@ const CryptoEvents: React.FC = () => {
               </CardContent>
             </Card>
           </div>
-          <div className="flex flex-row space-x-5 mr-8 w-full">
+          <div className="flex flex-row space-x-5 w-full">
             <Card className="w-full h-[150px]">
               <CardHeader>
                 <CardDescription>Nov. 27 2022</CardDescription>
