@@ -88,19 +88,19 @@ const MyCompany: React.FC = () => {
                       Fund Raising
                       <Switch />
                     </div>
-                    <div className="ml-5 flex flex-row space-x-3 pr-5">
+                    <div className="ml-5 flex flex-row space-x-3 pr-5 pt-5">
                       <Button>Round A</Button>
                       <Button>Fund Raising</Button>
                       <Button>Hiring</Button>
                     </div>
                   </div>
 
-                  <div className=" ml-6 ">
+                  <div>
                     <div className="mt-5 font-semibold w-fit text-lg">
                       Project Description
                     </div>
                     <br />
-                    <div className="font-normal text-sm">
+                    <div className="font-normal text-sm pr-5">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Magni, eos architecto et impedit sed assumenda,
                       voluptates, ipsum a quod quas aliquam nesciunt eligendi
@@ -179,28 +179,34 @@ const MyCompany: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <br />
               <div className="mt-[30px]">
-                {" "}
-                <p className="font-semibold text-5">Team</p>
-                <br />
-                <div className="w-full border flex justify-between">
-                  <Button className="p-5 font-medium text-md" variant="ghost">
-                    Full Team
-                  </Button>
-                  <Button className="p-5 font-medium text-md" variant="ghost">
-                    Founders
-                  </Button>
-                  <Button className="p-5 font-medium text-md" variant="ghost">
-                    Employees
-                  </Button>
-                  <Button className="p-5 font-medium text-md" variant="ghost">
-                    Advisors
-                  </Button>
-                  <Button className="p-5 font-medium text-md" variant="link">
-                    Add a Member
-                  </Button>
+                <div>
+                  {" "}
+                  <div className="flex justify-between items-center">
+                    <p className="font-semibold text-5">Team</p>
+                    <Button className="text-sm font-medium" variant="link">
+                      Edit Privacy
+                    </Button>
+                  </div>
+                  <div className="w-full border flex justify-between">
+                    <Button className="p-5 font-medium text-md" variant="ghost">
+                      Full Team
+                    </Button>
+                    <Button className="p-5 font-medium text-md" variant="ghost">
+                      Founders
+                    </Button>
+                    <Button className="p-5 font-medium text-md" variant="ghost">
+                      Employees
+                    </Button>
+                    <Button className="p-5 font-medium text-md" variant="ghost">
+                      Advisors
+                    </Button>
+                    <Button className="p-5 font-medium text-md" variant="link">
+                      Add a Member
+                    </Button>
+                  </div>
                 </div>
+
                 <Table className="border">
                   <TableHeader>
                     <TableRow>
@@ -236,11 +242,14 @@ const MyCompany: React.FC = () => {
                 </Table>
               </div>
               <div className="pt-[30px]">
-                {" "}
-                <p className="font-semibold text-5 ">
-                  Current Round Information
-                </p>
-                <br />
+                <div className="flex justify-between items-center">
+                  <p className="font-semibold text-5">
+                    Current Round Information
+                  </p>
+                  <Button className="text-sm font-medium" variant="link">
+                    Edit Privacy
+                  </Button>
+                </div>
                 <Table className="border  bg-black/5">
                   <TableHeader>
                     <TableRow>
@@ -271,9 +280,12 @@ const MyCompany: React.FC = () => {
                 </Table>
               </div>
               <div className="mt-[30px]">
-                {" "}
-                <p className="font-semibold text-5 ">Cap Table</p>
-                <br />
+                <div className="flex justify-between items-center">
+                  <p className="font-semibold text-5">Cap Table</p>
+                  <Button className="text-sm font-medium" variant="link">
+                    Edit Privacy
+                  </Button>
+                </div>
                 <Table className="border bg-black/5">
                   <TableHeader>
                     <TableRow>
@@ -307,8 +319,12 @@ const MyCompany: React.FC = () => {
               </div>
               <br />
               <div>
-                <p className="font-semibold text-5 ">Product Information</p>
-                <br />
+                <div className="flex justify-between items-center">
+                  <p className="font-semibold text-5">Product Information</p>
+                  <Button className="text-sm font-medium" variant="link">
+                    Edit Privacy
+                  </Button>
+                </div>{" "}
                 <div className="w-full h-[159px] border px-5 py-5 bg-black/5">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Fugit ullam ab fugiat illo sed qui sequi eius! Temporibus
@@ -322,8 +338,12 @@ const MyCompany: React.FC = () => {
               </div>
               <br />
               <div>
-                <p className="font-semibold text-5">Tech Information</p>
-                <br />
+                <div className="flex justify-between items-center">
+                  <p className="font-semibold text-5">Tech Information</p>
+                  <Button className="text-sm font-medium" variant="link">
+                    Edit Privacy
+                  </Button>
+                </div>{" "}
                 <div className="w-full h-[159px] border px-5 py-5 bg-black/5">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. At
                   quibusdam, veniam voluptate molestias placeat ratione aliquam
@@ -337,8 +357,12 @@ const MyCompany: React.FC = () => {
               </div>
               <br />
               <div>
-                <p className="font-semibold text-5">Market Information</p>{" "}
-                <br />
+                <div className="flex justify-between items-center">
+                  <p className="font-semibold text-5">Market Information</p>
+                  <Button className="text-sm font-medium" variant="link">
+                    Edit Privacy
+                  </Button>
+                </div>{" "}
                 <div className="w-full h-[159px] border px-5 py-5 bg-black/5">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Nobis, numquam repellat! Dolore in quidem sunt odit commodi
@@ -352,8 +376,14 @@ const MyCompany: React.FC = () => {
               </div>
               <br />
               <div>
-                <p className="font-semibold text-5">Fundraising Information</p>
-                <br />
+                <div className="flex justify-between items-center">
+                  <p className="font-semibold text-5">
+                    Fund Raising Information
+                  </p>
+                  <Button className="text-sm font-medium" variant="link">
+                    Edit Privacy
+                  </Button>
+                </div>{" "}
                 <div className="w-full h-[159px] border px-5 py-5 bg-black/5">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
                   doloribus nostrum labore praesentium sit non dignissimos
@@ -392,7 +422,12 @@ const MyCompany: React.FC = () => {
                   <Card className="bg-black/5">
                     <CardHeader>
                       <CardTitle className="font-medium text-base text-black/50">
-                        Nov. 27 2022
+                        <div className="flex justify-between items-center">
+                          <p className="font-semibold text-5">Nov. 27 2022 </p>
+                          <Button className="text-sm font-medium">
+                            For Everyone{" "}
+                          </Button>
+                        </div>{" "}
                       </CardTitle>
                       <CardDescription>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -409,7 +444,12 @@ const MyCompany: React.FC = () => {
                   <Card className="bg-black/5">
                     <CardHeader>
                       <CardTitle className="font-medium text-base text-black/50">
-                        Nov. 27 2022
+                        <div className="flex justify-between items-center">
+                          <p className="font-semibold text-5">Nov. 27 2022 </p>
+                          <Button className="text-sm font-medium">
+                            For Everyone{" "}
+                          </Button>
+                        </div>{" "}
                       </CardTitle>
                       <CardDescription>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -426,7 +466,12 @@ const MyCompany: React.FC = () => {
                   <Card className="bg-black/5">
                     <CardHeader>
                       <CardTitle className="font-medium text-base text-black/50">
-                        Nov. 27 2022
+                        <div className="flex justify-between items-center">
+                          <p className="font-semibold text-5">Nov. 27 2022 </p>
+                          <Button className="text-sm font-medium">
+                            For Everyone{" "}
+                          </Button>
+                        </div>{" "}
                       </CardTitle>
                       <CardDescription>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -443,7 +488,12 @@ const MyCompany: React.FC = () => {
                   <Card className="bg-black/5">
                     <CardHeader>
                       <CardTitle className="font-medium text-base text-black/50">
-                        Nov. 27 2022
+                        <div className="flex justify-between items-center">
+                          <p className="font-semibold text-5">Nov. 27 2022 </p>
+                          <Button className="text-sm font-medium">
+                            For Everyone{" "}
+                          </Button>
+                        </div>{" "}
                       </CardTitle>
                       <CardDescription>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -460,7 +510,12 @@ const MyCompany: React.FC = () => {
                   <Card className="bg-black/5">
                     <CardHeader>
                       <CardTitle className="font-medium text-base text-black/50">
-                        Nov. 27 2022
+                        <div className="flex justify-between items-center">
+                          <p className="font-semibold text-5">Nov. 27 2022 </p>
+                          <Button className="text-sm font-medium">
+                            For Everyone{" "}
+                          </Button>
+                        </div>{" "}
                       </CardTitle>
                       <CardDescription>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -477,7 +532,12 @@ const MyCompany: React.FC = () => {
                   <Card className="bg-black/5">
                     <CardHeader>
                       <CardTitle className="font-medium text-base text-black/50">
-                        Nov. 27 2022
+                        <div className="flex justify-between items-center">
+                          <p className="font-semibold text-5">Nov. 27 2022 </p>
+                          <Button className="text-sm font-medium">
+                            For Everyone{" "}
+                          </Button>
+                        </div>{" "}
                       </CardTitle>
                       <CardDescription>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -493,7 +553,12 @@ const MyCompany: React.FC = () => {
                   <Card className="bg-black/5">
                     <CardHeader>
                       <CardTitle className="font-medium text-base text-black/50">
-                        Nov. 27 2022
+                        <div className="flex justify-between items-center">
+                          <p className="font-semibold text-5">Nov. 27 2022 </p>
+                          <Button className="text-sm font-medium">
+                            For Everyone{" "}
+                          </Button>
+                        </div>{" "}
                       </CardTitle>
                       <CardDescription>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -509,7 +574,12 @@ const MyCompany: React.FC = () => {
                   <Card className="bg-black/5">
                     <CardHeader>
                       <CardTitle className="font-medium text-base text-black/50">
-                        Nov. 27 2022
+                        <div className="flex justify-between items-center">
+                          <p className="font-semibold text-5">Nov. 27 2022 </p>
+                          <Button className="text-sm font-medium">
+                            For Everyone{" "}
+                          </Button>
+                        </div>{" "}
                       </CardTitle>
                       <CardDescription>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -525,7 +595,12 @@ const MyCompany: React.FC = () => {
                   <Card className="bg-black/5">
                     <CardHeader>
                       <CardTitle className="font-medium text-base text-black/50">
-                        Nov. 27 2022
+                        <div className="flex justify-between items-center">
+                          <p className="font-semibold text-5">Nov. 27 2022 </p>
+                          <Button className="text-sm font-medium">
+                            For Everyone{" "}
+                          </Button>
+                        </div>{" "}
                       </CardTitle>
                       <CardDescription>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -541,7 +616,12 @@ const MyCompany: React.FC = () => {
                   <Card className="bg-black/5">
                     <CardHeader>
                       <CardTitle className="font-medium text-base text-black/50">
-                        Nov. 27 2022
+                        <div className="flex justify-between items-center">
+                          <p className="font-semibold text-5">Nov. 27 2022 </p>
+                          <Button className="text-sm font-medium">
+                            For Everyone{" "}
+                          </Button>
+                        </div>{" "}
                       </CardTitle>
                       <CardDescription>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -557,7 +637,12 @@ const MyCompany: React.FC = () => {
                   <Card className="bg-black/5">
                     <CardHeader>
                       <CardTitle className="font-medium text-base text-black/50">
-                        Nov. 27 2022
+                        <div className="flex justify-between items-center">
+                          <p className="font-semibold text-5">Nov. 27 2022 </p>
+                          <Button className="text-sm font-medium">
+                            For Everyone{" "}
+                          </Button>
+                        </div>{" "}
                       </CardTitle>
                       <CardDescription>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
