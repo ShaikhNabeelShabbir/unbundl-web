@@ -54,17 +54,17 @@ const Dashboard: React.FC = () => {
         <div className="mt-[30px] mb-5  mr-8  font-semibold text-lg p-3">
           Find people
         </div>
-        <div className="flex flex-row mr-8 font-semibold text-lg space-x-5 w-full  ">
+        <div className="flex flex-row font-semibold text-lg space-x-5 w-full  ">
           <div className="border h-25 font-semibold text-4 rounded-1  bg-black/5 ">
-            <div className="flex items-center justify-center p-2">
+            <div className="flex w-full items-center justify-center p-2">
               Investors{" "}
             </div>
-            <div className="text-[12px] font-medium flex items-center justify-center text-center p-3">
+            <div className="text-sm font-medium flex items-center justify-center text-center p-3">
               52 companies got funding this week on the platform
             </div>
           </div>
           <div className="border h-25 font-semibold text-md rounded-1  bg-black/5 ">
-            <div className="flex items-center justify-center p-2">
+            <div className="flex w-full items-center justify-center p-2">
               Employees and Advisors{" "}
             </div>
             <div className="text-sm font-medium flex items-center justify-center text-center p-3">
@@ -72,7 +72,7 @@ const Dashboard: React.FC = () => {
             </div>{" "}
           </div>
           <div className="border h-25 font-semibold text-md rounded-1  bg-black/5 ">
-            <div className="flex items-center justify-center p-2">
+            <div className="flex w-full items-center justify-center p-2">
               Service Providers{" "}
             </div>
             <div className="text-sm font-medium flex items-center justify-center text-center p-3">
@@ -80,7 +80,7 @@ const Dashboard: React.FC = () => {
             </div>
           </div>
           <div className="border h-25 font-semibold text-md rounded-1  bg-black/5 ">
-            <div className="flex items-center justify-center p-2 ">
+            <div className="flex w-full items-center justify-center p-2 ">
               Network{" "}
             </div>
             <div className="text-sm font-medium flex items-center justify-center text-center p-3">
@@ -136,7 +136,7 @@ const Dashboard: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="mt-8 mb-5 w-fit h-fit mr-8 font-semibold text-lg ">
+          <div className="mt-8 mb-5 w-fit h-fit  font-semibold text-lg ">
             Company profile completion{" "}
             <div className="w-full h-fit border font-semibold text-lg p-5 mt-5 bg-black/5 space-y-5">
               Complete your profile to increase your in-platform ranking <br />
@@ -145,7 +145,7 @@ const Dashboard: React.FC = () => {
                   className="absolute top-0 left-0 h-full bg-black/50 rounded-full"
                   style={{ width: "60%" }}
                 ></div>
-                <span className="absolute inset-0 flex items-center justify-center text-white text-sm font-bold ">
+                <span className="absolute inset-0 flex items-center justify-center text-white text-sm w-full font-bold ">
                   60%
                 </span>
               </div>

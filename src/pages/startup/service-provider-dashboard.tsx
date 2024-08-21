@@ -3,20 +3,20 @@ import React from "react";
 
 const SeeviceProviderDashboard: React.FC = () => {
   return (
-    <div className="flex ml-[30px] mr-[30px] mb-[30px]">
+    <div className="flex flex-wrap m-8">
       <div className="flex-1 py-[97px]">
         <div className="flex items-center justify-between">
           <p className="font-semibold text-5">Analytics</p>
           <Button
             type="button"
             variant="link"
-            className="h-[42px] w-[178px] text-base mr-[30px]"
+            className="h-[42px] w-[178px] text-base"
           >
             Open Profile Setting{" "}
           </Button>
         </div>
-        <div className="flex flex-row">
-          <div className="mt-5 mb-5 font-medium text-base w-[370px] h-[250px]  bg-black/5 ">
+        <div className="flex flex-row w-full">
+          <div className="mt-5 mb-5 font-medium text-base w-fit shrink-0 h-[250px]  bg-black/5 ">
             <div className="font-semibold text-[18px] mt-5 ml-5">
               Bob Alice{" "}
               <Button
@@ -45,7 +45,7 @@ const SeeviceProviderDashboard: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="mt-5 mb-5 font-medium text-base ml-5 w-[760px] h-[250px] border flex flex-col items-center justify-center bg-black/5">
+          <div className="mt-5 mb-5 font-medium text-base ml-5 w-full h-[250px] border flex flex-col items-center justify-center bg-black/5">
             <span className="flex items-center justify-center text-center">
               Analytics:
             </span>
@@ -55,68 +55,74 @@ const SeeviceProviderDashboard: React.FC = () => {
             </span>
           </div>
         </div>
-        <div className="flex flex-row mb-[10px]">
-          <div className="mt-[30px]  w-[760px] h-[24px] mr-[30px] font-semibold text-lg ">
-            <p className="mb-[30px]"> Upcoming Meetings </p>
-            <div className="w-[760px] h-[250px] border flex flex-row bg-black/5 ">
-              <div className="w-[233px] h-[32px] border mt-5 ml-5 mr-[10px] flex flex-col font-bold text-[10px] items-center  bg-black/10">
-                Today
-                <div className="w-[230px] h-[27px] border mt-[15px] mb-[10px] font-medium text-[6px]  bg-black/10">
+        <div className="flex flex-row mb-3">
+          <div className="mt-[30px] mb-5 w-full h-6 mr-8 font-semibold text-lg">
+            Upcoming Meetings{" "}
+            <div className="w-full  border flex flex-row bg-black/5 mt-5">
+              <div className="w-full h-full border mt-5 ml-5 mr-3 flex flex-col font-bold text-sm items-center p-2">
+                <p className="bg-black/10 w-full font-bold text-sm items-center text-center py-3">
+                  Today{" "}
+                </p>
+                <div className="w-full h-fit border mt-4 mb-3 font-medium p-2 text-2  bg-black/10">
                   Investor a16z crypto at 6:30 PM view request
                 </div>
-                <div className="w-[230px] h-[27px] border mt-[15px] mb-[10px] font-medium text-[6px] bg-black text-white">
+                <div className="w-full h-fit border mt-4 mb-3 font-medium p-2 text-2 bg-black text-white">
                   Potential Advisor Robert Maclarence at 7:00 PM
                 </div>
               </div>
-              <div className="w-[233px] h-[32px] border mt-5 ml-[10px] mr-[10px] flex flex-col font-bold text-[10px] items-center  bg-black/10">
-                Tommorrow
-                <div className="w-[230px] h-[27px] border mt-[15px] mb-[10px] font-medium text-[6px] bg-black text-white">
+              <div className="w-full h-fit border mt-5 ml-[10px] mr-[10px] flex flex-col font-bold text-sm items-center p-2">
+                <p className="bg-black/10 w-full font-bold text-sm items-center text-center py-3">
+                  Tommorrow{" "}
+                </p>
+                <div className="w-full h-fit border mt-4 mb-3 font-medium p-2 text-2 bg-black text-white">
                   Potential Advisor Robert Maclarence at 7:00 PM
                 </div>
-                <div className="w-[230px] h-[27px] border mt-[15px] mb-[10px] font-medium text-[6px] bg-black text-white">
+                <div className="w-full h-fit border mt-4 mb-3 font-medium p-2 text-2 bg-black text-white">
                   Potential Advisor Robert Maclarence at 7:00 PM
                 </div>{" "}
-                <div className="w-[230px] h-[27px] border mt-[15px] mb-[10px] font-medium text-[6px] bg-black text-white">
+                <div className="w-full h-fit border mt-4 mb-3 font-medium p-2 text-2 bg-black text-white">
                   Potential Advisor Robert Maclarence at 7:00 PM
                 </div>
               </div>
-              <div className="w-[233px] h-[32px] border mt-5 ml-[10px] mr-[10px] flex flex-col font-bold text-[10px] items-center  bg-black/10">
-                Later
-                <div className="w-[230px] h-[27px] border mt-[15px] mb-[10px] font-medium text-[6px]  bg-black/10">
+              <div className="w-full h-fit border mt-5 ml-[10px] mr-[10px] flex flex-col font-bold text-sm items-center p-2">
+                <p className="bg-black/10 w-full font-bold text-sm items-center text-center py-3">
+                  Later
+                </p>
+                <div className="w-full h-fit border mt-4 mb-3 font-medium p-2 text-2  bg-black/10">
                   Investor a16z crypto at 6:30 PM view request
                 </div>
-                <div className="w-[230px] h-[27px] border mt-[15px] mb-[10px] font-medium text-[6px]  bg-black/10">
+                <div className="w-full h-fit border mt-4 mb-3 font-medium p-2 text-2  bg-black/10">
                   Investor a16z crypto at 6:30 PM view request
                 </div>{" "}
-                <div className="w-[230px] h-[27px] border mt-[15px] mb-[10px] font-medium text-[6px]  bg-black/10">
+                <div className="w-full h-fit border mt-4 mb-3 font-medium p-2 text-2  bg-black/10">
                   Investor a16z crypto at 6:30 PM view request
                 </div>{" "}
-                <div className="w-[230px] h-[27px] border mt-[15px] mb-[10px] font-medium text-[6px]  bg-black/10">
+                <div className="w-full h-fit border mt-4 mb-3 font-medium p-2 text-2  bg-black/10">
                   Investor a16z crypto at 6:30 PM view request
                 </div>
               </div>
             </div>
           </div>
-          <div className="mt-[30px] mb-5 w-[360px] h-[24px] mr-[30px] font-semibold text-lg ">
-            <p className="mb-[30px]"> Company profile completion </p>
-            <div className="w-[360px] h-[250px] border font-semibold text-[18px] px-5 pt-5 bg-black/5">
-              Complete your profile to increase your in-platform ranking{" "}
-              <div className="relative w-[330px] h-[30px] border rounded-full bg-black/50">
+          <div className="mt-8 mb-5 w-fit h-fit mr-8 font-semibold text-lg ">
+            Company profile completion{" "}
+            <div className="w-full h-fit border font-semibold text-lg p-5 mt-5 bg-black/5 space-y-5">
+              Complete your profile to increase your in-platform ranking <br />
+              <div className="relative h-8 border rounded-full bg-black/50">
                 <div
                   className="absolute top-0 left-0 h-full bg-black/50 rounded-full"
                   style={{ width: "60%" }}
                 ></div>
-                <span className="absolute inset-0 flex items-center justify-center text-white text-[10px] font-bold ">
+                <span className="absolute inset-0 flex items-center justify-center text-white text-sm font-bold ">
                   60%
                 </span>
               </div>
-              <div className="text-[10px] text-white my-[10px] font-normal rounded-1 flex items-center justify-center bg-black w-[330px] h-[32]">
+              <div className="text-sm text-white my-3 font-normal rounded-1 flex items-center justify-center bg-black w-full h-8 p-2">
                 Add Product Demo
               </div>
-              <div className="text-[10px] text-white my-[10px] font-normal rounded-1 flex items-center justify-center bg-black w-[330px] h-[32]">
+              <div className="text-sm text-white my-3 font-normal rounded-1 flex items-center justify-center bg-black w-full h-8 p-2">
                 Add the blockchain that you are building on
               </div>
-              <div className="text-[10px] text-white my-[10px] font-normal rounded-1 flex items-center justify-center bg-black w-[330px] h-[32]">
+              <div className="text-sm text-white my-3 font-normal rounded-1 flex items-center justify-center bg-black w-full h-8 p-2">
                 Add your Team size
               </div>
             </div>
