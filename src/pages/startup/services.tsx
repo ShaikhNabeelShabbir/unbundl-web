@@ -32,7 +32,7 @@ const Services: React.FC = () => {
     <div className="flex flex-wrap m-8">
       <div className="flex-1 py-[97px]">
         <div className="flex flex-row">
-          <div className="mt-5 mb-5 font-medium text-base w-full h-[296px]  bg-black/5 ">
+          <div className="mt-5 mb-5 font-medium text-base w-full h-full  bg-black/5 ">
             <div className="w-full h-15 border flex flex-row">
               <div className="ml-5 mt-5">
                 <Button
@@ -76,9 +76,9 @@ const Services: React.FC = () => {
                 </Dialog>
               </div>
             </div>
-            <div className="mt-4 w-full h-8 font-semibold text-lg flex flex-row">
+            <div className="mt-4 ml-5 w-full h-8 font-semibold text-lg flex flex-row">
               <div>Active Services </div>
-              <div className="ml-auto">
+              <div className="ml-auto mr-5">
                 <Select>
                   <SelectTrigger className="w-[200px] h-[32px] bg-transparent">
                     <SelectValue placeholder="Dubai" />
@@ -91,7 +91,7 @@ const Services: React.FC = () => {
                 </Select>
               </div>
             </div>
-            <div className="mt-8  w-full h-[130px] border">
+            <div className="mt-8  w-full h-fit border">
               <Table>
                 <TableHeader>
                   <TableRow>
