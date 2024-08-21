@@ -20,7 +20,7 @@ const FindDeals = () => {
   return (
     <div>
       <div className="flex items-center justify-between mt-[21px]">
-        <div className="flex items-center w-[770px] h-[46px] border rounded-[4px]">
+        <div className="flex items-center w-[770px] h-[46px] border rounded-1">
           <Search className="ml-4 text-gray-500" />
           <input
             type="text"

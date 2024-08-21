@@ -55,7 +55,7 @@ const Dashboard: React.FC = () => {
           Find people
         </div>
         <div className="flex flex-row mr-8 font-semibold text-lg space-x-5 w-full  ">
-          <div className="border h-25 font-semibold text-4 rounded-[4px]  bg-black/5 ">
+          <div className="border h-25 font-semibold text-4 rounded-1  bg-black/5 ">
             <div className="flex items-center justify-center p-2">
               Investors{" "}
             </div>
@@ -71,7 +71,7 @@ const Dashboard: React.FC = () => {
               158 candidates got jobs last week on the platform
             </div>{" "}
           </div>
-          <div className="border h-25 font-semibold text-md rounded-[4px]  bg-black/5 ">
+          <div className="border h-25 font-semibold text-md rounded-1  bg-black/5 ">
             <div className="flex items-center justify-center p-2">
               Service Providers{" "}
             </div>

@@ -45,7 +45,7 @@ const ReachOutToInvestors = () => {
   return (
     <div className="w-full h-fit px-5">
       <div className="flex flex-row space-x-[10px] mb-4">
-        <div className="flex items-center w-full h-[46px] border rounded-[4px] mt-5">
+        <div className="flex items-center w-full h-[46px] border rounded-1 mt-5">
           <Search className=" text-gray-500 mt-[10px]" />
           <input
             type="text"

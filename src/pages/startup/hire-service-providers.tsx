@@ -37,28 +37,28 @@ const HireServiceProviders: React.FC = () => {
         </div>
         <div className=" flex flex-col font-semibold text-md  mt-[21px] space-y-[10px]">
           <div className="flex flex-row w-full space-x-3 ">
-            <Card className="w-full h-[76px] rounded-[4px] flex items-center justify-center  bg-black/25 text-black/50">
+            <Card className="w-full h-[76px] rounded-1 flex items-center justify-center  bg-black/25 text-black/50">
               All
             </Card>
-            <Card className="w-full h-[76px] rounded-[4px] flex items-center justify-center  bg-black/25 text-black/50">
+            <Card className="w-full h-[76px] rounded-1 flex items-center justify-center  bg-black/25 text-black/50">
               Devs
             </Card>
-            <Card className="w-full h-[76px] rounded-[4px] flex items-center justify-center  bg-black/25 text-black/50">
+            <Card className="w-full h-[76px] rounded-1 flex items-center justify-center  bg-black/25 text-black/50">
               Design
             </Card>
-            <Card className="w-full h-[76px] rounded-[4px] flex items-center justify-center  bg-black/25 text-black/50">
+            <Card className="w-full h-[76px] rounded-1 flex items-center justify-center  bg-black/25 text-black/50">
               Marketing
             </Card>
-            <Card className="w-full h-[76px] rounded-[4px] flex items-center justify-center  bg-black/25 text-black/50">
+            <Card className="w-full h-[76px] rounded-1 flex items-center justify-center  bg-black/25 text-black/50">
               Business
             </Card>
-            <Card className="w-full h-[76px] rounded-[4px] flex items-center justify-center  bg-black/25 text-black/50">
+            <Card className="w-full h-[76px] rounded-1 flex items-center justify-center  bg-black/25 text-black/50">
               Experts
             </Card>
           </div>
         </div>
         <div className="flex items-center justify-between mt-[21px]">
-          <div className="flex items-center w-full h-[46px] border rounded-[4px]">
+          <div className="flex items-center w-full h-[46px] border rounded-1">
             <Search className="ml-4 text-gray-500" />
             <input
               type="text"

@@ -110,13 +110,13 @@ const SeeviceProviderDashboard: React.FC = () => {
                   60%
                 </span>
               </div>
-              <div className="text-[10px] text-white my-[10px] font-normal rounded-[4px] flex items-center justify-center bg-black w-[330px] h-[32]">
+              <div className="text-[10px] text-white my-[10px] font-normal rounded-1 flex items-center justify-center bg-black w-[330px] h-[32]">
                 Add Product Demo
               </div>
-              <div className="text-[10px] text-white my-[10px] font-normal rounded-[4px] flex items-center justify-center bg-black w-[330px] h-[32]">
+              <div className="text-[10px] text-white my-[10px] font-normal rounded-1 flex items-center justify-center bg-black w-[330px] h-[32]">
                 Add the blockchain that you are building on
               </div>
-              <div className="text-[10px] text-white my-[10px] font-normal rounded-[4px] flex items-center justify-center bg-black w-[330px] h-[32]">
+              <div className="text-[10px] text-white my-[10px] font-normal rounded-1 flex items-center justify-center bg-black w-[330px] h-[32]">
                 Add your Team size
               </div>
             </div>

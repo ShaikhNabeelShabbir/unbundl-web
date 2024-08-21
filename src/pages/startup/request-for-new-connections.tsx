@@ -41,9 +41,9 @@ const expand_you_network = [
 
 const RequestForNewConnections = () => {
   return (
-    <div className="w-[1150px] h-[650px] px-5">
-      <div className="flex flex-row space-x-[10px] mb-4">
-        <div className="flex items-center w-[770px] h-[46px] border rounded-[4px] ml-[10px]">
+    <div className="w-full h-fit px-5">
+      <div className="flex flex-row space-x-3 mb-4">
+        <div className="flex items-center w-full h-[46px] border rounded-1 ml-3">
           <Search className="ml-4 text-gray-500" />
           <input
             type="text"
@@ -64,7 +64,7 @@ const RequestForNewConnections = () => {
         </Select>
         <Button className="w-[170px] h-[45px]">Filters</Button>
       </div>
-      <Table className="border">
+      <Table className="border ">
         <TableHeader>
           <TableRow>
             <TableHead>Organization Name</TableHead>

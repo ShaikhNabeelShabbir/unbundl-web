@@ -126,7 +126,7 @@ const MyCompany: React.FC = () => {
                     Add the blockchain
                   </div>
 
-                  <div className="w-45 h-8 mx-5 mt-3 border bg-black text-white font-normal text-3 rounded-[4px] flex items-center justify-center">
+                  <div className="w-45 h-8 mx-5 mt-3 border bg-black text-white font-normal text-3 rounded-1 flex items-center justify-center">
                     Add the blockchain
                   </div>
                 </div>

@@ -58,13 +58,13 @@ const InvestorDashboard: React.FC = () => {
           Find people
         </div>
         <div className="flex flex-row mr-[30px] font-semibold text-lg space-x-[10px]">
-          <div className="border w-[272.5px] h-[100px] font-semibold text-[15px] rounded-[4px]  bg-black/5 ">
+          <div className="border w-[272.5px] h-[100px] font-semibold text-[15px] rounded-1  bg-black/5 ">
             <div className="flex items-center justify-center">Investors </div>
             <div className="text-[12px] font-medium flex items-center justify-center text-center">
               52 companies got funding this week on the platform
             </div>
           </div>
-          <div className="border w-[272.5px] h-[100px] font-semibold text-[15px] rounded-[4px]  bg-black/5 ">
+          <div className="border w-[272.5px] h-[100px] font-semibold text-[15px] rounded-1  bg-black/5 ">
             <div className="flex items-center justify-center">
               Employees and Advisors{" "}
             </div>
@@ -72,7 +72,7 @@ const InvestorDashboard: React.FC = () => {
               158 candidates got jobs last week on the platform
             </div>{" "}
           </div>
-          <div className="border w-[272.5px] h-[100px] font-semibold text-[15px] rounded-[4px]  bg-black/5 ">
+          <div className="border w-[272.5px] h-[100px] font-semibold text-[15px] rounded-1  bg-black/5 ">
             <div className="flex items-center justify-center">
               Service Providers{" "}
             </div>
@@ -80,7 +80,7 @@ const InvestorDashboard: React.FC = () => {
               458 Service Providers provided services last week on the platform
             </div>
           </div>
-          <div className="border w-[272.5px] h-[100px] font-semibold text-[15px] rounded-[4px]  bg-black/5 ">
+          <div className="border w-[272.5px] h-[100px] font-semibold text-[15px] rounded-1  bg-black/5 ">
             <div className="flex items-center justify-center ">Network </div>
             <div className="text-[12px] font-medium flex items-center justify-center text-center">
               2152 people maid new connections last week on the platform
@@ -142,13 +142,13 @@ const InvestorDashboard: React.FC = () => {
                   60%
                 </span>
               </div>
-              <div className="text-[10px] text-white my-[10px] font-normal rounded-[4px] flex items-center justify-center bg-black w-[330px] h-[32]">
+              <div className="text-[10px] text-white my-[10px] font-normal rounded-1 flex items-center justify-center bg-black w-[330px] h-[32]">
                 Add Product Demo
               </div>
-              <div className="text-[10px] text-white my-[10px] font-normal rounded-[4px] flex items-center justify-center bg-black w-[330px] h-[32]">
+              <div className="text-[10px] text-white my-[10px] font-normal rounded-1 flex items-center justify-center bg-black w-[330px] h-[32]">
                 Add the blockchain that you are building on
               </div>
-              <div className="text-[10px] text-white my-[10px] font-normal rounded-[4px] flex items-center justify-center bg-black w-[330px] h-[32]">
+              <div className="text-[10px] text-white my-[10px] font-normal rounded-1 flex items-center justify-center bg-black w-[330px] h-[32]">
                 Add your Team size
               </div>
             </div>

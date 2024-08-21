@@ -106,7 +106,7 @@ const MyPortfolio: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                <div className=" w-[220px] h-[250px] border bg-black/5 rounded-[4px]">
+                <div className=" w-[220px] h-[250px] border bg-black/5 rounded-1">
                   <p className="font-semibold text-[12px] mt-5">
                     Complete your profile to increase your in-platform ranking
                   </p>
@@ -119,11 +119,11 @@ const MyPortfolio: React.FC = () => {
                       75%
                     </span>
                   </div>
-                  <div className="w-[180px] h-[30px] mx-5 mt-[11px] border bg-black text-white font-normal text-[10px] rounded-[4px] flex items-center justify-center">
+                  <div className="w-[180px] h-[30px] mx-5 mt-[11px] border bg-black text-white font-normal text-[10px] rounded-1 flex items-center justify-center">
                     Add the blockchain
                   </div>
 
-                  <div className="w-[180px] h-[30px] mx-5 mt-[11px] border bg-black text-white font-normal text-[10px] rounded-[4px] flex items-center justify-center">
+                  <div className="w-[180px] h-[30px] mx-5 mt-[11px] border bg-black text-white font-normal text-[10px] rounded-1 flex items-center justify-center">
                     Add the blockchain
                   </div>
                 </div>
@@ -168,7 +168,7 @@ const MyPortfolio: React.FC = () => {
                 {" "}
                 <p>Investments</p>
                 <div className="flex items-center justify-between mt-[21px]">
-                  <div className="flex items-center w-[650px] h-[46px] border rounded-[4px]">
+                  <div className="flex items-center w-[650px] h-[46px] border rounded-1">
                     <Search className="ml-4 text-gray-500" />
                     <input
                       type="text"
@@ -222,7 +222,7 @@ const MyPortfolio: React.FC = () => {
                 {" "}
                 <p>Investment Team</p>
                 <div className="flex items-center justify-between mt-[21px]">
-                  <div className="flex items-center w-[650px] h-[46px] border rounded-[4px]">
+                  <div className="flex items-center w-[650px] h-[46px] border rounded-1">
                     <Search className="ml-4 text-gray-500" />
                     <input
                       type="text"

@@ -19,7 +19,7 @@ const ResearchLibrary: React.FC = () => {
           <Button className="w-[178px] h-[42px] mr-[30px]">Publish</Button>
         </div>
         <div className="flex items-center justify-between mt-[21px]">
-          <div className="flex items-center w-[950px] h-[46px] border rounded-[4px]">
+          <div className="flex items-center w-[950px] h-[46px] border rounded-1">
             <Search className="ml-4 text-gray-500" />
             <input
               type="text"
