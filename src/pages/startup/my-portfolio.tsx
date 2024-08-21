@@ -285,12 +285,12 @@ const MyPortfolio: React.FC = () => {
             </div>
             <div className=" ml-5 h-fit w-[370px] flex flex-col space-y-5">
               <div className="w-[370px] space-y-5 mt-[30px]">
-                <div className="bg-black/5 border">
-                  <p className="font-semibold text-lg pl-5 pt-5">
+                <div className=" border">
+                  <p className="font-semibold bg-black/5 text-lg pl-5 pt-5">
                     Investment Thesis
                   </p>
                   <br />
-                  <p className="font-normal text-sm p-5">
+                  <p className="font-normal text-sm p-5 bg-black/5">
                     MENA countries have large, untapped markets that are ripe
                     for disruption by innovative startups. By identifying and
                     investing in companies that are targeting these underserved
