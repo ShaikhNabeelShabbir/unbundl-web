@@ -21,22 +21,20 @@ const LegalRoom: React.FC = () => {
   };
 
   return (
-    <div className="flex ml-[30px]">
+    <div className="flex flex-wrap m-8">
       <div className="flex-1 py-[97px]">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center ">
           <p className="font-semibold text-5">Legal Room</p>
           <Button
             variant="secondary"
-            className="w-[178px] h-[42px] ml-[666px] mr-[15px]  bg-white border"
+            className="w-[178px] h-10 bg-white border ml-auto mr-8"
           >
             Connect with a lawyer{" "}
           </Button>
-          <Button className="w-[190px] h-[46px] mr-[30px]">
-            Request to add a template{" "}
-          </Button>
+          <Button className="w-[190px] h-11">Request to add a template </Button>
         </div>
         <div className="flex items-center justify-between mt-[21px]">
-          <div className="flex items-center w-[1150px] h-[46px] border rounded-1">
+          <div className="flex items-center w-full h-[46px] border rounded-1">
             <Search className="ml-4 text-gray-500" />
             <input
               type="text"
@@ -45,7 +43,7 @@ const LegalRoom: React.FC = () => {
             />
           </div>
         </div>
-        <div className="mt-[30px] mb-5 font-medium text-base">
+        <div className="mt-8 mb-5 font-medium text-base">
           <NavbarLegalRoom setStep={setStep} currentStep={step} />
           {renderForm()}
         </div>

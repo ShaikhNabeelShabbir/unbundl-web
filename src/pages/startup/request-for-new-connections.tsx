@@ -80,10 +80,16 @@ const RequestForNewConnections = () => {
               <TableCell className="font-semibold text-base">
                 {organization.nameOrganiztion}
               </TableCell>
-              <TableCell>{organization.category}</TableCell>
-              <TableCell>{organization.location}</TableCell>
-              <TableCell>{organization.mutualConnections}</TableCell>
-              <TableCell>
+              <TableCell className="font-semibold text-base">
+                {organization.category}
+              </TableCell>
+              <TableCell className="font-semibold text-base">
+                {organization.location}
+              </TableCell>
+              <TableCell className="font-semibold text-base">
+                {organization.mutualConnections}
+              </TableCell>
+              <TableCell className="font-semibold text-base">
                 <Dialog>
                   <DialogTrigger asChild>
                     <u className="cursor-pointer">Request Introduction</u>

@@ -10,10 +10,10 @@ const ExistingTemplates = () => {
   return (
     <div>
       <div className="flex flex-col space-y-5 mt-5">
-        <div className="flex flex-row space-x-5">
-          <Card className="w-[370px] h-[200px] flex flex-col justify-between">
+        <div className="flex flex-row space-x-5 w-full">
+          <Card className="w-full h-[200px] flex flex-col justify-between">
             <CardHeader>
-              <CardTitle className="w-[330px] h-[19px]">
+              <CardTitle className="w-[330px] h-5">
                 SAFT Contract Template{" "}
               </CardTitle>
             </CardHeader>
@@ -28,9 +28,9 @@ const ExistingTemplates = () => {
               <Button className="w-full">Download</Button>
             </CardFooter>
           </Card>
-          <Card className="w-[370px] h-[200px] flex flex-col justify-between">
+          <Card className="w-full h-[200px] flex flex-col justify-between">
             <CardHeader>
-              <CardTitle className="w-[330px] h-[19px]">
+              <CardTitle className="w-[330px] h-5">
                 SAFT Contract Template{" "}
               </CardTitle>
             </CardHeader>
@@ -45,9 +45,9 @@ const ExistingTemplates = () => {
               <Button className="w-full">Download</Button>
             </CardFooter>
           </Card>
-          <Card className="w-[370px] h-[200px] flex flex-col justify-between">
+          <Card className="w-full h-[200px] flex flex-col justify-between">
             <CardHeader>
-              <CardTitle className="w-[330px] h-[19px]">
+              <CardTitle className="w-[330px] h-5">
                 SAFT Contract Template{" "}
               </CardTitle>
             </CardHeader>
@@ -64,9 +64,9 @@ const ExistingTemplates = () => {
           </Card>
         </div>
         <div className="flex flex-row space-x-5">
-          <Card className="w-[370px] h-[200px] flex flex-col justify-between">
+          <Card className="w-full h-[200px] flex flex-col justify-between">
             <CardHeader>
-              <CardTitle className="w-[330px] h-[19px]">
+              <CardTitle className="w-[330px] h-5">
                 SAFT Contract Template{" "}
               </CardTitle>
             </CardHeader>
@@ -81,9 +81,9 @@ const ExistingTemplates = () => {
               <Button className="w-full">Download</Button>
             </CardFooter>
           </Card>
-          <Card className="w-[370px] h-[200px] flex flex-col justify-between">
+          <Card className="w-full h-[200px] flex flex-col justify-between">
             <CardHeader>
-              <CardTitle className="w-[330px] h-[19px]">
+              <CardTitle className="w-[330px] h-5">
                 SAFT Contract Template{" "}
               </CardTitle>
             </CardHeader>
@@ -98,9 +98,9 @@ const ExistingTemplates = () => {
               <Button className="w-full">Download</Button>
             </CardFooter>
           </Card>
-          <Card className="w-[370px] h-[200px] flex flex-col justify-between">
+          <Card className="w-full h-[200px] flex flex-col justify-between">
             <CardHeader>
-              <CardTitle className="w-[330px] h-[19px]">
+              <CardTitle className="w-[330px] h-5">
                 SAFT Contract Template{" "}
               </CardTitle>
             </CardHeader>
