@@ -29,12 +29,12 @@ const InvestorDashboard: React.FC = () => {
               <div className="font-normal text-base text-black/30">
                 startupname.io
               </div>
-              <div className="font-medium text-[16px] text-black/30 mt-[12px]">
+              <div className="font-medium text-md text-black/30 mt-[12px]">
                 Public
                 <Switch className="ml-[10px] " />
               </div>
               <br />
-              <div className="font-medium text-[16px] text-black/30">
+              <div className="font-medium text-md text-black/30">
                 Fundraising <Switch className="ml-[10px] " />
               </div>
               <div className="mt-[15px] space-x-[10px]">

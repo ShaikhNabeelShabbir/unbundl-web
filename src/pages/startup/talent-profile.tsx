@@ -149,10 +149,10 @@ const Talentprofile = () => {
                 </DialogTitle>
               </DialogHeader>
               <p className="font-bold text-[24px] text-center">Call Booked </p>
-              <p className="text-center text-[16px] font-medium text-black/50">
+              <p className="text-center text-md font-medium text-black/50">
                 At 5 PM on February 2nd
               </p>
-              <p className="text-center text-[16px] font-medium">
+              <p className="text-center text-md font-medium">
                 <u>Close </u>
               </p>{" "}
             </DialogContent>

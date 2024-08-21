@@ -43,7 +43,7 @@ const SoftwareStash: React.FC = () => {
             </DialogContent>
           </Dialog>
         </div>
-        <div className=" flex flex-col font-semibold text-[16px] mr-[30px] mt-[21px] space-y-[10px]">
+        <div className=" flex flex-col font-semibold text-md mr-[30px] mt-[21px] space-y-[10px]">
           <div className="flex flex-row  space-x-[10px] ">
             <Card className="w-[280px] h-[76px] rounded-[4px] flex items-center justify-center  bg-black/25 text-black/50">
               Design

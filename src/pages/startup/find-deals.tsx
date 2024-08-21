@@ -45,7 +45,7 @@ const FindDeals = () => {
         </Button>
       </div>
       <div>
-        <p className="font-medium text-[16px] mt-[30px] mb-5">
+        <p className="font-medium text-md mt-[30px] mb-5">
           Best Pics for your fund
         </p>
       </div>

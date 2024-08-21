@@ -63,11 +63,11 @@ const ApplyGrant = () => {
               <p className="font-bold text-[24px] text-center">
                 Application Sent
               </p>
-              <p className="text-center text-[16px] font-medium text-black/50">
+              <p className="text-center text-md font-medium text-black/50">
                 You’ll get an email notification, with the results of your
                 application.
               </p>
-              <p className="text-center text-[16px] font-medium">
+              <p className="text-center text-md font-medium">
                 <u>Close </u>
               </p>
             </DialogContent>

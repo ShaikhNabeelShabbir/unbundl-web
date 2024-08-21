@@ -167,13 +167,13 @@ export function AddSoftwareForm() {
               </DialogTitle>
             </DialogHeader>
             <p className="font-bold text-[24px] text-center">Request Sent</p>
-            <p className="text-center text-[16px] font-medium text-black/50">
+            <p className="text-center text-md font-medium text-black/50">
               You suggested to add figma.com to the tool stash, you’ll get an
               email notification if your request gets approved.Every time
               someone will use or download the software you proposed, you’ll get
               points.
             </p>
-            <p className="text-center text-[16px] font-medium">
+            <p className="text-center text-md font-medium">
               <u>Close </u>
             </p>
           </DialogContent>

@@ -36,25 +36,25 @@ const Services: React.FC = () => {
             <div className="w-[1150px] h-[60px] border flex flex-row">
               <div className="ml-5 mt-5">
                 <Button
-                  className="p-5 hover:underline font-medium text-[16px]"
+                  className="p-5 hover:underline font-medium text-md"
                   variant="ghost"
                 >
                   Active
                 </Button>
                 <Button
-                  className="p-5 hover:underline font-medium text-[16px]"
+                  className="p-5 hover:underline font-medium text-md"
                   variant="ghost"
                 >
                   Pending Approval
                 </Button>
                 <Button
-                  className="p-5 hover:underline font-medium text-[16px]"
+                  className="p-5 hover:underline font-medium text-md"
                   variant="ghost"
                 >
                   Draft
                 </Button>
                 <Button
-                  className="p-5 hover:underline font-medium text-[16px]"
+                  className="p-5 hover:underline font-medium text-md"
                   variant="ghost"
                 >
                   Paused
