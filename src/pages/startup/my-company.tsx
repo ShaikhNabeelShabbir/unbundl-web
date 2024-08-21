@@ -179,6 +179,7 @@ const MyCompany: React.FC = () => {
                   </div>
                 </div>
               </div>
+              <br />
               <div className="mt-[30px]">
                 <div>
                   {" "}
@@ -384,6 +385,7 @@ const MyCompany: React.FC = () => {
                     Edit Privacy
                   </Button>
                 </div>{" "}
+                <br />
                 <div className="w-full h-[159px] border px-5 py-5 bg-black/5">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
                   doloribus nostrum labore praesentium sit non dignissimos
