@@ -98,18 +98,18 @@ const HireServiceProviders: React.FC = () => {
                 with additional offline features enabled by desktop applications
                 for macOS and Windows.
               </CardContent>
-              <CardFooter className="font-medium text-sm space-x-3">
-                <div className="w-[140px] h-[40px]">
-                  <p>Top rated project</p>
-                  <p>Binance Tokenomics</p>
+              <CardFooter className="flex justify-between font-medium text-sm mt-4">
+                <div>
+                  <p className="text-gray-500">Top rated project</p>
+                  <p className="text-lg font-semibold">Binance Tokenomics</p>
                 </div>
                 <Dialog>
-                  <DialogTrigger >
+                  <DialogTrigger asChild>
                     <Button
                       type="button"
-                      className="h-10 w-[178px] text-sm mr-8 "
+                      className="h-[42px] w-[178px] bg-black text-white"
                     >
-                      View Service{" "}
+                      View Service
                     </Button>
                   </DialogTrigger>
                   <DialogContent className="sm:max-w-[600px]">
@@ -120,11 +120,11 @@ const HireServiceProviders: React.FC = () => {
               </CardFooter>
             </Card>
 
-            <Card className="w-full h-fit">
+            <Card className="w-full h-fit ">
               <CardHeader>
-                <CardTitle>
+                <CardTitle className="">
                   Stani - Tokenomics{" "}
-                  <Button className="ml-[220px]  w-18 h-9">Business</Button>{" "}
+                  <Button className="ml-[220px] w-18 h-9">Business</Button>{" "}
                 </CardTitle>
                 <CardDescription>Agency</CardDescription>
               </CardHeader>
@@ -133,32 +133,32 @@ const HireServiceProviders: React.FC = () => {
                 with additional offline features enabled by desktop applications
                 for macOS and Windows.
               </CardContent>
-              <CardFooter className="font-medium text-sm space-x-3">
-                <div className="w-[140px] h-[40px]">
-                  <p>Top rated project</p>
-                  <p>Binance Tokenomics</p>
+              <CardFooter className="flex justify-between font-medium text-sm mt-4">
+                <div>
+                  <p className="text-gray-500">Top rated project</p>
+                  <p className="text-lg font-semibold">Binance Tokenomics</p>
                 </div>
                 <Dialog>
-                  <DialogTrigger >
+                  <DialogTrigger asChild>
                     <Button
                       type="button"
-                      className="h-10 w-[178px] text-sm mr-8"
+                      className="h-[42px] w-[178px] bg-black text-white"
                     >
-                      View Service{" "}
+                      View Service
                     </Button>
                   </DialogTrigger>
                   <DialogContent className="sm:max-w-[600px]">
+                    <DialogHeader></DialogHeader>
                     <VladTokenomics />
                   </DialogContent>
                 </Dialog>
               </CardFooter>
             </Card>
-
-            <Card className="w-full h-fit">
+            <Card className="w-full h-fit ">
               <CardHeader>
-                <CardTitle>
+                <CardTitle className="">
                   Stani - Tokenomics{" "}
-                  <Button className="ml-[220px]  w-18 h-9">Business</Button>{" "}
+                  <Button className="ml-[220px] w-18 h-9">Business</Button>{" "}
                 </CardTitle>
                 <CardDescription>Agency</CardDescription>
               </CardHeader>
@@ -167,18 +167,18 @@ const HireServiceProviders: React.FC = () => {
                 with additional offline features enabled by desktop applications
                 for macOS and Windows.
               </CardContent>
-              <CardFooter className="font-medium text-sm space-x-3">
-                <div className="w-[140px] h-[40px]">
-                  <p>Top rated project</p>
-                  <p>Binance Tokenomics</p>
+              <CardFooter className="flex justify-between font-medium text-sm mt-4">
+                <div>
+                  <p className="text-gray-500">Top rated project</p>
+                  <p className="text-lg font-semibold">Binance Tokenomics</p>
                 </div>
                 <Dialog>
-                  <DialogTrigger >
+                  <DialogTrigger asChild>
                     <Button
                       type="button"
-                      className="h-10 w-[178px] text-sm mr-8"
+                      className="h-[42px] w-[178px] bg-black text-white"
                     >
-                      View Service{" "}
+                      View Service
                     </Button>
                   </DialogTrigger>
                   <DialogContent className="sm:max-w-[600px]">
@@ -190,11 +190,11 @@ const HireServiceProviders: React.FC = () => {
             </Card>
           </div>
           <div className="flex flex-row space-x-5">
-            <Card className="w-full h-fit">
+            <Card className="w-full h-fit ">
               <CardHeader>
-                <CardTitle>
+                <CardTitle className="">
                   Stani - Tokenomics{" "}
-                  <Button className="ml-[220px]   w-18 h-9">Business</Button>{" "}
+                  <Button className="ml-[220px] w-18 h-9">Business</Button>{" "}
                 </CardTitle>
                 <CardDescription>Agency</CardDescription>
               </CardHeader>
@@ -203,18 +203,18 @@ const HireServiceProviders: React.FC = () => {
                 with additional offline features enabled by desktop applications
                 for macOS and Windows.
               </CardContent>
-              <CardFooter className="font-medium text-sm space-x-3">
-                <div className="w-[140px] h-[40px]">
-                  <p>Top rated project</p>
-                  <p>Binance Tokenomics</p>
+              <CardFooter className="flex justify-between font-medium text-sm mt-4">
+                <div>
+                  <p className="text-gray-500">Top rated project</p>
+                  <p className="text-lg font-semibold">Binance Tokenomics</p>
                 </div>
                 <Dialog>
-                  <DialogTrigger >
+                  <DialogTrigger asChild>
                     <Button
                       type="button"
-                      className="h-10 w-[178px] text-sm mr-8"
+                      className="h-[42px] w-[178px] bg-black text-white"
                     >
-                      View Service{" "}
+                      View Service
                     </Button>
                   </DialogTrigger>
                   <DialogContent className="sm:max-w-[600px]">
@@ -225,11 +225,11 @@ const HireServiceProviders: React.FC = () => {
               </CardFooter>
             </Card>
 
-            <Card className="w-full h-fit">
+            <Card className="w-full h-fit ">
               <CardHeader>
-                <CardTitle>
+                <CardTitle className="">
                   Stani - Tokenomics{" "}
-                  <Button className="ml-[220px]  w-18 h-9">Business</Button>{" "}
+                  <Button className="ml-[220px] w-18 h-9">Business</Button>{" "}
                 </CardTitle>
                 <CardDescription>Agency</CardDescription>
               </CardHeader>
@@ -238,18 +238,18 @@ const HireServiceProviders: React.FC = () => {
                 with additional offline features enabled by desktop applications
                 for macOS and Windows.
               </CardContent>
-              <CardFooter className="font-medium text-sm space-x-3">
-                <div className="w-[140px] h-[40px]">
-                  <p>Top rated project</p>
-                  <p>Binance Tokenomics</p>
+              <CardFooter className="flex justify-between font-medium text-sm mt-4">
+                <div>
+                  <p className="text-gray-500">Top rated project</p>
+                  <p className="text-lg font-semibold">Binance Tokenomics</p>
                 </div>
                 <Dialog>
-                  <DialogTrigger >
+                  <DialogTrigger asChild>
                     <Button
                       type="button"
-                      className="h-10 w-[178px] text-sm mr-8"
+                      className="h-[42px] w-[178px] bg-black text-white"
                     >
-                      View Service{" "}
+                      View Service
                     </Button>
                   </DialogTrigger>
                   <DialogContent className="sm:max-w-[600px]">
@@ -260,11 +260,11 @@ const HireServiceProviders: React.FC = () => {
               </CardFooter>
             </Card>
 
-            <Card className="w-full h-fit">
+            <Card className="w-full h-fit ">
               <CardHeader>
-                <CardTitle>
+                <CardTitle className="">
                   Stani - Tokenomics{" "}
-                  <Button className="ml-[220px]   w-18 h-9">Business</Button>{" "}
+                  <Button className="ml-[220px] w-18 h-9">Business</Button>{" "}
                 </CardTitle>
                 <CardDescription>Agency</CardDescription>
               </CardHeader>
@@ -273,18 +273,18 @@ const HireServiceProviders: React.FC = () => {
                 with additional offline features enabled by desktop applications
                 for macOS and Windows.
               </CardContent>
-              <CardFooter className="font-medium text-sm space-x-3">
-                <div className="w-[140px] h-[40px]">
-                  <p>Top rated project</p>
-                  <p>Binance Tokenomics</p>
+              <CardFooter className="flex justify-between font-medium text-sm mt-4">
+                <div>
+                  <p className="text-gray-500">Top rated project</p>
+                  <p className="text-lg font-semibold">Binance Tokenomics</p>
                 </div>
                 <Dialog>
-                  <DialogTrigger >
+                  <DialogTrigger asChild>
                     <Button
                       type="button"
-                      className="h-10 w-[178px] text-sm mr-8"
+                      className="h-[42px] w-[178px] bg-black text-white"
                     >
-                      View Service{" "}
+                      View Service
                     </Button>
                   </DialogTrigger>
                   <DialogContent className="sm:max-w-[600px]">
