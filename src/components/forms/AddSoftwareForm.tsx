@@ -47,7 +47,7 @@ export function AddSoftwareForm() {
   }
 
   return (
-    <div className="w-[600px] h-[582px]">
+    <div className="w-[600px] h-fit">
       <div className="font-normal text-[12px] text-black/50 w-[560px]">
         You can request to add software, that you use to the platform. If your
         request gets approved, every time someone will download it, or start
