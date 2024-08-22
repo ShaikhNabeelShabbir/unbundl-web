@@ -19,7 +19,7 @@ import { Search } from "lucide-react";
 const FindDeals = () => {
   return (
     <div>
-      <div className="flex items-center justify-between mt-[21px]">
+      <div className="flex items-center justify-between mt-5">
         <div className="flex items-center w-full h-fit border rounded-1">
           <Search className="ml-4 text-gray-500" />
           <input
@@ -30,7 +30,7 @@ const FindDeals = () => {
         </div>
         <div className="w-[170px] h-11 ml-5">
           <Select>
-            <SelectTrigger className="w-[170px] h-[45px]">
+            <SelectTrigger className="w-[170px] h-11">
               <SelectValue placeholder="Dubai" />
             </SelectTrigger>
             <SelectContent>
@@ -40,14 +40,10 @@ const FindDeals = () => {
             </SelectContent>
           </Select>
         </div>
-        <Button className="w-[190px] h-[46px] mr-[30px] ml-5">
-          Advanced Search
-        </Button>
+        <Button className="w-[190px] h-12 mr-8 ml-5">Advanced Search</Button>
       </div>
       <div>
-        <p className="font-medium text-md mt-[30px] mb-5">
-          Best Pics for your fund
-        </p>
+        <p className="font-medium text-md mt-8 mb-5">Best Pics for your fund</p>
       </div>
       <div className="flex flex-row w-full space-x-5">
         <Card className="w-full h-fit">
@@ -60,15 +56,15 @@ const FindDeals = () => {
               XYZ is a fintech startup that is revolutionizing the way people in
               the MENA region access and manage their finance.
             </p>
-            <div>
-              <Button className="font-medium text-sm">Ethereum Chain</Button>
-              <Button className="font-medium text-sm">De-fi</Button>
-              <Button className="font-medium text-sm">MVP</Button>
-              <Button className="font-medium text-sm">Dubai</Button>
+            <div className="space-x-1">
+              <Button className="font-medium text-sm ">Ethereum Chain</Button>
+              <Button className="font-medium text-sm ">De-fi</Button>
+              <Button className="font-medium text-sm ">MVP</Button>
+              <Button className="font-medium text-sm ">Dubai</Button>
             </div>
           </CardContent>
           <CardFooter>
-            <div className="w-[308px] h-[35px]  flex flex-row text-sm space-x-[8px]">
+            <div className="w-[308px] h-9  flex flex-row text-sm space-x-2">
               <div>
                 <p>Round</p>
                 <p>Seed</p>
@@ -98,7 +94,7 @@ const FindDeals = () => {
               XYZ is a fintech startup that is revolutionizing the way people in
               the MENA region access and manage their finance.
             </p>
-            <div>
+            <div className="space-x-1">
               <Button className="font-medium text-sm">Ethereum Chain</Button>
               <Button className="font-medium text-sm">De-fi</Button>
               <Button className="font-medium text-sm">MVP</Button>
@@ -106,7 +102,7 @@ const FindDeals = () => {
             </div>
           </CardContent>
           <CardFooter>
-            <div className="w-[308px] h-[35px]  flex flex-row text-sm space-x-[8px]">
+            <div className="w-[308px] h-9  flex flex-row text-sm space-x-2">
               <div>
                 <p>Round</p>
                 <p>Seed</p>
@@ -126,7 +122,7 @@ const FindDeals = () => {
             </div>
           </CardFooter>
         </Card>{" "}
-        <Card className="w-full h-[250px]">
+        <Card className="w-full h-fit">
           <CardHeader>
             <CardTitle>Startupname</CardTitle>
             <CardDescription>startupname.io</CardDescription>
@@ -136,7 +132,7 @@ const FindDeals = () => {
               XYZ is a fintech startup that is revolutionizing the way people in
               the MENA region access and manage their finance.
             </p>
-            <div>
+            <div className="space-x-1 ">
               <Button className="font-medium text-sm">Ethereum Chain</Button>
               <Button className="font-medium text-sm">De-fi</Button>
               <Button className="font-medium text-sm">MVP</Button>
@@ -144,7 +140,7 @@ const FindDeals = () => {
             </div>
           </CardContent>
           <CardFooter>
-            <div className="w-[308px] h-[35px]  flex flex-row text-sm space-x-[8px]">
+            <div className="w-[308px] h-9  flex flex-row text-sm space-x-2">
               <div>
                 <p>Round</p>
                 <p>Seed</p>

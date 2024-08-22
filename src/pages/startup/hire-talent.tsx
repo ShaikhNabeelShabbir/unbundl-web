@@ -36,7 +36,7 @@ const HireTalent: React.FC = () => {
             Propose Talent{" "}
           </Button>
         </div>
-        <div className=" flex flex-col font-semibold text-md mr-8 mt-5 space-y-3"></div>
+        <div className=" flex flex-col font-semibold text-lg mr-8 mt-5 space-y-3"></div>
         <div className="flex items-center justify-between ">
           <div className="flex items-center w-full h-12 border rounded-1 space-x-3">
             <Search className="ml-4 text-gray-500" />
