@@ -140,7 +140,7 @@ export function FundraisingIformationForm() {
                   </p>
                   <Dialog>
                     <DialogTrigger asChild>
-                      <Button type="button" className="h-45 w-88 text-sm px-4">
+                      <Button type="button" className="h-11 w-88 text-sm px-4">
                         Add Cap table{" "}
                       </Button>
                     </DialogTrigger>

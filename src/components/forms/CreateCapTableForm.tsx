@@ -33,12 +33,28 @@ const investments = [
     Price_per_share: "n/a",
     Ownership: "80.00%",
   },
+  {
+    Investor: "Investor c",
+    Invested: "n/a",
+    Existing_Shares: "1,000,000",
+    Preferred_Shares: "n/a",
+    Price_per_share: "n/a",
+    Ownership: "80.00%",
+  },
+  {
+    Investor: "Investor c",
+    Invested: "n/a",
+    Existing_Shares: "1,000,000",
+    Preferred_Shares: "n/a",
+    Price_per_share: "n/a",
+    Ownership: "80.00%",
+  },
 ];
 
 const CreateCapTableForm = () => {
   return (
     <div>
-      <div className="w-[780px] ">
+      <div className="w-full h-fit">
         <Table>
           <TableHeader>
             <TableRow>
@@ -67,12 +83,14 @@ const CreateCapTableForm = () => {
             ))}
           </TableBody>
         </Table>
-        <Button className="w-[780px]">Add investor</Button>
+        <Button className="w-full">Add investor</Button>
       </div>
       <br />
       <br />
-      <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[606px]">
-        <Button className="flex text-base bg-white text-black">Cancel</Button>
+      <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[500px]">
+        <Button className="flex text-base bg-white text-black" variant="link">
+          Cancel
+        </Button>
         <Button className="flex text-base">Save</Button>
       </div>
     </div>

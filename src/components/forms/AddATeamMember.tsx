@@ -154,7 +154,12 @@ export function AddATeamMember() {
         </div>
         <br />
         <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px]">
-          <Button className="flex text-base bg-white text-black">Cancel</Button>
+          <Button
+            className="flex text-base bg-white text-black "
+            variant="link"
+          >
+            Cancel
+          </Button>
           <Button className="flex text-base">Next Step</Button>
         </div>
       </div>

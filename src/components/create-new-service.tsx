@@ -46,6 +46,7 @@ export const CreateNewService = () => {
         <Button
           className="flex text-base bg-white text-blacka"
           onClick={handleCancel}
+          variant="link"
         >
           Cancel
         </Button>

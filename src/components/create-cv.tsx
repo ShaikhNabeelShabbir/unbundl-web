@@ -43,6 +43,7 @@ export const CreateCV = () => {
         <Button
           className="flex text-base bg-white text-blacka"
           onClick={handleCancel}
+          variant="link"
         >
           Cancel
         </Button>
