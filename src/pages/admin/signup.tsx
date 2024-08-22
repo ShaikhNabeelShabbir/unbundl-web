@@ -34,7 +34,12 @@ const Signup = () => {
   };
 
   const handleNext = () => {
-    setStep((prevStep) => prevStep + 1);
+    setStep((prevStep) => {
+      if (prevStep === 8) {
+        return 1; // Reset to step 1 after the third step
+      }
+      return prevStep + 1;
+    });
   };
 
   const handleCancel = () => {
