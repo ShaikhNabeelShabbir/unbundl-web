@@ -5,8 +5,8 @@ import CreateCV from "../create-cv";
 export function CreateCVs() {
   return (
     <div>
-      <div className="main-div">
-        <div className="py-[40px]">
+      <div className="main-div flex flex-col px-20 flex-wrap w-full items-center ">
+        <div className="py-10">
           <div className="justify-center">
             <div className="flex px-[440px] justify-center">
               <div className="text-base text-black/50">
