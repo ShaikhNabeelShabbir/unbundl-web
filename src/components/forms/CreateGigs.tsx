@@ -4,7 +4,7 @@ import CreateNewService from "../create-new-service";
 
 export function CreateGigs() {
   return (
-    <div>
+    <div className="main-div flex flex-col px-20 flex-wrap w-full items-center ">
       <div className="main-div">
         <div className="py-[40px]">
           <div className="justify-center">
