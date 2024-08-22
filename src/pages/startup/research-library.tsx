@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import React from "react";
+import React, { useState } from "react";
 import {
   Card,
   CardContent,
@@ -8,9 +8,28 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Search } from "lucide-react";
+import { ChevronDown, ChevronUp, Search } from "lucide-react";
 
 const ResearchLibrary: React.FC = () => {
+  const [count1, setCount1] = useState(0);
+  const [count2, setCount2] = useState(0);
+  const [count3, setCount3] = useState(0);
+
+  const handleIncrement = (
+    setCount: React.Dispatch<React.SetStateAction<number>>,
+  ) => {
+    setCount((prevCount) => prevCount + 1);
+  };
+
+  const handleDecrement = (
+    count: number,
+    setCount: React.Dispatch<React.SetStateAction<number>>,
+  ) => {
+    if (count > 0) {
+      setCount((prevCount) => prevCount - 1);
+    }
+  };
+
   return (
     <div className="flex flex-wrap m-8">
       <div className="flex-1 py-[97px]">
@@ -36,22 +55,37 @@ const ResearchLibrary: React.FC = () => {
           <Card className="w-full h-[260px]">
             <CardHeader>
               <CardDescription>Nov. 27 2022</CardDescription>
-              <CardTitle>
-                How is Web3 going to transform the dating industry
+              <CardTitle className="flex items-center space-x-2">
+                <span className="w-fit h-[19px]">
+                  How is Web3 going to transform the dating industry
+                </span>
+                <div className="flex items-center space-x-1">
+                  <ChevronUp
+                    className="cursor-pointer"
+                    onClick={() => handleIncrement(setCount1)}
+                  />
+                  <span>{count1}</span>
+                  <ChevronDown
+                    className="cursor-pointer"
+                    onClick={() => handleDecrement(count1, setCount1)}
+                  />
+                </div>
               </CardTitle>
-              <CardDescription>Published by Ramsy</CardDescription>
+              <CardDescription className="pt-3">
+                Published by Ramsy
+              </CardDescription>
             </CardHeader>
-            <CardContent className="font-medium text-sm space-x-3">
+            <CardContent className="font-medium text-sm space-x-3 w-full">
               <Button className="p-3 bg-black/25">Blockchain</Button>
               <Button className="p-3  bg-black/25">Web3</Button>
               <Button className="p-3  bg-black/25">Dating</Button>
               <Button className="p-3  bg-black/25">Marketing</Button>
             </CardContent>
             <CardFooter className="font-medium text-sm space-x-3">
-              <Button className="p-3 w-[160px] h-[42px] py-4 px-[55px]  bg-black/50">
+              <Button className="p-3 w-full h-[42px] py-4 px-[55px]  bg-black/50">
                 View
               </Button>
-              <Button className="p-3 w-[160px] h-[42px] py-4 px-[55px]">
+              <Button className="p-3 w-full h-[42px] py-4 px-[55px]">
                 Download
               </Button>
             </CardFooter>
@@ -60,22 +94,37 @@ const ResearchLibrary: React.FC = () => {
           <Card className="w-full h-[260px]">
             <CardHeader>
               <CardDescription>Nov. 27 2022</CardDescription>
-              <CardTitle>
-                How is Web3 going to transform the dating industry
+              <CardTitle className="flex items-center space-x-2">
+                <span className="w-fit h-[19px]">
+                  How is Web3 going to transform the dating industry
+                </span>
+                <div className="flex items-center space-x-1">
+                  <ChevronUp
+                    className="cursor-pointer"
+                    onClick={() => handleIncrement(setCount2)}
+                  />
+                  <span>{count2}</span>
+                  <ChevronDown
+                    className="cursor-pointer"
+                    onClick={() => handleDecrement(count2, setCount2)}
+                  />
+                </div>
               </CardTitle>
-              <CardDescription>Published by Ramsy</CardDescription>
+              <CardDescription className="pt-3">
+                Published by Ramsy
+              </CardDescription>
             </CardHeader>
-            <CardContent className="font-medium text-sm space-x-3">
+            <CardContent className="font-medium text-sm space-x-3 w-full">
               <Button className="p-3  bg-black/25">Blockchain</Button>
               <Button className="p-3  bg-black/25">Web3</Button>
               <Button className="p-3  bg-black/25">Dating</Button>
               <Button className="p-3  bg-black/25">Marketing</Button>
             </CardContent>
-            <CardFooter className="font-medium text-sm space-x-3">
-              <Button className="p-3 w-[160px] h-[42px] py-4 px-[55px]  bg-black/50">
+            <CardFooter className="font-medium text-sm space-x-3 w-full">
+              <Button className="p-3 w-full h-[42px] py-4 px-[55px]  bg-black/50">
                 View
               </Button>
-              <Button className="p-3 w-[160px] h-[42px] py-4 px-[55px]">
+              <Button className="p-3 w-full h-[42px] py-4 px-[55px]">
                 Download
               </Button>
             </CardFooter>
@@ -84,22 +133,37 @@ const ResearchLibrary: React.FC = () => {
           <Card className="w-full h-[260px]">
             <CardHeader>
               <CardDescription>Nov. 27 2022</CardDescription>
-              <CardTitle>
-                How is Web3 going to transform the dating industry
+              <CardTitle className="flex items-center space-x-2">
+                <span className="w-fit h-[19px]">
+                  How is Web3 going to transform the dating industry
+                </span>
+                <div className="flex items-center space-x-1">
+                  <ChevronUp
+                    className="cursor-pointer"
+                    onClick={() => handleIncrement(setCount3)}
+                  />
+                  <span>{count3}</span>
+                  <ChevronDown
+                    className="cursor-pointer"
+                    onClick={() => handleDecrement(count3, setCount3)}
+                  />
+                </div>
               </CardTitle>
-              <CardDescription>Published by Ramsy</CardDescription>
+              <CardDescription className="pt-3">
+                Published by Ramsy
+              </CardDescription>
             </CardHeader>
-            <CardContent className="font-medium text-sm space-x-3">
+            <CardContent className="font-medium text-sm space-x-3 w-full">
               <Button className="p-3  bg-black/25">Blockchain</Button>
               <Button className="p-3  bg-black/25">Web3</Button>
               <Button className="p-3  bg-black/25">Dating</Button>
               <Button className="p-3  bg-black/25">Marketing</Button>
             </CardContent>
             <CardFooter className="font-medium text-sm space-x-3 ">
-              <Button className="p-3 w-[160px] h-[42px] py-4 px-[55px] bg-black/50">
+              <Button className="p-3 w-full h-[42px] py-4 px-[55px] bg-black/50">
                 View
               </Button>
-              <Button className="p-3 w-[160px] h-[42px] py-4 px-[55px] bg-black">
+              <Button className="p-3 w-full h-[42px] py-4 px-[55px] bg-black">
                 Download
               </Button>
             </CardFooter>

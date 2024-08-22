@@ -13,6 +13,13 @@ import { Input } from "@/components/ui/input";
 import { Button } from "../ui/button";
 import { ExperienceSchema } from "@/schemas/experineceSchema";
 import { Textarea } from "../ui/textarea";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "../ui/select";
 
 export function ExperienceForm() {
   // Set up the form using useForm hook
@@ -151,7 +158,18 @@ export function ExperienceForm() {
                       Are you able to relocate?
                     </FormLabel>
                     <FormControl>
-                      <Input placeholder="Yes/No" {...field} />
+                      <Select
+                        onValueChange={field.onChange}
+                        defaultValue={field.value}
+                      >
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select an option" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="yes">Yes</SelectItem>
+                          <SelectItem value="no">No</SelectItem>
+                        </SelectContent>
+                      </Select>
                     </FormControl>
                     <FormMessage />
                   </FormItem>

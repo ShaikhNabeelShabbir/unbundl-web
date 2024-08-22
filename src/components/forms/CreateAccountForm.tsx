@@ -43,8 +43,8 @@ export function CreateAccountForm() {
       <div className="flex flex-row py-10 px-5">
         <div className="w-[260px] h-[168px] font-normal text-base text-justify text-1 text-black/50 py-16">
           Let us know a bit more about you, and
-          <br /> please provide some social links, so we <br /> can run a small
-          background check on <br /> you. <br /> <br />
+          <br /> please provide some social links, so we can run a small
+          background check on you. <br /> <br />
           It’s very important for us to make the
           <br /> experience on the platform exclusive,
           <br /> where every member brings value

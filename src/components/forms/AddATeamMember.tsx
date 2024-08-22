@@ -153,7 +153,7 @@ export function AddATeamMember() {
           </Form>
         </div>
         <br />
-        <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px]">
+        <div className="fixed bottom-0  z-50 py-5 flex justify-center gap-[374px]">
           <Button
             className="flex text-base bg-white text-black "
             variant="link"
