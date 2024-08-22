@@ -54,7 +54,7 @@ const ReachOutToInvestors = () => {
           />
         </div>
 
-        <Button className="w-[170px] h-[45px] mt-5">Filters</Button>
+        <Button className="w-[170px] h-11 mt-5">Filters</Button>
       </div>
       <Table className="">
         <TableHeader>

@@ -17,10 +17,7 @@ export function CreateCVs() {
                 <p className="font-medium text-base text-black">Create CVs</p>
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Button
-                      type="button"
-                      className="h-45 w-88 text-sm px-[15px]"
-                    >
+                    <Button type="button" className="h-45 w-88 text-sm px-4">
                       Create CV
                     </Button>
                   </DialogTrigger>

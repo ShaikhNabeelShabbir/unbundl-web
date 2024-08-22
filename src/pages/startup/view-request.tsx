@@ -52,9 +52,9 @@ const ViewRequest = () => {
             placeholder="Search..."
           />
         </div>
-        <div className="w-[170px] h-[45px] ml-5">
+        <div className="w-[170px] h-11 ml-5">
           <Select>
-            <SelectTrigger className="w-[170px] h-[45px]">
+            <SelectTrigger className="w-[170px] h-11">
               <SelectValue placeholder="Dubai" />
             </SelectTrigger>
             <SelectContent>

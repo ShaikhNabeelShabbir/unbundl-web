@@ -4,11 +4,9 @@ const AccountSettings = () => {
     <div>
       <div>
         <div className="mx-8 mt-8  w-[1380px] h-[46px]">
-          <span className="w-[63px] h-[24px] py-[15px] px-8">Back</span>
-          <span className="w-[63px] h-[24px] ml-[957px] py-[15px] px-8">
-            Help
-          </span>
-          <span className="w-[63px] h-[24px] ml-[13px] py-[15px] px-8">
+          <span className="w-[63px] h-[24px] py-4 px-8">Back</span>
+          <span className="w-[63px] h-[24px] ml-[957px] py-4 px-8">Help</span>
+          <span className="w-[63px] h-[24px] ml-[13px] py-4 px-8">
             Bob Alice
           </span>
           <span className="w-[63px] h-[24px]">

@@ -15,6 +15,7 @@ import {
   DialogTrigger,
 } from "../ui/dialog";
 import AddATeamMember from "./AddATeamMember";
+import { MoreHorizontal } from "lucide-react";
 
 const teamMembers = [
   {
@@ -33,11 +34,11 @@ const teamMembers = [
 
 export const TeamsForm = () => {
   return (
-    <div className="py-[40px]">
-      <div className="mx-[360px]">
-        <Table className="w-[720px]">
+    <div className="main-div flex flex-col px-20 flex-wrap w-full items-center ">
+      <div className="py-16">
+        <Table className="w-full">
           <TableHeader>
-            <TableRow className="grid grid-cols-5 gap-4">
+            <TableRow className="grid grid-cols-6 gap-4">
               <TableHead>Name</TableHead>
               <TableHead>Position</TableHead>
               <TableHead>Type</TableHead>
@@ -46,7 +47,7 @@ export const TeamsForm = () => {
           </TableHeader>
           <TableBody>
             {teamMembers.map((member) => (
-              <TableRow key={member.name} className="grid grid-cols-5 gap-4">
+              <TableRow key={member.name} className="grid grid-cols-6 gap-4">
                 <TableCell className="font-medium">{member.name}</TableCell>
                 <TableCell>{member.position}</TableCell>
                 <TableCell>{member.type}</TableCell>
@@ -54,14 +55,18 @@ export const TeamsForm = () => {
                 <TableCell className="text-right">
                   <Button variant="ghost" className="h-8 w-8 p-0"></Button>
                 </TableCell>
+                <TableCell className="text-right">
+                  <MoreHorizontal className="h-4 w-4" />
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>
         </Table>
+
         <br />
         <Dialog>
           <DialogTrigger asChild>
-            <Button type="button" className="h-45 w-full text-sm px-[15px]">
+            <Button type="button" className="h-45 w-full text-sm px-4">
               Add a team member
             </Button>
           </DialogTrigger>

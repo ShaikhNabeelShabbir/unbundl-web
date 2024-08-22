@@ -68,7 +68,7 @@ export function AddSoftwareForm() {
                     <Input
                       placeholder="Enter Name"
                       {...field}
-                      className="w-[560px] h-[45px]"
+                      className="w-[560px] h-11"
                     />
                   </FormControl>
                   <FormMessage />
@@ -92,7 +92,7 @@ export function AddSoftwareForm() {
                           onValueChange={field.onChange}
                           value={field.value}
                         >
-                          <SelectTrigger className="w-[560px] h-[45px]">
+                          <SelectTrigger className="w-[560px] h-11">
                             <SelectValue placeholder="Select Category" />
                           </SelectTrigger>
                           <SelectContent>
@@ -126,7 +126,7 @@ export function AddSoftwareForm() {
                           onValueChange={field.onChange}
                           value={field.value}
                         >
-                          <SelectTrigger className="w-[560px] h-[45px]">
+                          <SelectTrigger className="w-[560px] h-11">
                             <SelectValue placeholder="Select Category" />
                           </SelectTrigger>
                           <SelectContent>

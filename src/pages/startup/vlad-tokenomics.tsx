@@ -122,7 +122,7 @@ const VladTokenomics = () => {
           </Button>
           <Dialog>
             <DialogTrigger asChild>
-              <Button type="button" className="ml-[280px] px-[15px] ">
+              <Button type="button" className="ml-[280px] px-4 ">
                 Accept and Interview{" "}
               </Button>
             </DialogTrigger>

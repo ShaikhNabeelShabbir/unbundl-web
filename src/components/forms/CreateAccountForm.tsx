@@ -39,9 +39,9 @@ export function CreateAccountForm() {
   }
 
   return (
-    <div className="main-div flex flex-col px-20">
+    <div className="main-div flex flex-col px-20 flex-wrap w-full items-center ">
       <div className="flex flex-row py-10 px-5">
-        <div className="w-260 h-168 font-normal text-base text-justify text-1 text-black/50 py-[59px]">
+        <div className="w-[260px] h-[168px] font-normal text-base text-justify text-1 text-black/50 py-16">
           Let us know a bit more about you, and
           <br /> please provide some social links, so we <br /> can run a small
           background check on <br /> you. <br /> <br />
@@ -49,8 +49,8 @@ export function CreateAccountForm() {
           <br /> experience on the platform exclusive,
           <br /> where every member brings value
         </div>
-        <div className="px-[80px] ">
-          <div className="justify-center w-[560px] py-[40px]">
+        <div className="px-20 ">
+          <div className="justify-center w-[560px] py-10">
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
@@ -111,20 +111,14 @@ export function CreateAccountForm() {
                 />
                 <div className="flex flex-col justify-start gap-3">
                   <p className="font-medium">Connect your social media</p>
-                  <div className="flex flex-row gap-[15px]">
-                    <Button
-                      type="button"
-                      className=" h-[45px] w-[88px] text-sm"
-                    >
+                  <div className="flex flex-row gap-4">
+                    <Button type="button" className=" h-11 w-20 text-sm">
                       LinkedIn
                     </Button>
-                    <Button
-                      type="button"
-                      className=" h-[45px] w-[80px] text-sm"
-                    >
+                    <Button type="button" className=" h-11 w-20 text-sm">
                       Twitter
                     </Button>
-                    <Button type="button" className="h-[45px] w-[80px] text-sm">
+                    <Button type="button" className="h-11 w-20 text-sm">
                       GitHub
                     </Button>
                   </div>

@@ -36,7 +36,7 @@ export const Signupforserviceproviders = () => {
         <div className="flex flex-row py-[40px] px-[100px] font-semibold w-82 h-24 text-lg">
           Unbundl
           <div className="px-3 font-medium">
-            <a href="" className="py-[45px] text-gray-500 text-sm">
+            <a href="" className="py-11 text-gray-500 text-sm">
               SignUp for Service Providers
             </a>
           </div>

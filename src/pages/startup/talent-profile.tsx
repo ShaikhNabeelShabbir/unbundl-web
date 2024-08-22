@@ -22,41 +22,41 @@ const Talentprofile = () => {
         </p>
       </div>
       <div className="mt-5 flex flex-row font-medium text-[12px]">
-        <span className="w-[160px] h-[45px]">
+        <span className="w-[160px] h-11">
           <p>April 2022 — To this day </p>
           <p>9 moths</p>
         </span>
-        <span className="ml-[15px]">
+        <span className="ml-4">
           <p>Meta</p>
           <p>UI/UX Designer</p>
         </span>
       </div>
       <div className="mt-5 flex flex-row font-medium text-[12px]">
-        <span className="w-[160px] h-[45px]">
+        <span className="w-[160px] h-11">
           <p>April 2022 — To this day </p>
           <p>9 moths</p>
         </span>
-        <span className="ml-[15px]">
+        <span className="ml-4">
           <p>Meta</p>
           <p>UI/UX Designer</p>
         </span>
       </div>
       <div className="mt-5 flex flex-row font-medium text-[12px]">
-        <span className="w-[160px] h-[45px]">
+        <span className="w-[160px] h-11">
           <p>April 2022 — To this day </p>
           <p>9 moths</p>
         </span>
-        <span className="ml-[15px]">
+        <span className="ml-4">
           <p>Meta</p>
           <p>UI/UX Designer</p>
         </span>
       </div>
       <div className="mt-5 flex flex-row font-medium text-[12px]">
-        <span className="w-[160px] h-[45px]">
+        <span className="w-[160px] h-11">
           <p>April 2022 — To this day </p>
           <p>9 moths</p>
         </span>
-        <span className="ml-[15px]">
+        <span className="ml-4">
           <p>Meta</p>
           <p>UI/UX Designer</p>
         </span>
@@ -103,7 +103,7 @@ const Talentprofile = () => {
               <div>2022</div>
               <div>2018</div>
             </div>
-            <div className="ml-[15px]">
+            <div className="ml-4">
               <div>Princeton University</div>
               <div> Some School</div>
             </div>
@@ -114,7 +114,7 @@ const Talentprofile = () => {
           <div>
             <div>English</div>
           </div>
-          <div className="ml-[15px]">
+          <div className="ml-4">
             <div>Native</div>
           </div>
         </div>
@@ -123,10 +123,10 @@ const Talentprofile = () => {
           <div>
             <div>Behance</div>
           </div>
-          <div className="ml-[15px]">
+          <div className="ml-4">
             <div>Dribble</div>
           </div>
-          <div className="ml-[15px]">
+          <div className="ml-4">
             <div>Instagram</div>
           </div>
         </div>
@@ -138,7 +138,7 @@ const Talentprofile = () => {
           </Button>
           <Dialog>
             <DialogTrigger asChild>
-              <Button type="button" className="ml-[280px] px-[15px] ">
+              <Button type="button" className="ml-[280px] px-4 ">
                 Accept and Interview{" "}
               </Button>
             </DialogTrigger>

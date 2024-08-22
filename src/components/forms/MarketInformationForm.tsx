@@ -42,9 +42,9 @@ export function MarketInformationForm() {
 
   return (
     <div>
-      <div className="main-div flex flex-col min-h-screen px-20">
-        <div className="flex flex-row py-10 px-5 flex-grow">
-          <div className="w-260 h-168 font-normal text-justify text-base text-black/50 py-[59px]">
+      <div className="main-div flex flex-col px-20 flex-wrap w-full items-center ">
+      <div className="flex flex-row py-10 px-5 flex-grow">
+          <div className="w-260 h-168 font-normal text-justify text-base text-black/50 py-16">
             Being in the right market at the right
             <br /> time is a big part of a startup's
             <br /> success. <br />

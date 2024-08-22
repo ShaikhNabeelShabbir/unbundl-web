@@ -48,10 +48,10 @@ const ResearchLibrary: React.FC = () => {
               <Button className="p-3  bg-black/25">Marketing</Button>
             </CardContent>
             <CardFooter className="font-medium text-sm space-x-3">
-              <Button className="p-3 w-[160px] h-[42px] py-[15px] px-[55px]  bg-black/50">
+              <Button className="p-3 w-[160px] h-[42px] py-4 px-[55px]  bg-black/50">
                 View
               </Button>
-              <Button className="p-3 w-[160px] h-[42px] py-[15px] px-[55px]">
+              <Button className="p-3 w-[160px] h-[42px] py-4 px-[55px]">
                 Download
               </Button>
             </CardFooter>
@@ -72,10 +72,10 @@ const ResearchLibrary: React.FC = () => {
               <Button className="p-3  bg-black/25">Marketing</Button>
             </CardContent>
             <CardFooter className="font-medium text-sm space-x-3">
-              <Button className="p-3 w-[160px] h-[42px] py-[15px] px-[55px]  bg-black/50">
+              <Button className="p-3 w-[160px] h-[42px] py-4 px-[55px]  bg-black/50">
                 View
               </Button>
-              <Button className="p-3 w-[160px] h-[42px] py-[15px] px-[55px]">
+              <Button className="p-3 w-[160px] h-[42px] py-4 px-[55px]">
                 Download
               </Button>
             </CardFooter>
@@ -96,10 +96,10 @@ const ResearchLibrary: React.FC = () => {
               <Button className="p-3  bg-black/25">Marketing</Button>
             </CardContent>
             <CardFooter className="font-medium text-sm space-x-3 ">
-              <Button className="p-3 w-[160px] h-[42px] py-[15px] px-[55px] bg-black/50">
+              <Button className="p-3 w-[160px] h-[42px] py-4 px-[55px] bg-black/50">
                 View
               </Button>
-              <Button className="p-3 w-[160px] h-[42px] py-[15px] px-[55px] bg-black">
+              <Button className="p-3 w-[160px] h-[42px] py-4 px-[55px] bg-black">
                 Download
               </Button>
             </CardFooter>

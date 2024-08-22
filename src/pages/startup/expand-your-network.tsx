@@ -55,7 +55,7 @@ const ExpandYourNetwork = () => {
           />
         </div>
         <Select>
-          <SelectTrigger className="w-[170px] h-[45px] bg-transparent">
+          <SelectTrigger className="w-[170px] h-11 bg-transparent">
             <SelectValue placeholder="Choose Category" />
           </SelectTrigger>
           <SelectContent>
@@ -65,7 +65,7 @@ const ExpandYourNetwork = () => {
             <SelectItem value="COO">COO</SelectItem>
           </SelectContent>
         </Select>
-        <Button className="w-[170px] h-[45px]">Filters</Button>
+        <Button className="w-[170px] h-11">Filters</Button>
       </div>
       <Table className="border w-full h-fit">
         <TableHeader>

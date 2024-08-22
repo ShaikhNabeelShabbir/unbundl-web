@@ -25,7 +25,7 @@ const SuggestPeople = () => {
           <p>Send them referral link</p>
           <input
             type="text"
-            className="w-[355px] h-[45px] border"
+            className="w-[355px] h-11 border"
             placeholder="unbundl.io/referral/sdjfsbldjcb127312w1kjsdvfs"
           />
           <Button className="ml-3 w-[115px]"> Copy</Button>

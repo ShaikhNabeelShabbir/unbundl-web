@@ -66,9 +66,9 @@ const HireServiceProviders: React.FC = () => {
               placeholder="Search..."
             />
           </div>
-          <div className="w-[170px] h-[45px] px-5">
+          <div className="w-[170px] h-11 px-5">
             <Select>
-              <SelectTrigger className="w-[170px] h-[45px]">
+              <SelectTrigger className="w-[170px] h-11">
                 <SelectValue placeholder="Dubai" />
               </SelectTrigger>
               <SelectContent>
