@@ -87,9 +87,9 @@ const HireServiceProviders: React.FC = () => {
           <div className="flex flex-row space-x-5 w-full">
             <Card className="w-full h-fit ">
               <CardHeader>
-                <CardTitle className="">
+                <CardTitle className="flex justify-between font-semibold text-base mt-4">
                   Stani - Tokenomics{" "}
-                  <Button className="ml-[220px] w-18 h-9">Business</Button>{" "}
+                  <Button className=" w-18 h-9">Business</Button>{" "}
                 </CardTitle>
                 <CardDescription>Agency</CardDescription>
               </CardHeader>
@@ -122,7 +122,7 @@ const HireServiceProviders: React.FC = () => {
 
             <Card className="w-full h-fit ">
               <CardHeader>
-                <CardTitle className="">
+                <CardTitle className="flex justify-between font-semibold text-base mt-4">
                   Stani - Tokenomics{" "}
                   <Button className="ml-[220px] w-18 h-9">Business</Button>{" "}
                 </CardTitle>
@@ -156,7 +156,7 @@ const HireServiceProviders: React.FC = () => {
             </Card>
             <Card className="w-full h-fit ">
               <CardHeader>
-                <CardTitle className="">
+                <CardTitle className="flex justify-between font-semibold text-base mt-4">
                   Stani - Tokenomics{" "}
                   <Button className="ml-[220px] w-18 h-9">Business</Button>{" "}
                 </CardTitle>
@@ -192,7 +192,7 @@ const HireServiceProviders: React.FC = () => {
           <div className="flex flex-row space-x-5">
             <Card className="w-full h-fit ">
               <CardHeader>
-                <CardTitle className="">
+                <CardTitle className="flex justify-between font-semibold text-base mt-4">
                   Stani - Tokenomics{" "}
                   <Button className="ml-[220px] w-18 h-9">Business</Button>{" "}
                 </CardTitle>
@@ -227,7 +227,7 @@ const HireServiceProviders: React.FC = () => {
 
             <Card className="w-full h-fit ">
               <CardHeader>
-                <CardTitle className="">
+                <CardTitle className="flex justify-between font-semibold text-base mt-4">
                   Stani - Tokenomics{" "}
                   <Button className="ml-[220px] w-18 h-9">Business</Button>{" "}
                 </CardTitle>
@@ -262,7 +262,7 @@ const HireServiceProviders: React.FC = () => {
 
             <Card className="w-full h-fit ">
               <CardHeader>
-                <CardTitle className="">
+                <CardTitle className="flex justify-between font-semibold text-base mt-4">
                   Stani - Tokenomics{" "}
                   <Button className="ml-[220px] w-18 h-9">Business</Button>{" "}
                 </CardTitle>
