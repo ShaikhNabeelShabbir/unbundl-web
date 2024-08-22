@@ -85,11 +85,11 @@ const HireServiceProviders: React.FC = () => {
         </div>
         <div className="flex flex-col space-y-5">
           <div className="flex flex-row space-x-5 w-full">
-            <Card className="w-full h-[250px]">
+            <Card className="w-full h-fit ">
               <CardHeader>
-                <CardTitle>
+                <CardTitle className="">
                   Stani - Tokenomics{" "}
-                  <Button className="ml-[100px] w-18 h-9">Business</Button>{" "}
+                  <Button className="ml-[220px] w-18 h-9">Business</Button>{" "}
                 </CardTitle>
                 <CardDescription>Agency</CardDescription>
               </CardHeader>
@@ -104,10 +104,10 @@ const HireServiceProviders: React.FC = () => {
                   <p>Binance Tokenomics</p>
                 </div>
                 <Dialog>
-                  <DialogTrigger asChild>
+                  <DialogTrigger >
                     <Button
                       type="button"
-                      className="h-10 w-[178px] text-sm mr-8"
+                      className="h-10 w-[178px] text-sm mr-8 "
                     >
                       View Service{" "}
                     </Button>
@@ -120,11 +120,11 @@ const HireServiceProviders: React.FC = () => {
               </CardFooter>
             </Card>
 
-            <Card className="w-full h-[250px]">
+            <Card className="w-full h-fit">
               <CardHeader>
                 <CardTitle>
                   Stani - Tokenomics{" "}
-                  <Button className="ml-[100px]  w-18 h-9">Business</Button>{" "}
+                  <Button className="ml-[220px]  w-18 h-9">Business</Button>{" "}
                 </CardTitle>
                 <CardDescription>Agency</CardDescription>
               </CardHeader>
@@ -139,7 +139,7 @@ const HireServiceProviders: React.FC = () => {
                   <p>Binance Tokenomics</p>
                 </div>
                 <Dialog>
-                  <DialogTrigger asChild>
+                  <DialogTrigger >
                     <Button
                       type="button"
                       className="h-10 w-[178px] text-sm mr-8"
@@ -154,11 +154,11 @@ const HireServiceProviders: React.FC = () => {
               </CardFooter>
             </Card>
 
-            <Card className="w-full h-[250px]">
+            <Card className="w-full h-fit">
               <CardHeader>
                 <CardTitle>
                   Stani - Tokenomics{" "}
-                  <Button className="ml-[100px]  w-18 h-9">Business</Button>{" "}
+                  <Button className="ml-[220px]  w-18 h-9">Business</Button>{" "}
                 </CardTitle>
                 <CardDescription>Agency</CardDescription>
               </CardHeader>
@@ -173,7 +173,7 @@ const HireServiceProviders: React.FC = () => {
                   <p>Binance Tokenomics</p>
                 </div>
                 <Dialog>
-                  <DialogTrigger asChild>
+                  <DialogTrigger >
                     <Button
                       type="button"
                       className="h-10 w-[178px] text-sm mr-8"
@@ -190,11 +190,11 @@ const HireServiceProviders: React.FC = () => {
             </Card>
           </div>
           <div className="flex flex-row space-x-5">
-            <Card className="w-full h-[250px]">
+            <Card className="w-full h-fit">
               <CardHeader>
                 <CardTitle>
                   Stani - Tokenomics{" "}
-                  <Button className="ml-[100px]  w-18 h-9">Business</Button>{" "}
+                  <Button className="ml-[220px]   w-18 h-9">Business</Button>{" "}
                 </CardTitle>
                 <CardDescription>Agency</CardDescription>
               </CardHeader>
@@ -209,7 +209,7 @@ const HireServiceProviders: React.FC = () => {
                   <p>Binance Tokenomics</p>
                 </div>
                 <Dialog>
-                  <DialogTrigger asChild>
+                  <DialogTrigger >
                     <Button
                       type="button"
                       className="h-10 w-[178px] text-sm mr-8"
@@ -225,11 +225,11 @@ const HireServiceProviders: React.FC = () => {
               </CardFooter>
             </Card>
 
-            <Card className="w-full h-[250px]">
+            <Card className="w-full h-fit">
               <CardHeader>
                 <CardTitle>
                   Stani - Tokenomics{" "}
-                  <Button className="ml-[100px]  w-18 h-9">Business</Button>{" "}
+                  <Button className="ml-[220px]  w-18 h-9">Business</Button>{" "}
                 </CardTitle>
                 <CardDescription>Agency</CardDescription>
               </CardHeader>
@@ -244,7 +244,7 @@ const HireServiceProviders: React.FC = () => {
                   <p>Binance Tokenomics</p>
                 </div>
                 <Dialog>
-                  <DialogTrigger asChild>
+                  <DialogTrigger >
                     <Button
                       type="button"
                       className="h-10 w-[178px] text-sm mr-8"
@@ -260,11 +260,11 @@ const HireServiceProviders: React.FC = () => {
               </CardFooter>
             </Card>
 
-            <Card className="w-full h-[250px]">
+            <Card className="w-full h-fit">
               <CardHeader>
                 <CardTitle>
                   Stani - Tokenomics{" "}
-                  <Button className="ml-[100px]  w-18 h-9">Business</Button>{" "}
+                  <Button className="ml-[220px]   w-18 h-9">Business</Button>{" "}
                 </CardTitle>
                 <CardDescription>Agency</CardDescription>
               </CardHeader>
@@ -279,7 +279,7 @@ const HireServiceProviders: React.FC = () => {
                   <p>Binance Tokenomics</p>
                 </div>
                 <Dialog>
-                  <DialogTrigger asChild>
+                  <DialogTrigger >
                     <Button
                       type="button"
                       className="h-10 w-[178px] text-sm mr-8"
