@@ -140,8 +140,8 @@ const MyPortfolio: React.FC = () => {
                 </div>
               </div>{" "}
               <div className="mt-5 w-full border p-5 bg-gray-100 h-[240px] rounded-md flex justify-center">
-                <div className="grid grid-cols-3 gap-8">
-                  <div className="flex flex-col">
+                <div className="grid grid-cols-3 gap-16">
+                  <div className="flex flex-col ">
                     <div className="font-semibold mb-3 w-max">Chains Used</div>
                     <div className="flex space-x-3">
                       <Button className="h-8 bg-black/25">Ethereum</Button>
