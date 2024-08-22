@@ -43,7 +43,7 @@ export function DealsForm() {
 
   return (
     <div>
-      <div className="main-div flex flex-col min-h-screen px-20">
+      <div className="main-div flex flex-col px-20 flex-wrap w-full items-center ">
         <div className="px-[440px] ">
           <div className="justify-center  w-[560px] py-[40px]">
             <Form {...form}>

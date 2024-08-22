@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { CreateAccountForm } from "@/components/forms/CreateAccountForm";
 import { Button } from "@/components/ui/button";
 import { TeamsForm } from "@/components/forms/TeamsForm"; // Assuming you have a TeamForm component
 import PortfolioForm from "@/components/forms/PortfolioForm";
@@ -26,9 +25,8 @@ const Signupforinvestor = () => {
         return <Thankyou />;
       case 5:
         return <TeamsForm />;
-
       default:
-        return <CreateAccountForm />;
+        return <CreateAccountForm2 />;
     }
   };
 
