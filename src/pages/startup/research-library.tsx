@@ -35,7 +35,7 @@ const ResearchLibrary: React.FC = () => {
       <div className="flex-1 py-[97px]">
         <div className="flex items-center justify-between">
           <p className="font-semibold text-5">Research Library</p>
-          <Button className="w-[178px] h-[42px] ">Publish</Button>
+          <Button className="w-[178px] h-11 ">Publish</Button>
         </div>
         <div className="flex items-center justify-between mt-[21px]">
           <div className="flex items-center w-full h-[46px] border rounded-1">
@@ -82,10 +82,10 @@ const ResearchLibrary: React.FC = () => {
               <Button className="p-3  bg-black/25">Marketing</Button>
             </CardContent>
             <CardFooter className="font-medium text-sm space-x-3">
-              <Button className="p-3 w-full h-[42px] py-4 px-[55px]  bg-black/50">
+              <Button className="p-3 w-full h-11 py-4 px-[55px]  bg-black/50">
                 View
               </Button>
-              <Button className="p-3 w-full h-[42px] py-4 px-[55px]">
+              <Button className="p-3 w-full h-11 py-4 px-[55px]">
                 Download
               </Button>
             </CardFooter>
@@ -121,10 +121,10 @@ const ResearchLibrary: React.FC = () => {
               <Button className="p-3  bg-black/25">Marketing</Button>
             </CardContent>
             <CardFooter className="font-medium text-sm space-x-3 w-full">
-              <Button className="p-3 w-full h-[42px] py-4 px-[55px]  bg-black/50">
+              <Button className="p-3 w-full h-11 py-4 px-[55px]  bg-black/50">
                 View
               </Button>
-              <Button className="p-3 w-full h-[42px] py-4 px-[55px]">
+              <Button className="p-3 w-full h-11 py-4 px-[55px]">
                 Download
               </Button>
             </CardFooter>
@@ -160,10 +160,10 @@ const ResearchLibrary: React.FC = () => {
               <Button className="p-3  bg-black/25">Marketing</Button>
             </CardContent>
             <CardFooter className="font-medium text-sm space-x-3 ">
-              <Button className="p-3 w-full h-[42px] py-4 px-[55px] bg-black/50">
+              <Button className="p-3 w-full h-11 py-4 px-[55px] bg-black/50">
                 View
               </Button>
-              <Button className="p-3 w-full h-[42px] py-4 px-[55px] bg-black">
+              <Button className="p-3 w-full h-11 py-4 px-[55px] bg-black">
                 Download
               </Button>
             </CardFooter>
