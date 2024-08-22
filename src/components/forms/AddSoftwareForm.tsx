@@ -153,10 +153,7 @@ export function AddSoftwareForm() {
         <Button className="flex text-base bg-white text-black">Cancel</Button>
         <Dialog>
           <DialogTrigger asChild>
-            <Button
-              type="button"
-              className="h-[42px] w-[178px] text-sm mr-[30px]"
-            >
+            <Button type="button" className="h-[42px] w-[178px] text-sm mr-8">
               Request to add software{" "}
             </Button>
           </DialogTrigger>

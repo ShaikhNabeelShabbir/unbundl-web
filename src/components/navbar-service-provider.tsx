@@ -44,7 +44,7 @@ const NavbarServiceProvider: React.FC<NavbarProps> = ({
   return (
     <div>
       <div className="relative">
-        <div className="flex justify-center gap-0 px-14 md:px-5 w-full">
+        <div className="flex justify-center gap-0 px-14 md:px-5">
           {["Create Account", "Create Gigs"].map((label, index) => (
             <div
               key={index}

@@ -15,7 +15,7 @@ const SuggestPeople = () => {
         </DialogDescription>
       </DialogHeader>
       <div className="flex-1 overflow-auto p-4">
-        <div className="mt-[30px]">
+        <div className="mt-8">
           <p>Enter their Emails</p>
           <Textarea className="w-[480px]"></Textarea>
           <br />
@@ -28,7 +28,7 @@ const SuggestPeople = () => {
             className="w-[355px] h-[45px] border"
             placeholder="unbundl.io/referral/sdjfsbldjcb127312w1kjsdvfs"
           />
-          <Button className="ml-[10px] w-[115px]"> Copy</Button>
+          <Button className="ml-3 w-[115px]"> Copy</Button>
         </div>
       </div>
     </div>

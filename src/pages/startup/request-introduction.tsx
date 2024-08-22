@@ -22,7 +22,7 @@ const RequestIntroduction = () => {
         </DialogDescription>
       </DialogHeader>
       <div className="flex-1 overflow-auto p-4">
-        <div className="mt-[30px]">
+        <div className="mt-8">
           <p>Please explain why you would like to connect:</p>
           <Textarea className="w-[480px] min-h-[100px]" />
           <Dialog>

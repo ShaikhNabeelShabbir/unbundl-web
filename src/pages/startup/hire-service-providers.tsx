@@ -35,7 +35,7 @@ const HireServiceProviders: React.FC = () => {
             View Service{" "}
           </Button>
         </div>
-        <div className=" flex flex-col font-semibold text-md  mt-[21px] space-y-[10px]">
+        <div className=" flex flex-col font-semibold text-md  mt-[21px] space-y-3">
           <div className="flex flex-row w-full space-x-3 ">
             <Card className="w-full h-[76px] rounded-1 flex items-center justify-center  bg-black/25 text-black/50">
               All
@@ -82,7 +82,7 @@ const HireServiceProviders: React.FC = () => {
             Advanced Search
           </Button>
         </div>
-        <div className="mt-[30px] mb-5 font-medium text-base">
+        <div className="mt-8 mb-5 font-medium text-base">
           Best Picks For your company
         </div>
         <div className="flex flex-col space-y-5">
@@ -97,12 +97,12 @@ const HireServiceProviders: React.FC = () => {
                 </CardTitle>
                 <CardDescription>Agency</CardDescription>
               </CardHeader>
-              <CardContent className="font-medium text-[12px] space-x-[10px]">
+              <CardContent className="font-medium text-[12px] space-x-3">
                 Figma is a collaborative web application for interface design,
                 with additional offline features enabled by desktop applications
                 for macOS and Windows.
               </CardContent>
-              <CardFooter className="font-medium text-sm space-x-[10px]">
+              <CardFooter className="font-medium text-sm space-x-3">
                 <div className="w-[140px] h-[40px]">
                   <p>Top rated project</p>
                   <p>Binance Tokenomics</p>
@@ -111,7 +111,7 @@ const HireServiceProviders: React.FC = () => {
                   <DialogTrigger asChild>
                     <Button
                       type="button"
-                      className="h-[42px] w-[178px] text-sm mr-[30px]"
+                      className="h-[42px] w-[178px] text-sm mr-8"
                     >
                       View Service{" "}
                     </Button>
@@ -134,12 +134,12 @@ const HireServiceProviders: React.FC = () => {
                 </CardTitle>
                 <CardDescription>Agency</CardDescription>
               </CardHeader>
-              <CardContent className="font-medium text-[12px] space-x-[10px]">
+              <CardContent className="font-medium text-[12px] space-x-3">
                 Figma is a collaborative web application for interface design,
                 with additional offline features enabled by desktop applications
                 for macOS and Windows.
               </CardContent>
-              <CardFooter className="font-medium text-sm space-x-[10px]">
+              <CardFooter className="font-medium text-sm space-x-3">
                 <div className="w-[140px] h-[40px]">
                   <p>Top rated project</p>
                   <p>Binance Tokenomics</p>
@@ -148,7 +148,7 @@ const HireServiceProviders: React.FC = () => {
                   <DialogTrigger asChild>
                     <Button
                       type="button"
-                      className="h-[42px] w-[178px] text-sm mr-[30px]"
+                      className="h-[42px] w-[178px] text-sm mr-8"
                     >
                       View Service{" "}
                     </Button>
@@ -170,12 +170,12 @@ const HireServiceProviders: React.FC = () => {
                 </CardTitle>
                 <CardDescription>Agency</CardDescription>
               </CardHeader>
-              <CardContent className="font-medium text-[12px] space-x-[10px]">
+              <CardContent className="font-medium text-[12px] space-x-3">
                 Figma is a collaborative web application for interface design,
                 with additional offline features enabled by desktop applications
                 for macOS and Windows.
               </CardContent>
-              <CardFooter className="font-medium text-sm space-x-[10px]">
+              <CardFooter className="font-medium text-sm space-x-3">
                 <div className="w-[140px] h-[40px]">
                   <p>Top rated project</p>
                   <p>Binance Tokenomics</p>
@@ -184,7 +184,7 @@ const HireServiceProviders: React.FC = () => {
                   <DialogTrigger asChild>
                     <Button
                       type="button"
-                      className="h-[42px] w-[178px] text-sm mr-[30px]"
+                      className="h-[42px] w-[178px] text-sm mr-8"
                     >
                       View Service{" "}
                     </Button>
@@ -208,12 +208,12 @@ const HireServiceProviders: React.FC = () => {
                 </CardTitle>
                 <CardDescription>Agency</CardDescription>
               </CardHeader>
-              <CardContent className="font-medium text-[12px] space-x-[10px]">
+              <CardContent className="font-medium text-[12px] space-x-3">
                 Figma is a collaborative web application for interface design,
                 with additional offline features enabled by desktop applications
                 for macOS and Windows.
               </CardContent>
-              <CardFooter className="font-medium text-sm space-x-[10px]">
+              <CardFooter className="font-medium text-sm space-x-3">
                 <div className="w-[140px] h-[40px]">
                   <p>Top rated project</p>
                   <p>Binance Tokenomics</p>
@@ -222,7 +222,7 @@ const HireServiceProviders: React.FC = () => {
                   <DialogTrigger asChild>
                     <Button
                       type="button"
-                      className="h-[42px] w-[178px] text-sm mr-[30px]"
+                      className="h-[42px] w-[178px] text-sm mr-8"
                     >
                       View Service{" "}
                     </Button>
@@ -245,12 +245,12 @@ const HireServiceProviders: React.FC = () => {
                 </CardTitle>
                 <CardDescription>Agency</CardDescription>
               </CardHeader>
-              <CardContent className="font-medium text-[12px] space-x-[10px]">
+              <CardContent className="font-medium text-[12px] space-x-3">
                 Figma is a collaborative web application for interface design,
                 with additional offline features enabled by desktop applications
                 for macOS and Windows.
               </CardContent>
-              <CardFooter className="font-medium text-sm space-x-[10px]">
+              <CardFooter className="font-medium text-sm space-x-3">
                 <div className="w-[140px] h-[40px]">
                   <p>Top rated project</p>
                   <p>Binance Tokenomics</p>
@@ -259,7 +259,7 @@ const HireServiceProviders: React.FC = () => {
                   <DialogTrigger asChild>
                     <Button
                       type="button"
-                      className="h-[42px] w-[178px] text-sm mr-[30px]"
+                      className="h-[42px] w-[178px] text-sm mr-8"
                     >
                       View Service{" "}
                     </Button>
@@ -282,12 +282,12 @@ const HireServiceProviders: React.FC = () => {
                 </CardTitle>
                 <CardDescription>Agency</CardDescription>
               </CardHeader>
-              <CardContent className="font-medium text-[12px] space-x-[10px]">
+              <CardContent className="font-medium text-[12px] space-x-3">
                 Figma is a collaborative web application for interface design,
                 with additional offline features enabled by desktop applications
                 for macOS and Windows.
               </CardContent>
-              <CardFooter className="font-medium text-sm space-x-[10px]">
+              <CardFooter className="font-medium text-sm space-x-3">
                 <div className="w-[140px] h-[40px]">
                   <p>Top rated project</p>
                   <p>Binance Tokenomics</p>
@@ -296,7 +296,7 @@ const HireServiceProviders: React.FC = () => {
                   <DialogTrigger asChild>
                     <Button
                       type="button"
-                      className="h-[42px] w-[178px] text-sm mr-[30px]"
+                      className="h-[42px] w-[178px] text-sm mr-8"
                     >
                       View Service{" "}
                     </Button>

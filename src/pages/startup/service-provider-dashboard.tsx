@@ -32,7 +32,7 @@ const SeeviceProviderDashboard: React.FC = () => {
               <br />
               <br />
               <br />
-              <div className=" mb-5 space-x-[10px]">
+              <div className=" mb-5 space-x-3">
                 <Button className="bg-black/25 w-[97px] h-9">
                   UI/UX Design
                 </Button>
@@ -56,7 +56,7 @@ const SeeviceProviderDashboard: React.FC = () => {
           </div>
         </div>
         <div className="flex flex-row mb-3">
-          <div className="mt-[30px] mb-5 w-full h-6 mr-8 font-semibold text-lg">
+          <div className="mt-8 mb-5 w-full h-6 mr-8 font-semibold text-lg">
             Upcoming Meetings{" "}
             <div className="w-full  border flex flex-row bg-black/5 mt-5">
               <div className="w-full h-full border mt-5 ml-5 mr-3 flex flex-col font-bold text-sm items-center p-2">
@@ -70,7 +70,7 @@ const SeeviceProviderDashboard: React.FC = () => {
                   Potential Advisor Robert Maclarence at 7:00 PM
                 </div>
               </div>
-              <div className="w-full h-fit border mt-5 ml-[10px] mr-[10px] flex flex-col font-bold text-sm items-center p-2">
+              <div className="w-full h-fit border mt-5 ml-3 mr-3 flex flex-col font-bold text-sm items-center p-2">
                 <p className="bg-black/10 w-full font-bold text-sm items-center text-center py-3">
                   Tommorrow{" "}
                 </p>
@@ -84,7 +84,7 @@ const SeeviceProviderDashboard: React.FC = () => {
                   Potential Advisor Robert Maclarence at 7:00 PM
                 </div>
               </div>
-              <div className="w-full h-fit border mt-5 ml-[10px] mr-[10px] flex flex-col font-bold text-sm items-center p-2">
+              <div className="w-full h-fit border mt-5 ml-3 mr-3 flex flex-col font-bold text-sm items-center p-2">
                 <p className="bg-black/10 w-full font-bold text-sm items-center text-center py-3">
                   Later
                 </p>

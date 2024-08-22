@@ -10,20 +10,20 @@ export const Sidebar: React.FC<SidebarProps> = ({ setCurrentView }) => {
 
   return (
     <div>
-      <div className="mb-[30px] mt-[30px] ml-[30px] flex items-center">
+      <div className="mb-8 mt-8 ml-8 flex items-center">
         <h1 className="text-lg font-semibold flex items-center">
           Startup Name
           <ChevronDown className="ml-2" />
         </h1>{" "}
-        <div className="absolute right-0 flex items-center mr-[30px]">
+        <div className="absolute right-0 flex items-center mr-8 space-x-3">
           <u>24 Points</u>
           <Bell className="ml-2" />
           <Search className="ml-2" />
-          <div className="bg-black/50 rounded-full w-[30px] h-[30px] ml-2"></div>
+          <div className="bg-black/50 rounded-full w-8 h-8 ml-2"></div>
         </div>
       </div>
-      <div className="w-[200px] h-full px-[30px]">
-        <ul className="text-black/50 space-y-[10px]">
+      <div className="w-[200px] h-full px-8">
+        <ul className="text-black/50 space-y-3">
           <li className="hover:text-black">
             <button onClick={() => setCurrentView("dashboard")}>
               Dashboard

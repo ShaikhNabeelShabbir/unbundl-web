@@ -63,8 +63,8 @@ const Talentprofile = () => {
       </div>
       <div>
         <p className="font-semibold text-[18px] mt-5">Key Skills</p>
-        <div className=" flex flex-row space-x-[10px] border w-[560px] h-[150px]">
-          <ul className="font-medium text-[12px] px-[10px]">
+        <div className=" flex flex-row space-x-3 border w-[560px] h-[150px]">
+          <ul className="font-medium text-[12px] px-3">
             <li>UI/UX Design</li>
             <li>Photoshop</li>
             <li>Figma</li>
@@ -96,7 +96,7 @@ const Talentprofile = () => {
             the future of the Web3 and Blockchain landscape.
           </p>
         </div>
-        <div className="mt-[30px]">
+        <div className="mt-8">
           <p className="font-semibold text-[18px]">Education</p>
           <div className="flex flex-row">
             <div>

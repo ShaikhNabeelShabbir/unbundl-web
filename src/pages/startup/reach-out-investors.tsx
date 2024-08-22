@@ -44,9 +44,9 @@ const expand_you_network = [
 const ReachOutToInvestors = () => {
   return (
     <div className="w-full h-fit px-5">
-      <div className="flex flex-row space-x-[10px] mb-4">
+      <div className="flex flex-row space-x-3 mb-4">
         <div className="flex items-center w-full h-[46px] border rounded-1 mt-5">
-          <Search className=" text-gray-500 mt-[10px]" />
+          <Search className=" text-gray-500 mt-3" />
           <input
             type="text"
             className="w-full px-4 py-2 outline-black bg-transparent"
@@ -101,7 +101,7 @@ const ReachOutToInvestors = () => {
                         capital, updated to the modern crypto world.
                       </p>
                       <br />
-                      <div className="flex flex-row space-x-[10px]">
+                      <div className="flex flex-row space-x-3">
                         <Card className="w-[105px] h-[39px] border-none rounded-none">
                           <CardTitle>Type</CardTitle>
                           <CardDescription>Venture Capital </CardDescription>

@@ -72,7 +72,7 @@ const HireTalent: React.FC = () => {
                 </CardTitle>
                 <CardDescription>$10,000/month</CardDescription>
               </CardHeader>
-              <CardContent className="font-medium text-sm space-x-[10px]">
+              <CardContent className="font-medium text-sm space-x-3">
                 Work experience <br />5 years 8 months
               </CardContent>
               <CardFooter className="font-medium text-sm space-x-3">

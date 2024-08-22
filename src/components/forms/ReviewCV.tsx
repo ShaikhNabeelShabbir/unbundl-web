@@ -62,20 +62,18 @@ const ReviewCV = () => {
       </div>
       <div>
         <p className="font-semibold text-[12px] mt-5">Key Skills</p>
-        <div className=" flex flex-row space-x-[10px]">
-          <Card className="p-[10px] rounded-none text-white bg-black/25">
+        <div className=" flex flex-row space-x-3">
+          <Card className="p-3 rounded-none text-white bg-black/25">
             Web Design
           </Card>
-          <Card className="p-[10px] rounded-none text-white bg-black/25">
+          <Card className="p-3 rounded-none text-white bg-black/25">
             UI/UX Design
           </Card>
-          <Card className="p-[10px] rounded-none text-white bg-black/25">
+          <Card className="p-3 rounded-none text-white bg-black/25">
             Mobile Design
           </Card>
-          <Card className="p-[10px] rounded-none text-white bg-black/25">
-            Figma
-          </Card>
-          <Card className="p-[10px] rounded-none text-white bg-black/25">
+          <Card className="p-3 rounded-none text-white bg-black/25">Figma</Card>
+          <Card className="p-3 rounded-none text-white bg-black/25">
             Adobe XD
           </Card>
         </div>
@@ -100,7 +98,7 @@ const ReviewCV = () => {
             the future of the Web3 and Blockchain landscape.
           </p>
         </div>
-        <div className="mt-[30px]">
+        <div className="mt-8">
           <p className="font-semibold text-[18px]">Education</p>
           <div className="flex flex-row">
             <div>

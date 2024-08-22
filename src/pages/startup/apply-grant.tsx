@@ -11,7 +11,7 @@ const ApplyGrant = () => {
   return (
     <div>
       <div>
-        <p className="font-normal text-[12px] mb-[30px]">
+        <p className="font-normal text-[12px] mb-8">
           Here you can apply for a grant. You don’t need to fill out any
           information, as it’s already in your profile, just read about the
           grant, and apply
@@ -47,10 +47,7 @@ const ApplyGrant = () => {
           <Button className="flex text-base bg-white text-black">Cancel</Button>
           <Dialog>
             <DialogTrigger asChild>
-              <Button
-                type="button"
-                className="h-[42px] w-[178px] text-sm mr-[30px]"
-              >
+              <Button type="button" className="h-[42px] w-[178px] text-sm mr-8">
                 Request to add software{" "}
               </Button>
             </DialogTrigger>

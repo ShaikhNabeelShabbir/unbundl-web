@@ -32,12 +32,9 @@ export function SkillsForm() {
   return (
     <div>
       <div className="main-div">
-        <div className="justify-center py-[32px] space-y-[30px]">
+        <div className="justify-center py-[32px] space-y-8">
           <Form {...form}>
-            <form
-              onSubmit={form.handleSubmit(onSubmit)}
-              className="space-y-[30px]"
-            >
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
               <FormField
                 control={form.control}
                 name="previousClients"

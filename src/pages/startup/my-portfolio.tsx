@@ -191,7 +191,7 @@ const MyPortfolio: React.FC = () => {
               </div>
               <br />
               <br />
-              <div className="mt-[30px] w-full">
+              <div className="mt-8 w-full">
                 {" "}
                 <p className="font-semibold text-lg">Investments</p>
                 <div className="flex items-center justify-between mt-[21px]">
@@ -255,7 +255,7 @@ const MyPortfolio: React.FC = () => {
                   </TableBody>
                 </Table>
               </div>
-              <div className="pt-[30px]">
+              <div className="pt-8">
                 {" "}
                 <p className="font-semibold text-lg">Investment Team</p>
                 <div className="flex items-center justify-between mt-[21px]">
@@ -313,7 +313,7 @@ const MyPortfolio: React.FC = () => {
               {/* {DND} */}
             </div>
             <div className=" ml-5 h-fit w-[370px] flex flex-col space-y-5">
-              <div className="w-[370px] space-y-5 mt-[30px]">
+              <div className="w-[370px] space-y-5 mt-8">
                 <div className=" border">
                   <p className="font-semibold bg-black/5 text-lg pl-5 pt-5">
                     Investment Thesis

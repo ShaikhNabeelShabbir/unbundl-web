@@ -30,7 +30,6 @@ const expand_you_network = [
     stagedFocus: "Seed",
     timeOfCall: "Fri, Dec 13, 6 PM",
   },
-  
 ];
 import {
   Select,
@@ -65,7 +64,7 @@ const ViewRequest = () => {
             </SelectContent>
           </Select>
         </div>
-        <Button className="w-[190px] h-[46px] mr-[30px] ml-5">
+        <Button className="w-[190px] h-[46px] mr-8 ml-5">
           Advanced Search
         </Button>
       </div>

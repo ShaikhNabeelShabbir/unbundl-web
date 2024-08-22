@@ -81,7 +81,7 @@ const SoftwareStash: React.FC = () => {
           </div>
           <Button className="w-[190px] ml-3 mr-3 h-12">Advanced Search</Button>
         </div>
-        <div className="mt-[30px] mb-5 font-medium text-base">
+        <div className="mt-8 mb-5 font-medium text-base">
           Best Pics For your company
         </div>
         <div className="flex flex-col space-y-5">

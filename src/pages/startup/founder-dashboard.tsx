@@ -11,7 +11,7 @@ const Dashboard: React.FC = () => {
           <Button
             type="button"
             variant="link"
-            className="h-[42px] w-[178px] text-base mr-[30px]"
+            className="h-[42px] w-[178px] text-base mr-8"
           >
             Open My Company Page{" "}
           </Button>
@@ -28,13 +28,13 @@ const Dashboard: React.FC = () => {
               </div>
               <div className="font-medium text-md text-black/30 mt-[12px]">
                 Public
-                <Switch className="ml-[10px] " />
+                <Switch className="ml-3 " />
               </div>
               <br />
               <div className="font-medium text-md text-black/30">
-                Fundraising <Switch className="ml-[10px] " />
+                Fundraising <Switch className="ml-3 " />
               </div>
-              <div className="mt-4 space-x-[10px]">
+              <div className="mt-4 space-x-3">
                 <Button className="bg-black/25">Round A</Button>
                 <Button className="bg-black/25">Hiring</Button>
                 <Button className="bg-black/25">Fundaising</Button>
@@ -51,7 +51,7 @@ const Dashboard: React.FC = () => {
             </span>
           </div>
         </div>
-        <div className="mt-[30px] mb-5  mr-8  font-semibold text-lg p-3">
+        <div className="mt-8 mb-5  mr-8  font-semibold text-lg p-3">
           Find people
         </div>
         <div className="flex flex-row font-semibold text-lg space-x-5 w-full  ">
@@ -89,7 +89,7 @@ const Dashboard: React.FC = () => {
           </div>
         </div>
         <div className="flex flex-row mb-3">
-          <div className="mt-[30px] mb-5 w-full h-6 mr-8 font-semibold text-lg">
+          <div className="mt-8 mb-5 w-full h-6 mr-8 font-semibold text-lg">
             Upcoming Meetings{" "}
             <div className="w-full  border flex flex-row bg-black/5 mt-5">
               <div className="w-full h-full border mt-5 ml-5 mr-3 flex flex-col font-bold text-sm items-center p-2">
@@ -103,7 +103,7 @@ const Dashboard: React.FC = () => {
                   Potential Advisor Robert Maclarence at 7:00 PM
                 </div>
               </div>
-              <div className="w-full h-fit border mt-5 ml-[10px] mr-[10px] flex flex-col font-bold text-sm items-center p-2">
+              <div className="w-full h-fit border mt-5 ml-3 mr-3 flex flex-col font-bold text-sm items-center p-2">
                 <p className="bg-black/10 w-full font-bold text-sm items-center text-center py-3">
                   Tommorrow{" "}
                 </p>
@@ -117,7 +117,7 @@ const Dashboard: React.FC = () => {
                   Potential Advisor Robert Maclarence at 7:00 PM
                 </div>
               </div>
-              <div className="w-full h-fit border mt-5 ml-[10px] mr-[10px] flex flex-col font-bold text-sm items-center p-2">
+              <div className="w-full h-fit border mt-5 ml-3 mr-3 flex flex-col font-bold text-sm items-center p-2">
                 <p className="bg-black/10 w-full font-bold text-sm items-center text-center py-3">
                   Later
                 </p>

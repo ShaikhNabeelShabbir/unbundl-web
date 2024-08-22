@@ -179,7 +179,7 @@ const MyCompany: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <div className="mt-[30px]">
+              <div className="mt-8">
                 <div>
                   {" "}
                   <div className="flex justify-between items-center">
@@ -241,7 +241,7 @@ const MyCompany: React.FC = () => {
                   </TableBody>
                 </Table>
               </div>
-              <div className="pt-[30px]">
+              <div className="pt-8">
                 <div className="flex justify-between items-center">
                   <p className="font-semibold text-5">
                     Current Round Information
@@ -279,7 +279,7 @@ const MyCompany: React.FC = () => {
                   </TableBody>
                 </Table>
               </div>
-              <div className="mt-[30px]">
+              <div className="mt-8">
                 <div className="flex justify-between items-center">
                   <p className="font-semibold text-5">Cap Table</p>
                   <Button className="text-sm font-medium" variant="link">
@@ -331,7 +331,7 @@ const MyCompany: React.FC = () => {
                   consequuntur consequatur doloribus, quam blanditiis, ex odio
                   quibusdam, fuga vero rerum explicabo!
                 </div>
-                <div className="w-full h-[80px] mt-5 border font-semibold text-md px-[30px] py-5 bg-black/5">
+                <div className="w-full h-[80px] mt-5 border font-semibold text-md px-8 py-5 bg-black/5">
                   Answer 3 missing questions to increase your chance of getting
                   funded
                 </div>{" "}
@@ -350,7 +350,7 @@ const MyCompany: React.FC = () => {
                   porro labore nemo aspernatur debitis culpa quisquam minus
                   corrupti illo similique voluptas rem voluptatem?
                 </div>{" "}
-                <div className="w-full h-[80px] mt-5 bg-black/5 border font-semibold text-md px-[30px] py-5">
+                <div className="w-full h-[80px] mt-5 bg-black/5 border font-semibold text-md px-8 py-5">
                   Answer 2 missing questions to increase your chance of getting
                   funded
                 </div>{" "}
@@ -369,7 +369,7 @@ const MyCompany: React.FC = () => {
                   aliquid dicta blanditiis placeat cupiditate explicabo, eos
                   eius nam culpa, harum voluptas aspernatur.
                 </div>{" "}
-                <div className="w-full h-[80px] mt-5 bg-black/5 border font-semibold text-md px-[30px] py-5">
+                <div className="w-full h-[80px] mt-5 bg-black/5 border font-semibold text-md px-8 py-5">
                   Answer 2 missing questions to increase your chance of getting
                   funded
                 </div>{" "}
@@ -390,7 +390,7 @@ const MyCompany: React.FC = () => {
                   saepe, ipsum totam facere quaerat tenetur maiores error odio
                   laborum minus distinctio nihil mollitia?
                 </div>{" "}
-                <div className="w-full h-[80px] mt-5 border bg-black/5 font-semibold text-md px-[30px] py-5">
+                <div className="w-full h-[80px] mt-5 border bg-black/5 font-semibold text-md px-8 py-5">
                   Answer 3 missing questions to increase your chance of getting
                   funded
                 </div>{" "}
