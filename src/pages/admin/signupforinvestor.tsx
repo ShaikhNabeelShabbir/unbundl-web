@@ -21,10 +21,11 @@ const Signupforinvestor = () => {
         return <DealsForm />;
       case 4:
         return <PortfolioForm />;
-      case 6:
-        return <Thankyou />;
       case 5:
         return <TeamsForm />;
+      case 6:
+        return <Thankyou />;
+
       default:
         return <CreateAccountForm2 />;
     }
@@ -32,7 +33,7 @@ const Signupforinvestor = () => {
 
   const handleNext = () => {
     setStep((prevStep) => {
-      if (prevStep === 5) {
+      if (prevStep === 7) {
         return 1; // Reset to step 1 after the third step
       }
       return prevStep + 1;
@@ -55,16 +56,21 @@ const Signupforinvestor = () => {
           </div>
         </div>
       </div>
-      <NavbarInvestor setStep={setStep} currentStep={step} />
+      {step !== 6 && <NavbarInvestor setStep={setStep} currentStep={step} />}
       {renderForm()}
-      <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px] bg-white">
-        <Button className="flex text-base bg-gray-500 " onClick={handleCancel}>
-          Cancel
-        </Button>
-        <Button className="flex text-base" onClick={handleNext}>
-          Next Step
-        </Button>
-      </div>
+      {step !== 6 && (
+        <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px] bg-white">
+          <Button
+            className="flex text-base bg-gray-500 "
+            onClick={handleCancel}
+          >
+            Cancel
+          </Button>
+          <Button className="flex text-base" onClick={handleNext}>
+            Next Step
+          </Button>
+        </div>
+      )}
     </div>
   );
 };

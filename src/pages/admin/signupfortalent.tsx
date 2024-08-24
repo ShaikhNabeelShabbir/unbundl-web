@@ -46,16 +46,21 @@ export const Signupfortalent = () => {
           </div>
         </div>
       </div>
-      <Navbartalent setStep={setStep} currentStep={step} />
+      {step !== 3 && <Navbartalent setStep={setStep} currentStep={step} />}
       {renderForm()}
-      <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px] bg-white">
-        <Button className="flex text-base bg-gray-500 " onClick={handleCancel}>
-          Cancel
-        </Button>
-        <Button className="flex text-base" onClick={handleNext}>
-          Next Step
-        </Button>
-      </div>
+      {step !== 3 && (
+        <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px] bg-white">
+          <Button
+            className="flex text-base bg-gray-500 "
+            onClick={handleCancel}
+          >
+            Cancel
+          </Button>
+          <Button className="flex text-base" onClick={handleNext}>
+            Next Step
+          </Button>
+        </div>
+      )}
     </div>
   );
 };
