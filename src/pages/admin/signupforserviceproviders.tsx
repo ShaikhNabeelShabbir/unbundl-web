@@ -57,7 +57,7 @@ export const Signupforserviceproviders = () => {
           >
             Cancel
           </Button>
-          <Button className="flex text-base" onClick={handleNext}>
+          <Button className="flex text-base" type="submit" form="signupForm">
             Next Step
           </Button>
         </div>

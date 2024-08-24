@@ -76,7 +76,7 @@ export function GeneralInvestorInformationForm({
 
                 <FormField
                   control={form.control}
-                  name="fundName"
+                  name="fundLegalName"
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="font-medium text-base">
