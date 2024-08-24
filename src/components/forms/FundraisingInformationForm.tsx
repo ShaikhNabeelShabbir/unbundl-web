@@ -65,13 +65,13 @@ export function FundraisingIformationForm({ onNext }: { onNext: () => void }) {
           <div className="px-[80px] ">
             <div className="justify-center w-[560px] py-[40px]">
               <Form {...form}>
-                <form
-                  id="signupForm"
-                  onSubmit={form.handleSubmit((values) => {
-                    onSubmit(values); // Validate and submit the form
-                  })}
-                  className="space-y-8"
-                >
+              <form
+                id="signupForm"
+                onSubmit={form.handleSubmit((values) => {
+                  onSubmit(values); // Validate and submit the form
+                })}
+                className="space-y-8"
+              >
                   <FormField
                     name="fundraisingStatus"
                     render={({ field }) => (
