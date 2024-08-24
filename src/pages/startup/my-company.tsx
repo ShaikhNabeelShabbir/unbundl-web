@@ -157,7 +157,7 @@ const MyCompany: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="flex flex-col">
+                    <div className="flex flex-col w-fit ml-auto">
                       <div className="font-semibold mb-3">Category</div>
                       <Button className="h-8 bg-black/25">De-Fi</Button>
                     </div>
@@ -170,7 +170,7 @@ const MyCompany: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="flex flex-col">
+                    <div className="flex flex-col w-fit ml-auto">
                       <div className="font-semibold mb-3">
                         Level of Completion
                       </div>
@@ -401,9 +401,8 @@ const MyCompany: React.FC = () => {
               <div className="flex items-center space-x-12">
                 <p className="font-semibold text-5">Company Updates</p>
                 <Dialog>
-                  <DialogHeader></DialogHeader>
                   <DialogTrigger>
-                    <Button variant="link" className=" mr-0 border">
+                    <Button variant="link" className=" mr-0 border ml-14">
                       Create Update
                     </Button>
                   </DialogTrigger>
