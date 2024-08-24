@@ -18,7 +18,6 @@ import {
 import {
   Dialog,
   DialogContent,
-  DialogHeader,
   DialogTrigger,
 } from "@/components/ui/dialog";
 import Update from "./update";
