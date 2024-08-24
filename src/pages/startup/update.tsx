@@ -13,7 +13,7 @@ import ChartIcon from "@/assets/icons/chart.png";
 const Update = () => {
   return (
     <div className="rounded-md">
-      <div className="grid grid-cols-[auto,1fr] items-start gap-2">
+      <div className="grid grid-cols-[auto,1fr] items-start gap-5">
         <div className="flex justify-center items-start">
           <div className="w-[50px] h-[50px] rounded-full bg-gray-300"></div>
         </div>
