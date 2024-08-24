@@ -20,7 +20,7 @@ import {
 } from "../ui/select";
 import { Textarea } from "../ui/textarea";
 
-export function DealsForm() {
+export function DealsForm({ onNext }: { onNext: () => void }) {
   // Set up the form using useForm hook
   const form = useForm<z.infer<typeof dealsSchema>>({
     resolver: zodResolver(dealsSchema),
@@ -39,6 +39,7 @@ export function DealsForm() {
   function onSubmit(values: z.infer<typeof dealsSchema>) {
     // Handle form submission
     console.log(values);
+    onNext(); // Call onNext to move to the next step
   }
 
   return (
@@ -48,7 +49,10 @@ export function DealsForm() {
           <div className="justify-center  w-[560px] py-[40px]">
             <Form {...form}>
               <form
-                onSubmit={form.handleSubmit(onSubmit)}
+                id="signupForm"
+                onSubmit={form.handleSubmit((values) => {
+                  onSubmit(values); // Validate and submit the form
+                })}
                 className="space-y-8"
               >
                 <FormField

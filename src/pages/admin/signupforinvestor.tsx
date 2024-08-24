@@ -18,7 +18,7 @@ const Signupforinvestor = () => {
       case 2:
         return <GeneralInvestorInformationForm onNext={handleNext} />;
       case 3:
-        return <DealsForm />;
+        return <DealsForm onNext={handleNext}/>;
       case 4:
         return <PortfolioForm />;
       case 5:
