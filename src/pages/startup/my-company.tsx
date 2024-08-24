@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import Update from "./update";
+import TeamNavbar from "@/components/team-navbar";
 
 const invoices = [
   {
@@ -183,26 +184,7 @@ const MyCompany: React.FC = () => {
                       Edit Privacy
                     </Button>
                   </div>
-                  <div className="w-full border flex justify-between bg-black/5">
-                    <Button
-                      className="p-5 font-medium text-md w-1/5"
-                      variant="ghost"
-                    >
-                      Full Team
-                    </Button>
-                    <Button className="p-5 font-medium text-md w-1/5" variant="ghost">
-                      Founders
-                    </Button>
-                    <Button className="p-5 font-medium text-md w-1/5" variant="ghost">
-                      Employees
-                    </Button>
-                    <Button className="p-5 font-medium text-mdw-1/5" variant="ghost">
-                      Advisors
-                    </Button>
-                    <Button className="p-5 font-medium text-md w-1/5" variant="link">
-                      Add a Member
-                    </Button>
-                  </div>
+                  <TeamNavbar />
                 </div>
 
                 <Table className="border bg-black/5">
