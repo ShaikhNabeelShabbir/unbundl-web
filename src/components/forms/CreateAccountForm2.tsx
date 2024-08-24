@@ -21,7 +21,7 @@ import {
 } from "@/components/ui/select";
 
 // Define the form component
-export function CreateAccountForm2() {
+export function CreateAccountForm2({ onNext }: { onNext: () => void }) {
   // Set up the form using useForm hook
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -36,6 +36,7 @@ export function CreateAccountForm2() {
   function onSubmit(values: z.infer<typeof formSchema>) {
     // Handle form submission
     console.log(values);
+    onNext(); // Call onNext to move to the next step
   }
 
   return (
@@ -43,7 +44,14 @@ export function CreateAccountForm2() {
       <div className="flex flex-row py-10 px-5">
         <div className="justify-center w-[560px] py-10">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+            <form
+              id="signupForm"
+              onSubmit={form.handleSubmit((values) => {
+                onSubmit(values); // Validate and submit the form
+              })}
+              className="space-y-8"
+            >
+              {" "}
               <FormField
                 control={form.control}
                 name="name"
@@ -75,21 +83,25 @@ export function CreateAccountForm2() {
                 )}
               />
               <FormField
+                control={form.control}
                 name="role"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="font-medium text-base">
+                    <FormLabel className="font-medium text-md">
                       I am a
                     </FormLabel>
                     <FormControl>
-                      <Select {...field}>
+                      <Select
+                        value={field.value}
+                        onValueChange={(value) => field.onChange(value)}
+                      >
                         <SelectTrigger>
                           <SelectValue placeholder="Founder" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="light">Founder</SelectItem>
-                          <SelectItem value="dark">Engineer</SelectItem>
-                          <SelectItem value="system">Developer</SelectItem>
+                          <SelectItem value="Founder">Founder</SelectItem>
+                          <SelectItem value="Engineer">Engineer</SelectItem>
+                          <SelectItem value="Developer">Developer</SelectItem>
                         </SelectContent>
                       </Select>
                     </FormControl>

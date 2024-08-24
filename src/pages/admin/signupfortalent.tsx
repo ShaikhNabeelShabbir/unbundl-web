@@ -11,13 +11,13 @@ export const Signupfortalent = () => {
   const renderForm = () => {
     switch (step) {
       case 1:
-        return <CreateAccountForm2 />;
+        return <CreateAccountForm2 onNext={handleNext} />;
       case 2:
         return <CreateCVs />;
       case 3:
         return <Thankyou />;
       default:
-        return <CreateAccountForm2 />;
+        return <CreateAccountForm2 onNext={handleNext} />;
     }
   };
 
@@ -56,7 +56,7 @@ export const Signupfortalent = () => {
           >
             Cancel
           </Button>
-          <Button className="flex text-base" onClick={handleNext}>
+          <Button className="flex text-base" type="submit" form="signupForm">
             Next Step
           </Button>
         </div>
