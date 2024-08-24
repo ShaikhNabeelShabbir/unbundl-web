@@ -140,7 +140,7 @@ const MyCompany: React.FC = () => {
                     <Button className="h-8 ">Calendly</Button>
                   </div>
                 </div>
-                <div className=" w-full border p-5 px-52 bg-gray-100 rounded-md flex ">
+                <div className=" w-full border p-5 px-52 bg-gray-100 rounded-md flex ml-5 ">
                   <div className="grid grid-cols-2 gap-20">
                     <div className="flex flex-col">
                       <div className="font-semibold mb-3 w-max">
