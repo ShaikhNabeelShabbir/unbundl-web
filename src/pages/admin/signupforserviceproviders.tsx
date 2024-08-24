@@ -11,13 +11,13 @@ export const Signupforserviceproviders = () => {
   const renderForm = () => {
     switch (step) {
       case 1:
-        return <CreateAccountForm2 />;
+        return <CreateAccountForm2 onNext={handleNext} />;
       case 2:
         return <CreateGigs />;
       case 3:
         return <Thankyou />;
       default:
-        return <CreateAccountForm2 />;
+        return <CreateAccountForm2 onNext={handleNext} />;
     }
   };
 

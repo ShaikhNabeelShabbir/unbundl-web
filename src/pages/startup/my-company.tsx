@@ -145,7 +145,7 @@ const MyCompany: React.FC = () => {
                   </div>
                 </div>
                 <div className="ml-5 w-full border p-5 bg-gray-100 rounded-md flex justify-center">
-                  <div className="grid grid-cols-2 gap-8">
+                  <div className="grid grid-cols-2 gap-12">
                     <div className="flex flex-col">
                       <div className="font-semibold mb-3 w-max">
                         Chains Used
@@ -398,12 +398,12 @@ const MyCompany: React.FC = () => {
               {/* {DND} */}
             </div>
             <div className="Company-Updates ml-5 w-[370px] flex flex-col space-y-5">
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-12">
                 <p className="font-semibold text-5">Company Updates</p>
                 <Dialog>
                   <DialogHeader></DialogHeader>
                   <DialogTrigger>
-                    <Button variant="link" className="pl-[70px]">
+                    <Button variant="link" className=" mr-0 border">
                       Create Update
                     </Button>
                   </DialogTrigger>
