@@ -21,7 +21,11 @@ import {
 import { Textarea } from "../ui/textarea";
 import { generalInvestorSchema } from "@/schemas/generalInvestorSchema";
 
-export function GeneralInvestorInformationForm() {
+export function GeneralInvestorInformationForm({
+  onNext,
+}: {
+  onNext: () => void;
+}) {
   // Set up the form using useForm hook
   const form = useForm<z.infer<typeof generalInvestorSchema>>({
     resolver: zodResolver(generalInvestorSchema),
@@ -38,6 +42,7 @@ export function GeneralInvestorInformationForm() {
   function onSubmit(values: z.infer<typeof generalInvestorSchema>) {
     // Handle form submission
     console.log(values);
+    onNext(); // Call onNext to move to the next step
   }
 
   return (
@@ -47,7 +52,10 @@ export function GeneralInvestorInformationForm() {
           <div className="justify-center  w-[560px] py-[40px]">
             <Form {...form}>
               <form
-                onSubmit={form.handleSubmit(onSubmit)}
+                id="signupForm"
+                onSubmit={form.handleSubmit((values) => {
+                  onSubmit(values); // Validate and submit the form
+                })}
                 className="space-y-8"
               >
                 <FormField

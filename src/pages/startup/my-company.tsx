@@ -139,8 +139,8 @@ const MyCompany: React.FC = () => {
                     <Button className="h-8 ">Calendly</Button>
                   </div>
                 </div>
-                <div className=" w-full border p-5 bg-gray-100 rounded-md flex justify-center">
-                  <div className="grid grid-cols-2 gap-12">
+                <div className=" w-full border p-5 px-52 bg-gray-100 rounded-md flex ">
+                  <div className="grid grid-cols-2 gap-20">
                     <div className="flex flex-col">
                       <div className="font-semibold mb-3 w-max">
                         Chains Used
@@ -183,26 +183,29 @@ const MyCompany: React.FC = () => {
                       Edit Privacy
                     </Button>
                   </div>
-                  <div className="w-full border flex justify-between">
-                    <Button className="p-5 font-medium text-md" variant="ghost">
+                  <div className="w-full border flex justify-between bg-black/5">
+                    <Button
+                      className="p-5 font-medium text-md w-1/5"
+                      variant="ghost"
+                    >
                       Full Team
                     </Button>
-                    <Button className="p-5 font-medium text-md" variant="ghost">
+                    <Button className="p-5 font-medium text-md w-1/5" variant="ghost">
                       Founders
                     </Button>
-                    <Button className="p-5 font-medium text-md" variant="ghost">
+                    <Button className="p-5 font-medium text-md w-1/5" variant="ghost">
                       Employees
                     </Button>
-                    <Button className="p-5 font-medium text-md" variant="ghost">
+                    <Button className="p-5 font-medium text-mdw-1/5" variant="ghost">
                       Advisors
                     </Button>
-                    <Button className="p-5 font-medium text-md" variant="link">
+                    <Button className="p-5 font-medium text-md w-1/5" variant="link">
                       Add a Member
                     </Button>
                   </div>
                 </div>
 
-                <Table className="border">
+                <Table className="border bg-black/5">
                   <TableHeader>
                     <TableRow>
                       <TableHead className="w-1/5">Name</TableHead>

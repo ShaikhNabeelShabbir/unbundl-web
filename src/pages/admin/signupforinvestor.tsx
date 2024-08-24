@@ -14,9 +14,9 @@ const Signupforinvestor = () => {
   const renderForm = () => {
     switch (step) {
       case 1:
-        return <CreateAccountForm2 />;
+        return <CreateAccountForm2 onNext={handleNext} />;
       case 2:
-        return <GeneralInvestorInformationForm />;
+        return <GeneralInvestorInformationForm onNext={handleNext} />;
       case 3:
         return <DealsForm />;
       case 4:
@@ -27,7 +27,7 @@ const Signupforinvestor = () => {
         return <Thankyou />;
 
       default:
-        return <CreateAccountForm2 />;
+        return <CreateAccountForm2 onNext={handleNext} />;
     }
   };
 
