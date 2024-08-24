@@ -15,11 +15,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  Dialog,
-  DialogContent,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import Update from "./update";
 
 const invoices = [
@@ -143,7 +139,7 @@ const MyCompany: React.FC = () => {
                     <Button className="h-8 ">Calendly</Button>
                   </div>
                 </div>
-                <div className="ml-5 w-full border p-5 bg-gray-100 rounded-md flex justify-center">
+                <div className=" w-full border p-5 bg-gray-100 rounded-md flex justify-center">
                   <div className="grid grid-cols-2 gap-12">
                     <div className="flex flex-col">
                       <div className="font-semibold mb-3 w-max">
