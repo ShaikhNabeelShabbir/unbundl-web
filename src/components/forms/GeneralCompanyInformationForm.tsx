@@ -77,7 +77,7 @@ export function GeneralCompanyInformationForm({
                     name="companyName"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="font-medium text-base">
+                        <FormLabel className="font-medium text-md">
                           Company Name
                         </FormLabel>
                         <FormControl>
@@ -95,7 +95,7 @@ export function GeneralCompanyInformationForm({
                     name="projectDescription"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="font-medium text-base">
+                        <FormLabel className="font-medium text-md">
                           Describe Your Project
                         </FormLabel>
                         <FormControl>
@@ -113,7 +113,7 @@ export function GeneralCompanyInformationForm({
                     name="websiteLink"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="font-medium text-base">
+                        <FormLabel className="font-medium text-md">
                           Provide a Link to Your Website
                         </FormLabel>
                         <FormControl>
@@ -128,7 +128,7 @@ export function GeneralCompanyInformationForm({
                     name="chain"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="font-medium text-base">
+                        <FormLabel className="font-medium text-md">
                           On What Chain Are You Building On?
                         </FormLabel>
                         <FormControl>
@@ -142,7 +142,7 @@ export function GeneralCompanyInformationForm({
                     name="category"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="font-medium text-base">
+                        <FormLabel className="font-medium text-md">
                           What is the category of your Web3 Startup?{" "}
                         </FormLabel>
                         <FormControl>
@@ -168,7 +168,7 @@ export function GeneralCompanyInformationForm({
                     name="developmentStage"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="font-medium text-base">
+                        <FormLabel className="font-medium text-md">
                           How far did you move in the development of your
                           project?{" "}
                         </FormLabel>
@@ -195,7 +195,7 @@ export function GeneralCompanyInformationForm({
                     name="teamSize"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="font-medium text-base">
+                        <FormLabel className="font-medium text-md">
                           What is the size of your team?
                         </FormLabel>
                         <FormControl>
@@ -243,7 +243,7 @@ export function GeneralCompanyInformationForm({
                     name="calendlyLink"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="font-medium text-base">
+                        <FormLabel className="font-medium text-md">
                           Add Your Calendly Link
                         </FormLabel>
                         <FormControl>
@@ -258,7 +258,7 @@ export function GeneralCompanyInformationForm({
                     name="timezone"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="font-medium text-base">
+                        <FormLabel className="font-medium text-md">
                           Timezone
                         </FormLabel>
                         <FormControl>

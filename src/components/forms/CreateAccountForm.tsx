@@ -61,7 +61,7 @@ export function CreateAccountForm({ onNext }: { onNext: () => void }) {
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium text-base">
+                      <FormLabel className="font-medium text-md">
                         Enter your name
                       </FormLabel>
                       <FormControl>
@@ -76,7 +76,7 @@ export function CreateAccountForm({ onNext }: { onNext: () => void }) {
                   name="username"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium text-base">
+                      <FormLabel className="font-medium text-md">
                         Choose a Username
                       </FormLabel>
                       <FormControl>
@@ -91,7 +91,7 @@ export function CreateAccountForm({ onNext }: { onNext: () => void }) {
                   name="role"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-medium text-base">
+                      <FormLabel className="font-medium text-md">
                         I am a
                       </FormLabel>
                       <FormControl>
