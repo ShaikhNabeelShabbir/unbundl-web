@@ -23,7 +23,7 @@ const Signup = () => {
       case 4:
         return <FundraisingIformationForm onNext={handleNext} />;
       case 5:
-        return <MarketInformationForm />;
+        return <MarketInformationForm onNext={handleNext} />;
       case 6:
         return <TeamsForm />;
       case 7:

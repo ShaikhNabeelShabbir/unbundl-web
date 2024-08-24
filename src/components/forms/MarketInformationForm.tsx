@@ -19,7 +19,7 @@ import {
   SelectValue,
 } from "../ui/select";
 
-export function MarketInformationForm() {
+export function MarketInformationForm({ onNext }: { onNext: () => void }) {
   // Set up the form using useForm hook
   const form = useForm<z.infer<typeof MarketInformationFormSchema>>({
     resolver: zodResolver(MarketInformationFormSchema),
@@ -38,12 +38,13 @@ export function MarketInformationForm() {
   function onSubmit(values: z.infer<typeof MarketInformationFormSchema>) {
     // Handle form submission
     console.log(values);
+    onNext();
   }
 
   return (
     <div>
       <div className="main-div flex flex-col px-20 flex-wrap w-full items-center ">
-      <div className="flex flex-row py-10 px-5 flex-grow">
+        <div className="flex flex-row py-10 px-5 flex-grow">
           <div className="w-260 h-168 font-normal text-justify text-base text-black/50 py-16">
             Being in the right market at the right
             <br /> time is a big part of a startup's
@@ -56,18 +57,25 @@ export function MarketInformationForm() {
             <div className="justify-center  w-[560px] py-[40px]">
               <Form {...form}>
                 <form
-                  onSubmit={form.handleSubmit(onSubmit)}
+                  id="signupForm"
+                  onSubmit={form.handleSubmit((values) => {
+                    onSubmit(values); // Validate and submit the form
+                  })}
                   className="space-y-8"
                 >
                   <FormField
-                    name="teamSize"
+                    name="sector"
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="font-medium text-base">
                           Which sectors/space are you building in?{" "}
                         </FormLabel>
                         <FormControl>
-                          <Select {...field}>
+                          <Select
+                            value={field.value}
+                            onValueChange={(value) => field.onChange(value)}
+                          >
+                            {" "}
                             <SelectTrigger>
                               <SelectValue placeholder="Yes" />
                             </SelectTrigger>
@@ -118,14 +126,18 @@ export function MarketInformationForm() {
                     )}
                   />
                   <FormField
-                    name="teamSize"
+                    name="businessModel"
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="font-medium text-base">
                           What is the business model?{" "}
                         </FormLabel>
                         <FormControl>
-                          <Select {...field}>
+                          <Select
+                            value={field.value}
+                            onValueChange={(value) => field.onChange(value)}
+                          >
+                            {" "}
                             <SelectTrigger>
                               <SelectValue placeholder="B2B" />
                             </SelectTrigger>
@@ -140,14 +152,18 @@ export function MarketInformationForm() {
                     )}
                   />
                   <FormField
-                    name="teamSize"
+                    name="traction"
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="font-medium text-base">
                           Any traction early Users{" "}
                         </FormLabel>
                         <FormControl>
-                          <Select {...field}>
+                          <Select
+                            value={field.value}
+                            onValueChange={(value) => field.onChange(value)}
+                          >
+                            {" "}
                             <SelectTrigger>
                               <SelectValue placeholder="<1000" />
                             </SelectTrigger>
