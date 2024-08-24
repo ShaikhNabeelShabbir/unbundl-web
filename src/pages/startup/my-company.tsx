@@ -128,7 +128,7 @@ const MyCompany: React.FC = () => {
                 </div>
               </div>
               <div className="flex flex-row h-65 mt-5 justify-center">
-                <div className="w-1/3  shrink-0 border pb-5 px-5  bg-black/5">
+                <div className="w-1/3  shrink-0 border pb-5 bg-black/5">
                   <p className="mt-5 ml-5 font-semibold text-lg w-full">
                     Main Links
                   </p>
@@ -141,7 +141,7 @@ const MyCompany: React.FC = () => {
                   </div>
                 </div>
                 <div className="w-2/3 border p-5 bg-gray-100 rounded-md flex ml-5">
-                  <div className="grid grid-cols-2 gap-x-10 gap-y-6 w-full">
+                  <div className="grid grid-cols-2 gap-x-12 gap-y-6 w-full">
                     <div className="flex flex-col w-full">
                       <div className="font-semibold mb-3 w-max">
                         Chains Used
