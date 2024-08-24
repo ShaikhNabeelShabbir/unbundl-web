@@ -17,7 +17,7 @@ const Signup = () => {
       case 1:
         return <CreateAccountForm onNext={handleNext} />;
       case 2:
-        return <GeneralCompanyInformationForm />;
+        return <GeneralCompanyInformationForm onNext={handleNext} />;
       case 3:
         return <ProjectInformationForm />;
       case 4:

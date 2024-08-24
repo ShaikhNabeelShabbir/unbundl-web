@@ -21,7 +21,11 @@ import {
 } from "../ui/select";
 import { Textarea } from "../ui/textarea";
 
-export function GeneralCompanyInformationForm() {
+export function GeneralCompanyInformationForm({
+  onNext,
+}: {
+  onNext: () => void;
+}) {
   // Set up the form using useForm hook
   const form = useForm<z.infer<typeof generalCompanySchema>>({
     resolver: zodResolver(generalCompanySchema),
@@ -43,6 +47,7 @@ export function GeneralCompanyInformationForm() {
   function onSubmit(values: z.infer<typeof generalCompanySchema>) {
     // Handle form submission
     console.log(values);
+    onNext(); // Call onNext to move to the next step
   }
 
   return (
@@ -61,7 +66,10 @@ export function GeneralCompanyInformationForm() {
             <div className="justify-center  w-[560px] py-[40px]">
               <Form {...form}>
                 <form
-                  onSubmit={form.handleSubmit(onSubmit)}
+                  id="signupForm"
+                  onSubmit={form.handleSubmit((values) => {
+                    onSubmit(values); // Validate and submit the form
+                  })}
                   className="space-y-8"
                 >
                   <FormField
@@ -138,7 +146,10 @@ export function GeneralCompanyInformationForm() {
                           What is the category of your Web3 Startup?{" "}
                         </FormLabel>
                         <FormControl>
-                          <Select {...field}>
+                          <Select
+                            value={field.value}
+                            onValueChange={(value) => field.onChange(value)}
+                          >
                             <SelectTrigger>
                               <SelectValue placeholder="De-Fi" />
                             </SelectTrigger>
@@ -162,7 +173,10 @@ export function GeneralCompanyInformationForm() {
                           project?{" "}
                         </FormLabel>
                         <FormControl>
-                          <Select {...field}>
+                          <Select
+                            value={field.value}
+                            onValueChange={(value) => field.onChange(value)}
+                          >
                             <SelectTrigger>
                               <SelectValue placeholder="MVP" />
                             </SelectTrigger>
@@ -185,7 +199,10 @@ export function GeneralCompanyInformationForm() {
                           What is the size of your team?
                         </FormLabel>
                         <FormControl>
-                          <Select {...field}>
+                          <Select
+                            value={field.value}
+                            onValueChange={(value) => field.onChange(value)}
+                          >
                             <SelectTrigger>
                               <SelectValue placeholder="0-5" />
                             </SelectTrigger>
@@ -254,6 +271,7 @@ export function GeneralCompanyInformationForm() {
                 </form>
               </Form>
             </div>
+            <br />
           </div>
         </div>
       </div>
