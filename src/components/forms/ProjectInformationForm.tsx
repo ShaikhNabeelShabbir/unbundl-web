@@ -13,7 +13,7 @@ import { Input } from "@/components/ui/input";
 import { projectInformationSchema } from "@/schemas/ProjectInformationSchema";
 import { Textarea } from "../ui/textarea";
 
-export function ProjectInformationForm() {
+export function ProjectInformationForm({ onNext }: { onNext: () => void }) {
   const form = useForm<z.infer<typeof projectInformationSchema>>({
     resolver: zodResolver(projectInformationSchema),
     defaultValues: {
@@ -29,6 +29,7 @@ export function ProjectInformationForm() {
   function onSubmit(values: z.infer<typeof projectInformationSchema>) {
     // Handle form submission
     console.log(values);
+    onNext()
   }
 
   return (
@@ -47,7 +48,10 @@ export function ProjectInformationForm() {
             <div className="justify-center w-[560px] py-[40px]">
               <Form {...form}>
                 <form
-                  onSubmit={form.handleSubmit(onSubmit)}
+                  id="signupForm"
+                  onSubmit={form.handleSubmit((values) => {
+                    onSubmit(values); // Validate and submit the form
+                  })}
                   className="space-y-8"
                 >
                   <FormField
@@ -55,7 +59,7 @@ export function ProjectInformationForm() {
                     name="problem"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="font-medium text-base ">
+                        <FormLabel className="font-medium text-md ">
                           What Problem Are You Solving?
                         </FormLabel>
                         <FormControl>
@@ -73,7 +77,7 @@ export function ProjectInformationForm() {
                     name="startReason"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="font-medium text-base">
+                        <FormLabel className="font-medium text-md">
                           Why Did You Start Working on This Idea?
                         </FormLabel>
                         <FormControl>
@@ -91,7 +95,7 @@ export function ProjectInformationForm() {
                     name="startDate"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="font-medium text-base">
+                        <FormLabel className="font-medium text-md">
                           Since When Are You Working on This Idea?
                         </FormLabel>
                         <FormControl>
@@ -109,7 +113,7 @@ export function ProjectInformationForm() {
                     name="projectDescription"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="font-medium text-base">
+                        <FormLabel className="font-medium text-md">
                           What Are You Building?
                         </FormLabel>
                         <FormControl>
@@ -127,7 +131,7 @@ export function ProjectInformationForm() {
                     name="demoLink"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="font-medium text-base">
+                        <FormLabel className="font-medium text-md">
                           Provide a Link to Your Demo
                         </FormLabel>
                         <FormControl>
