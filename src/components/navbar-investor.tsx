@@ -60,7 +60,7 @@ const NavbarInvestor: React.FC<NavbarProps> = ({ setStep, currentStep }) => {
               <Button
                 variant="ghost"
                 onClick={() => setStep(index + 1)}
-                className={currentStep === index + 1 ? "font-bold" : ""}
+                className={`text-md font-medium ${currentStep === index + 1 ? "font-bold" : ""}`}
               >
                 {label}
               </Button>
