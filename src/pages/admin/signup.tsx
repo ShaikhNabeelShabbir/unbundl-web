@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ProjectInformationForm } from "@/components/forms/ProjectInformationForm";
 import { FundraisingIformationForm } from "@/components/forms/FundraisingInformationForm";
 import { MarketInformationForm } from "@/components/forms/MarketInformationForm";
-import { TeamsForm } from "@/components/forms/TeamsForm"; // Assuming you have a TeamForm component
+import { TeamsForm } from "@/components/forms/TeamsForm";
 import { Thankyou } from "@/components/thank-you";
 
 const Signup = () => {
@@ -15,7 +15,7 @@ const Signup = () => {
   const renderForm = () => {
     switch (step) {
       case 1:
-        return <CreateAccountForm />;
+        return <CreateAccountForm onNext={handleNext} />;
       case 2:
         return <GeneralCompanyInformationForm />;
       case 3:
@@ -29,14 +29,14 @@ const Signup = () => {
       case 7:
         return <Thankyou />;
       default:
-        return <CreateAccountForm />;
+        return <CreateAccountForm onNext={handleNext} />;
     }
   };
 
   const handleNext = () => {
     setStep((prevStep) => {
-      if (prevStep === 8) {
-        return 1;
+      if (prevStep === 7) {
+        return 1; // Reset to step 1 after the last step
       }
       return prevStep + 1;
     });
@@ -47,7 +47,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="main-div flex flex-col min-h-screen flex-wrap">
+    <div className="main-div flex flex-col min-h-screen ">
       <div className="flex gap-6 px-[100px] ">
         <div className="flex flex-row py-[40px] px-[100px] font-semibold w-82 h-24 text-lg">
           Unbundl
@@ -64,13 +64,10 @@ const Signup = () => {
       {/* Conditionally render the buttons based on the step */}
       {step !== 7 && (
         <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px] bg-white">
-          <Button
-            className="flex text-base bg-gray-500 "
-            onClick={handleCancel}
-          >
+          <Button className="flex text-base bg-gray-500" onClick={handleCancel}>
             Cancel
           </Button>
-          <Button className="flex text-base" onClick={handleNext}>
+          <Button className="flex text-base" type="submit" form="signupForm">
             Next Step
           </Button>
         </div>

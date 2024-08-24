@@ -20,9 +20,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-// Define the form component
-export function CreateAccountForm() {
-  // Set up the form using useForm hook
+export function CreateAccountForm({ onNext }: { onNext: () => void }) {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -32,10 +30,9 @@ export function CreateAccountForm() {
     },
   });
 
-  // Define the submit handler
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // Handle form submission
     console.log(values);
+    onNext(); // Call onNext to move to the next step
   }
 
   return (
@@ -53,7 +50,10 @@ export function CreateAccountForm() {
           <div className="justify-center w-[560px] py-10">
             <Form {...form}>
               <form
-                onSubmit={form.handleSubmit(onSubmit)}
+                id="signupForm"
+                onSubmit={form.handleSubmit((values) => {
+                  onSubmit(values); // Validate and submit the form
+                })}
                 className="space-y-8"
               >
                 <FormField
@@ -97,7 +97,7 @@ export function CreateAccountForm() {
                       <FormControl>
                         <Select
                           value={field.value}
-                          onValueChange={(value) => field.onChange(value)} // Update value on change
+                          onValueChange={(value) => field.onChange(value)}
                         >
                           <SelectTrigger>
                             <SelectValue placeholder="Founder" />
