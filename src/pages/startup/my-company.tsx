@@ -182,7 +182,7 @@ const MyCompany: React.FC = () => {
                       <div className="font-semibold mb-3">
                         Level of Completion
                       </div>
-                      <Button className="h-8 bg-black/25 rounded-none">
+                      <Button className="h-8 bg-black/25 rounded-none w-fit">
                         Mainnet
                       </Button>
                     </div>
