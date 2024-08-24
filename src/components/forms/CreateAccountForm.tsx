@@ -87,6 +87,7 @@ export function CreateAccountForm() {
                   )}
                 />
                 <FormField
+                  control={form.control}
                   name="role"
                   render={({ field }) => (
                     <FormItem>
@@ -94,14 +95,17 @@ export function CreateAccountForm() {
                         I am a
                       </FormLabel>
                       <FormControl>
-                        <Select {...field}>
+                        <Select
+                          value={field.value}
+                          onValueChange={(value) => field.onChange(value)} // Update value on change
+                        >
                           <SelectTrigger>
                             <SelectValue placeholder="Founder" />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="light">Founder</SelectItem>
-                            <SelectItem value="dark">Engineer</SelectItem>
-                            <SelectItem value="system">Developer</SelectItem>
+                            <SelectItem value="Founder">Founder</SelectItem>
+                            <SelectItem value="Engineer">Engineer</SelectItem>
+                            <SelectItem value="Developer">Developer</SelectItem>
                           </SelectContent>
                         </Select>
                       </FormControl>
