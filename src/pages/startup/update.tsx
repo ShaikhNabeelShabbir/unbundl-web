@@ -7,6 +7,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import ImageIcon from "@/assets/icons/image.png";
+import ChartIcon from "@/assets/icons/chart.png";
 
 const Update = () => {
   return (
@@ -36,10 +38,10 @@ const Update = () => {
       <div className="flex justify-between items-center mt-4">
         <div className="flex space-x-2">
           <button className="p-2">
-            <img src="/icons/image.png" alt="Upload" className="w-6 h-6" />
+            <img src={ImageIcon} alt="Upload" className="w-6 h-6" />
           </button>
           <button className="p-2">
-            <img src="/icons/chart.png" alt="Poll" className="w-6 h-6" />
+            <img src={ChartIcon} alt="Poll" className="w-6 h-6" />
           </button>
         </div>
         <Button className="text-sm">Post Update</Button>
