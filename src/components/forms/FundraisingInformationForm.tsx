@@ -28,7 +28,7 @@ import {
   SelectValue,
 } from "../ui/select";
 
-export function FundraisingIformationForm() {
+export function FundraisingIformationForm({ onNext }: { onNext: () => void }) {
   // Set up the form using useForm hook
   const form = useForm<z.infer<typeof fundraisingSchema>>({
     resolver: zodResolver(fundraisingSchema),
@@ -45,6 +45,7 @@ export function FundraisingIformationForm() {
   function onSubmit(values: z.infer<typeof fundraisingSchema>) {
     // Handle form submission
     console.log(values);
+    onNext(); // Call onNext to move to the next step
   }
 
   return (
@@ -65,7 +66,10 @@ export function FundraisingIformationForm() {
             <div className="justify-center w-[560px] py-[40px]">
               <Form {...form}>
                 <form
-                  onSubmit={form.handleSubmit(onSubmit)}
+                  id="signupForm"
+                  onSubmit={form.handleSubmit((values) => {
+                    onSubmit(values); // Validate and submit the form
+                  })}
                   className="space-y-8"
                 >
                   <FormField
