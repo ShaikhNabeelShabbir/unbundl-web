@@ -127,22 +127,22 @@ const MyCompany: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-row h-65 mt-5">
-                <div className="w-fit  shrink-0 border pb-5 px-5  bg-black/5">
+              <div className="flex flex-row h-65 mt-5 justify-center">
+                <div className="w-1/3  shrink-0 border pb-5 px-5  bg-black/5">
                   <p className="mt-5 ml-5 font-semibold text-lg w-full">
                     Main Links
                   </p>
                   <br />
-                  <div className="flex flex-col w-[180px] ml-5 space-y-3">
+                  <div className="flex flex-col w-4/5 ml-5 space-y-3">
                     <Button className="h-8 ">Whitepaper</Button>
                     <Button className="h-8 ">Tokenomics</Button>
                     <Button className="h-8 ">Pitch Deck</Button>
                     <Button className="h-8 ">Calendly</Button>
                   </div>
                 </div>
-                <div className=" w-full border p-5 px-52 bg-gray-100 rounded-md flex ml-5 ">
-                  <div className="grid grid-cols-2 gap-20">
-                    <div className="flex flex-col">
+                <div className="w-2/3 border p-5 bg-gray-100 rounded-md flex ml-5">
+                  <div className="grid grid-cols-2 gap-x-10 gap-y-6 w-full">
+                    <div className="flex flex-col w-full">
                       <div className="font-semibold mb-3 w-max">
                         Chains Used
                       </div>
@@ -153,12 +153,12 @@ const MyCompany: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="flex flex-col w-fit ml-auto">
+                    <div className="flex flex-col w-fit">
                       <div className="font-semibold mb-3">Category</div>
                       <Button className="h-8 bg-black/25">De-Fi</Button>
                     </div>
 
-                    <div className="flex flex-col">
+                    <div className="flex flex-col mr-auto">
                       <div className="font-semibold mb-3">Location</div>
                       <div className="flex space-x-3">
                         <Button className="h-8 bg-black/25">Dubai, UAE</Button>
@@ -166,7 +166,7 @@ const MyCompany: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="flex flex-col w-fit ml-auto">
+                    <div className="flex flex-col w-fit">
                       <div className="font-semibold mb-3">
                         Level of Completion
                       </div>
