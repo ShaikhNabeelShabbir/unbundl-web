@@ -36,7 +36,7 @@ const Signup = () => {
   const handleNext = () => {
     setStep((prevStep) => {
       if (prevStep === 8) {
-        return 1; // Reset to step 1 after the third step
+        return 1;
       }
       return prevStep + 1;
     });
