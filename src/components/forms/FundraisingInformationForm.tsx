@@ -69,14 +69,18 @@ export function FundraisingIformationForm() {
                   className="space-y-8"
                 >
                   <FormField
-                    name="teamSize"
+                    name="fundraisingStatus"
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="font-medium text-base">
                           Are you currently Fundraising?{" "}
                         </FormLabel>
                         <FormControl>
-                          <Select {...field}>
+                          <Select
+                            value={field.value}
+                            onValueChange={(value) => field.onChange(value)}
+                          >
+                            {" "}
                             <SelectTrigger>
                               <SelectValue placeholder="Yes" />
                             </SelectTrigger>
@@ -91,14 +95,18 @@ export function FundraisingIformationForm() {
                     )}
                   />
                   <FormField
-                    name="teamSize"
+                    name="tokenStatus"
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="font-medium text-base">
                           Is there a token or will one come in the future?{" "}
                         </FormLabel>
                         <FormControl>
-                          <Select {...field}>
+                          <Select
+                            value={field.value}
+                            onValueChange={(value) => field.onChange(value)}
+                          >
+                            {" "}
                             <SelectTrigger>
                               <SelectValue placeholder="Yes" />
                             </SelectTrigger>
@@ -113,14 +121,18 @@ export function FundraisingIformationForm() {
                     )}
                   />
                   <FormField
-                    name="teamSize"
+                    name="financingStage"
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="font-medium text-base">
                           What’s the stage of financing?{" "}
                         </FormLabel>
                         <FormControl>
-                          <Select {...field}>
+                          <Select
+                            value={field.value}
+                            onValueChange={(value) => field.onChange(value)}
+                          >
+                            {" "}
                             <SelectTrigger>
                               <SelectValue placeholder="Seed" />
                             </SelectTrigger>
