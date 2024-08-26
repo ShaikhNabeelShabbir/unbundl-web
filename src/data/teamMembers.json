@@ -1,0 +1,15 @@
+[
+    {
+      "name": "John Doe",
+      "position": "CEO",
+      "type": "Full-time",
+      "rights": "Admin"
+    },
+    {
+      "name": "Jane Smith",
+      "position": "CTO",
+      "type": "Full-time",
+      "rights": "Managing partner"
+    }
+  ]
+  
