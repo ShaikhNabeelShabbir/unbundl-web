@@ -15,9 +15,16 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import Update from "./update";
 import TeamNavbar from "@/components/team-navbar";
+import AddATeamMember from "@/components/forms/AddATeamMember";
 
 const invoices = [
   {
@@ -38,22 +45,28 @@ const investments = [
     Ownership: "80.00%",
   },
 ];
-const teamMembers = [
-  {
-    name: "John Doe",
-    position: "CEO",
-    type: "Full-time",
-    rights: "Admin",
-  },
-  {
-    name: "Jane Smith",
-    position: "CTO",
-    type: "Full-time",
-    rights: "Managing partner",
-  },
-];
 
 const MyCompany: React.FC = () => {
+  const [teamMembers, setTeamMembers] = useState<
+    Array<{ name: string; position: string; type: string; rights: string }>
+  >([
+    { name: "John Doe", position: "CEO", type: "Full-time", rights: "Admin" },
+    {
+      name: "Jane Smith",
+      position: "CTO",
+      type: "Full-time",
+      rights: "Managing partner",
+    },
+  ]);
+  const handleAddMember = (newMember: {
+    name: string;
+    position: string;
+    type: string;
+    rights: string;
+  }) => {
+    // Update teamMembers state with the new member
+    setTeamMembers((prevMembers) => [...prevMembers, newMember]);
+  };
   const [updates, setUpdates] = useState([
     {
       date: "Nov. 27 2022",
@@ -216,9 +229,27 @@ const MyCompany: React.FC = () => {
                   </div>
                   <div className="flex flex-row">
                     <TeamNavbar />
-                    <Button className="p-5 font-medium text-md w-1/5">
-                      Add a Member
-                    </Button>
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button
+                          type="button"
+                          className="h-45 w-fit text-sm px-4"
+                        >
+                          Add a team member
+                        </Button>
+                      </DialogTrigger>
+                      <DialogContent className="sm:max-w-[600px]">
+                        <DialogHeader>
+                          <DialogTitle className="font-semibold text-xl">
+                            Add a team member
+                          </DialogTitle>
+                        </DialogHeader>
+                        <AddATeamMember
+                          data={teamMembers}
+                          onAddMember={handleAddMember}
+                        />
+                      </DialogContent>
+                    </Dialog>
                   </div>
                 </div>
 
