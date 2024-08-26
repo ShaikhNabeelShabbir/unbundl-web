@@ -6,50 +6,9 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { Button } from "@/components/ui/button"; // Assuming you have a Button component
+import { Button } from "@/components/ui/button";
 
-const investments = [
-  {
-    Investor: "Founders + ESOP",
-    Invested: "n/a",
-    Existing_Shares: "1,000,000",
-    Preferred_Shares: "n/a",
-    Price_per_share: "n/a",
-    Ownership: "80.00%",
-  },
-  {
-    Investor: "Investor A",
-    Invested: "n/a",
-    Existing_Shares: "1,000,000",
-    Preferred_Shares: "n/a",
-    Price_per_share: "n/a",
-    Ownership: "80.00%",
-  },
-  {
-    Investor: "Investor B",
-    Invested: "n/a",
-    Existing_Shares: "1,000,000",
-    Preferred_Shares: "n/a",
-    Price_per_share: "n/a",
-    Ownership: "80.00%",
-  },
-  {
-    Investor: "Investor c",
-    Invested: "n/a",
-    Existing_Shares: "1,000,000",
-    Preferred_Shares: "n/a",
-    Price_per_share: "n/a",
-    Ownership: "80.00%",
-  },
-  {
-    Investor: "Investor c",
-    Invested: "n/a",
-    Existing_Shares: "1,000,000",
-    Preferred_Shares: "n/a",
-    Price_per_share: "n/a",
-    Ownership: "80.00%",
-  },
-];
+import investments from "@/data/investments.json";
 
 const CreateCapTableForm = () => {
   return (
