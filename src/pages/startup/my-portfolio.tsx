@@ -21,33 +21,6 @@ import {
 import AddATeamMember from "@/components/forms/AddATeamMember";
 import AddInvestmentForm from "@/components/forms/AddInvestmentForm";
 
-const investmentTeam = [
-  {
-    name: "Rick Wright",
-    position: "CEO",
-    type: "Managing Partner",
-    right: "Managing Partner",
-  },
-  {
-    name: "Sarah Jones",
-    position: "CFO",
-    type: "Partner",
-    right: "Partner",
-  },
-  {
-    name: "John Doe",
-    position: "CTO",
-    type: "Senior Partner",
-    right: "Senior Partner",
-  },
-  {
-    name: "Jane Smith",
-    position: "COO",
-    type: "Junior Partner",
-    right: "Junior Partner",
-  },
-];
-
 const MyPortfolio: React.FC = () => {
   const [investments, setInvestments] = useState<
     Array<{
@@ -264,7 +237,7 @@ const MyPortfolio: React.FC = () => {
                     </DialogContent>
                   </Dialog>
                 </div>
-                <Table>
+                <Table className=" bg-black/5">
                   <TableHeader>
                     <TableRow>
                       <TableHead className="w-[110px]">Company/Fund</TableHead>
@@ -331,7 +304,7 @@ const MyPortfolio: React.FC = () => {
                     </DialogContent>
                   </Dialog>
                 </div>
-                <Table className="border">
+                <Table className="border bg-black/5">
                   <TableHeader>
                     <TableRow>
                       <TableHead className="w-[100px]">Name</TableHead>
@@ -341,14 +314,14 @@ const MyPortfolio: React.FC = () => {
                     </TableRow>
                   </TableHeader>
                   <TableBody>
-                    {investmentTeam.map((investmentTeam) => (
+                    {teamMembers.map((investmentTeam) => (
                       <TableRow key={investmentTeam.name}>
                         <TableCell className="font-medium">
                           {investmentTeam.name}
                         </TableCell>
                         <TableCell>{investmentTeam.position}</TableCell>
                         <TableCell>{investmentTeam.type}</TableCell>
-                        <TableCell>{investmentTeam.right}</TableCell>
+                        <TableCell>{investmentTeam.rights}</TableCell>
                       </TableRow>
                     ))}
                   </TableBody>
