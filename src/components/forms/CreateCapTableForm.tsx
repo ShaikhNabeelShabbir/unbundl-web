@@ -7,7 +7,6 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
-
 import investments from "@/data/investments.json";
 
 const CreateCapTableForm = () => {
