@@ -16,27 +16,47 @@ import {
   DialogTrigger,
 } from "../ui/dialog";
 import AddInvestmentForm from "./AddInvestmentForm";
-
-const investments = [
-  {
-    company: "Company A",
-    status: "Active",
-    investDate: "2023-01-15",
-    investedAmount: "$500,000",
-    round: "Series A",
-  },
-  {
-    company: "Company B",
-    status: "Exited",
-    investDate: "2022-05-10",
-    investedAmount: "$300,000",
-    round: "Seed",
-  },
-];
+import { useState } from "react";
 
 const PortfolioForm = () => {
+  const [investments, setInvestments] = useState<
+    Array<{
+      company: string;
+      status: string;
+      investDate: string;
+      investedAmount: string;
+      round: string;
+    }>
+  >([
+    {
+      company: "Company A",
+      status: "Active",
+      investDate: "2023-01-15",
+      investedAmount: "500000",
+      round: "Series A",
+    },
+    {
+      company: "Company B",
+      status: "Exited",
+      investDate: "2022-05-10",
+      investedAmount: "300000",
+      round: "Seed",
+    },
+  ]);
+
+  const handleAddInvestment = (newInvestment: {
+    company: string;
+    status: string;
+    investDate: string;
+    investedAmount: string;
+    round: string;
+  }) => {
+    // Update investments state with the new investment
+    setInvestments((prevInvestments) => [...prevInvestments, newInvestment]);
+  };
+
   return (
-    <div className="main-div flex flex-col px-20 flex-wrap w-full items-center ">
+    <div className="main-div flex flex-col px-20 flex-wrap w-full items-center">
       <div className="py-[40px]">
         <div className="px-[165px]">
           <Table className="w-full">
@@ -86,7 +106,7 @@ const PortfolioForm = () => {
                   Add Investment Form
                 </DialogTitle>
               </DialogHeader>
-              <AddInvestmentForm />
+              <AddInvestmentForm onAddInvestment={handleAddInvestment} />
             </DialogContent>
           </Dialog>
         </div>

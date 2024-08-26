@@ -17,7 +17,6 @@ import {
 import AddATeamMember from "./AddATeamMember";
 import { MoreHorizontal } from "lucide-react";
 
-// Import the team members data from the JSON file
 import { useState } from "react";
 
 export const TeamsForm = () => {

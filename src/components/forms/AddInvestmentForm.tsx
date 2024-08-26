@@ -20,27 +20,42 @@ import {
   SelectValue,
 } from "../ui/select";
 
-// Define the schema using Zod
+interface AddInvestmentFormProps {
+  onAddInvestment: (investment: {
+    company: string;
+    status: string;
+    investDate: string;
+    investedAmount: string;
+    round: string;
+  }) => void;
+}
 
-export function AddInvestmentForm() {
-  // Set up the form using useForm hook
+export function AddInvestmentForm({ onAddInvestment }: AddInvestmentFormProps) {
   const form = useForm<z.infer<typeof addInvestmentSchema>>({
     resolver: zodResolver(addInvestmentSchema),
     defaultValues: {
       companyName: "",
       companyWebsite: "",
       personEmail: "",
-      amountInvested: 0,
+      amountInvested: "",
       dateofInvestment: "",
       investmentRound: "",
     },
   });
 
-  // Define the submit handler
-  function onSubmit(values: z.infer<typeof addInvestmentSchema>) {
-    // Handle form submission
-    console.log(values);
-  }
+  const onSubmit = (values: z.infer<typeof addInvestmentSchema>) => {
+    // Prepare investment data
+    const newInvestment = {
+      company: values.companyName,
+      status: "Active", // or any default status
+      investDate: values.dateofInvestment,
+      investedAmount: `$${values.amountInvested.toLocaleString()}`,
+      round: values.investmentRound,
+    };
+
+    // Call the prop function to update the parent component
+    onAddInvestment(newInvestment);
+  };
 
   return (
     <div>
@@ -141,7 +156,11 @@ export function AddInvestmentForm() {
                       What was the round of investment?{" "}
                     </FormLabel>
                     <FormControl>
-                      <Select {...field}>
+                      <Select
+                        value={field.value}
+                        onValueChange={(value) => field.onChange(value)}
+                      >
+                        {" "}
                         <SelectTrigger>
                           <SelectValue placeholder="Select Round" />
                         </SelectTrigger>
