@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
-import React from "react";
+import React, { useState } from "react";
 import {
   Table,
   TableBody,
@@ -66,6 +66,26 @@ const investments = [
 ];
 
 const MyPortfolio: React.FC = () => {
+  const [teamMembers, setTeamMembers] = useState<
+    Array<{ name: string; position: string; type: string; rights: string }>
+  >([
+    { name: "John Doe", position: "CEO", type: "Full-time", rights: "Admin" },
+    {
+      name: "Jane Smith",
+      position: "CTO",
+      type: "Full-time",
+      rights: "Managing partner",
+    },
+  ]);
+  const handleAddMember = (newMember: {
+    name: string;
+    position: string;
+    type: string;
+    rights: string;
+  }) => {
+    // Update teamMembers state with the new member
+    setTeamMembers((prevMembers) => [...prevMembers, newMember]);
+  };
   return (
     <div className="flex flex-wrap m-8">
       <div className="flex-1 py-[97px]">
@@ -283,7 +303,10 @@ const MyPortfolio: React.FC = () => {
                           Add a team member
                         </DialogTitle>
                       </DialogHeader>
-                      <AddATeamMember />
+                      <AddATeamMember
+                        data={teamMembers}
+                        onAddMember={handleAddMember}
+                      />
                     </DialogContent>
                   </Dialog>
                 </div>
