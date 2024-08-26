@@ -107,9 +107,9 @@ export function AddATeamMember({ onAddMember }: AddATeamMemberProps) {
                               <SelectValue placeholder="Select Type" />
                             </SelectTrigger>
                             <SelectContent>
-                              <SelectItem value="founder">Founder</SelectItem>
-                              <SelectItem value="engineer">Engineer</SelectItem>
-                              <SelectItem value="developer">
+                              <SelectItem value="Founder">Founder</SelectItem>
+                              <SelectItem value="Engineer">Engineer</SelectItem>
+                              <SelectItem value="Developer">
                                 Developer
                               </SelectItem>
                             </SelectContent>
