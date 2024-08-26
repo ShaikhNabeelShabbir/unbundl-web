@@ -12,7 +12,7 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import { descriptionSchema } from "@/schemas/descriptionSchema";
 
-export function OverviewForm() {
+export function OverviewForm({ onNext }: { onNext: () => void }) {
   // Set up the form using useForm hook
   const form = useForm<z.infer<typeof descriptionSchema>>({
     resolver: zodResolver(descriptionSchema),
@@ -25,6 +25,7 @@ export function OverviewForm() {
   function onSubmit(values: z.infer<typeof descriptionSchema>) {
     // Handle form submission
     console.log(values);
+    onNext(); // Call onNext to move to the next step
   }
 
   return (
@@ -32,8 +33,13 @@ export function OverviewForm() {
       <div className="main-div">
         <div className="justify-center py-[32px]">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-              <FormField
+          <form
+                id="signupForm"
+                onSubmit={form.handleSubmit((values) => {
+                  onSubmit(values); // Validate and submit the form
+                })}
+                className="space-y-8"
+              >              <FormField
                 control={form.control}
                 name="description"
                 render={({}) => (

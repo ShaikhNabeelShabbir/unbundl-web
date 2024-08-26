@@ -13,17 +13,17 @@ export const CreateNewService = () => {
   const renderForm = () => {
     switch (step) {
       case 1:
-        return <OverviewForm />;
+        return <OverviewForm onNext={handleNext} />;
       case 2:
         return <SkillsForm />;
       case 3:
-        return <DescriptionForm />;
+        return <DescriptionForm onNext={handleNext} />;
       case 4:
-        return <PricingForm />;
+        return <PricingForm onNext={handleNext} />;
       case 5:
         return <PublishForm />;
       default:
-        return <OverviewForm />;
+        return <OverviewForm onNext={handleNext} />;
     }
   };
 
@@ -50,7 +50,7 @@ export const CreateNewService = () => {
         >
           Cancel
         </Button>
-        <Button className="flex text-base" onClick={handleNext}>
+        <Button className="flex text-base" type="submit" form="signupForm">
           Next Step
         </Button>
       </div>

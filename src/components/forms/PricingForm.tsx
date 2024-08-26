@@ -19,7 +19,7 @@ import {
 } from "@/components/ui/select"; // Assuming you're using a custom wrapper around Radix UI's Select
 import { pricingSchema } from "@/schemas/pricingSchema";
 
-export function PricingForm() {
+export function PricingForm({ onNext }: { onNext: () => void }) {
   // Set up the form using useForm hook
   const form = useForm<z.infer<typeof pricingSchema>>({
     resolver: zodResolver(pricingSchema),
@@ -33,6 +33,7 @@ export function PricingForm() {
   function onSubmit(values: z.infer<typeof pricingSchema>) {
     // Handle form submission
     console.log(values);
+    onNext(); // Call onNext to move to the next step
   }
 
   return (
@@ -40,7 +41,14 @@ export function PricingForm() {
       <div className="main-div">
         <div className="justify-center py-[32px]">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+            <form
+              id="signupForm"
+              onSubmit={form.handleSubmit((values) => {
+                onSubmit(values); // Validate and submit the form
+              })}
+              className="space-y-8"
+            >
+              {" "}
               <FormField
                 name="category"
                 control={form.control}
