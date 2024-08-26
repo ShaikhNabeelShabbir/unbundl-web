@@ -18,9 +18,29 @@ import AddATeamMember from "./AddATeamMember";
 import { MoreHorizontal } from "lucide-react";
 
 // Import the team members data from the JSON file
-import teamMembers from "@/data/teamMembers.json";
+import { useState } from "react";
 
 export const TeamsForm = () => {
+  const [teamMembers, setTeamMembers] = useState<
+    Array<{ name: string; position: string; type: string; rights: string }>
+  >([
+    { name: "John Doe", position: "CEO", type: "Full-time", rights: "Admin" },
+    {
+      name: "Jane Smith",
+      position: "CTO",
+      type: "Full-time",
+      rights: "Managing partner",
+    },
+  ]);
+  const handleAddMember = (newMember: {
+    name: string;
+    position: string;
+    type: string;
+    rights: string;
+  }) => {
+    // Update teamMembers state with the new member
+    setTeamMembers((prevMembers) => [...prevMembers, newMember]);
+  };
   return (
     <div className="main-div flex flex-col px-20 flex-wrap w-full items-center ">
       <div className="py-16">
@@ -64,7 +84,7 @@ export const TeamsForm = () => {
                 Add a team member
               </DialogTitle>
             </DialogHeader>
-            <AddATeamMember />
+            <AddATeamMember data={teamMembers} onAddMember={handleAddMember} />
           </DialogContent>
         </Dialog>
       </div>

@@ -20,7 +20,17 @@ import {
 import { addTeamMemberSchema } from "@/schemas/addTeamMemberSchema";
 import { Button } from "../ui/button";
 
-export function AddATeamMember() {
+interface AddATeamMemberProps {
+  data: Array<{ name: string; position: string; type: string; rights: string }>;
+  onAddMember: (member: {
+    name: string;
+    position: string;
+    type: string;
+    rights: string;
+  }) => void;
+}
+
+export function AddATeamMember({ onAddMember }: AddATeamMemberProps) {
   // Set up the form using useForm hook
   const form = useForm<z.infer<typeof addTeamMemberSchema>>({
     resolver: zodResolver(addTeamMemberSchema),
@@ -28,14 +38,14 @@ export function AddATeamMember() {
       name: "",
       position: "",
       type: "",
-      right: "",
+      rights: "",
     },
   });
 
   // Define the submit handler
   function onSubmit(values: z.infer<typeof addTeamMemberSchema>) {
-    // Handle form submission
-    console.log(values);
+    // Call the onAddMember function passed from the parent
+    onAddMember(values);
   }
 
   return (
@@ -113,7 +123,7 @@ export function AddATeamMember() {
               />
 
               <FormField
-                name="right"
+                name="rights"
                 control={form.control}
                 render={({}) => (
                   <FormItem>
@@ -123,7 +133,7 @@ export function AddATeamMember() {
                     <FormControl>
                       <Controller
                         control={form.control}
-                        name="right"
+                        name="rights"
                         render={({ field }) => (
                           <Select
                             onValueChange={field.onChange}
