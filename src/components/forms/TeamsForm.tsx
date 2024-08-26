@@ -17,20 +17,8 @@ import {
 import AddATeamMember from "./AddATeamMember";
 import { MoreHorizontal } from "lucide-react";
 
-const teamMembers = [
-  {
-    name: "John Doe",
-    position: "CEO",
-    type: "Full-time",
-    rights: "Admin",
-  },
-  {
-    name: "Jane Smith",
-    position: "CTO",
-    type: "Full-time",
-    rights: "Managing partner",
-  },
-];
+// Import the team members data from the JSON file
+import teamMembers from "@/data/teamMembers.json";
 
 export const TeamsForm = () => {
   return (
