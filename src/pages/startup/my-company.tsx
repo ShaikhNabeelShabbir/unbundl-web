@@ -139,7 +139,7 @@ const MyCompany: React.FC = () => {
                   <p className="font-semibold text-sm mt-5 px-5">
                     Complete your profile to increase your in-platform ranking
                   </p>
-                  <ProgressBar progress={23} />
+                  <ProgressBar progress={50} />
                   <div className="w-45 h-8 mx-5 mt-3 border bg-black text-white font-normal text-3 rounded-1 flex items-center justify-center">
                     Add the blockchain
                   </div>
