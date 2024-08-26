@@ -21,7 +21,7 @@ import {
   SelectValue,
 } from "../ui/select";
 
-export function ExperienceForm() {
+export function ExperienceForm({ onNext }: { onNext: () => void }) {
   // Set up the form using useForm hook
   const form = useForm<z.infer<typeof ExperienceSchema>>({
     resolver: zodResolver(ExperienceSchema),
@@ -40,13 +40,21 @@ export function ExperienceForm() {
   function onSubmit(values: z.infer<typeof ExperienceSchema>) {
     // Handle form submission
     console.log(values);
+    onNext(); // Call onNext to move to the next step
   }
 
   return (
     <div className="main-div overflow-auto max-h-[80vh]">
       <div className="justify-center py-[32px]">
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+          <form
+            id="signupForm"
+            onSubmit={form.handleSubmit((values) => {
+              onSubmit(values); // Validate and submit the form
+            })}
+            className="space-y-8"
+          >
+            {" "}
             <FormField
               control={form.control}
               name="wantedPosition"
@@ -62,7 +70,6 @@ export function ExperienceForm() {
                 </FormItem>
               )}
             />
-
             <FormField
               control={form.control}
               name="expectedSalary"
@@ -78,7 +85,6 @@ export function ExperienceForm() {
                 </FormItem>
               )}
             />
-
             <FormField
               control={form.control}
               name="aboutYou"
@@ -94,7 +100,6 @@ export function ExperienceForm() {
                 </FormItem>
               )}
             />
-
             <div className="flex gap-4">
               <FormField
                 control={form.control}
@@ -130,7 +135,6 @@ export function ExperienceForm() {
                 )}
               />
             </div>
-
             <div className="flex gap-4">
               <FormField
                 control={form.control}

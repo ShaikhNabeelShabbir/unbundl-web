@@ -20,8 +20,7 @@ import {
 import { Button } from "../ui/button";
 import { generalSchema } from "@/schemas/generalSchema";
 
-
-export function GeneralForm() {
+export function GeneralForm({ onNext }: { onNext: () => void }) {
   // Set up the form using useForm hook
   const form = useForm<z.infer<typeof generalSchema>>({
     resolver: zodResolver(generalSchema),
@@ -37,6 +36,7 @@ export function GeneralForm() {
   function onSubmit(values: z.infer<typeof generalSchema>) {
     // Handle form submission
     console.log(values);
+    onNext(); // Call onNext to move to the next step
   }
 
   return (
@@ -44,7 +44,14 @@ export function GeneralForm() {
       <div className="main-div">
         <div className="justify-center py-[32px]">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+            <form
+              id="signupForm"
+              onSubmit={form.handleSubmit((values) => {
+                onSubmit(values); // Validate and submit the form
+              })}
+              className="space-y-8"
+            >
+              {" "}
               <FormField
                 control={form.control}
                 name="name"

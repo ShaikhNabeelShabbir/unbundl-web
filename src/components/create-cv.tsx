@@ -12,15 +12,15 @@ export const CreateCV = () => {
   const renderForm = () => {
     switch (step) {
       case 1:
-        return <GeneralForm />;
+        return <GeneralForm onNext={handleNext} />;
       case 2:
-        return <ExperienceForm />;
+        return <ExperienceForm onNext={handleNext} />;
       case 3:
-        return <LinksForm />;
+        return <LinksForm onNext={handleNext} />;
       case 4:
         return <ReviewCV />;
       default:
-        return <GeneralForm />;
+        return <GeneralForm onNext={handleNext} />;
     }
   };
 
@@ -47,7 +47,7 @@ export const CreateCV = () => {
         >
           Cancel
         </Button>
-        <Button className="flex text-base" onClick={handleNext}>
+        <Button className="flex text-base" type="submit" form="signupForm">
           Next Step
         </Button>
       </div>

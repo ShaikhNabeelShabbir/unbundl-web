@@ -12,7 +12,7 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import { linkSchema } from "@/schemas/linkSchema";
 
-export function LinksForm() {
+export function LinksForm({ onNext }: { onNext: () => void }) {
   // Set up the form using useForm hook
   const form = useForm<z.infer<typeof linkSchema>>({
     resolver: zodResolver(linkSchema),
@@ -25,6 +25,7 @@ export function LinksForm() {
   function onSubmit(values: z.infer<typeof linkSchema>) {
     // Handle form submission
     console.log(values);
+    onNext(); // Call onNext to move to the next step
   }
 
   return (
@@ -32,7 +33,14 @@ export function LinksForm() {
       <div className="main-div">
         <div className="justify-center py-[32px]">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+            <form
+              id="signupForm"
+              onSubmit={form.handleSubmit((values) => {
+                onSubmit(values); // Validate and submit the form
+              })}
+              className="space-y-8"
+            >
+              {" "}
               <FormField
                 control={form.control}
                 name="links"
