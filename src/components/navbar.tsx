@@ -20,6 +20,7 @@ const Navbar: React.FC<NavbarProps> = ({ setStep, currentStep }) => {
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
+    useRef<HTMLDivElement>(null),
   ];
 
   useEffect(() => {
@@ -51,6 +52,7 @@ const Navbar: React.FC<NavbarProps> = ({ setStep, currentStep }) => {
             "General Company Information",
             "Project Information",
             "Fundraising Information",
+            "Tech",
             "Market Information",
             "Team",
           ].map((label, index) => (

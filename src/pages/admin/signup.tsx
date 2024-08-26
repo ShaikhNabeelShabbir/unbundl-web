@@ -8,6 +8,7 @@ import { FundraisingIformationForm } from "@/components/forms/FundraisingInforma
 import { MarketInformationForm } from "@/components/forms/MarketInformationForm";
 import { TeamsForm } from "@/components/forms/TeamsForm";
 import { Thankyou } from "@/components/thank-you";
+import TechForm from "@/components/forms/TechForm";
 
 const Signup = () => {
   const [step, setStep] = useState(1);
@@ -23,10 +24,12 @@ const Signup = () => {
       case 4:
         return <FundraisingIformationForm onNext={handleNext} />;
       case 5:
-        return <MarketInformationForm onNext={handleNext} />;
+        return <TechForm onNext={handleNext} />;
       case 6:
-        return <TeamsForm />;
+        return <MarketInformationForm onNext={handleNext} />;
       case 7:
+        return <TeamsForm />;
+      case 8:
         return <Thankyou />;
       default:
         return <CreateAccountForm onNext={handleNext} />;
