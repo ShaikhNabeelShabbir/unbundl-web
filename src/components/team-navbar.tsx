@@ -30,7 +30,6 @@ const TeamNavbar = () => {
           ),
         )}
       </div>
-      <Button className="p-5 font-medium text-md w-1/5">Add a Member</Button>
     </div>
   );
 };

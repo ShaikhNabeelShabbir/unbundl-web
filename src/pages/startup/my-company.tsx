@@ -214,7 +214,12 @@ const MyCompany: React.FC = () => {
                       Edit Privacy
                     </Button>
                   </div>
-                  <TeamNavbar />
+                  <div className="flex flex-row">
+                    <TeamNavbar />
+                    <Button className="p-5 font-medium text-md w-1/5">
+                      Add a Member
+                    </Button>
+                  </div>
                 </div>
 
                 <Table className="border bg-black/5">
