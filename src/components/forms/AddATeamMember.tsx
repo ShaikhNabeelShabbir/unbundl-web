@@ -16,11 +16,9 @@ import {
   SelectValue,
   SelectContent,
   SelectItem,
-} from "@/components/ui/select"; // Assuming you're using a custom wrapper around Radix UI's Select
+} from "@/components/ui/select";
 import { addTeamMemberSchema } from "@/schemas/addTeamMemberSchema";
 import { Button } from "../ui/button";
-
-// Define the schema using Zod
 
 export function AddATeamMember() {
   // Set up the form using useForm hook
@@ -52,7 +50,7 @@ export function AddATeamMember() {
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
-                      Enter the team member name{" "}
+                      Enter the team member name
                     </FormLabel>
                     <FormControl>
                       <Input placeholder="Enter Name" {...field} />
@@ -61,13 +59,14 @@ export function AddATeamMember() {
                   </FormItem>
                 )}
               />
+
               <FormField
                 control={form.control}
                 name="position"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
-                      What is the position of this team member in the company?{" "}
+                      What is the position of this team member in the company?
                     </FormLabel>
                     <FormControl>
                       <Input placeholder="Enter Position" {...field} />
@@ -76,13 +75,14 @@ export function AddATeamMember() {
                   </FormItem>
                 )}
               />
+
               <FormField
                 name="type"
                 control={form.control}
                 render={({}) => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
-                      What is the type of the team member{" "}
+                      What is the type of the team member
                     </FormLabel>
                     <FormControl>
                       <Controller
@@ -94,7 +94,7 @@ export function AddATeamMember() {
                             value={field.value}
                           >
                             <SelectTrigger>
-                              <SelectValue placeholder="Select Category" />
+                              <SelectValue placeholder="Select Type" />
                             </SelectTrigger>
                             <SelectContent>
                               <SelectItem value="founder">Founder</SelectItem>
@@ -118,7 +118,7 @@ export function AddATeamMember() {
                 render={({}) => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
-                      What rights do you want to give to this team member?{" "}
+                      What rights do you want to give to this team member?
                     </FormLabel>
                     <FormControl>
                       <Controller
@@ -130,7 +130,7 @@ export function AddATeamMember() {
                             value={field.value}
                           >
                             <SelectTrigger>
-                              <SelectValue placeholder="Select Category" />
+                              <SelectValue placeholder="Select Rights" />
                             </SelectTrigger>
                             <SelectContent>
                               <SelectItem value="Admin">Admin</SelectItem>
@@ -149,18 +149,21 @@ export function AddATeamMember() {
                   </FormItem>
                 )}
               />
+              <br />
+              <div className="fixed bottom-0 z-50 py-5 flex justify-center gap-[374px]">
+                <Button
+                  className="flex text-base bg-white text-black "
+                  variant="link"
+                  type="button"
+                >
+                  Cancel
+                </Button>
+                <Button className="flex text-base" type="submit">
+                  Next Step
+                </Button>
+              </div>
             </form>
           </Form>
-        </div>
-        <br />
-        <div className="fixed bottom-0  z-50 py-5 flex justify-center gap-[374px]">
-          <Button
-            className="flex text-base bg-white text-black "
-            variant="link"
-          >
-            Cancel
-          </Button>
-          <Button className="flex text-base">Next Step</Button>
         </div>
       </div>
     </div>
