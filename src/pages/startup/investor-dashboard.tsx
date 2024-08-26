@@ -10,6 +10,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { MoreHorizontal } from "lucide-react";
+import ProgressBar from "@/components/progress-bar";
 const expand_you_network = [
   {
     nameOrganiztion: "Startup name",
@@ -199,15 +200,7 @@ const InvestorDashboard: React.FC = () => {
             Company profile completion{" "}
             <div className="w-full h-fit border font-semibold text-lg p-5 mt-5 bg-black/5 space-y-5">
               Complete your profile to increase your in-platform ranking <br />
-              <div className="relative h-8 border rounded-full bg-black/50">
-                <div
-                  className="absolute top-0 left-0 h-full bg-black/50 rounded-full"
-                  style={{ width: "60%" }}
-                ></div>
-                <span className="absolute inset-0 flex items-center justify-center text-white text-sm w-full font-bold ">
-                  60%
-                </span>
-              </div>
+              <ProgressBar progress={23} />
               <div className="text-sm text-white my-3 font-normal rounded-1 flex items-center justify-center bg-black w-full h-8 p-2">
                 Add Product Demo
               </div>

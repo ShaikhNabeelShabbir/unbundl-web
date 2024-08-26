@@ -25,6 +25,7 @@ import {
 import Update from "./update";
 import TeamNavbar from "@/components/team-navbar";
 import AddATeamMember from "@/components/forms/AddATeamMember";
+import ProgressBar from "@/components/progress-bar";
 
 const invoices = [
   {
@@ -138,15 +139,7 @@ const MyCompany: React.FC = () => {
                   <p className="font-semibold text-sm mt-5 px-5">
                     Complete your profile to increase your in-platform ranking
                   </p>
-                  <div className="progress-bar relative w-45 h-8 mx-5 mt-3 border rounded-full bg-black/50 ">
-                    <div
-                      className="absolute top-0 left-0 h-full bg-black/50 rounded-full"
-                      style={{ width: "75%" }}
-                    ></div>
-                    <span className="absolute inset-0 flex items-center justify-center text-white text-3 font-bold ">
-                      75%
-                    </span>
-                  </div>
+                  <ProgressBar progress={23} />
                   <div className="w-45 h-8 mx-5 mt-3 border bg-black text-white font-normal text-3 rounded-1 flex items-center justify-center">
                     Add the blockchain
                   </div>
