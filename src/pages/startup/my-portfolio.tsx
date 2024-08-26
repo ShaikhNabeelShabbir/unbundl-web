@@ -48,24 +48,43 @@ const investmentTeam = [
   },
 ];
 
-const investments = [
-  {
-    company: "Company A",
-    status: "Active",
-    investDate: "2023-01-15",
-    investedAmount: "$500,000",
-    round: "Series A",
-  },
-  {
-    company: "Company B",
-    status: "Exited",
-    investDate: "2022-05-10",
-    investedAmount: "$300,000",
-    round: "Seed",
-  },
-];
-
 const MyPortfolio: React.FC = () => {
+  const [investments, setInvestments] = useState<
+    Array<{
+      company: string;
+      status: string;
+      investDate: string;
+      investedAmount: string;
+      round: string;
+    }>
+  >([
+    {
+      company: "Company A",
+      status: "Active",
+      investDate: "2023-01-15",
+      investedAmount: "500000",
+      round: "Series A",
+    },
+    {
+      company: "Company B",
+      status: "Exited",
+      investDate: "2022-05-10",
+      investedAmount: "300000",
+      round: "Seed",
+    },
+  ]);
+
+  const handleAddInvestment = (newInvestment: {
+    company: string;
+    status: string;
+    investDate: string;
+    investedAmount: string;
+    round: string;
+  }) => {
+    // Update investments state with the new investment
+    setInvestments((prevInvestments) => [...prevInvestments, newInvestment]);
+  };
+
   const [teamMembers, setTeamMembers] = useState<
     Array<{ name: string; position: string; type: string; rights: string }>
   >([
@@ -239,7 +258,9 @@ const MyPortfolio: React.FC = () => {
                           Add Investment Form
                         </DialogTitle>
                       </DialogHeader>
-                      <AddInvestmentForm />
+                      <AddInvestmentForm
+                        onAddInvestment={handleAddInvestment}
+                      />
                     </DialogContent>
                   </Dialog>
                 </div>
