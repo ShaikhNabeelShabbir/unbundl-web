@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
-import React from "react";
+import React, { useState } from "react";
 import {
   Table,
   TableBody,
@@ -54,6 +54,22 @@ const teamMembers = [
 ];
 
 const MyCompany: React.FC = () => {
+  const [updates, setUpdates] = useState([
+    {
+      date: "Nov. 27 2022",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aliquid, sunt repudiandae ab obcaecati blanditiis maxime nobis? Repellendus delectus est, asperiores, vel reiciendis dignissimos voluptatum suscipit sit eligendi ipsam explicabo?",
+      visibility: "For Everyone",
+    },
+  ]);
+
+  const handleAddUpdate = (newUpdate: {
+    date: string;
+    description: string;
+    visibility: string;
+  }) => {
+    setUpdates([...updates, newUpdate]);
+  };
   return (
     <div className="flex flex-wrap m-8">
       <div className="flex-1 py-[97px]">
@@ -401,7 +417,7 @@ const MyCompany: React.FC = () => {
                     </Button>
                   </DialogTrigger>
                   <DialogContent>
-                    <Update />
+                    <Update onAddUpdate={handleAddUpdate} />
                   </DialogContent>
                 </Dialog>{" "}
               </div>
@@ -411,241 +427,24 @@ const MyCompany: React.FC = () => {
                     Connect your company Twitter account to your Unbundl Feed
                   </p>
                 </div>
-                <div>
-                  <Card className="bg-black/5">
-                    <CardHeader>
-                      <CardTitle className="font-medium text-base text-black/50">
-                        <div className="flex justify-between items-center">
-                          <p className="font-semibold text-5">Nov. 27 2022 </p>
-                          <Button className="text-sm font-medium">
-                            For Everyone{" "}
-                          </Button>
-                        </div>{" "}
-                      </CardTitle>
-                      <CardDescription>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ducimus aliquid, sunt repudiandae ab obcaecati
-                        blanditiis maxime nobis? Repellendus delectus est,
-                        asperiores, vel reiciendis dignissimos voluptatum
-                        suscipit sit eligendi ipsam explicabo?
-                      </CardDescription>
-                    </CardHeader>
-                  </Card>
-                </div>
-                <div>
-                  {" "}
-                  <Card className="bg-black/5">
-                    <CardHeader>
-                      <CardTitle className="font-medium text-base text-black/50">
-                        <div className="flex justify-between items-center">
-                          <p className="font-semibold text-5">Nov. 27 2022 </p>
-                          <Button className="text-sm font-medium">
-                            For Everyone{" "}
-                          </Button>
-                        </div>{" "}
-                      </CardTitle>
-                      <CardDescription>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ducimus aliquid, sunt repudiandae ab obcaecati
-                        blanditiis maxime nobis? Repellendus delectus est,
-                        asperiores, vel reiciendis dignissimos voluptatum
-                        suscipit sit eligendi ipsam explicabo?
-                      </CardDescription>
-                    </CardHeader>
-                  </Card>
-                </div>
-                <div>
-                  {" "}
-                  <Card className="bg-black/5">
-                    <CardHeader>
-                      <CardTitle className="font-medium text-base text-black/50">
-                        <div className="flex justify-between items-center">
-                          <p className="font-semibold text-5">Nov. 27 2022 </p>
-                          <Button className="text-sm font-medium">
-                            For Everyone{" "}
-                          </Button>
-                        </div>{" "}
-                      </CardTitle>
-                      <CardDescription>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ducimus aliquid, sunt repudiandae ab obcaecati
-                        blanditiis maxime nobis? Repellendus delectus est,
-                        asperiores, vel reiciendis dignissimos voluptatum
-                        suscipit sit eligendi ipsam explicabo?
-                      </CardDescription>
-                    </CardHeader>
-                  </Card>
-                </div>
-                <div>
-                  {" "}
-                  <Card className="bg-black/5">
-                    <CardHeader>
-                      <CardTitle className="font-medium text-base text-black/50">
-                        <div className="flex justify-between items-center">
-                          <p className="font-semibold text-5">Nov. 27 2022 </p>
-                          <Button className="text-sm font-medium">
-                            For Everyone{" "}
-                          </Button>
-                        </div>{" "}
-                      </CardTitle>
-                      <CardDescription>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ducimus aliquid, sunt repudiandae ab obcaecati
-                        blanditiis maxime nobis? Repellendus delectus est,
-                        asperiores, vel reiciendis dignissimos voluptatum
-                        suscipit sit eligendi ipsam explicabo?
-                      </CardDescription>
-                    </CardHeader>
-                  </Card>
-                </div>{" "}
-                <div>
-                  {" "}
-                  <Card className="bg-black/5">
-                    <CardHeader>
-                      <CardTitle className="font-medium text-base text-black/50">
-                        <div className="flex justify-between items-center">
-                          <p className="font-semibold text-5">Nov. 27 2022 </p>
-                          <Button className="text-sm font-medium">
-                            For Everyone{" "}
-                          </Button>
-                        </div>{" "}
-                      </CardTitle>
-                      <CardDescription>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ducimus aliquid, sunt repudiandae ab obcaecati
-                        blanditiis maxime nobis? Repellendus delectus est,
-                        asperiores, vel reiciendis dignissimos voluptatum
-                        suscipit sit eligendi ipsam explicabo?
-                      </CardDescription>
-                    </CardHeader>
-                  </Card>
-                </div>
-                <div>
-                  {" "}
-                  <Card className="bg-black/5">
-                    <CardHeader>
-                      <CardTitle className="font-medium text-base text-black/50">
-                        <div className="flex justify-between items-center">
-                          <p className="font-semibold text-5">Nov. 27 2022 </p>
-                          <Button className="text-sm font-medium">
-                            For Everyone{" "}
-                          </Button>
-                        </div>{" "}
-                      </CardTitle>
-                      <CardDescription>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ducimus aliquid, sunt repudiandae ab obcaecati
-                        blanditiis maxime nobis? Repellendus delectus est,
-                        asperiores, vel reiciendis dignissimos voluptatum
-                        suscipit sit eligendi ipsam explicabo?
-                      </CardDescription>
-                    </CardHeader>
-                  </Card>
-                </div>
-                <div>
-                  <Card className="bg-black/5">
-                    <CardHeader>
-                      <CardTitle className="font-medium text-base text-black/50">
-                        <div className="flex justify-between items-center">
-                          <p className="font-semibold text-5">Nov. 27 2022 </p>
-                          <Button className="text-sm font-medium">
-                            For Everyone{" "}
-                          </Button>
-                        </div>{" "}
-                      </CardTitle>
-                      <CardDescription>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ducimus aliquid, sunt repudiandae ab obcaecati
-                        blanditiis maxime nobis? Repellendus delectus est,
-                        asperiores, vel reiciendis dignissimos voluptatum
-                        suscipit sit eligendi ipsam explicabo?
-                      </CardDescription>
-                    </CardHeader>
-                  </Card>
-                </div>
-                <div>
-                  <Card className="bg-black/5">
-                    <CardHeader>
-                      <CardTitle className="font-medium text-base text-black/50">
-                        <div className="flex justify-between items-center">
-                          <p className="font-semibold text-5">Nov. 27 2022 </p>
-                          <Button className="text-sm font-medium">
-                            For Everyone{" "}
-                          </Button>
-                        </div>{" "}
-                      </CardTitle>
-                      <CardDescription>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ducimus aliquid, sunt repudiandae ab obcaecati
-                        blanditiis maxime nobis? Repellendus delectus est,
-                        asperiores, vel reiciendis dignissimos voluptatum
-                        suscipit sit eligendi ipsam explicabo?
-                      </CardDescription>
-                    </CardHeader>
-                  </Card>
-                </div>
-                <div>
-                  <Card className="bg-black/5">
-                    <CardHeader>
-                      <CardTitle className="font-medium text-base text-black/50">
-                        <div className="flex justify-between items-center">
-                          <p className="font-semibold text-5">Nov. 27 2022 </p>
-                          <Button className="text-sm font-medium">
-                            For Everyone{" "}
-                          </Button>
-                        </div>{" "}
-                      </CardTitle>
-                      <CardDescription>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ducimus aliquid, sunt repudiandae ab obcaecati
-                        blanditiis maxime nobis? Repellendus delectus est,
-                        asperiores, vel reiciendis dignissimos voluptatum
-                        suscipit sit eligendi ipsam explicabo?
-                      </CardDescription>
-                    </CardHeader>
-                  </Card>
-                </div>
-                <div>
-                  <Card className="bg-black/5">
-                    <CardHeader>
-                      <CardTitle className="font-medium text-base text-black/50">
-                        <div className="flex justify-between items-center">
-                          <p className="font-semibold text-5">Nov. 27 2022 </p>
-                          <Button className="text-sm font-medium">
-                            For Everyone{" "}
-                          </Button>
-                        </div>{" "}
-                      </CardTitle>
-                      <CardDescription>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ducimus aliquid, sunt repudiandae ab obcaecati
-                        blanditiis maxime nobis? Repellendus delectus est,
-                        asperiores, vel reiciendis dignissimos voluptatum
-                        suscipit sit eligendi ipsam explicabo?
-                      </CardDescription>
-                    </CardHeader>
-                  </Card>
-                </div>
-                <div>
-                  <Card className="bg-black/5">
-                    <CardHeader>
-                      <CardTitle className="font-medium text-base text-black/50">
-                        <div className="flex justify-between items-center">
-                          <p className="font-semibold text-5">Nov. 27 2022 </p>
-                          <Button className="text-sm font-medium">
-                            For Everyone{" "}
-                          </Button>
-                        </div>{" "}
-                      </CardTitle>
-                      <CardDescription>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ducimus aliquid, sunt repudiandae ab obcaecati
-                        blanditiis maxime nobis? Repellendus delectus est,
-                        asperiores, vel reiciendis dignissimos voluptatum
-                        suscipit sit eligendi ipsam explicabo?
-                      </CardDescription>
-                    </CardHeader>
-                  </Card>
+                <div className="w-[370px] space-y-5">
+                  {updates.map((update, index) => (
+                    <Card key={index} className="bg-black/5">
+                      <CardHeader>
+                        <CardTitle className="font-medium text-base text-black/50">
+                          <div className="flex justify-between items-center">
+                            <p className="font-semibold text-5">
+                              {update.date}
+                            </p>
+                            <Button className="text-sm font-medium">
+                              {update.visibility}
+                            </Button>
+                          </div>
+                        </CardTitle>
+                        <CardDescription>{update.description}</CardDescription>
+                      </CardHeader>
+                    </Card>
+                  ))}
                 </div>
               </div>
             </div>

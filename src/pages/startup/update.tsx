@@ -9,8 +9,29 @@ import {
 } from "@/components/ui/select";
 import ImageIcon from "@/assets/icons/image.png";
 import ChartIcon from "@/assets/icons/chart.png";
+import React, { useState } from "react";
 
-const Update = () => {
+interface UpdateProps {
+  onAddUpdate: (update: {
+    date: string;
+    description: string;
+    visibility: string;
+  }) => void;
+}
+
+const Update: React.FC<UpdateProps> = ({ onAddUpdate }) => {
+  const [description, setDescription] = useState("");
+  const [visibility, setVisibility] = useState("Everyone");
+
+  const handleSubmit = () => {
+    const newUpdate = {
+      date: new Date().toLocaleDateString("en-GB"), // Formats date as "dd/mm/yyyy"
+      description,
+      visibility,
+    };
+    onAddUpdate(newUpdate);
+  };
+
   return (
     <div className="rounded-md">
       <div className="grid grid-cols-[auto,1fr] items-start gap-5">
@@ -20,7 +41,7 @@ const Update = () => {
 
         <div className="flex flex-col">
           <div className="flex justify-between">
-            <Select>
+            <Select onValueChange={setVisibility}>
               <SelectTrigger className="w-[120px] rounded-md">
                 <SelectValue placeholder="Everyone" />
               </SelectTrigger>
@@ -36,6 +57,8 @@ const Update = () => {
             className="mt-4 w-full h-[100px] rounded-md p-2"
             placeholder="What’s happening? (140 characters max)"
             maxLength={140}
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
           />
 
           <div className="flex justify-between items-center mt-4">
@@ -47,7 +70,7 @@ const Update = () => {
                 <img src={ChartIcon} alt="Poll" className="w-6 h-6" />
               </button>
             </div>
-            <Button className="text-sm" variant="link">
+            <Button className="text-sm" variant="link" onClick={handleSubmit}>
               <u>Post Update</u>
             </Button>
           </div>
