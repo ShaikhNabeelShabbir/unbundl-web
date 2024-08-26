@@ -57,7 +57,7 @@ export function AddInvestmentForm() {
                       Enter the company/fund Name{" "}
                     </FormLabel>
                     <FormControl>
-                      <Input placeholder="Enter Service Title" {...field} />
+                      <Input placeholder="Enter Company Name" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -72,7 +72,7 @@ export function AddInvestmentForm() {
                       Enter the company website{" "}
                     </FormLabel>
                     <FormControl>
-                      <Input placeholder="Enter Service Title" {...field} />
+                      <Input placeholder="Enter Company Website" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -84,11 +84,11 @@ export function AddInvestmentForm() {
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
-                      Enter an email of a person, that you are connected with
+                      Enter an email of a person that you are connected with
                       from that company{" "}
                     </FormLabel>
                     <FormControl>
-                      <Input placeholder="Enter Service Title" {...field} />
+                      <Input placeholder="Enter Person Email" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -103,7 +103,11 @@ export function AddInvestmentForm() {
                       How much did you invest?{" "}
                     </FormLabel>
                     <FormControl>
-                      <Input placeholder="Enter Service Title" {...field} />
+                      <Input
+                        type="number"
+                        placeholder="Enter Amount Invested"
+                        {...field}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -118,14 +122,19 @@ export function AddInvestmentForm() {
                       When did you invest?{" "}
                     </FormLabel>
                     <FormControl>
-                      <Input placeholder="Enter Service Title" {...field} />
+                      <Input
+                        type="date"
+                        placeholder="Enter Date of Investment"
+                        {...field}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
               />
               <FormField
-                name="stages"
+                control={form.control}
+                name="investmentRound"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="font-medium text-base">
@@ -134,7 +143,7 @@ export function AddInvestmentForm() {
                     <FormControl>
                       <Select {...field}>
                         <SelectTrigger>
-                          <SelectValue placeholder="Early" />
+                          <SelectValue placeholder="Select Round" />
                         </SelectTrigger>
                         <SelectContent>
                           <SelectItem value="Early">Early</SelectItem>
@@ -147,20 +156,21 @@ export function AddInvestmentForm() {
                   </FormItem>
                 )}
               />
+              <br />
+              <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px]">
+                <Button
+                  className="flex text-base bg-white text-black"
+                  variant="link"
+                  type="button"
+                >
+                  Cancel
+                </Button>
+                <Button className="flex text-base" type="submit">
+                  Add Investment to the portfolio
+                </Button>
+              </div>
             </form>
           </Form>
-          <br />
-          <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px]">
-            <Button
-              className="flex text-base bg-white text-black"
-              variant="link"
-            >
-              Cancel
-            </Button>
-            <Button className="flex text-base">
-              Add Investment to the portfolio
-            </Button>
-          </div>
         </div>
       </div>
     </div>
