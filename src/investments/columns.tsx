@@ -24,7 +24,7 @@ export const columns: ColumnDef<Investment>[] = [
     header: "Amount Invested",
   },
   {
-    accessorKey: "Round",
-    header: "investmentRound",
+    accessorKey: "investmentRound",
+    header: "Investment Round",
   },
 ];
