@@ -28,7 +28,6 @@ export function GeneralForm({ onNext }: { onNext: () => void }) {
       name: "",
       country: "",
       city: "",
-      linkedin: "",
     },
   });
 
@@ -41,7 +40,7 @@ export function GeneralForm({ onNext }: { onNext: () => void }) {
 
   return (
     <div>
-      <div className="main-div">
+      <div className="main-div overflow-auto max-h-[80vh]">
         <div className="justify-center py-[32px]">
           <Form {...form}>
             <form
@@ -149,6 +148,8 @@ export function GeneralForm({ onNext }: { onNext: () => void }) {
               />
             </form>
           </Form>
+          <br />
+          <br />
         </div>
       </div>
     </div>
