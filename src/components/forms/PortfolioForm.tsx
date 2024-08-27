@@ -61,7 +61,7 @@ const PortfolioForm = () => {
   return (
     <div className="main-div flex flex-col px-20 flex-wrap w-full items-center">
       <div className="py-[40px]">
-        <div className="px-[165px]">
+        <div className="px-[165px] w-full">
           <InvestmentDataTable columns={columns} data={data} />
 
           <Dialog>
