@@ -19,24 +19,27 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 
 import React from "react";
 
 interface InvestmentDataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
+  hasPagination?: boolean;
 }
 
 export function InvestmentDataTable<TData, TValue>({
   columns,
   data,
+  hasPagination,
 }: InvestmentDataTableProps<TData, TValue>) {
   const [sorting, setSorting] = React.useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
     [],
   );
-
+  if (data.length > 10) {
+    hasPagination = true;
+  }
   const table = useReactTable({
     data,
     columns,
@@ -51,21 +54,10 @@ export function InvestmentDataTable<TData, TValue>({
       columnFilters,
     },
   });
+  const shouldShowPagination = hasPagination && data.length > 2;
 
   return (
     <>
-      <div className="flex items-center py-4 w-full">
-        <Input
-          placeholder="Filter companyNames..."
-          value={
-            (table.getColumn("companyName")?.getFilterValue() as string) ?? ""
-          }
-          onChange={(event) =>
-            table.getColumn("companyName")?.setFilterValue(event.target.value)
-          }
-          className="max-w-sm"
-        />
-      </div>
       <div className="rounded-md w-full">
         <Table className="w-full">
           <TableHeader>
@@ -115,24 +107,26 @@ export function InvestmentDataTable<TData, TValue>({
             )}
           </TableBody>
         </Table>
-        <div className="flex items-center justify-end space-x-2 py-4">
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => table.previousPage()}
-            disabled={!table.getCanPreviousPage()}
-          >
-            Previous
-          </Button>
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => table.nextPage()}
-            disabled={!table.getCanNextPage()}
-          >
-            Next
-          </Button>
-        </div>
+        {shouldShowPagination && (
+          <div className="flex items-center justify-end space-x-2 py-4">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => table.previousPage()}
+              disabled={!table.getCanPreviousPage()}
+            >
+              Previous
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => table.nextPage()}
+              disabled={!table.getCanNextPage()}
+            >
+              Next
+            </Button>
+          </div>
+        )}
       </div>
     </>
   );

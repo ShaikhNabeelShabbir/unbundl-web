@@ -35,7 +35,7 @@ export function TeamsDataTable<TData, TValue>({
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
     [],
   );
-  if (data.length > 2) {
+  if (data.length > 10) {
     hasPagination = true;
   }
   const table = useReactTable({
