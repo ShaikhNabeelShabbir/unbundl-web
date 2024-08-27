@@ -8,7 +8,7 @@ import {
   DialogTrigger,
 } from "../ui/dialog";
 import AddInvestmentForm from "./AddInvestmentForm";
-import { Investment, columns } from "@/investments/columns"; // Ensure correct relative path
+import { Investment, columns } from "@/investments/investment-columns"; // Ensure correct relative path
 import { InvestmentDataTable } from "@/investments/investment-data-table"; // Ensure correct relative path
 
 // Function to fetch the data
