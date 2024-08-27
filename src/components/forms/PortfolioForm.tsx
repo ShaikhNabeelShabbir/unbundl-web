@@ -28,6 +28,20 @@ async function fetchData(): Promise<Investment[]> {
       amountInvested: "300000",
       investmentRound: "Seed",
     },
+    {
+      companyName: "Company Nab",
+      status: "Invested",
+      dateofInvestment: "2024-05-10",
+      amountInvested: "300000",
+      investmentRound: "Seed",
+    },
+    {
+      companyName: "Company JU",
+      status: "Invested",
+      dateofInvestment: "2023-05-10",
+      amountInvested: "300000",
+      investmentRound: "Seed",
+    },
   ];
 }
 
