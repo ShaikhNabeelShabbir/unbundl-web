@@ -20,17 +20,17 @@ import {
   SelectValue,
 } from "../ui/select";
 
-interface AddInvestmentFormProps {
-  onAddInvestment: (investment: {
-    company: string;
-    status: string;
-    investDate: string;
-    investedAmount: string;
-    round: string;
-  }) => void;
-}
+// interface AddInvestmentFormProps {
+//   onAddInvestment: (investment: {
+//     company: string;
+//     status: string;
+//     investDate: string;
+//     investedAmount: string;
+//     round: string;
+//   }) => void;
+// }
 
-export function AddInvestmentForm({ onAddInvestment }: AddInvestmentFormProps) {
+export function AddInvestmentForm() {
   const form = useForm<z.infer<typeof addInvestmentSchema>>({
     resolver: zodResolver(addInvestmentSchema),
     defaultValues: {
@@ -43,26 +43,12 @@ export function AddInvestmentForm({ onAddInvestment }: AddInvestmentFormProps) {
     },
   });
 
-  const onSubmit = (values: z.infer<typeof addInvestmentSchema>) => {
-    // Prepare investment data
-    const newInvestment = {
-      company: values.companyName,
-      status: "Active", // or any default status
-      investDate: values.dateofInvestment,
-      investedAmount: `$${values.amountInvested.toLocaleString()}`,
-      round: values.investmentRound,
-    };
-
-    // Call the prop function to update the parent component
-    onAddInvestment(newInvestment);
-  };
-
   return (
     <div>
       <div className="main-div">
         <div className="justify-center py-[32px]">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+            <form className="space-y-8">
               <FormField
                 control={form.control}
                 name="companyName"

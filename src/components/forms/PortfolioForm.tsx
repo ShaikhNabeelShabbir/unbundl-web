@@ -1,13 +1,5 @@
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { MoreHorizontal } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -16,84 +8,48 @@ import {
   DialogTrigger,
 } from "../ui/dialog";
 import AddInvestmentForm from "./AddInvestmentForm";
-import { useState } from "react";
+import { Investment, columns } from "@/investments/columns"; // Ensure correct relative path
+import { InvestmentDataTable } from "@/investments/investment-data-table"; // Ensure correct relative path
+
+// Function to fetch the data
+async function fetchData(): Promise<Investment[]> {
+  return [
+    {
+      companyName: "Company A",
+      status: "Invested",
+      dateofInvestment: "2023-01-15",
+      amountInvested: "500000",
+      investmentRound: "Series A",
+    },
+    {
+      companyName: "Company B",
+      status: "Invested",
+      dateofInvestment: "2022-05-10",
+      amountInvested: "300000",
+      investmentRound: "Seed",
+    },
+  ];
+}
 
 const PortfolioForm = () => {
-  const [investments, setInvestments] = useState<
-    Array<{
-      company: string;
-      status: string;
-      investDate: string;
-      investedAmount: string;
-      round: string;
-    }>
-  >([
-    {
-      company: "Company A",
-      status: "Invested",
-      investDate: "2023-01-15",
-      investedAmount: "500000",
-      round: "Series A",
-    },
-    {
-      company: "Company B",
-      status: "Invested",
-      investDate: "2022-05-10",
-      investedAmount: "300000",
-      round: "Seed",
-    },
-  ]);
+  const [data, setData] = useState<Investment[]>([]);
 
-  const handleAddInvestment = (newInvestment: {
-    company: string;
-    status: string;
-    investDate: string;
-    investedAmount: string;
-    round: string;
-  }) => {
-    // Update investments state with the new investment
-    setInvestments((prevInvestments) => [...prevInvestments, newInvestment]);
-  };
+  useEffect(() => {
+    // Fetch data on component mount
+    const loadData = async () => {
+      const investments = await fetchData();
+      setData(investments);
+    };
+
+    loadData();
+  }, []);
 
   return (
     <div className="main-div flex flex-col px-20 flex-wrap w-full items-center">
       <div className="py-[40px]">
         <div className="px-[165px]">
-          <Table className="w-full">
-            <TableHeader>
-              <TableRow className="grid grid-cols-6 gap-4">
-                <TableHead>Company/Fund</TableHead>
-                <TableHead>Status</TableHead>
-                <TableHead>Invest Date</TableHead>
-                <TableHead className="text-right">Invested</TableHead>
-                <TableHead>Round</TableHead>
-                <TableHead className="text-right">Actions</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {investments.map((investment) => (
-                <TableRow
-                  key={investment.company}
-                  className="grid grid-cols-6 gap-4"
-                >
-                  <TableCell className="font-medium">
-                    {investment.company}
-                  </TableCell>
-                  <TableCell>{investment.status}</TableCell>
-                  <TableCell>{investment.investDate}</TableCell>
-                  <TableCell className="text-right">
-                    {investment.investedAmount}
-                  </TableCell>
-                  <TableCell>{investment.round}</TableCell>
-                  <TableCell className="text-right">
-                    <Button variant="ghost" className="h-8 w-8 p-0">
-                      <MoreHorizontal className="h-5 w-5" />
-                    </Button>
-                  </TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
+          <InvestmentDataTable columns={columns} data={data} />
+
           <Dialog>
             <DialogTrigger asChild>
               <Button type="button" className="w-full mt-4">
@@ -106,7 +62,7 @@ const PortfolioForm = () => {
                   Add Investment Form
                 </DialogTitle>
               </DialogHeader>
-              <AddInvestmentForm onAddInvestment={handleAddInvestment} />
+              <AddInvestmentForm />
             </DialogContent>
           </Dialog>
         </div>
