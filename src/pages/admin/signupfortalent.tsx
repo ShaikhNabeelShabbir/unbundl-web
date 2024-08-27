@@ -35,7 +35,7 @@ export const Signupfortalent = () => {
   };
 
   return (
-    <div className="main-div flex flex-col min-h-screen ">
+    <div className="main-div flex flex-col min-h-screenflex-wrap">
       <div className="flex gap-6 px-[100px] ">
         <div className="flex flex-row py-[40px] px-[100px] font-semibold w-82 h-24 text-lg">
           Unbundl
