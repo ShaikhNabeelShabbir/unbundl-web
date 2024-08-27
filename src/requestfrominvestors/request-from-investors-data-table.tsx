@@ -21,17 +21,17 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
-interface ReachOutToInvestorDataTable<TData, TValue> {
+interface RequestFromInvestorDataTable<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
   hasPagination?: boolean;
 }
 
-export function ReachOutToInvestorDataTable<TData, TValue>({
+export function RequestFromInvestorDataTable<TData, TValue>({
   columns,
   data,
   hasPagination,
-}: ReachOutToInvestorDataTable<TData, TValue>) {
+}: RequestFromInvestorDataTable<TData, TValue>) {
   const [sorting, setSorting] = React.useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
     [],
