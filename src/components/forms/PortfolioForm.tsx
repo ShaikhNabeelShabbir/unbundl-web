@@ -19,7 +19,15 @@ import AddInvestmentForm from "./AddInvestmentForm";
 import { useState } from "react";
 
 const PortfolioForm = () => {
-  const [investments, setInvestments] = useState([
+  const [investments, setInvestments] = useState<
+    Array<{
+      company: string;
+      status: string;
+      investDate: string;
+      investedAmount: string;
+      round: string;
+    }>
+  >([
     {
       company: "Company A",
       status: "Active",
@@ -34,24 +42,7 @@ const PortfolioForm = () => {
       investedAmount: "300000",
       round: "Seed",
     },
-    {
-      company: "Company C",
-      status: "Active",
-      investDate: "2021-09-20",
-      investedAmount: "700000",
-      round: "Series B",
-    },
-    {
-      company: "Company D",
-      status: "Active",
-      investDate: "2023-03-01",
-      investedAmount: "600000",
-      round: "Series C",
-    },
   ]);
-
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 3;
 
   const handleAddInvestment = (newInvestment: {
     company: string;
@@ -60,21 +51,9 @@ const PortfolioForm = () => {
     investedAmount: string;
     round: string;
   }) => {
+    // Update investments state with the new investment
     setInvestments((prevInvestments) => [...prevInvestments, newInvestment]);
   };
-
-  // Sort investments by investDate before rendering
-  const sortedInvestments = investments.sort(
-    (a, b) =>
-      new Date(b.investDate).getTime() - new Date(a.investDate).getTime(),
-  );
-
-  // Pagination logic
-  const totalPages = Math.ceil(sortedInvestments.length / itemsPerPage);
-  const currentInvestments = sortedInvestments.slice(
-    (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage,
-  );
 
   return (
     <div className="main-div flex flex-col px-20 flex-wrap w-full items-center">
@@ -92,7 +71,7 @@ const PortfolioForm = () => {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {currentInvestments.map((investment) => (
+              {investments.map((investment) => (
                 <TableRow
                   key={investment.company}
                   className="grid grid-cols-6 gap-4"
@@ -115,30 +94,6 @@ const PortfolioForm = () => {
               ))}
             </TableBody>
           </Table>
-
-          {/* Pagination Controls */}
-          <div className="flex justify-between mt-4">
-            <Button
-              variant="outline"
-              onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
-              disabled={currentPage === 1}
-            >
-              Previous
-            </Button>
-            <span>
-              Page {currentPage} of {totalPages}
-            </span>
-            <Button
-              variant="outline"
-              onClick={() =>
-                setCurrentPage((prev) => Math.min(prev + 1, totalPages))
-              }
-              disabled={currentPage === totalPages}
-            >
-              Next
-            </Button>
-          </div>
-
           <Dialog>
             <DialogTrigger asChild>
               <Button type="button" className="w-full mt-4">
