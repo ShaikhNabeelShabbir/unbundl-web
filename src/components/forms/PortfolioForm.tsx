@@ -30,14 +30,14 @@ const PortfolioForm = () => {
   >([
     {
       company: "Company A",
-      status: "Active",
+      status: "Invested",
       investDate: "2023-01-15",
       investedAmount: "500000",
       round: "Series A",
     },
     {
       company: "Company B",
-      status: "Exited",
+      status: "Invested",
       investDate: "2022-05-10",
       investedAmount: "300000",
       round: "Seed",
