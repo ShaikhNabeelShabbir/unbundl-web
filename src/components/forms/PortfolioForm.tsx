@@ -55,6 +55,11 @@ const PortfolioForm = () => {
     setInvestments((prevInvestments) => [...prevInvestments, newInvestment]);
   };
 
+  // Sort investments by investDate before rendering
+  const sortedInvestments = investments.sort((a, b) =>
+    new Date(b.investDate).getTime() - new Date(a.investDate).getTime()
+  );
+
   return (
     <div className="main-div flex flex-col px-20 flex-wrap w-full items-center">
       <div className="py-[40px]">
@@ -71,7 +76,7 @@ const PortfolioForm = () => {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {investments.map((investment) => (
+              {sortedInvestments.map((investment) => (
                 <TableRow
                   key={investment.company}
                   className="grid grid-cols-6 gap-4"
