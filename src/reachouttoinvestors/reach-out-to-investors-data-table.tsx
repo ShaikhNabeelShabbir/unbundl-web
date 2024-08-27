@@ -58,7 +58,7 @@ export function ReachOutToInvestorDataTable<TData, TValue>({
 
   return (
     <>
-      <div className="flex items-center  w-full">
+      <div className="flex items-center my-5 w-full">
         <Input
           placeholder="Filter locations..."
           value={
@@ -67,9 +67,9 @@ export function ReachOutToInvestorDataTable<TData, TValue>({
           onChange={(event) =>
             table.getColumn("location")?.setFilterValue(event.target.value)
           }
-          className="w-full"
+          className="w-full bg-black/5"
         />
-        <Button className="w-[170px] h-11 ">Filters</Button>
+        <Button className="w-[170px] h-11 ml-5 ">Filters</Button>
       </div>
       <div className="rounded-md w-full">
         <Table className="w-full">
