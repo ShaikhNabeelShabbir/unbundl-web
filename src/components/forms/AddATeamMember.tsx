@@ -20,17 +20,7 @@ import {
 import { addTeamMemberSchema } from "@/schemas/addTeamMemberSchema";
 import { Button } from "../ui/button";
 
-interface AddATeamMemberProps {
-  data: Array<{ name: string; position: string; type: string; rights: string }>;
-  onAddMember: (member: {
-    name: string;
-    position: string;
-    type: string;
-    rights: string;
-  }) => void;
-}
-
-export function AddATeamMember({ onAddMember }: AddATeamMemberProps) {
+export function AddATeamMember() {
   // Set up the form using useForm hook
   const form = useForm<z.infer<typeof addTeamMemberSchema>>({
     resolver: zodResolver(addTeamMemberSchema),
@@ -45,7 +35,7 @@ export function AddATeamMember({ onAddMember }: AddATeamMemberProps) {
   // Define the submit handler
   function onSubmit(values: z.infer<typeof addTeamMemberSchema>) {
     // Call the onAddMember function passed from the parent
-    onAddMember(values);
+    console.log(values);
   }
 
   return (

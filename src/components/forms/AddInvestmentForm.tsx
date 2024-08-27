@@ -20,16 +20,6 @@ import {
   SelectValue,
 } from "../ui/select";
 
-// interface AddInvestmentFormProps {
-//   onAddInvestment: (investment: {
-//     company: string;
-//     status: string;
-//     investDate: string;
-//     investedAmount: string;
-//     round: string;
-//   }) => void;
-// }
-
 export function AddInvestmentForm() {
   const form = useForm<z.infer<typeof addInvestmentSchema>>({
     resolver: zodResolver(addInvestmentSchema),
