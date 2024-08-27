@@ -38,7 +38,7 @@ const Signup = () => {
 
   const handleNext = () => {
     setStep((prevStep) => {
-      if (prevStep === 7) {
+      if (prevStep === 8) {
         return 1; // Reset to step 1 after the last step
       }
       return prevStep + 1;
@@ -62,10 +62,10 @@ const Signup = () => {
         </div>
       </div>
       {/* Conditionally render the navbar based on the step */}
-      {step !== 7 && <Navbar setStep={setStep} currentStep={step} />}
+      {step !== 8 && <Navbar setStep={setStep} currentStep={step} />}
       {renderForm()}
       {/* Conditionally render the buttons based on the step */}
-      {step !== 7 && (
+      {step !== 8 && (
         <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px] bg-white">
           <Button className="flex text-base bg-gray-500" onClick={handleCancel}>
             Cancel
