@@ -236,7 +236,7 @@ const MyCompany: React.FC = () => {
                       <DialogTrigger asChild>
                         <Button
                           type="button"
-                          className="h-45 w-full text-sm px-4"
+                          className="h-45 w-fit text-sm px-4"
                         >
                           Add a team member
                         </Button>

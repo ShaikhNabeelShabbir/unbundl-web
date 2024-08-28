@@ -240,7 +240,7 @@ const MyPortfolio: React.FC = () => {
                   </Button>
                   <Dialog>
                     <DialogTrigger asChild>
-                      <Button type="button" className="w-full mt-4">
+                      <Button type="button" className="w-fit h-[46px] mr-3">
                         Add Investment
                       </Button>
                     </DialogTrigger>
@@ -276,7 +276,7 @@ const MyPortfolio: React.FC = () => {
                     <DialogTrigger asChild>
                       <Button
                         type="button"
-                        className="h-45 w-full text-sm px-4"
+                        className="h-45 w-fit text-sm px-4 h-[46px] mr-3"
                       >
                         Add a team member
                       </Button>
