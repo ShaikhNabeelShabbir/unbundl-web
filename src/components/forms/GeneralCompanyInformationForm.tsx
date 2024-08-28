@@ -234,14 +234,18 @@ export function GeneralCompanyInformationForm({
                       <Button type="button" className="space-x-5 h-45 w-88">
                         GitHub
                       </Button>
-                      <Dialog>
+                      <Dialog
+                        onOpenChange={(isOpen) => {
+                          if (!isOpen) setShowDropzone(false);
+                        }}
+                      >
                         <DialogTrigger asChild>
                           <Button
                             type="button"
                             className="h-45 w-fit text-sm px-4"
-                            onClick={() => setShowDropzone(!showDropzone)}
+                            onClick={() => setShowDropzone(true)}
                           >
-                            White Paper{" "}
+                            White Paper
                           </Button>
                         </DialogTrigger>
                         <DialogContent>
