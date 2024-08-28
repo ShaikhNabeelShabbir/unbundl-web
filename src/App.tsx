@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 import Signupforserviceproviders from "./pages/admin/signupforserviceproviders";
 import Signupfortalent from "./pages/admin/signupfortalent";
@@ -14,7 +14,28 @@ import AccountSettings from "./pages/startup/account-settings";
 const App: React.FC = () => {
   return (
     <Router>
-      <div>
+        
+              <Link to="/">Sign Up</Link>
+           
+              <Link to="/service-providers">Service Providers</Link>
+            
+              <Link to="/talent">Talent</Link>
+           
+              <Link to="/investor">Investor</Link>
+           
+              <Link to="/founder-dashboard">Founder Dashboard</Link>
+           
+              <Link to="/service-provider-dashboard">
+                Service Provider Dashboard
+              </Link>
+            
+              <Link to="/talent-dashboard">Talent Dashboard</Link>
+            
+              <Link to="/investor-dashboard">Investor Dashboard</Link>
+            
+              <Link to="/account-setting">Account Settings</Link>
+          
+
         <Routes>
           <Route path="/" element={<Signup />} />
           <Route
@@ -32,7 +53,6 @@ const App: React.FC = () => {
           <Route path="/investor-dashboard" element={<Investor />} />
           <Route path="/account-setting" element={<AccountSettings />} />
         </Routes>
-      </div>
     </Router>
   );
 };
