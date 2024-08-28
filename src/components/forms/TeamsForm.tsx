@@ -64,6 +64,7 @@ export const TeamsForm = () => {
           </DialogContent>
         </Dialog>
       </div>
+      <br />
     </div>
   );
 };
