@@ -1,16 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
-import React, { useState } from "react";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
+import React, { useEffect, useState } from "react";
 import { Card, CardHeader } from "@/components/ui/card";
-import { MoreHorizontal, Search } from "lucide-react";
+import { Search } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -20,64 +12,91 @@ import {
 } from "@/components/ui/dialog";
 import AddATeamMember from "@/components/forms/AddATeamMember";
 import AddInvestmentForm from "@/components/forms/AddInvestmentForm";
+import { InvestmentDataTable } from "@/investments/investment-data-table";
+import { columns, Investment } from "@/investments/investment-columns";
+import { TeamsDataTable } from "@/teams/teams-data-table";
+import { teamscolumns, Teams } from "@/teams/teams-columns";
 
 const MyPortfolio: React.FC = () => {
-  const [investments, setInvestments] = useState<
-    Array<{
-      company: string;
-      status: string;
-      investDate: string;
-      investedAmount: string;
-      round: string;
-    }>
-  >([
-    {
-      company: "Company A",
-      status: "Active",
-      investDate: "2023-01-15",
-      investedAmount: "500000",
-      round: "Series A",
-    },
-    {
-      company: "Company B",
-      status: "Exited",
-      investDate: "2022-05-10",
-      investedAmount: "300000",
-      round: "Seed",
-    },
-  ]);
+  async function fetchData(): Promise<Investment[]> {
+    return [
+      {
+        companyName: "Company A",
+        status: "Invested",
+        dateofInvestment: "2023-01-15",
+        amountInvested: "500000",
+        investmentRound: "Series A",
+      },
+      {
+        companyName: "Company B",
+        status: "Invested",
+        dateofInvestment: "2022-05-10",
+        amountInvested: "300000",
+        investmentRound: "Seed",
+      },
+      {
+        companyName: "Company Nab",
+        status: "Invested",
+        dateofInvestment: "2024-05-10",
+        amountInvested: "300000",
+        investmentRound: "Seed",
+      },
+      {
+        companyName: "Company JU",
+        status: "Invested",
+        dateofInvestment: "2023-05-10",
+        amountInvested: "300000",
+        investmentRound: "Seed",
+      },
+    ];
+  }
+  async function fetchTeamsData(): Promise<Teams[]> {
+    return [
+      {
+        name: "John Doe",
+        position: "CEO",
+        types: "Full-time",
+        rights: "Admin",
+      },
+      {
+        name: "Nabeel ",
+        position: "Developer",
+        types: "Full-time",
+        rights: "Developer",
+      },
 
-  const handleAddInvestment = (newInvestment: {
-    company: string;
-    status: string;
-    investDate: string;
-    investedAmount: string;
-    round: string;
-  }) => {
-    // Update investments state with the new investment
-    setInvestments((prevInvestments) => [...prevInvestments, newInvestment]);
-  };
+      {
+        name: "Jane Smith",
+        position: "CTO",
+        types: "Full-time",
+        rights: "Managing partner",
+      },
+    ];
+  }
 
-  const [teamMembers, setTeamMembers] = useState<
-    Array<{ name: string; position: string; type: string; rights: string }>
-  >([
-    { name: "John Doe", position: "CEO", type: "Full-time", rights: "Admin" },
-    {
-      name: "Jane Smith",
-      position: "CTO",
-      type: "Full-time",
-      rights: "Managing partner",
-    },
-  ]);
-  const handleAddMember = (newMember: {
-    name: string;
-    position: string;
-    type: string;
-    rights: string;
-  }) => {
-    // Update teamMembers state with the new member
-    setTeamMembers((prevMembers) => [...prevMembers, newMember]);
-  };
+  const [data, setData] = useState<Investment[]>([]);
+
+  useEffect(() => {
+    // Fetch data on component mount
+    const loadData = async () => {
+      const investments = await fetchData();
+      setData(investments);
+    };
+
+    loadData();
+  }, []);
+
+  const [teamsData, setTeamsData] = useState<Teams[]>([]);
+
+  useEffect(() => {
+    // Fetch data on component mount
+    const loadData = async () => {
+      const teams = await fetchTeamsData();
+      setTeamsData(teams);
+    };
+
+    loadData();
+  }, []);
   return (
     <div className="flex flex-wrap m-8">
       <div className="flex-1 py-[97px]">
@@ -221,7 +240,7 @@ const MyPortfolio: React.FC = () => {
                   </Button>
                   <Dialog>
                     <DialogTrigger asChild>
-                      <Button type="button" className="w-[140px] h-[46px] mr-3">
+                      <Button type="button" className="w-full mt-4">
                         Add Investment
                       </Button>
                     </DialogTrigger>
@@ -231,43 +250,11 @@ const MyPortfolio: React.FC = () => {
                           Add Investment Form
                         </DialogTitle>
                       </DialogHeader>
-                      <AddInvestmentForm
-                        onAddInvestment={handleAddInvestment}
-                      />
+                      <AddInvestmentForm />
                     </DialogContent>
                   </Dialog>
                 </div>
-                <Table className=" bg-black/5">
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead className="w-[110px]">Company/Fund</TableHead>
-                      <TableHead>Status</TableHead>
-                      <TableHead>Invest Date</TableHead>
-                      <TableHead className="text-right">Invested</TableHead>
-                      <TableHead>Round</TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    {investments.map((investment) => (
-                      <TableRow key={investment.company}>
-                        <TableCell className="font-medium">
-                          {investment.company}
-                        </TableCell>
-                        <TableCell>{investment.status}</TableCell>
-                        <TableCell>{investment.investDate}</TableCell>
-                        <TableCell className="text-right">
-                          {investment.investedAmount}
-                        </TableCell>
-                        <TableCell>{investment.round}</TableCell>
-                        <TableCell className="text-right">
-                          <Button variant="ghost" className="h-8 w-8 p-0">
-                            <MoreHorizontal className="h-5 w-5" />
-                          </Button>
-                        </TableCell>
-                      </TableRow>
-                    ))}
-                  </TableBody>
-                </Table>
+                <InvestmentDataTable columns={columns} data={data} />
               </div>
               <div className="pt-8">
                 {" "}
@@ -287,7 +274,10 @@ const MyPortfolio: React.FC = () => {
                   </Button>
                   <Dialog>
                     <DialogTrigger asChild>
-                      <Button type="button" className="w-[140px] h-[46px] mr-3">
+                      <Button
+                        type="button"
+                        className="h-45 w-full text-sm px-4"
+                      >
                         Add a team member
                       </Button>
                     </DialogTrigger>
@@ -297,35 +287,11 @@ const MyPortfolio: React.FC = () => {
                           Add a team member
                         </DialogTitle>
                       </DialogHeader>
-                      <AddATeamMember
-                        data={teamMembers}
-                        onAddMember={handleAddMember}
-                      />
+                      <AddATeamMember />
                     </DialogContent>
                   </Dialog>
                 </div>
-                <Table className="border bg-black/5">
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead className="w-[100px]">Name</TableHead>
-                      <TableHead>Position</TableHead>
-                      <TableHead>Type</TableHead>
-                      <TableHead>Right</TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    {teamMembers.map((investmentTeam) => (
-                      <TableRow key={investmentTeam.name}>
-                        <TableCell className="font-medium">
-                          {investmentTeam.name}
-                        </TableCell>
-                        <TableCell>{investmentTeam.position}</TableCell>
-                        <TableCell>{investmentTeam.type}</TableCell>
-                        <TableCell>{investmentTeam.rights}</TableCell>
-                      </TableRow>
-                    ))}
-                  </TableBody>
-                </Table>
+                <TeamsDataTable columns={teamscolumns} data={teamsData} />
               </div>
               {/* {DND} */}
             </div>

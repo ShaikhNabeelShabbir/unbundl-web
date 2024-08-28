@@ -14,7 +14,7 @@ import { teamsTableSchema } from "@/schemas/teamsTableSchema";
 
 export type Teams = z.infer<typeof teamsTableSchema>;
 
-export const columns: ColumnDef<Teams>[] = [
+export const teamscolumns: ColumnDef<Teams>[] = [
   {
     accessorKey: "name",
     header: " Name",

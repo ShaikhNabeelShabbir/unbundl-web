@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Table,
   TableBody,
@@ -26,6 +26,8 @@ import Update from "./update";
 import TeamNavbar from "@/components/team-navbar";
 import AddATeamMember from "@/components/forms/AddATeamMember";
 import ProgressBar from "@/components/progress-bar";
+import { TeamsDataTable } from "@/teams/teams-data-table";
+import { teamscolumns, Teams } from "@/teams/teams-columns";
 
 const invoices = [
   {
@@ -46,28 +48,36 @@ const investments = [
     Ownership: "80.00%",
   },
 ];
+async function fetchData(): Promise<Teams[]> {
+  return [
+    { name: "John Doe", position: "CEO", types: "Full-time", rights: "Admin" },
+    {
+      name: "Nabeel ",
+      position: "Developer",
+      types: "Full-time",
+      rights: "Developer",
+    },
 
-const MyCompany: React.FC = () => {
-  const [teamMembers, setTeamMembers] = useState<
-    Array<{ name: string; position: string; type: string; rights: string }>
-  >([
-    { name: "John Doe", position: "CEO", type: "Full-time", rights: "Admin" },
     {
       name: "Jane Smith",
       position: "CTO",
-      type: "Full-time",
+      types: "Full-time",
       rights: "Managing partner",
     },
-  ]);
-  const handleAddMember = (newMember: {
-    name: string;
-    position: string;
-    type: string;
-    rights: string;
-  }) => {
-    // Update teamMembers state with the new member
-    setTeamMembers((prevMembers) => [...prevMembers, newMember]);
-  };
+  ];
+}
+const MyCompany: React.FC = () => {
+  const [data, setData] = useState<Teams[]>([]);
+
+  useEffect(() => {
+    // Fetch data on component mount
+    const loadData = async () => {
+      const investments = await fetchData();
+      setData(investments);
+    };
+
+    loadData();
+  }, []);
   const [updates, setUpdates] = useState([
     {
       date: "Nov. 27 2022",
@@ -226,7 +236,7 @@ const MyCompany: React.FC = () => {
                       <DialogTrigger asChild>
                         <Button
                           type="button"
-                          className="h-45 w-fit text-sm px-4"
+                          className="h-45 w-full text-sm px-4"
                         >
                           Add a team member
                         </Button>
@@ -237,48 +247,13 @@ const MyCompany: React.FC = () => {
                             Add a team member
                           </DialogTitle>
                         </DialogHeader>
-                        <AddATeamMember
-                          data={teamMembers}
-                          onAddMember={handleAddMember}
-                        />
+                        <AddATeamMember />
                       </DialogContent>
                     </Dialog>
                   </div>
                 </div>
 
-                <Table className="border bg-black/5">
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead className="w-1/5">Name</TableHead>
-                      <TableHead className="w-1/5">Position</TableHead>
-                      <TableHead className="w-1/5">Type</TableHead>
-                      <TableHead className="w-1/5 text-right">Rights</TableHead>
-                      <TableHead className="w-1/5"></TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    {teamMembers.map((member) => (
-                      <TableRow key={member.name}>
-                        <TableCell className="font-medium w-1/5">
-                          {member.name}
-                        </TableCell>
-                        <TableCell className="w-1/5">
-                          {member.position}
-                        </TableCell>
-                        <TableCell className="w-1/5">{member.type}</TableCell>
-                        <TableCell className="text-right w-1/5">
-                          {member.rights}
-                        </TableCell>
-                        <TableCell className="text-right w-1/5">
-                          <Button
-                            variant="ghost"
-                            className="h-8 w-8 p-0"
-                          ></Button>
-                        </TableCell>
-                      </TableRow>
-                    ))}
-                  </TableBody>
-                </Table>
+                <TeamsDataTable columns={teamscolumns} data={data} />
               </div>
               <div className="pt-8">
                 <div className="flex justify-between items-center">

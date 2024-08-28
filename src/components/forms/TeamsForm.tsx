@@ -10,7 +10,7 @@ import AddATeamMember from "./AddATeamMember";
 
 import { useEffect, useState } from "react";
 import { TeamsDataTable } from "@/teams/teams-data-table";
-import { columns, Teams } from "@/teams/teams-columns";
+import { teamscolumns, Teams } from "@/teams/teams-columns";
 async function fetchData(): Promise<Teams[]> {
   return [
     { name: "John Doe", position: "CEO", types: "Full-time", rights: "Admin" },
@@ -36,8 +36,8 @@ export const TeamsForm = () => {
   useEffect(() => {
     // Fetch data on component mount
     const loadData = async () => {
-      const investments = await fetchData();
-      setData(investments);
+      const teams = await fetchData();
+      setData(teams);
     };
 
     loadData();
@@ -46,7 +46,7 @@ export const TeamsForm = () => {
     <div className="main-div flex flex-col px-20 flex-wrap w-full items-center ">
       <div className="py-16">
         {" "}
-        <TeamsDataTable columns={columns} data={data} />
+        <TeamsDataTable columns={teamscolumns} data={data} />
         <br />
         <Dialog>
           <DialogTrigger asChild>
