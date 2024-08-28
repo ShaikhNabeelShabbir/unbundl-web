@@ -242,7 +242,7 @@ export function GeneralCompanyInformationForm({
                         <DialogTrigger asChild>
                           <Button
                             type="button"
-                            className="h-45 w-fit text-sm px-4"
+                            className="h-full w-fit text-sm px-4"
                             onClick={() => setShowDropzone(true)}
                           >
                             White Paper
@@ -260,10 +260,10 @@ export function GeneralCompanyInformationForm({
                         <DialogTrigger asChild>
                           <Button
                             type="button"
-                            className="h-45 w-fit text-sm px-4"
+                            className="h-full w-fit text-sm px-4"
                             onClick={() => setShowDropzone(true)}
                           >
-                            White Paper
+                            Pitch Deck{" "}
                           </Button>
                         </DialogTrigger>
                         <DialogContent>
