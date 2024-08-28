@@ -29,7 +29,14 @@ export function GeneralCompanyInformationForm({
 }: {
   onNext: () => void;
 }) {
-  const [showDropzone, setShowDropzone] = useState(false);
+  const [showDropzone, setShowDropzone] = useState({
+    whitepaper: false,
+    pitchDeck: false,
+  });
+  const [uploadedFiles, setUploadedFiles] = useState<{
+    whitepaper?: File[];
+    pitchDeck?: File[];
+  }>({});
 
   // Set up the form using useForm hook
   const form = useForm<z.infer<typeof generalCompanySchema>>({
@@ -55,6 +62,14 @@ export function GeneralCompanyInformationForm({
     onNext(); // Call onNext to move to the next step
   }
 
+  // Handle file drop
+  const handleDrop =
+    (fileType: "whitepaper" | "pitchDeck") => (acceptedFiles: File[]) => {
+      setUploadedFiles((prev) => ({
+        ...prev,
+        [fileType]: acceptedFiles,
+      }));
+    };
   return (
     <div>
       <div className="main-div flex flex-col px-20 flex-wrap w-full items-center ">
@@ -234,40 +249,96 @@ export function GeneralCompanyInformationForm({
                       <Button type="button" className="space-x-5 h-45 w-88">
                         GitHub
                       </Button>
+
                       <Dialog
                         onOpenChange={(isOpen) => {
-                          if (!isOpen) setShowDropzone(false);
+                          if (!isOpen)
+                            setShowDropzone((prev) => ({
+                              ...prev,
+                              whitepaper: false,
+                            }));
                         }}
                       >
                         <DialogTrigger asChild>
                           <Button
                             type="button"
-                            className="h-full w-fit text-sm px-4"
-                            onClick={() => setShowDropzone(true)}
+                            className="h-45 w-fit text-sm px-4"
+                            onClick={() =>
+                              setShowDropzone((prev) => ({
+                                ...prev,
+                                whitepaper: true,
+                              }))
+                            }
                           >
                             White Paper
                           </Button>
                         </DialogTrigger>
                         <DialogContent>
-                          {showDropzone && <FileDropzone />}
+                          {showDropzone.whitepaper && (
+                            <div>
+                              <FileDropzone onDrop={handleDrop("whitepaper")} />
+                              {uploadedFiles.whitepaper &&
+                                uploadedFiles.whitepaper.map((file) => (
+                                  <div
+                                    key={file.name}
+                                    className="flex items-center space-x-2 "
+                                  >
+                                    <img
+                                      src="/path/to/file-icon.png"
+                                      alt="File icon"
+                                      className="w-6 h-6"
+                                    />
+                                    <span>{file.name}</span>
+                                  </div>
+                                ))}
+                            </div>
+                          )}
                         </DialogContent>
                       </Dialog>
+
                       <Dialog
                         onOpenChange={(isOpen) => {
-                          if (!isOpen) setShowDropzone(false);
+                          if (!isOpen)
+                            setShowDropzone((prev) => ({
+                              ...prev,
+                              whitepaper: false,
+                            }));
                         }}
                       >
                         <DialogTrigger asChild>
                           <Button
                             type="button"
-                            className="h-full w-fit text-sm px-4"
-                            onClick={() => setShowDropzone(true)}
+                            className="h-45 w-fit text-sm px-4"
+                            onClick={() =>
+                              setShowDropzone((prev) => ({
+                                ...prev,
+                                whitepaper: true,
+                              }))
+                            }
                           >
                             Pitch Deck{" "}
                           </Button>
                         </DialogTrigger>
                         <DialogContent>
-                          {showDropzone && <FileDropzone />}
+                          {showDropzone.whitepaper && (
+                            <div>
+                              <FileDropzone onDrop={handleDrop("whitepaper")} />
+                              {uploadedFiles.whitepaper &&
+                                uploadedFiles.whitepaper.map((file) => (
+                                  <div
+                                    key={file.name}
+                                    className="flex items-center space-x-2"
+                                  >
+                                    <img
+                                      src="/path/to/file-icon.png"
+                                      alt="File icon"
+                                      className="w-6 h-6"
+                                    />
+                                    <span>{file.name}</span>
+                                  </div>
+                                ))}
+                            </div>
+                          )}
                         </DialogContent>
                       </Dialog>
                     </div>

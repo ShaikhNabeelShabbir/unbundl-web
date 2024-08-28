@@ -1,20 +1,11 @@
-import { FileRejection, useDropzone } from "react-dropzone";
+import { useDropzone } from "react-dropzone";
 import { MAX_FILE_SIZE_MB, ALLOWED_FILE_FORMATS } from "@/constants";
 
-function FileDropzone() {
-  const onDrop = (acceptedFiles: File[], fileRejections: FileRejection[]) => {
-    acceptedFiles.forEach((file) => {
-      console.log("Accepted file:", file);
-    });
+interface FileDropzoneProps {
+  onDrop: (acceptedFiles: File[]) => void;
+}
 
-    fileRejections.forEach((rejection) => {
-      console.log("Rejected file:", rejection.file);
-      rejection.errors.forEach((error) => {
-        console.log("Error:", error.message);
-      });
-    });
-  };
-
+const FileDropzone: React.FC<FileDropzoneProps> = ({ onDrop }) => {
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
     accept: ALLOWED_FILE_FORMATS,
@@ -22,15 +13,18 @@ function FileDropzone() {
   });
 
   return (
-    <div {...getRootProps()} className="dropzone">
+    <div {...getRootProps({ className: "dropzone" })}>
       <input {...getInputProps()} />
       {isDragActive ? (
         <p>Drop the files here...</p>
       ) : (
-        <p>Drag & drop some files here, or click to select files</p>
+        <p>
+          Drag & drop some files here, or click to <u>select files </u>
+        </p>
       )}
+      <br />
     </div>
   );
-}
+};
 
 export default FileDropzone;

@@ -18,4 +18,5 @@ export const ALLOWED_FILE_FORMATS: { [key: string]: string[] } = {
   ],
   "image/jpeg": [".jpg", ".jpeg"],
   "image/png": [".png"],
+  "application/pdf": [".pdf"], // Added PDF support
 };
