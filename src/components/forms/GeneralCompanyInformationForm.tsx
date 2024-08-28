@@ -20,12 +20,17 @@ import {
   SelectValue,
 } from "../ui/select";
 import { Textarea } from "../ui/textarea";
+import { useState } from "react";
+import FileDropzone from "../FileDropZone";
+import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
 
 export function GeneralCompanyInformationForm({
   onNext,
 }: {
   onNext: () => void;
 }) {
+  const [showDropzone, setShowDropzone] = useState(false);
+
   // Set up the form using useForm hook
   const form = useForm<z.infer<typeof generalCompanySchema>>({
     resolver: zodResolver(generalCompanySchema),
@@ -229,9 +234,20 @@ export function GeneralCompanyInformationForm({
                       <Button type="button" className="space-x-5 h-45 w-88">
                         GitHub
                       </Button>
-                      <Button type="button" className="space-x-5 h-45 w-88">
-                        Whitepaper
-                      </Button>
+                      <Dialog>
+                        <DialogTrigger asChild>
+                          <Button
+                            type="button"
+                            className="h-45 w-fit text-sm px-4"
+                            onClick={() => setShowDropzone(!showDropzone)}
+                          >
+                            White Paper{" "}
+                          </Button>
+                        </DialogTrigger>
+                        <DialogContent>
+                          {showDropzone && <FileDropzone />}
+                        </DialogContent>
+                      </Dialog>
                       <Button className="space-x-5 h-45 w-88">
                         Pitch Deck
                       </Button>
