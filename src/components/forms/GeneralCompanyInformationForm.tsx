@@ -281,7 +281,7 @@ export function GeneralCompanyInformationForm({
                                 uploadedFiles.whitepaper.map((file) => (
                                   <div
                                     key={file.name}
-                                    className="flex items-center space-x-2 bg-black/5 border mt-2"
+                                    className="flex items-center space-x-2 bg-black/5 border mt-5"
                                   >
                                     <span className="mx-5 rounded-md">
                                       {file.name}
