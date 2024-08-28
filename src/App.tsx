@@ -6,10 +6,10 @@ import Signupfortalent from "./pages/admin/signupfortalent";
 import Signupforinvestor from "./pages/admin/signupforinvestor";
 import Signup from "./pages/admin/signup";
 import Founderdashboard from "./pages/startup/founder";
-import ServiceProvider from "./pages/startup/service-provider";
 import Talentdashboard from "./pages/startup/talent";
 import Investor from "./pages/startup/investor";
 import AccountSettings from "./pages/startup/account-settings";
+import ServiceProvider from "./pages/startup/service-provider";
 
 const App: React.FC = () => {
   return (
