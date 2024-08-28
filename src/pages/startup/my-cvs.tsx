@@ -1,11 +1,3 @@
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import {
   Select,
@@ -14,20 +6,34 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import React from "react";
-import { MoreHorizontal } from "lucide-react";
+import React, { useEffect, useState } from "react";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import { CreateCV } from "@/components/create-cv";
+import CreateNewService from "@/components/create-new-service";
+import { columns, ServicesProviders } from "@/services/services-column";
+import { ServicesDataTable } from "@/services/services-data-table";
 
-const investments = [
-  {
-    name: "Company A",
-    impression: "0",
-    clicks: "0",
-    calls: "0",
-  },
-];
+async function fetchData(): Promise<ServicesProviders[]> {
+  return [
+    {
+      name: "Company Nabeel",
+      impression: 0,
+      clicks: 0,
+      calls: 0,
+    },
+  ];
+}
 const MyCvs: React.FC = () => {
+  const [data, setData] = useState<ServicesProviders[]>([]);
+
+  useEffect(() => {
+    // Fetch data on component mount
+    const loadData = async () => {
+      const investments = await fetchData();
+      setData(investments);
+    };
+
+    loadData();
+  }, []);
   return (
     <div className="flex flex-wrap m-8">
       <div className="flex-1 py-[97px]">
@@ -45,27 +51,42 @@ const MyCvs: React.FC = () => {
                   className="p-5 hover:underline font-medium text-md"
                   variant="ghost"
                 >
+                  Pending Approval
+                </Button>
+                <Button
+                  className="p-5 hover:underline font-medium text-md"
+                  variant="ghost"
+                >
+                  Draft
+                </Button>
+                <Button
+                  className="p-5 hover:underline font-medium text-md"
+                  variant="ghost"
+                >
                   Paused
                 </Button>
               </div>
-              <div className="pt-3 ml-auto">
+              <div className="pt-3 ml-auto border ">
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Button type="button" className="h-45 w-88 text-sm ml-auto">
-                      Create New CV
+                    <Button
+                      type="button"
+                      className="h-11 w-22 text-sm mr-25 ml-auto"
+                    >
+                      Add your service
                     </Button>
                   </DialogTrigger>
                   <DialogContent className="sm:max-w-[600px]">
-                    <CreateCV />
+                    <CreateNewService />
                   </DialogContent>
                 </Dialog>
               </div>
             </div>
-            <div className="mt-4 ml-5 w-full h-8  font-semibold text-lg flex flex-row">
+            <div className="mt-4 ml-5 w-full h-8 font-semibold text-lg flex flex-row">
               <div>Active Services </div>
               <div className="ml-auto mr-5">
                 <Select>
-                  <SelectTrigger className="w-[200px] h-8 bg-transparent">
+                  <SelectTrigger className="w-[200px] h-[32px] bg-transparent">
                     <SelectValue placeholder="Dubai" />
                   </SelectTrigger>
                   <SelectContent>
@@ -76,36 +97,8 @@ const MyCvs: React.FC = () => {
                 </Select>
               </div>
             </div>
-            <div className="mt-8 w-full h-fit border">
-              <Table>
-                <TableHeader>
-                  <TableRow>
-                    <TableHead className="w-[110px]">Name</TableHead>
-                    <TableHead>Impression</TableHead>
-                    <TableHead>Clicks</TableHead>
-                    <TableHead className="text-right">Calls</TableHead>
-                  </TableRow>
-                </TableHeader>
-                <TableBody>
-                  {investments.map((investment) => (
-                    <TableRow key={investment.name}>
-                      <TableCell className="font-medium">
-                        {investment.name}
-                      </TableCell>
-                      <TableCell>{investment.impression}</TableCell>
-                      <TableCell>{investment.clicks}</TableCell>
-                      <TableCell className="text-right">
-                        {investment.calls}
-                      </TableCell>
-                      <TableCell className="text-right">
-                        <Button variant="ghost" className="h-8 w-8 p-0">
-                          <MoreHorizontal className="h-5 w-5" />
-                        </Button>
-                      </TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
+            <div className="mt-8  w-full h-fit border">
+              <ServicesDataTable columns={columns} data={data} />
             </div>
           </div>
         </div>
