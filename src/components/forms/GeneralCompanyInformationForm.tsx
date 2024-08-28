@@ -252,9 +252,24 @@ export function GeneralCompanyInformationForm({
                           {showDropzone && <FileDropzone />}
                         </DialogContent>
                       </Dialog>
-                      <Button className="space-x-5 h-45 w-88">
-                        Pitch Deck
-                      </Button>
+                      <Dialog
+                        onOpenChange={(isOpen) => {
+                          if (!isOpen) setShowDropzone(false);
+                        }}
+                      >
+                        <DialogTrigger asChild>
+                          <Button
+                            type="button"
+                            className="h-45 w-fit text-sm px-4"
+                            onClick={() => setShowDropzone(true)}
+                          >
+                            White Paper
+                          </Button>
+                        </DialogTrigger>
+                        <DialogContent>
+                          {showDropzone && <FileDropzone />}
+                        </DialogContent>
+                      </Dialog>
                     </div>
                   </div>
 
