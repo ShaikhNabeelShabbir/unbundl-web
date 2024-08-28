@@ -324,11 +324,6 @@ export function GeneralCompanyInformationForm({
                                     key={file.name}
                                     className="flex items-center space-x-2"
                                   >
-                                    <img
-                                      src="/path/to/file-icon.png"
-                                      alt="File icon"
-                                      className="w-6 h-6"
-                                    />
                                     <span>{file.name}</span>
                                   </div>
                                 ))}
