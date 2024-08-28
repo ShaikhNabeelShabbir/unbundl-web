@@ -11,6 +11,7 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import CreateNewService from "@/components/create-new-service";
 import { columns, ServicesProviders } from "@/services/services-column";
 import { ServicesDataTable } from "@/services/services-data-table";
+import CreateCV from "@/components/create-cv";
 
 async function fetchData(): Promise<ServicesProviders[]> {
   return [
@@ -73,11 +74,11 @@ const MyCvs: React.FC = () => {
                       type="button"
                       className="h-11 w-22 text-sm mr-25 ml-auto"
                     >
-                      Add your service
+                      Create New CV
                     </Button>
                   </DialogTrigger>
                   <DialogContent className="sm:max-w-[600px]">
-                    <CreateNewService />
+                    <CreateCV />
                   </DialogContent>
                 </Dialog>
               </div>
