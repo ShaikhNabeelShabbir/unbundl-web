@@ -262,7 +262,7 @@ export function GeneralCompanyInformationForm({
                         <DialogTrigger asChild>
                           <Button
                             type="button"
-                            className="h-45 w-fit text-sm px-4"
+                            className="h-50 w-fit text-sm px-4"
                             onClick={() =>
                               setShowDropzone((prev) => ({
                                 ...prev,
@@ -281,9 +281,11 @@ export function GeneralCompanyInformationForm({
                                 uploadedFiles.whitepaper.map((file) => (
                                   <div
                                     key={file.name}
-                                    className="flex items-center space-x-2 border border-black "
+                                    className="flex items-center space-x-2 bg-black/5 border mt-2"
                                   >
-                                    <span>{file.name}</span>
+                                    <span className="mx-5 rounded-md">
+                                      {file.name}
+                                    </span>
                                   </div>
                                 ))}
                             </div>
