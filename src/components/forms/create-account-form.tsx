@@ -39,10 +39,9 @@ export function CreateAccountForm({ onNext }: { onNext: () => void }) {
     <div className="main-div flex flex-col w-full items-center px-4 sm:px-10 lg:px-20">
       <div className="flex flex-col lg:flex-row py-10 px-2 sm:px-5">
         <div className="lg:w-[260px] h-auto lg:h-[168px] font-normal text-base text-justify text-black/50 lg:py-16 mb-6 lg:mb-0">
-          Let us know a bit more about you, and
-          <br /> please provide some social links, so we can run a small
-          background check on you. <br /> <br />
-          It’s very important for us to make the
+          Let us know a bit more about you, and please provide some social
+          links, so we can run a small background check on you. It’s very
+          important for us to make the
           <br /> experience on the platform exclusive,
           <br /> where every member brings value
         </div>
