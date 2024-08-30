@@ -35,13 +35,14 @@ export const Signupfortalent = () => {
   };
 
   return (
-    <div className="main-div flex flex-col min-h-screenflex-wrap">
-      <div className="flex gap-6 px-[100px] ">
-        <div className="flex flex-row py-[40px] px-[100px] font-semibold w-82 h-24 text-lg">
-          Unbundl
-          <div className="px-3 font-medium">
-            <a href="" className="py-11 text-gray-500 text-sm">
-              SignUp for Talent
+    <div className="main-div flex flex-col min-h-screen w-full">
+      {/* Header Section */}
+      <div className="flex gap-6 px-4 sm:px-8 lg:px-[100px]">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center py-4 sm:py-8 w-full sm:w-auto font-semibold text-lg">
+          <span>Unbundl</span>
+          <div className="px-0 sm:px-3 font-medium">
+            <a href="#" className="text-gray-500 text-sm">
+              SignUp for Service Providers
             </a>
           </div>
         </div>
