@@ -10,7 +10,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { addInvestmentSchema } from "@/schemas/addInvestmentSchema";
+import { addInvestmentSchema } from "@/schemas/add-investment-schema";
 import { Button } from "../ui/button";
 import {
   Select,

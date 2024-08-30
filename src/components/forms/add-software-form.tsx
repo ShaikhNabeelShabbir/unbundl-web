@@ -17,7 +17,7 @@ import {
   SelectContent,
   SelectItem,
 } from "@/components/ui/select"; // Assuming you're using a custom wrapper around Radix UI's Select
-import { addSoftwareSchema } from "@/schemas/addSoftwareSchema";
+import { addSoftwareSchema } from "@/schemas/add-software-schema";
 import { Button } from "../ui/button";
 import {
   Dialog,

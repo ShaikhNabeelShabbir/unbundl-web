@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import Signupforserviceproviders from "./pages/admin/signupforserviceproviders";
-import Signupfortalent from "./pages/admin/signupfortalent";
-import Signupforinvestor from "./pages/admin/signupforinvestor";
+import Signupforserviceproviders from "./pages/admin/signup-for-service-providers";
+import Signupfortalent from "./pages/admin/signup-for-talent";
+import Signupforinvestor from "./pages/admin/sign-up-for-investor";
 import Signup from "./pages/admin/signup";
 import Founderdashboard from "./pages/startup/founder";
 import Talentdashboard from "./pages/startup/talent";
