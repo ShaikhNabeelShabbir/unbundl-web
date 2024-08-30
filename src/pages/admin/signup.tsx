@@ -50,27 +50,39 @@ const Signup = () => {
   };
 
   return (
-    <div className="main-div flex flex-wrap flex-col min-h-screen ">
-      <div className="flex gap-6 px-[100px] ">
-        <div className="flex flex-row py-[40px] px-[100px] font-semibold w-82 h-24 text-lg">
-          Unbundl
-          <div className="px-3 font-medium">
-            <a href="" className="py-11 text-gray-500 text-sm">
+    <div className="main-div flex flex-col min-h-screen w-full ">
+      {/* Header Section */}
+      <div className="flex gap-6 px-4 sm:px-8 lg:px-[100px] py-4">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center py-4 sm:py-8 w-full sm:w-auto font-semibold text-lg">
+          <span>Unbundl</span>
+          <div className="px-0 sm:px-3 font-medium">
+            <a href="#" className="text-gray-500 text-sm">
               SignUp for founders
             </a>
           </div>
         </div>
       </div>
+
       {/* Conditionally render the navbar based on the step */}
       {step !== 8 && <Navbar setStep={setStep} currentStep={step} />}
-      {renderForm()}
+
+      {/* Form Section */}
+      <div className="px-4 sm:px-8 lg:px-12">{renderForm()}</div>
+
       {/* Conditionally render the buttons based on the step */}
       {step !== 8 && (
-        <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px] bg-white">
-          <Button className="flex text-base bg-gray-500" onClick={handleCancel}>
+        <div className="fixed bottom-0 left-0 right-0 z-50 py-4 flex justify-between sm:justify-center gap-4 bg-white px-4 sm:px-8 lg:px-[233px]">
+          <Button
+            className="flex text-base bg-gray-500"
+            onClick={handleCancel}
+          >
             Cancel
           </Button>
-          <Button className="flex text-base" type="submit" form="signupForm">
+          <Button
+            className="flex text-base"
+            type="submit"
+            form="signupForm"
+          >
             Next Step
           </Button>
         </div>
