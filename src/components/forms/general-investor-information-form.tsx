@@ -47,9 +47,9 @@ export function GeneralInvestorInformationForm({
 
   return (
     <div>
-      <div className="main-div flex flex-col px-20 flex-wrap w-full items-center ">
-        <div className="px-[440px] ">
-          <div className="justify-center  w-[560px] py-[40px]">
+    <div className="main-div flex flex-col px-4 md:px-20 w-full items-center">
+      <div className="flex flex-col md:flex-row py-10 md:px-5 flex-grow">
+        <div className="justify-center w-full md:w-[560px] py-2">
             <Form {...form}>
               <form
                 id="signupForm"

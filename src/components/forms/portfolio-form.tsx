@@ -62,26 +62,28 @@ const PortfolioForm = () => {
   }, []);
 
   return (
-    <div className="main-div flex flex-col px-20 flex-wrap w-full items-center">
-      <div className="py-[40px]">
-        <div className="px-[165px] w-full">
-          <InvestmentDataTable columns={columns} data={data} />
+    <div>
+      <div className="main-div flex flex-col px-4 md:px-20 w-full items-center">
+        <div className="flex flex-col md:flex-row py-10 md:px-5 flex-grow">
+          <div className="justify-center w-full md:w-[560px] py-2">
+            <InvestmentDataTable columns={columns} data={data} />
 
-          <Dialog>
-            <DialogTrigger asChild>
-              <Button type="button" className="w-full mt-4">
-                Add Investment
-              </Button>
-            </DialogTrigger>
-            <DialogContent className="sm:max-w-[600px]">
-              <DialogHeader>
-                <DialogTitle className="font-semibold text-xl">
-                  Add Investment Form
-                </DialogTitle>
-              </DialogHeader>
-              <AddInvestmentForm />
-            </DialogContent>
-          </Dialog>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button type="button" className="w-full mt-4">
+                  Add Investment
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-[600px]">
+                <DialogHeader>
+                  <DialogTitle className="font-semibold text-xl">
+                    Add Investment Form
+                  </DialogTitle>
+                </DialogHeader>
+                <AddInvestmentForm />
+              </DialogContent>
+            </Dialog>
+          </div>
         </div>
       </div>
       <br />

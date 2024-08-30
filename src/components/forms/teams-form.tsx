@@ -43,28 +43,32 @@ export const TeamsForm = () => {
     loadData();
   }, []);
   return (
-    <div className="main-div flex flex-col px-20 flex-wrap w-full items-center ">
-      <div className="py-16">
-        {" "}
-        <TeamsDataTable columns={teamscolumns} data={data} />
-        <br />
-        <Dialog>
-          <DialogTrigger asChild>
-            <Button type="button" className="h-45 w-full text-sm px-4">
-              Add a team member
-            </Button>
-          </DialogTrigger>
-          <DialogContent className="sm:max-w-[600px]">
-            <DialogHeader>
-              <DialogTitle className="font-semibold text-xl">
-                Add a team member
-              </DialogTitle>
-            </DialogHeader>
-            <AddATeamMember />
-          </DialogContent>
-        </Dialog>
-      </div>
-      <br />
+    <div>
+      <div className="main-div flex flex-col px-4 md:px-20 w-full items-center">
+        <div className="flex flex-col md:flex-row py-10 md:px-5 flex-grow">
+          <div className="justify-center w-full md:w-[560px] py-2">
+            {" "}
+            <TeamsDataTable columns={teamscolumns} data={data} />
+            <br />
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button type="button" className="h-45 w-full text-sm px-4">
+                  Add a team member
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-[600px]">
+                <DialogHeader>
+                  <DialogTitle className="font-semibold text-xl">
+                    Add a team member
+                  </DialogTitle>
+                </DialogHeader>
+                <AddATeamMember />
+              </DialogContent>
+            </Dialog>
+          </div>
+          <br />
+        </div>
+      </div>{" "}
     </div>
   );
 };
