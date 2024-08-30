@@ -1,10 +1,10 @@
 import { useState } from "react";
 import NavbarCreateService from "./navbar-create-service";
-import OverviewForm from "./forms/OverviewForm";
-import DescriptionForm from "./forms/DescriptionForm";
-import SkillsForm from "./forms/SkillsForm";
-import PricingForm from "./forms/PricingForm";
-import PublishForm from "./forms/PublishForm";
+import OverviewForm from "./forms/overview-form";
+import DescriptionForm from "./forms/description-form";
+import SkillsForm from "./forms/skills-form";
+import PricingForm from "./forms/pricing-form";
+import PublishForm from "./forms/publish-form";
 import { Button } from "./ui/button";
 
 export const CreateNewService = () => {

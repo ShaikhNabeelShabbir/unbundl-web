@@ -1,14 +1,14 @@
 import { useState } from "react";
-import { CreateAccountForm } from "@/components/forms/CreateAccountForm";
-import { GeneralCompanyInformationForm } from "@/components/forms/GeneralCompanyInformationForm";
+import { CreateAccountForm } from "@/components/forms/create-account-form";
 import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
-import { ProjectInformationForm } from "@/components/forms/ProjectInformationForm";
-import { FundraisingIformationForm } from "@/components/forms/FundraisingInformationForm";
-import { MarketInformationForm } from "@/components/forms/MarketInformationForm";
-import { TeamsForm } from "@/components/forms/TeamsForm";
+import { ProjectInformationForm } from "@/components/forms/project-information-form";
+import { MarketInformationForm } from "@/components/forms/market-information-form";
+import { TeamsForm } from "@/components/forms/teams-form";
 import { Thankyou } from "@/components/thank-you";
-import TechForm from "@/components/forms/TechForm";
+import TechForm from "@/components/forms/tech-form";
+import { FundraisingIformationForm } from "@/components/forms/fundraising-information-form";
+import { GeneralCompanyInformationForm } from "@/components/forms/general-company-information-form";
 
 const Signup = () => {
   const [step, setStep] = useState(1);

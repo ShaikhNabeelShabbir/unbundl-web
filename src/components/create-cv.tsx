@@ -1,10 +1,10 @@
 import { useState } from "react";
 import Navbarcreatecvs from "./navbar-create-cv";
 import { Button } from "./ui/button";
-import GeneralForm from "./forms/GeneralForm";
-import ExperienceForm from "./forms/ExperienceForm";
-import LinksForm from "./forms/LinksForm";
-import ReviewCV from "./forms/ReviewCV";
+import GeneralForm from "./forms/general-form";
+import ExperienceForm from "./forms/experience-form";
+import LinksForm from "./forms/links-form";
+import ReviewCV from "./forms/review-cv";
 
 export const CreateCV = () => {
   const [step, setStep] = useState(1);

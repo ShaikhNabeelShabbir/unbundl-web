@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { TeamsForm } from "@/components/forms/TeamsForm"; // Assuming you have a TeamForm component
-import PortfolioForm from "@/components/forms/PortfolioForm";
+import { TeamsForm } from "@/components/forms/teams-form"; // Assuming you have a TeamForm component
+import PortfolioForm from "@/components/forms/portfolio-form";
 import NavbarInvestor from "@/components/navbar-investor";
-import { GeneralInvestorInformationForm } from "@/components/forms/GeneralInvestorInformationForm";
-import { DealsForm } from "@/components/forms/DealsForm";
+import { GeneralInvestorInformationForm } from "@/components/forms/general-investor-information-form";
+import { DealsForm } from "@/components/forms/deals-form";
 import { Thankyou } from "@/components/thank-you";
-import { CreateAccountForm2 } from "@/components/forms/CreateAccountForm2";
+import { CreateAccountForm2 } from "@/components/forms/create-account-form-2";
 
 const Signupforinvestor = () => {
   const [step, setStep] = useState(1);
@@ -18,7 +18,7 @@ const Signupforinvestor = () => {
       case 2:
         return <GeneralInvestorInformationForm onNext={handleNext} />;
       case 3:
-        return <DealsForm onNext={handleNext}/>;
+        return <DealsForm onNext={handleNext} />;
       case 4:
         return <PortfolioForm />;
       case 5:

@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Navbartalent from "@/components/navbar-talent";
-import { CreateCVs } from "@/components/forms/CreateCvs";
+import { CreateCVs } from "@/components/forms/create-cvs";
 import { Thankyou } from "@/components/thank-you";
-import { CreateAccountForm2 } from "@/components/forms/CreateAccountForm2";
+import { CreateAccountForm2 } from "@/components/forms/create-account-form-2";
 
 export const Signupfortalent = () => {
   const [step, setStep] = useState(1);
