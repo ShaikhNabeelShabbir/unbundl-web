@@ -20,6 +20,7 @@ const Navbar: React.FC<NavbarProps> = ({ setStep, currentStep }) => {
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
+    useRef<HTMLDivElement>(null),
   ];
 
   useEffect(() => {
@@ -43,9 +44,9 @@ const Navbar: React.FC<NavbarProps> = ({ setStep, currentStep }) => {
   }, [currentStep]);
 
   return (
-    <div className="overflow-x-auto overflow-y-hidden w-full">
-      <div className="relative w-max">
-        <div className="flex justify-center gap-0 px-4 md:px-14 scrollbar-hide">
+    <div className="overflow-x-auto w-full">
+      <div className="relative flex items-center">
+        <div className="flex gap-4 px-4 md:px-10 w-max">
           {[
             "Create Account",
             "General Company Information",
@@ -58,7 +59,7 @@ const Navbar: React.FC<NavbarProps> = ({ setStep, currentStep }) => {
             <div
               key={index}
               ref={buttonRefs[index]}
-              className="font-medium py-1 cursor-pointer whitespace-nowrap"
+              className="font-medium py-2 cursor-pointer whitespace-nowrap"
             >
               <Button
                 variant="ghost"
@@ -72,7 +73,7 @@ const Navbar: React.FC<NavbarProps> = ({ setStep, currentStep }) => {
             </div>
           ))}
         </div>
-        <div className="absolute bottom-0 left-0 right-0 px-4 md:px-[100px]">
+        <div className="absolute bottom-0 left-0 right-0 px-4 md:px-10">
           <hr className="border-t border-gray-300" />
           <div
             className="absolute bottom-0 h-0.5 bg-black transition-all duration-300"
