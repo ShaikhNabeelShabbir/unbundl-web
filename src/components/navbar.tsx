@@ -20,12 +20,11 @@ const Navbar: React.FC<NavbarProps> = ({ setStep, currentStep }) => {
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
-    useRef<HTMLDivElement>(null),
   ];
 
   useEffect(() => {
     const updateUnderline = () => {
-      const ref = buttonRefs[currentStep - 1].current;
+      const ref = buttonRefs[currentStep - 1]?.current;
       if (ref) {
         const { offsetWidth, offsetLeft } = ref;
         setUnderlineStyle({
@@ -46,7 +45,7 @@ const Navbar: React.FC<NavbarProps> = ({ setStep, currentStep }) => {
   return (
     <div>
       <div className="relative">
-        <div className="flex justify-center gap-0 px-14 md:px-5 ">
+        <div className="flex justify-center gap-0 overflow-x-auto px-4 md:px-14 scrollbar-hide">
           {[
             "Create Account",
             "General Company Information",
@@ -59,19 +58,21 @@ const Navbar: React.FC<NavbarProps> = ({ setStep, currentStep }) => {
             <div
               key={index}
               ref={buttonRefs[index]}
-              className="font-medium py-1 cursor-pointer"
+              className="font-medium py-1 cursor-pointer whitespace-nowrap"
             >
               <Button
                 variant="ghost"
                 onClick={() => setStep(index + 1)}
-                className={`text-md font-medium ${currentStep === index + 1 ? "font-bold" : ""}`}
+                className={`text-sm md:text-md font-medium ${
+                  currentStep === index + 1 ? "font-bold" : ""
+                }`}
               >
                 {label}
               </Button>
             </div>
           ))}
         </div>
-        <div className="absolute bottom-0 left-0 right-0 px-[100px]">
+        <div className="absolute bottom-0 left-0 right-0 px-4 md:px-[100px]">
           <hr className="border-t border-gray-300" />
           <div
             className="absolute bottom-0 h-0.5 bg-black transition-all duration-300"

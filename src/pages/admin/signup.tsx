@@ -71,7 +71,7 @@ const Signup = () => {
 
       {/* Conditionally render the buttons based on the step */}
       {step !== 8 && (
-        <div className="fixed bottom-0 left-0 right-0 z-50 py-4 flex justify-between sm:justify-center gap-4 bg-white px-4 sm:px-8 lg:px-[233px]">
+        <div className=" bottom-0 left-0 right-0 z-50 py-4 flex justify-between sm:justify-center gap-4 bg-white px-4 sm:px-8 lg:px-[233px]">
           <Button
             className="flex text-base bg-gray-500"
             onClick={handleCancel}
