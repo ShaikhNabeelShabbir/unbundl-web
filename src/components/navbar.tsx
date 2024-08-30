@@ -43,9 +43,9 @@ const Navbar: React.FC<NavbarProps> = ({ setStep, currentStep }) => {
   }, [currentStep]);
 
   return (
-    <div>
-      <div className="relative">
-        <div className="flex justify-center gap-0 overflow-x-auto px-4 md:px-14 scrollbar-hide">
+    <div className="overflow-x-auto overflow-y-hidden w-full">
+      <div className="relative w-max">
+        <div className="flex justify-center gap-0 px-4 md:px-14 scrollbar-hide">
           {[
             "Create Account",
             "General Company Information",
