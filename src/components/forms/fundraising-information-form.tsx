@@ -10,7 +10,6 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { fundraisingSchema } from "@/schemas/fundraisingSchema";
 import {
   Dialog,
   DialogContent,
@@ -27,6 +26,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../ui/select";
+import { fundraisingSchema } from "@/schemas/fundraising-schema";
 
 export function FundraisingIformationForm({ onNext }: { onNext: () => void }) {
   // Set up the form using useForm hook
