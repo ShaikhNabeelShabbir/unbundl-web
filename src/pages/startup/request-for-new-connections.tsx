@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { RequestNewConnectionDataTable } from "@/request-for-new-connections/request-for-new-connections-data-table";
+import { RequestNewConnectionDataTable } from "@/components/request-for-new-connections/request-for-new-connections-data-table";
 import {
   columns,
   RequestNewConnectionInfo,
-} from "@/request-for-new-connections/request-for-new-connections-columns";
+} from "@/components/request-for-new-connections/request-for-new-connections-columns";
 
 async function fetchData(): Promise<RequestNewConnectionInfo[]> {
   return [

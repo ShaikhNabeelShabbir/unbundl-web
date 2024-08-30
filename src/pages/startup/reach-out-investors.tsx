@@ -1,8 +1,8 @@
-import { ReachOutToInvestorDataTable } from "@/reach-out-to-investors/reach-out-to-investors-data-table";
+import { ReachOutToInvestorDataTable } from "@/components/reach-out-to-investors/reach-out-to-investors-data-table";
 import {
   columns,
   InvestorInfo,
-} from "@/reach-out-to-investors/reach-out-to-investors-columns";
+} from "@/components/reach-out-to-investors/reach-out-to-investors-columns";
 import { useEffect, useState } from "react";
 
 async function fetchData(): Promise<InvestorInfo[]> {

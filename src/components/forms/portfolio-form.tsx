@@ -8,8 +8,11 @@ import {
   DialogTrigger,
 } from "../ui/dialog";
 import AddInvestmentForm from "./add-investment-form";
-import { Investment, columns } from "@/investments/investment-columns"; // Ensure correct relative path
-import { InvestmentDataTable } from "@/investments/investment-data-table"; // Ensure correct relative path
+import {
+  Investment,
+  columns,
+} from "@/components/investments/investment-columns"; // Ensure correct relative path
+import { InvestmentDataTable } from "@/components/investments/investment-data-table"; // Ensure correct relative path
 
 // Function to fetch the data
 async function fetchData(): Promise<Investment[]> {

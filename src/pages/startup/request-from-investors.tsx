@@ -1,9 +1,9 @@
 
-import { RequestFromInvestorDataTable } from "@/request-from-investors/request-from-investors-data-table";
+import { RequestFromInvestorDataTable } from "@/components/request-from-investors/request-from-investors-data-table";
 import {
   columns,
   RequestInvestorInfo,
-} from "@/request-from-investors/request-from-investors-column";
+} from "@/components/request-from-investors/request-from-investors-column";
 import { useEffect, useState } from "react";
 
 async function fetchData(): Promise<RequestInvestorInfo[]> {
