@@ -8,8 +8,11 @@ import {
 } from "@/components/ui/select";
 import React, { useEffect, useState } from "react";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import { columns, ServicesProviders } from "@/services/services-column";
-import { ServicesDataTable } from "@/services/services-data-table";
+import {
+  columns,
+  ServicesProviders,
+} from "@/components/services/services-column";
+import { ServicesDataTable } from "@/components/services/services-data-table";
 import CreateCV from "@/components/create-cv";
 
 async function fetchData(): Promise<ServicesProviders[]> {
