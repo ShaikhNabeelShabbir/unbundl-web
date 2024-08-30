@@ -1,9 +1,9 @@
-import { ExpandYourNetworkDataTable } from "@/components/expandyournetwork/expand-your-network-data-table";
+import { ExpandYourNetworkDataTable } from "@/components/expand-your-network/expand-your-network-data-table";
 import { useEffect, useState } from "react";
 import {
   columns,
   ExpandYourNetworkInfo,
-} from "@/components/expandyournetwork/expand-your-network-columns";
+} from "@/components/expand-your-network/expand-your-network-columns";
 
 async function fetchData(): Promise<ExpandYourNetworkInfo[]> {
   return [
