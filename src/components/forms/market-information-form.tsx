@@ -9,7 +9,7 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { MarketInformationFormSchema } from "@/schemas/MarketInformation";
+import { MarketInformationFormSchema } from "@/schemas/market-information";
 import { Textarea } from "../ui/textarea";
 import {
   Select,

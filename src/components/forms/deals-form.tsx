@@ -10,7 +10,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { dealsSchema } from "@/schemas/dealsSchema";
+import { dealsSchema } from "@/schemas/deals-schema";
 import {
   Select,
   SelectContent,

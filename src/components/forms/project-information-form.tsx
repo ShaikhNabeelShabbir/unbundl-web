@@ -10,7 +10,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { projectInformationSchema } from "@/schemas/ProjectInformationSchema";
+import { projectInformationSchema } from "@/schemas/project-information-schema";
 import { Textarea } from "../ui/textarea";
 
 export function ProjectInformationForm({ onNext }: { onNext: () => void }) {

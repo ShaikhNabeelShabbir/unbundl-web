@@ -18,7 +18,7 @@ import {
   SelectItem,
 } from "@/components/ui/select"; // Assuming you're using a custom wrapper around Radix UI's Select
 import { Button } from "../ui/button";
-import { generalSchema } from "@/schemas/generalSchema";
+import { generalSchema } from "@/schemas/general-schema";
 
 export function GeneralForm({ onNext }: { onNext: () => void }) {
   // Set up the form using useForm hook

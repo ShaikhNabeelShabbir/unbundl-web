@@ -17,7 +17,7 @@ import {
   SelectContent,
   SelectItem,
 } from "@/components/ui/select"; // Assuming you're using a custom wrapper around Radix UI's Select
-import { pricingSchema } from "@/schemas/pricingSchema";
+import { pricingSchema } from "@/schemas/pricing-schema";
 
 export function PricingForm({ onNext }: { onNext: () => void }) {
   // Set up the form using useForm hook

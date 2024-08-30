@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "../ui/button";
-import { ExperienceSchema } from "@/schemas/experineceSchema";
+import { ExperienceSchema } from "@/schemas/experinece-schema";
 import { Textarea } from "../ui/textarea";
 import {
   Select,

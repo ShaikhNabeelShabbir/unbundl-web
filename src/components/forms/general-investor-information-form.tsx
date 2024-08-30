@@ -19,7 +19,7 @@ import {
   SelectValue,
 } from "../ui/select";
 import { Textarea } from "../ui/textarea";
-import { generalInvestorSchema } from "@/schemas/generalInvestorSchema";
+import { generalInvestorSchema } from "@/schemas/general-investor-schema";
 
 export function GeneralInvestorInformationForm({
   onNext,

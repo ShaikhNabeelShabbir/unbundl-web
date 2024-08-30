@@ -1,4 +1,4 @@
-import { addInvestmentTableSchema } from "@/schemas/investmentTableSchema";
+import { addInvestmentTableSchema } from "@/schemas/investment-table-schema";
 import { z } from "zod";
 import { ColumnDef } from "@tanstack/react-table";
 import { Button } from "@/components/ui/button";

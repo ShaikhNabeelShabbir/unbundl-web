@@ -11,7 +11,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { generalCompanySchema } from "@/schemas/generalCompanySchema";
+import { generalCompanySchema } from "@/schemas/general-company-schema";
 import {
   Select,
   SelectContent,

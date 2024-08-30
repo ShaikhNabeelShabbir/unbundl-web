@@ -10,7 +10,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Textarea } from "@/components/ui/textarea";
-import { linkSchema } from "@/schemas/linkSchema";
+import { linkSchema } from "@/schemas/link-schema";
 
 export function LinksForm({ onNext }: { onNext: () => void }) {
   // Set up the form using useForm hook
