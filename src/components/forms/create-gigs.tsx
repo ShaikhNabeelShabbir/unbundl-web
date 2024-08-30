@@ -6,7 +6,7 @@ export function CreateGigs() {
   return (
     <div>
       <div className="main-div flex flex-col px-4 md:px-20 w-full items-center">
-        <div className="flex flex-col md:flex-row py-10 md:px-5 flex-grow">
+        <div className="flex flex-col md:flex-row  md:px-5 flex-grow">
           <div className="justify-center w-full md:w-[560px] py-2">
             Add services that you provide, like “Token Design”, or “I will give
             you a 30-minute consultation on tokenomics”

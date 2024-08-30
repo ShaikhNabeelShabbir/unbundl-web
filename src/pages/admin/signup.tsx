@@ -53,7 +53,7 @@ const Signup = () => {
     <div className="main-div flex flex-col min-h-screen w-full ">
       {/* Header Section */}
       <div className="flex gap-6 px-4 sm:px-8 lg:px-[100px] py-4">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center py-4 sm:py-8 w-full sm:w-auto font-semibold text-lg">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center  sm:py-8 w-full sm:w-auto font-semibold text-lg">
           <span>Unbundl</span>
           <div className="px-0 sm:px-3 font-medium">
             <a href="#" className="text-gray-500 text-sm">
@@ -72,17 +72,10 @@ const Signup = () => {
       {/* Conditionally render the buttons based on the step */}
       {step !== 8 && (
         <div className=" bottom-0 left-0 right-0 z-50 py-4 flex justify-between sm:justify-center gap-4 bg-white px-4 sm:px-8 lg:px-[233px]">
-          <Button
-            className="flex text-base bg-gray-500"
-            onClick={handleCancel}
-          >
+          <Button className="flex text-base bg-gray-500" onClick={handleCancel}>
             Cancel
           </Button>
-          <Button
-            className="flex text-base"
-            type="submit"
-            form="signupForm"
-          >
+          <Button className="flex text-base" type="submit" form="signupForm">
             Next Step
           </Button>
         </div>
