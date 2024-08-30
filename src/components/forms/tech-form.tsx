@@ -9,7 +9,6 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { formSchema } from "@/schemas/SignupSchemas";
 import { Button } from "@/components/ui/button";
 import {
   Select,
@@ -18,6 +17,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { formSchema } from "@/schemas/signup-schemas";
 
 export function TechForm({ onNext }: { onNext: () => void }) {
   const form = useForm<z.infer<typeof formSchema>>({

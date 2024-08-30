@@ -17,8 +17,8 @@ import {
   SelectContent,
   SelectItem,
 } from "@/components/ui/select";
-import { addTeamMemberSchema } from "@/schemas/addTeamMemberSchema";
 import { Button } from "../ui/button";
+import { addTeamMemberSchema } from "@/schemas/add-team-member-schema";
 
 export function AddATeamMember() {
   // Set up the form using useForm hook

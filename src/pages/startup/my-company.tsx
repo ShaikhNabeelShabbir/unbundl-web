@@ -25,9 +25,9 @@ import {
 import Update from "./update";
 import TeamNavbar from "@/components/team-navbar";
 import ProgressBar from "@/components/progress-bar";
-import { TeamsDataTable } from "@/teams/teams-data-table";
-import { teamscolumns, Teams } from "@/teams/teams-columns";
+import { TeamsDataTable } from "@/components/teams/teams-data-table";
 import { AddATeamMember } from "@/components/forms/add-a-team-member";
+import { Teams, teamscolumns } from "@/components/teams/teams-columns";
 
 const invoices = [
   {

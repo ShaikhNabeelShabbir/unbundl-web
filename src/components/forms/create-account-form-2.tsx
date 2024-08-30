@@ -10,7 +10,6 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { formSchema } from "@/schemas/SignupSchemas";
 import { Button } from "@/components/ui/button";
 import {
   Select,
@@ -19,6 +18,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { formSchema } from "@/schemas/signup-schemas";
 
 // Define the form component
 export function CreateAccountForm2({ onNext }: { onNext: () => void }) {

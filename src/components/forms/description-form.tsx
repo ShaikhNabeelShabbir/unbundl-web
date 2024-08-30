@@ -10,7 +10,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Textarea } from "@/components/ui/textarea";
-import { descriptionSchema } from "@/schemas/descriptionSchema";
+import { descriptionSchema } from "@/schemas/description-schema";
 
 export function OverviewForm({ onNext }: { onNext: () => void }) {
   // Set up the form using useForm hook

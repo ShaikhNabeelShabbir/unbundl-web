@@ -17,7 +17,7 @@ import {
   SelectContent,
   SelectItem,
 } from "@/components/ui/select"; // Assuming you're using a custom wrapper around Radix UI's Select
-import { overviewSchema } from "@/schemas/overviewSchema";
+import { overviewSchema } from "@/schemas/overview-schema";
 
 // Define the schema using Zod
 

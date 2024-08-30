@@ -9,7 +9,7 @@ import {
 import AddATeamMember from "./add-a-team-member";
 
 import { useEffect, useState } from "react";
-import { TeamsDataTable } from "@/teams/teams-data-table";
+import { TeamsDataTable } from "@/components/teams/teams-data-table";
 import { teamscolumns, Teams } from "@/teams/teams-columns";
 async function fetchData(): Promise<Teams[]> {
   return [

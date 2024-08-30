@@ -10,7 +10,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Button } from "../ui/button";
-import { skillsSchema } from "@/schemas/skillsSchema";
+import { skillsSchema } from "@/schemas/skills-schema";
 
 export function SkillsForm() {
   // Set up the form using useForm hook
