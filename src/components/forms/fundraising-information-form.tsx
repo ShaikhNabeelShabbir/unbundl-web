@@ -52,7 +52,7 @@ export function FundraisingIformationForm({ onNext }: { onNext: () => void }) {
     <div>
       <div className="main-div flex flex-col px-4 md:px-20 w-full items-center">
         <div className="flex flex-col md:flex-row py-10 md:px-5 flex-grow">
-          <div className="w-full md:w-260 md:h-168 font-normal text-justify text-base text-black/50 py-16">
+          <div className="w-full md:w-260 md:h-168 font-normal text-justify text-base text-black/50 py-2">
             We would like to know are you <br />
             fundraising or not, because Undundle
             <br /> is the best place to fundraise for web3
@@ -63,7 +63,7 @@ export function FundraisingIformationForm({ onNext }: { onNext: () => void }) {
             us with a cap table.
           </div>
           <div className="w-full md:px-[80px]">
-            <div className="justify-center w-full md:w-[560px] py-[40px]"> 
+            <div className="justify-center w-full md:w-[560px] py-2">
               <Form {...form}>
                 <form
                   id="signupForm"

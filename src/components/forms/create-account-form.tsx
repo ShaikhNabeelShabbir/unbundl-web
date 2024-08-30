@@ -38,7 +38,7 @@ export function CreateAccountForm({ onNext }: { onNext: () => void }) {
   return (
     <div className="main-div flex flex-col px-4 md:px-20 w-full items-center">
       <div className="flex flex-col md:flex-row py-10 md:px-5 flex-grow">
-        <div className="w-full md:w-260 md:h-168 font-normal text-justify text-base text-black/50 py-16">
+        <div className="w-full md:w-260 md:h-168 font-normal text-justify text-base text-black/50 py-2">
           Let us know a bit more about you, <br /> and please provide some
           social links, <br /> so we can run a small background check on you.
           <br />
@@ -47,7 +47,7 @@ export function CreateAccountForm({ onNext }: { onNext: () => void }) {
           <br /> where every member brings value
         </div>
         <div className="w-full md:px-[80px]">
-          <div className="justify-center w-full md:w-[560px] py-[40px]">
+          <div className="justify-center w-full md:w-[560px] py-2">
             <Form {...form}>
               <form
                 id="signupForm"

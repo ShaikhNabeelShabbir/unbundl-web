@@ -74,14 +74,14 @@ export function GeneralCompanyInformationForm({
   return (
     <div className="main-div flex flex-col px-4 md:px-20 w-full items-center">
       <div className="flex flex-col md:flex-row py-10 md:px-5 flex-grow">
-        <div className="w-full md:w-260 md:h-168 font-normal text-justify text-base text-black/50 py-16">
+        <div className="w-full md:w-260 md:h-168 font-normal text-justify text-base text-black/50 py-2">
           Tell us the general information about your startup, <br /> this will
           help us to learn more about what you are doing, <br /> so you can
           easily find investors, advisors or great <br /> talent for your
           company.
         </div>
         <div className="w-full md:px-[80px]">
-          <div className="justify-center w-full md:w-[560px] py-[40px]">
+          <div className="justify-center w-full md:w-[560px] py-2">
             <Form {...form}>
               <form
                 id="signupForm"
