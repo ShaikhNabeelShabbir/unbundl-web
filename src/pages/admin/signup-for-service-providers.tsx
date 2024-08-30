@@ -37,7 +37,7 @@ export const Signupforserviceproviders = () => {
   return (
     <div className="main-div flex flex-col min-h-screen w-full">
       {/* Header Section */}
-      <div className="flex gap-6 px-4 sm:px-8 lg:px-[100px] py-4">
+      <div className="flex gap-6 px-4 sm:px-8 lg:px-[100px]">
         <div className="flex flex-col sm:flex-row items-start sm:items-center py-4 sm:py-8 w-full sm:w-auto font-semibold text-lg">
           <span>Unbundl</span>
           <div className="px-0 sm:px-3 font-medium">
