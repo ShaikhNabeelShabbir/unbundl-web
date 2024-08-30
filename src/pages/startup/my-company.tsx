@@ -24,10 +24,10 @@ import {
 } from "@/components/ui/dialog";
 import Update from "./update";
 import TeamNavbar from "@/components/team-navbar";
-import AddATeamMember from "@/components/forms/AddATeamMember";
 import ProgressBar from "@/components/progress-bar";
 import { TeamsDataTable } from "@/teams/teams-data-table";
 import { teamscolumns, Teams } from "@/teams/teams-columns";
+import { AddATeamMember } from "@/components/forms/add-a-team-member";
 
 const invoices = [
   {

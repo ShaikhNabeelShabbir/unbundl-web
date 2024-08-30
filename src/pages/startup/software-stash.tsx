@@ -16,7 +16,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Search } from "lucide-react";
-import AddSoftwareForm from "@/components/forms/AddSoftwareForm";
+import AddSoftwareForm from "@/components/forms/add-software-form";
 
 const SoftwareStash: React.FC = () => {
   return (

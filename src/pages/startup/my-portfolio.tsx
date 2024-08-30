@@ -10,12 +10,12 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import AddATeamMember from "@/components/forms/AddATeamMember";
 import AddInvestmentForm from "@/components/forms/add-investment-form";
 import { InvestmentDataTable } from "@/investments/investment-data-table";
 import { columns, Investment } from "@/investments/investment-columns";
 import { TeamsDataTable } from "@/teams/teams-data-table";
 import { teamscolumns, Teams } from "@/teams/teams-columns";
+import { AddATeamMember } from "@/components/forms/add-a-team-member";
 
 const MyPortfolio: React.FC = () => {
   async function fetchData(): Promise<Investment[]> {
