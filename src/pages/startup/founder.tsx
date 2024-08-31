@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Sidebar from "@/components/sidebar";
 import CryptoEvents from "./crypto-events";
-import LegalRoom from "./leagal-room";
 import MyCompany from "./my-company";
 import RaiseFunds from "./raise-funds";
 import ResearchLibrary from "./research-library";
@@ -13,9 +12,10 @@ import Hire from "./hire";
 import Dashboard from "./founder-dashboard";
 import HireTalent from "./hire-talent";
 import HireServiceProviders from "./hire-service-providers";
+import LegalRoom from "./leagal-room";
 
 const Founderdashboard = () => {
-  const [currentView, setCurrentView] = useState<string>("");
+  const [currentView, setCurrentView] = useState<string>("dashboard");
 
   const renderForm = () => {
     switch (currentView) {
@@ -53,7 +53,7 @@ const Founderdashboard = () => {
   return (
     <div className="flex">
       <Sidebar setCurrentView={setCurrentView} />
-      <div className="flex-1">{renderForm()}</div>
+      <div className="flex-1 p-4 lg:p-8">{renderForm()}</div>
     </div>
   );
 };
