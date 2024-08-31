@@ -22,7 +22,7 @@ const HireServiceProviders: React.FC = () => {
     <div className="flex flex-col p-4 sm:p-8">
       <div className="py-6 sm:py-[97px]">
         <div className="flex flex-col sm:flex-row items-center justify-between">
-          <p className="font-semibold text-lg sm:text-2xl">
+          <p className="font-semibold mb-5 text-lg sm:text-2xl">
             Hire freelancers and agencies
           </p>
         </div>

@@ -1,4 +1,3 @@
-
 import { RequestFromInvestorDataTable } from "@/components/request-from-investors/request-from-investors-data-table";
 import {
   columns,
@@ -10,7 +9,7 @@ async function fetchData(): Promise<RequestInvestorInfo[]> {
   return [
     {
       investorName: "Polychain Capital",
-      location: "Dubai,UAE",
+      location: "Dubai, UAE",
       assetsManaged: 3,
       stagedFocus: "Seed",
       timeOfCall: "Fri, Dec 13, 6 PM",
@@ -44,9 +43,12 @@ const RequsetFromInvestors = () => {
 
     loadData();
   }, []);
+
   return (
-    <div className="w-full h-fit px-5">
-      <RequestFromInvestorDataTable columns={columns} data={data} />
+    <div className="w-full h-fit px-4 py-4">
+      <div className="overflow-x-auto">
+        <RequestFromInvestorDataTable columns={columns} data={data} />
+      </div>
     </div>
   );
 };

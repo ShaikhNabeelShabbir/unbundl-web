@@ -9,7 +9,7 @@ async function fetchData(): Promise<InvestorInfo[]> {
   return [
     {
       investorName: "Polychain Capital",
-      location: "Dubai,UAE",
+      location: "Dubai, UAE",
       assetsManaged: 3,
       stagedFocus: "Seed",
       priceOfCall: "$10,000.00/15 min",
@@ -43,9 +43,12 @@ const ReachOutToInvestors = () => {
 
     loadData();
   }, []);
+
   return (
-    <div className="w-full h-fit px-5">
-      <ReachOutToInvestorDataTable columns={columns} data={data} />
+    <div className="w-full h-fit px-4 py-4">
+      <div className="overflow-x-auto">
+        <ReachOutToInvestorDataTable columns={columns} data={data} />
+      </div>
     </div>
   );
 };

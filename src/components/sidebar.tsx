@@ -66,7 +66,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ setCurrentView }) => {
                 Hire
               </button>
               <ChevronDown
-                className={`ml-2 transform ${isHireDropdownOpen ? "rotate-180" : ""}`}
+                className={` transform ${isHireDropdownOpen ? "rotate-180" : ""}`}
               />
             </li>
             {isHireDropdownOpen && (
