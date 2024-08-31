@@ -143,6 +143,12 @@ const Dashboard: React.FC = () => {
               <div className="text-sm text-white my-3 font-normal rounded-1 flex items-center justify-center bg-[#262626] h-[52px]">
                 Start Here
               </div>
+              <div className="text-sm text-white my-3 font-normal rounded-1 flex items-center justify-center bg-[#262626] h-[52px]">
+                Start Here
+              </div>
+              <div className="text-sm text-white my-3 font-normal rounded-1 flex items-center justify-center bg-[#262626] h-[52px]">
+                Start Here
+              </div>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Bell, Search, ChevronDown } from "lucide-react";
+// import { Bell, Search, ChevronDown } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 interface SidebarProps {
   setCurrentView: (view: string) => void;
@@ -16,7 +17,9 @@ export const Sidebar: React.FC<SidebarProps> = ({ setCurrentView }) => {
       {/* Hamburger Icon for Mobile */}
       <div className="lg:hidden p-4">
         <button onClick={toggleSidebar} className="text-black/50">
-          <ChevronDown className={`transform ${isSidebarOpen ? "rotate-180" : ""}`} />
+          <ChevronDown
+            className={`transform ${isSidebarOpen ? "rotate-180" : ""}`}
+          />
         </button>
       </div>
 
@@ -32,10 +35,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ setCurrentView }) => {
             <ChevronDown className="ml-2" />
           </h1>
           <div className="absolute right-0 flex items-center mr-8 space-x-3">
-            <u>24 Points</u>
+            {/* <u>24 Points</u>
             <Bell className="ml-2" />
             <Search className="ml-2" />
-            <div className="bg-black/50 rounded-full w-8 h-8 ml-2"></div>
+            <div className="bg-black/50 rounded-full w-8 h-8 ml-2"></div> */}
           </div>
         </div>
 
@@ -57,7 +60,9 @@ export const Sidebar: React.FC<SidebarProps> = ({ setCurrentView }) => {
               </button>
             </li>
             <li className="hover:text-black flex items-center justify-between">
-              <button onClick={() => setIsHireDropdownOpen(!isHireDropdownOpen)}>
+              <button
+                onClick={() => setIsHireDropdownOpen(!isHireDropdownOpen)}
+              >
                 Hire
               </button>
               <ChevronDown
@@ -72,16 +77,16 @@ export const Sidebar: React.FC<SidebarProps> = ({ setCurrentView }) => {
                   </button>
                 </li>
                 <li className="hover:text-black">
-                  <button onClick={() => setCurrentView("HireServiceProviders")}>
+                  <button
+                    onClick={() => setCurrentView("HireServiceProviders")}
+                  >
                     Service Providers
                   </button>
                 </li>
               </ul>
             )}
             <li className="hover:text-black">
-              <button onClick={() => setCurrentView("network")}>
-                Network
-              </button>
+              <button onClick={() => setCurrentView("network")}>Network</button>
             </li>
             <li className="hover:text-black">
               <button onClick={() => setCurrentView("legal-room")}>
