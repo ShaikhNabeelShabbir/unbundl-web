@@ -25,7 +25,10 @@ const SoftwareStash: React.FC = () => {
         <p className="font-semibold text-lg sm:text-2xl">Tool Stash</p>
         <Dialog>
           <DialogTrigger asChild>
-            <Button type="button" className="h-11 w-full sm:w-[178px] text-sm">
+            <Button
+              type="button"
+              className="h-11 w-full sm:w-[178px] mt-5 text-sm"
+            >
               Request to add software
             </Button>
           </DialogTrigger>
