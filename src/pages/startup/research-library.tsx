@@ -114,12 +114,12 @@ const ResearchLibrary: React.FC = () => {
                 <div className="flex items-center space-x-1">
                   <ChevronUp
                     className="cursor-pointer"
-                    onClick={() => handleIncrement(setCount1)}
+                    onClick={() => handleIncrement(setCount2)}
                   />
-                  <span>{count1}</span>
+                  <span>{count2}</span>
                   <ChevronDown
                     className="cursor-pointer"
-                    onClick={() => handleDecrement(count1, setCount1)}
+                    onClick={() => handleDecrement(count2, setCount2)}
                   />
                 </div>
               </CardTitle>
@@ -191,12 +191,12 @@ const ResearchLibrary: React.FC = () => {
                 <div className="flex items-center space-x-1">
                   <ChevronUp
                     className="cursor-pointer"
-                    onClick={() => handleIncrement(setCount1)}
+                    onClick={() => handleIncrement(setCount3)}
                   />
-                  <span>{count1}</span>
+                  <span>{count3}</span>
                   <ChevronDown
                     className="cursor-pointer"
-                    onClick={() => handleDecrement(count1, setCount1)}
+                    onClick={() => handleDecrement(count3, setCount3)}
                   />
                 </div>
               </CardTitle>
@@ -219,7 +219,6 @@ const ResearchLibrary: React.FC = () => {
               </Button>
             </CardFooter>
           </Card>
-          
         </div>
       </div>
     </div>
