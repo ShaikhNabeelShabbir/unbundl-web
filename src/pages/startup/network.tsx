@@ -20,24 +20,27 @@ const Network: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-wrap m-8">
-      <div className="flex-1 py-[97px]">
-        <div className="flex items-center justify-between">
-          <p className="font-semibold text-5">My Network</p>
+    <div className="flex flex-col m-4 sm:m-8">
+      <div className="flex-1 py-4 sm:py-[97px]">
+        <div className="flex items-center justify-between mb-4">
+          <p className="font-semibold text-lg sm:text-5">My Network</p>
         </div>
-        <div className="flex flex-row w-full h-[300px] space-x-5">
-          <div className="w-full border flex items-center justify-center font-medium text-lg">
+        <div className="flex flex-col sm:flex-row w-full space-y-4 sm:space-y-0 sm:space-x-5">
+          <div className="w-full border flex items-center justify-center font-medium text-base sm:text-lg h-[200px] sm:h-[300px]">
             Network visualisation
           </div>
-          <div className="w-fit border flex items-center justify-center font-medium text-lg text-center">
+          <div className="w-full sm:w-fit border flex items-center justify-center font-medium text-base sm:text-lg text-center">
             <div>
               <p>
                 Suggest new people to the platform and increase your in-platform
-                ranking <br />
+                ranking
+                <br />
                 <br />
                 <Dialog>
                   <DialogTrigger asChild>
-                    <u className="cursor-pointer">Invite</u>
+                    <u className="cursor-pointer text-blue-600 hover:underline">
+                      Invite
+                    </u>
                   </DialogTrigger>
                   <DialogContent className="sm:max-w-[600px]">
                     <SuggestPeople />
@@ -47,9 +50,9 @@ const Network: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-fit border mt-5 bg-black/5">
+        <div className="w-full mt-4 border bg-black/5 rounded-lg">
           <NavbarMyNetwork setStep={setStep} currentStep={step} />
-          {renderForm()}
+          <div className="p-4">{renderForm()}</div>
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ async function fetchData(): Promise<ExpandYourNetworkInfo[]> {
     {
       nameOrganiztion: "Polychain Capital",
       category: "VC",
-      location: "Dubai,UAE",
+      location: "Dubai, UAE",
       mutualConnections: 3,
       levelOfConnection: 3,
     },
@@ -43,10 +43,15 @@ const ExpandYourNetwork = () => {
 
     loadData();
   }, []);
+
   return (
-    <div className="w-full h-fit px-5">
-      <div className="flex flex-row space-x-3 mb-4"></div>
-      <ExpandYourNetworkDataTable columns={columns} data={data} />
+    <div className="w-full px-4 sm:px-5 py-4 sm:py-5">
+      <div className="flex flex-col space-y-4">
+        {/* Add any additional content here */}
+        <div className="overflow-x-auto">
+          <ExpandYourNetworkDataTable columns={columns} data={data} />
+        </div>
+      </div>
     </div>
   );
 };
