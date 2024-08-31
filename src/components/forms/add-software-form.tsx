@@ -27,8 +27,6 @@ import {
   DialogTrigger,
 } from "../ui/dialog";
 
-// Define the schema using Zod
-
 export function AddSoftwareForm() {
   // Set up the form using useForm hook
   const form = useForm<z.infer<typeof addSoftwareSchema>>({
@@ -47,135 +45,130 @@ export function AddSoftwareForm() {
   }
 
   return (
-    <div className="w-[600px] h-fit">
-      <div className="font-normal text-[12px] text-black/50 w-[560px]">
-        You can request to add software, that you use to the platform. If your
-        request gets approved, every time someone will download it, or start
-        using it, you’ll get points
+    <div className="p-4 max-w-full sm:max-w-md mx-auto">
+      <div className="text-sm text-black/50 mb-4">
+        You can request to add software that you use to the platform. If your
+        request gets approved, every time someone will download it or start
+        using it, you’ll get points.
       </div>
-      <div className="main-div justify-center py-[32px]">
-        <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-            <FormField
-              control={form.control}
-              name="softwareLink"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="font-medium text-base">
-                    Link to the software website{" "}
-                  </FormLabel>
-                  <FormControl>
-                    <Input
-                      placeholder="Enter Name"
-                      {...field}
-                      className="w-[560px] h-11"
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              name="category"
-              control={form.control}
-              render={({}) => (
-                <FormItem>
-                  <FormLabel className="font-medium text-base">
-                    Category{" "}
-                  </FormLabel>
-                  <FormControl>
-                    <Controller
-                      control={form.control}
-                      name="category"
-                      render={({ field }) => (
-                        <Select
-                          onValueChange={field.onChange}
-                          value={field.value}
-                        >
-                          <SelectTrigger className="w-[560px] h-11">
-                            <SelectValue placeholder="Select Category" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="Design">Design</SelectItem>
-                            <SelectItem value="engineer">Engineer</SelectItem>
-                            <SelectItem value="developer">Developer</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      )}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-
-            <FormField
-              name="months"
-              control={form.control}
-              render={({}) => (
-                <FormItem>
-                  <FormLabel className="font-medium text-base">
-                    For how long are you using it?{" "}
-                  </FormLabel>
-                  <FormControl>
-                    <Controller
-                      control={form.control}
-                      name="months"
-                      render={({ field }) => (
-                        <Select
-                          onValueChange={field.onChange}
-                          value={field.value}
-                        >
-                          <SelectTrigger className="w-[560px] h-11">
-                            <SelectValue placeholder="Select Category" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="Admin">Admin</SelectItem>
-                            <SelectItem value="Management">
-                              Management
-                            </SelectItem>
-                            <SelectItem value="developer">Developer</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      )}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-          </form>
-        </Form>
-      </div>
-
-      <br />
-      <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px]">
-        <Button className="flex text-base bg-white text-black">Cancel</Button>
-        <Dialog>
-          <DialogTrigger asChild>
-            <Button type="button" className="h-[42px] w-[178px] text-sm mr-8">
-              Request to add software{" "}
+      <Form {...form}>
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+          <FormField
+            control={form.control}
+            name="softwareLink"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className="font-medium text-base">
+                  Link to the software website
+                </FormLabel>
+                <FormControl>
+                  <Input
+                    placeholder="Enter Link"
+                    {...field}
+                    className="w-full h-11"
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            name="category"
+            control={form.control}
+            render={({}) => (
+              <FormItem>
+                <FormLabel className="font-medium text-base">
+                  Category
+                </FormLabel>
+                <FormControl>
+                  <Controller
+                    control={form.control}
+                    name="category"
+                    render={({ field }) => (
+                      <Select
+                        onValueChange={field.onChange}
+                        value={field.value}
+                      >
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select Category" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="Design">Design</SelectItem>
+                          <SelectItem value="engineer">Engineer</SelectItem>
+                          <SelectItem value="developer">Developer</SelectItem>
+                        </SelectContent>
+                      </Select>
+                    )}
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            name="months"
+            control={form.control}
+            render={({}) => (
+              <FormItem>
+                <FormLabel className="font-medium text-base">
+                  For how long are you using it?
+                </FormLabel>
+                <FormControl>
+                  <Controller
+                    control={form.control}
+                    name="months"
+                    render={({ field }) => (
+                      <Select
+                        onValueChange={field.onChange}
+                        value={field.value}
+                      >
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select Duration" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="1">1 Month</SelectItem>
+                          <SelectItem value="3">3 Months</SelectItem>
+                          <SelectItem value="6">6 Months</SelectItem>
+                          <SelectItem value="12">12 Months</SelectItem>
+                        </SelectContent>
+                      </Select>
+                    )}
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <div className="flex justify-between mt-4">
+            <Button type="button" className="text-base bg-white text-black">
+              Cancel
             </Button>
-          </DialogTrigger>
-          <DialogContent className="sm:max-w-[600px]">
-            <DialogHeader>
-              <DialogTitle className="font-semibold text-xl">
-                Request to add software{" "}
-              </DialogTitle>
-            </DialogHeader>
-            <p className="font-bold text-[24px] text-center">Request Sent</p>
-            <p className="text-center text-md font-medium text-black/50">
-              You suggested to add figma.com to the tool stash, you’ll get an
-              email notification if your request gets approved.Every time
-              someone will use or download the software you proposed, you’ll get
-              points.
-            </p>
-            <p className="text-center text-md font-medium">
-              <u>Close </u>
-            </p>
-          </DialogContent>
-        </Dialog>{" "}
-      </div>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button type="submit" className="h-11 w-full sm:w-40 text-sm">
+                  Request to add software
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="max-w-sm p-6 mx-auto">
+                <DialogHeader>
+                  <DialogTitle className="text-xl font-semibold">
+                    Request to add software
+                  </DialogTitle>
+                </DialogHeader>
+                <p className="text-center text-md font-medium text-black/50">
+                  You suggested to add this software to the tool stash. You’ll
+                  get an email notification if your request gets approved. Every
+                  time someone uses or downloads the software you proposed,
+                  you’ll get points.
+                </p>
+                <p className="text-center text-md font-medium mt-4">
+                  <u>Close</u>
+                </p>
+              </DialogContent>
+            </Dialog>
+          </div>
+        </form>
+      </Form>
     </div>
   );
 }
