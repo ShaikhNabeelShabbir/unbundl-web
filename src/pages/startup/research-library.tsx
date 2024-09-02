@@ -104,7 +104,7 @@ const ResearchLibrary: React.FC = () => {
       </div>
       <div className="flex flex-col space-y-5">
         <div className="flex flex-col space-y-5 sm:flex-row sm:space-x-5 sm:space-y-0">
-          <Card className="w-full h-[260px]">
+          <Card className="w-full h-fit">
             <CardHeader>
               <CardDescription>Nov. 27 2022</CardDescription>
               <CardTitle className="flex items-center space-x-2">
@@ -143,7 +143,7 @@ const ResearchLibrary: React.FC = () => {
             </CardFooter>
           </Card>
           {/* Repeat the Card for other research papers */}
-          <Card className="w-full h-[260px]">
+          <Card className="w-full h-fit">
             <CardHeader>
               <CardDescription>Nov. 27 2022</CardDescription>
               <CardTitle className="flex items-center space-x-2">
@@ -181,7 +181,7 @@ const ResearchLibrary: React.FC = () => {
               </Button>
             </CardFooter>
           </Card>
-          <Card className="w-full h-[260px]">
+          <Card className="w-full h-fit">
             <CardHeader>
               <CardDescription>Nov. 27 2022</CardDescription>
               <CardTitle className="flex items-center space-x-2">
