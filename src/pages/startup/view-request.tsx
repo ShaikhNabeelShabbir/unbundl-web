@@ -68,35 +68,37 @@ const ViewRequest = () => {
           Advanced Search
         </Button>
       </div>
-      <div>
-        <Table className="border">
-          <TableHeader>
-            <TableRow>
-              <TableHead>Investor Name</TableHead>
-              <TableHead>Location</TableHead>
-              <TableHead>Tags</TableHead>
-              <TableHead>Staged focus</TableHead>
-              <TableHead>Time of Call</TableHead>
-              <TableHead>Action button</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {expand_you_network.map((organization, index) => (
-              <TableRow key={index}>
-                <TableCell className="font-semibold text-base">
-                  {organization.investorName}
-                </TableCell>
-                <TableCell>{organization.location}</TableCell>
-                <TableCell>{organization.Tags}</TableCell>
-                <TableCell>{organization.stagedFocus}</TableCell>
-                <TableCell>{organization.timeOfCall}</TableCell>
-                <TableCell>
-                  <Button variant="link">Request Connection</Button>
-                </TableCell>
+      <div className="w-full h-fit px-4 py-4">
+        <div className="overflow-x-auto">
+          <Table className="border">
+            <TableHeader>
+              <TableRow>
+                <TableHead>Investor Name</TableHead>
+                <TableHead>Location</TableHead>
+                <TableHead>Tags</TableHead>
+                <TableHead>Staged focus</TableHead>
+                <TableHead>Time of Call</TableHead>
+                <TableHead>Action button</TableHead>
               </TableRow>
-            ))}
-          </TableBody>
-        </Table>
+            </TableHeader>
+            <TableBody>
+              {expand_you_network.map((organization, index) => (
+                <TableRow key={index}>
+                  <TableCell className="font-semibold text-base">
+                    {organization.investorName}
+                  </TableCell>
+                  <TableCell>{organization.location}</TableCell>
+                  <TableCell>{organization.Tags}</TableCell>
+                  <TableCell>{organization.stagedFocus}</TableCell>
+                  <TableCell>{organization.timeOfCall}</TableCell>
+                  <TableCell>
+                    <Button variant="link">Request Connection</Button>
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
       </div>
     </div>
   );
