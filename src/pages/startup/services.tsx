@@ -75,7 +75,7 @@ const Services: React.FC = () => {
                   <DialogTrigger asChild>
                     <Button
                       type="button"
-                      className="h-10 w-full md:w-fit text-sm"
+                      className="h-10 w-full md:w-fit text-sm mr-5"
                     >
                       Add your service
                     </Button>
@@ -86,11 +86,11 @@ const Services: React.FC = () => {
                 </Dialog>
               </div>
             </div>
-            <div className="ml-5 w-full h-8 font-semibold text-lg flex flex-col md:flex-row">
-              <div className="sm:ml-0">Active Services</div>
+            <div className="ml-5 w-full h-8 font-semibold text-lg mt-5 flex flex-col md:flex-row">
+              <div className="sm:ml-0 mb-5`">Active Services</div>
               <div className=" md:ml-auto mr-5">
                 <Select>
-                  <SelectTrigger className="w-full md:w-[200px] h-fit bg-transparent">
+                  <SelectTrigger className="w-full mr-5 md:w-[200px] h-fit bg-transparent sm:">
                     <SelectValue placeholder="Dubai" />
                   </SelectTrigger>
                   <SelectContent>
