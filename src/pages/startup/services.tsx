@@ -37,44 +37,45 @@ const Services: React.FC = () => {
 
     loadData();
   }, []);
+
   return (
     <div className="flex flex-wrap m-8">
       <div className="flex-1 py-[97px]">
-        <div className="flex flex-row">
-          <div className="mt-5 mb-5 font-medium text-base w-full h-full  bg-black/5 ">
-            <div className="w-full h-15 border flex flex-row">
+        <div className="flex flex-col md:flex-row">
+          <div className="mt-5 mb-5 font-medium text-base w-full bg-black/5">
+            <div className="w-full h-15 border flex flex-col md:flex-row">
               <div className="ml-5 mt-5">
                 <Button
-                  className="p-5 hover:underline font-medium text-md"
+                  className="p-3 md:p-5 hover:underline font-medium text-sm md:text-md"
                   variant="ghost"
                 >
                   Active
                 </Button>
                 <Button
-                  className="p-5 hover:underline font-medium text-md"
+                  className="p-3 md:p-5 hover:underline font-medium text-sm md:text-md"
                   variant="ghost"
                 >
                   Pending Approval
                 </Button>
                 <Button
-                  className="p-5 hover:underline font-medium text-md"
+                  className="p-3 md:p-5 hover:underline font-medium text-sm md:text-md"
                   variant="ghost"
                 >
                   Draft
                 </Button>
                 <Button
-                  className="p-5 hover:underline font-medium text-md"
+                  className="p-3 md:p-5 hover:underline font-medium text-sm md:text-md"
                   variant="ghost"
                 >
                   Paused
                 </Button>
               </div>
-              <div className="pt-3 ml-auto border ">
+              <div className="pt-3 ml-auto border mt-3 md:mt-0">
                 <Dialog>
                   <DialogTrigger asChild>
                     <Button
                       type="button"
-                      className="h-11 w-22 text-sm mr-25 ml-auto"
+                      className="h-10 w-full md:w-fit text-sm"
                     >
                       Add your service
                     </Button>
@@ -85,11 +86,11 @@ const Services: React.FC = () => {
                 </Dialog>
               </div>
             </div>
-            <div className="mt-4 ml-5 w-full h-8 font-semibold text-lg flex flex-row">
-              <div>Active Services </div>
-              <div className="ml-auto mr-5">
+            <div className="ml-5 w-full h-8 font-semibold text-lg flex flex-col md:flex-row">
+              <div className="sm:ml-0">Active Services</div>
+              <div className=" md:ml-auto mr-5">
                 <Select>
-                  <SelectTrigger className="w-[200px] h-[32px] bg-transparent">
+                  <SelectTrigger className="w-full md:w-[200px] h-fit bg-transparent">
                     <SelectValue placeholder="Dubai" />
                   </SelectTrigger>
                   <SelectContent>
@@ -100,7 +101,7 @@ const Services: React.FC = () => {
                 </Select>
               </div>
             </div>
-            <div className="mt-8  w-full h-fit border">
+            <div className="mt-8 w-full h-fit border overflow-x-auto">
               <ServicesDataTable columns={columns} data={data} />
             </div>
           </div>
