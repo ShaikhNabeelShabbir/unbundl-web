@@ -162,11 +162,11 @@ const MyPortfolio: React.FC = () => {
                     75%
                   </span>
                 </div>
-                <div className="w-45 h-8 mx-5 mt-3 border bg-black text-white font-normal text-3 rounded-1 flex items-center justify-center">
+                <div className="w-fit h-fit p-3 mx-5 mt-3 border bg-black text-white font-normal text-3 rounded-1 flex items-center justify-center">
                   Add the blockchain
                 </div>
 
-                <div className="w-45 h-8 mx-5 mt-3 border bg-black text-white font-normal text-3 rounded-1 flex items-center justify-center">
+                <div className="w-fit h-fit p-3 mx-5 mt-3 border bg-black text-white font-normal text-3 rounded-1 flex items-center justify-center">
                   Add the blockchain
                 </div>
               </div>
@@ -290,8 +290,8 @@ const MyPortfolio: React.FC = () => {
             </div>
             {/* {DND} */}
           </div>
-          <div className="w-full lg:w-1/3 lg:ml-5 flex flex-col space-y-5 mt-8 lg:mt-0 order-last lg:order-none">
-            {/* This section will move to the bottom on mobile */}
+          <div className="flex-1  top-0 align-top  w-full lg:w-1/3 lg:ml-5 flex flex-col space-y-5 mt-0">
+            {/* This section is now at the top on mobile and larger screens */}
             <div className="border">
               <p className="font-semibold bg-black/5 text-lg pl-5 pt-5">
                 Investment Thesis
