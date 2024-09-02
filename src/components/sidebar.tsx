@@ -13,7 +13,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ setCurrentView }) => {
   const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
 
   return (
-    <div className="lg:relative lg:w-[200px] lg:block">
+    <div className="lg:relative lg:w-fit lg:block">
       {/* Hamburger Icon for Mobile */}
       <div className="lg:hidden p-4">
         <button onClick={toggleSidebar} className="text-black/50">
