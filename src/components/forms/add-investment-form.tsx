@@ -34,139 +34,154 @@ export function AddInvestmentForm() {
   });
 
   return (
-    <div>
-      <div className="main-div">
-        <div className="justify-center py-[32px]">
-          <Form {...form}>
-            <form className="space-y-8">
-              <FormField
-                control={form.control}
-                name="companyName"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="font-medium text-base">
-                      Enter the company/fund Name{" "}
-                    </FormLabel>
-                    <FormControl>
-                      <Input placeholder="Enter Company Name" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="companyWebsite"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="font-medium text-base">
-                      Enter the company website{" "}
-                    </FormLabel>
-                    <FormControl>
-                      <Input placeholder="Enter Company Website" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="personEmail"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="font-medium text-base">
-                      Enter an email of a person that you are connected with
-                      from that company{" "}
-                    </FormLabel>
-                    <FormControl>
-                      <Input placeholder="Enter Person Email" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="amountInvested"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="font-medium text-base">
-                      How much did you invest?{" "}
-                    </FormLabel>
-                    <FormControl>
-                      <Input
-                        type="number"
-                        placeholder="Enter Amount Invested"
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="dateofInvestment"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="font-medium text-base">
-                      When did you invest?{" "}
-                    </FormLabel>
-                    <FormControl>
-                      <Input
-                        type="date"
-                        placeholder="Enter Date of Investment"
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="investmentRound"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="font-medium text-base">
-                      What was the round of investment?{" "}
-                    </FormLabel>
-                    <FormControl>
-                      <Select
-                        value={field.value}
-                        onValueChange={(value) => field.onChange(value)}
-                      >
-                        {" "}
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select Round" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="Early">Early</SelectItem>
-                          <SelectItem value="Mid">Mid</SelectItem>
-                          <SelectItem value="Late">Late</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <br />
-              <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[233px]">
-                <Button
-                  className="flex text-base bg-white text-black"
-                  variant="link"
-                  type="button"
-                >
-                  Cancel
-                </Button>
-                <Button className="flex text-base" type="submit">
-                  Add Investment to the portfolio
-                </Button>
-              </div>
-            </form>
-          </Form>
-        </div>
+    <div className="px-4 py-8 md:px-8 md:py-12">
+      <div className="max-w-lg mx-auto">
+        <Form {...form}>
+          <form
+            onSubmit={form.handleSubmit((values) => console.log(values))}
+            className="space-y-6"
+          >
+            <FormField
+              control={form.control}
+              name="companyName"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="font-medium text-base">
+                    Enter the company/fund Name
+                  </FormLabel>
+                  <FormControl>
+                    <Input
+                      placeholder="Enter Company Name"
+                      {...field}
+                      className="w-full"
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="companyWebsite"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="font-medium text-base">
+                    Enter the company website
+                  </FormLabel>
+                  <FormControl>
+                    <Input
+                      placeholder="Enter Company Website"
+                      {...field}
+                      className="w-full"
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="personEmail"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="font-medium text-base">
+                    Enter an email of a person that you are connected with from
+                    that company
+                  </FormLabel>
+                  <FormControl>
+                    <Input
+                      placeholder="Enter Person Email"
+                      {...field}
+                      className="w-full"
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="amountInvested"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="font-medium text-base">
+                    How much did you invest?
+                  </FormLabel>
+                  <FormControl>
+                    <Input
+                      type="number"
+                      placeholder="Enter Amount Invested"
+                      {...field}
+                      className="w-full"
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="dateofInvestment"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="font-medium text-base">
+                    When did you invest?
+                  </FormLabel>
+                  <FormControl>
+                    <Input
+                      type="date"
+                      placeholder="Enter Date of Investment"
+                      {...field}
+                      className="w-full"
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="investmentRound"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="font-medium text-base">
+                    What was the round of investment?
+                  </FormLabel>
+                  <FormControl>
+                    <Select
+                      value={field.value}
+                      onValueChange={(value) => field.onChange(value)}
+                    >
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select Round" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="Early">Early</SelectItem>
+                        <SelectItem value="Mid">Mid</SelectItem>
+                        <SelectItem value="Late">Late</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <div className="flex flex-col gap-4 sm:flex-row sm:justify-between">
+              <Button className="w-full sm:w-auto" variant="link" type="button">
+                Cancel
+              </Button>
+              <Button className="w-full sm:w-auto" type="submit">
+                Add Investment to the portfolio
+              </Button>
+            </div>
+          </form>
+        </Form>
       </div>
     </div>
   );

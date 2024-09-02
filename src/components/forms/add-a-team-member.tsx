@@ -39,132 +39,130 @@ export function AddATeamMember() {
   }
 
   return (
-    <div>
-      <div className="main-div">
-        <div className="justify-center py-[32px]">
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-              <FormField
-                control={form.control}
-                name="name"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="font-medium text-base">
-                      Enter the team member name
-                    </FormLabel>
-                    <FormControl>
-                      <Input placeholder="Enter Name" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+    <div className="px-4 py-8 md:px-8 md:py-12">
+      <div className="max-w-lg mx-auto">
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+            <FormField
+              control={form.control}
+              name="name"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="font-medium text-base">
+                    Enter the team member name
+                  </FormLabel>
+                  <FormControl>
+                    <Input
+                      placeholder="Enter Name"
+                      {...field}
+                      className="w-full"
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
 
-              <FormField
-                control={form.control}
-                name="position"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="font-medium text-base">
-                      What is the position of this team member in the company?
-                    </FormLabel>
-                    <FormControl>
-                      <Input placeholder="Enter Position" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+            <FormField
+              control={form.control}
+              name="position"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="font-medium text-base">
+                    What is the position of this team member in the company?
+                  </FormLabel>
+                  <FormControl>
+                    <Input
+                      placeholder="Enter Position"
+                      {...field}
+                      className="w-full"
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
 
-              <FormField
-                name="type"
-                control={form.control}
-                render={({}) => (
-                  <FormItem>
-                    <FormLabel className="font-medium text-base">
-                      What is the type of the team member
-                    </FormLabel>
-                    <FormControl>
-                      <Controller
-                        control={form.control}
-                        name="type"
-                        render={({ field }) => (
-                          <Select
-                            onValueChange={field.onChange}
-                            value={field.value}
-                          >
-                            <SelectTrigger>
-                              <SelectValue placeholder="Select Type" />
-                            </SelectTrigger>
-                            <SelectContent>
-                              <SelectItem value="Founder">Founder</SelectItem>
-                              <SelectItem value="Engineer">Engineer</SelectItem>
-                              <SelectItem value="Developer">
-                                Developer
-                              </SelectItem>
-                            </SelectContent>
-                          </Select>
-                        )}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+            <FormField
+              name="type"
+              control={form.control}
+              render={({}) => (
+                <FormItem>
+                  <FormLabel className="font-medium text-base">
+                    What is the type of the team member
+                  </FormLabel>
+                  <FormControl>
+                    <Controller
+                      control={form.control}
+                      name="type"
+                      render={({ field }) => (
+                        <Select
+                          onValueChange={field.onChange}
+                          value={field.value}
+                        >
+                          <SelectTrigger>
+                            <SelectValue placeholder="Select Type" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value="Founder">Founder</SelectItem>
+                            <SelectItem value="Engineer">Engineer</SelectItem>
+                            <SelectItem value="Developer">Developer</SelectItem>
+                          </SelectContent>
+                        </Select>
+                      )}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
 
-              <FormField
-                name="rights"
-                control={form.control}
-                render={({}) => (
-                  <FormItem>
-                    <FormLabel className="font-medium text-base">
-                      What rights do you want to give to this team member?
-                    </FormLabel>
-                    <FormControl>
-                      <Controller
-                        control={form.control}
-                        name="rights"
-                        render={({ field }) => (
-                          <Select
-                            onValueChange={field.onChange}
-                            value={field.value}
-                          >
-                            <SelectTrigger>
-                              <SelectValue placeholder="Select Rights" />
-                            </SelectTrigger>
-                            <SelectContent>
-                              <SelectItem value="Admin">Admin</SelectItem>
-                              <SelectItem value="Management">
-                                Management
-                              </SelectItem>
-                              <SelectItem value="developer">
-                                Developer
-                              </SelectItem>
-                            </SelectContent>
-                          </Select>
-                        )}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <br />
-              <div className="fixed bottom-0 z-50 py-5 flex justify-center gap-[374px]">
-                <Button
-                  className="flex text-base bg-white text-black "
-                  variant="link"
-                  type="button"
-                >
-                  Cancel
-                </Button>
-                <Button className="flex text-base" type="submit">
-                  Next Step
-                </Button>
-              </div>
-            </form>
-          </Form>
-        </div>
+            <FormField
+              name="rights"
+              control={form.control}
+              render={({}) => (
+                <FormItem>
+                  <FormLabel className="font-medium text-base">
+                    What rights do you want to give to this team member?
+                  </FormLabel>
+                  <FormControl>
+                    <Controller
+                      control={form.control}
+                      name="rights"
+                      render={({ field }) => (
+                        <Select
+                          onValueChange={field.onChange}
+                          value={field.value}
+                        >
+                          <SelectTrigger>
+                            <SelectValue placeholder="Select Rights" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value="Admin">Admin</SelectItem>
+                            <SelectItem value="Management">
+                              Management
+                            </SelectItem>
+                            <SelectItem value="Developer">Developer</SelectItem>
+                          </SelectContent>
+                        </Select>
+                      )}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <div className="flex flex-col-reverse sm:flex-row sm:justify-between gap-4">
+              <Button className="w-full sm:w-auto" variant="link" type="button">
+                Cancel
+              </Button>
+              <Button className="w-full sm:w-auto" type="submit">
+                Next Step
+              </Button>
+            </div>
+          </form>
+        </Form>
       </div>
     </div>
   );

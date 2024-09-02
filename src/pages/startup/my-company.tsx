@@ -94,16 +94,17 @@ const MyCompany: React.FC = () => {
   }) => {
     setUpdates([...updates, newUpdate]);
   };
+
   return (
-    <div className="flex flex-wrap m-8">
+    <div className="flex flex-col-reverse md:flex-row m-8">
       <div className="flex-1 py-[97px]">
         <div className="flex items-center justify-between">
-          <div className="flex flex-row">
-            <div className="Overview w-full  ">
+          <div className="flex flex-col md:flex-row">
+            <div className="Overview w-full">
               <p className="font-semibold text-5 mb-5">Overview</p>
-              <div className="flex flex-row">
-                <div className="flex flex-row  w-full h-63 bg-black/5 border mr-5">
-                  <div className=" flex flex-col  w-full pb-5">
+              <div className="flex flex-col md:flex-row">
+                <div className="flex flex-col md:flex-row w-full h-63 bg-black/5 border mb-5 md:mb-0 md:mr-5">
+                  <div className="flex flex-col w-full pb-5">
                     <div className="flex flex-row mt-5 ml-5">
                       <div className="w-12 h-12 border"></div>
                       <div className="ml-3">
@@ -145,7 +146,7 @@ const MyCompany: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                <div className=" w-fit h-63 border bg-black/5 rounded-1 space-y-5">
+                <div className="w-full md:w-fit h-63 border bg-black/5 rounded-1 space-y-5 mb-5 md:mb-0">
                   <p className="font-semibold text-sm mt-5 px-5">
                     Complete your profile to increase your in-platform ranking
                   </p>
@@ -159,8 +160,8 @@ const MyCompany: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-row h-65 mt-5 justify-center">
-                <div className="w-1/3  shrink-0 border pb-5 mr-5 bg-black/5">
+              <div className="flex flex-col md:flex-row md:h-65 mt-5">
+                <div className="w-full md:w-1/3 shrink-0 border pb-5 md:mr-5 bg-black/5">
                   <p className="mt-5 ml-5 font-semibold text-lg w-full">
                     Main Links
                   </p>
@@ -172,7 +173,7 @@ const MyCompany: React.FC = () => {
                     <Button className="h-8 ">Calendly</Button>
                   </div>
                 </div>
-                <div className="w-2/3 border p-5 bg-gray-100 rounded-md flex ml-5">
+                <div className="w-full md:w-2/3 border p-5 bg-gray-100 rounded-md flex md:ml-5">
                   <div className="grid grid-cols-2 gap-x-11 gap-y-6 w-full">
                     <div className="flex flex-col w-full">
                       <div className="font-semibold mb-3 w-max">
@@ -205,7 +206,7 @@ const MyCompany: React.FC = () => {
                           Dubai, UAE
                         </Button>
                         <Button className="h-8 bg-black/25 rounded-none">
-                          Singapore,Singapore
+                          Singapore, Singapore
                         </Button>
                       </div>
                     </div>
@@ -223,37 +224,27 @@ const MyCompany: React.FC = () => {
               </div>
               <div className="mt-8">
                 <div>
-                  {" "}
+                  <p className="font-semibold text-5">Team</p>
+
                   <div className="flex justify-between items-center">
-                    <p className="font-semibold text-5">Team</p>
-                    <Button className="text-sm font-medium" variant="link">
-                      Edit Privacy
-                    </Button>
-                  </div>
-                  <div className="flex flex-row">
                     <TeamNavbar />
                     <Dialog>
                       <DialogTrigger asChild>
-                        <Button
-                          type="button"
-                          className="h-45 w-fit text-sm px-4"
-                        >
-                          Add a team member
+                        <Button className="bg-black text-white">
+                          Add Team Member
                         </Button>
                       </DialogTrigger>
-                      <DialogContent className="sm:max-w-[600px]">
+                      <DialogContent>
                         <DialogHeader>
-                          <DialogTitle className="font-semibold text-xl">
-                            Add a team member
-                          </DialogTitle>
+                          <DialogTitle>Add Team Member</DialogTitle>
                         </DialogHeader>
                         <AddATeamMember />
                       </DialogContent>
                     </Dialog>
                   </div>
+                  <br />
+                  <TeamsDataTable columns={teamscolumns} data={data} />
                 </div>
-
-                <TeamsDataTable columns={teamscolumns} data={data} />
               </div>
               <div className="pt-8">
                 <div className="flex justify-between items-center">
@@ -409,11 +400,13 @@ const MyCompany: React.FC = () => {
                   funded
                 </div>{" "}
               </div>
-              {/* {DND} */}
             </div>
-            <div className="Company-Updates ml-5 w-[370px] flex flex-col space-y-5">
-              <div className="flex items-center space-x-12">
-                <p className="font-semibold text-5">Company Updates</p>
+
+            <div className="md:w-80 md:ml-6 w-full">
+              <Card className="h-fit">
+                <CardHeader>
+                  <CardTitle>Company Updates</CardTitle>
+                </CardHeader>
                 <Dialog>
                   <DialogTrigger>
                     <Button variant="link" className=" mr-0 border ml-14">
@@ -424,33 +417,20 @@ const MyCompany: React.FC = () => {
                     <Update onAddUpdate={handleAddUpdate} />
                   </DialogContent>
                 </Dialog>{" "}
-              </div>
-              <div className="w-[370px] space-y-5">
-                <div className="bg-black/5 border w-[370px] h-[122px]">
-                  <p className="p-[40px] text-base font-bold text-center">
-                    Connect your company Twitter account to your Unbundl Feed
-                  </p>
-                </div>
-                <div className="w-[370px] space-y-5">
-                  {updates.map((update, index) => (
-                    <Card key={index} className="bg-black/5">
-                      <CardHeader>
-                        <CardTitle className="font-medium text-base text-black/50">
-                          <div className="flex justify-between items-center">
-                            <p className="font-semibold text-5">
-                              {update.date}
-                            </p>
-                            <Button className="text-sm font-medium">
-                              {update.visibility}
-                            </Button>
-                          </div>
-                        </CardTitle>
-                        <CardDescription>{update.description}</CardDescription>
-                      </CardHeader>
-                    </Card>
-                  ))}
-                </div>
-              </div>
+                <CardDescription>
+                  <div className="space-y-4">
+                    {updates.map((update, index) => (
+                      <div key={index} className="p-4 border-b">
+                        <div className="font-semibold">{update.date}</div>
+                        <p>{update.description}</p>
+                        <p className="text-sm text-gray-500">
+                          {update.visibility}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </CardDescription>
+              </Card>
             </div>
           </div>
         </div>
