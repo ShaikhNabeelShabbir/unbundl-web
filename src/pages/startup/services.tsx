@@ -87,7 +87,7 @@ const Services: React.FC = () => {
               </div>
             </div>
             <div className="ml-5 w-full h-8 font-semibold text-lg mt-5 flex flex-col md:flex-row">
-              <div className="sm:ml-0 mt-0">Active Services</div>
+              <div className="sm:ml-0 mt-">Active Services</div>
               <div className=" md:ml-auto mr-5">
                 <Select>
                   <SelectTrigger className="w-full mr-5 md:w-[200px] h-fit bg-transparent sm:">

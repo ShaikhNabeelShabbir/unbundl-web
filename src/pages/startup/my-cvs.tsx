@@ -42,39 +42,39 @@ const MyCvs: React.FC = () => {
       <div className="flex-1 py-[97px]">
         <div className="flex flex-row">
           <div className="mt-5 mb-5 font-medium text-base w-full h-full  bg-black/5 ">
-            <div className="w-full h-15 border flex flex-row">
+            <div className="w-full h-15 border flex flex-col md:flex-row">
               <div className="ml-5 mt-5">
                 <Button
-                  className="p-5 hover:underline font-medium text-md"
+                  className="p-3 md:p-5 hover:underline font-medium text-sm md:text-md"
                   variant="ghost"
                 >
                   Active
                 </Button>
                 <Button
-                  className="p-5 hover:underline font-medium text-md"
+                  className="p-3 md:p-5 hover:underline font-medium text-sm md:text-md"
                   variant="ghost"
                 >
                   Pending Approval
                 </Button>
                 <Button
-                  className="p-5 hover:underline font-medium text-md"
+                  className="p-3 md:p-5 hover:underline font-medium text-sm md:text-md"
                   variant="ghost"
                 >
                   Draft
                 </Button>
                 <Button
-                  className="p-5 hover:underline font-medium text-md"
+                  className="p-3 md:p-5 hover:underline font-medium text-sm md:text-md"
                   variant="ghost"
                 >
                   Paused
                 </Button>
               </div>
-              <div className="pt-3 ml-auto border ">
+              <div className="pt-3 ml-auto border mt-3 md:mt-0">
                 <Dialog>
                   <DialogTrigger asChild>
                     <Button
                       type="button"
-                      className="h-11 w-22 text-sm mr-25 ml-auto"
+                      className="h-10 w-full md:w-fit text-sm mr-5"
                     >
                       Create New CV
                     </Button>
