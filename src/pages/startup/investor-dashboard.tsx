@@ -84,7 +84,7 @@ const InvestorDashboard: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="mt-5 mb-5 font-medium text-base ml-5 w-full h-full border flex flex-col items-center justify-center bg-black/5">
+          <div className="mt-5 mb-5 font-medium text-base  w-full h-full border flex flex-col items-center justify-center bg-black/5">
             <ExpandYourNetworkDataTable columns={columns} data={data} />
           </div>
         </div>
