@@ -35,7 +35,7 @@ const ServiceProvider = () => {
   return (
     <div className="flex">
       <SidebarServiceProvider setCurrentView={setCurrentView} />
-      <div className="flex-1">{renderForm()}</div>
+      <div className="flex-1 p-4 lg:p-0">{renderForm()}</div>
     </div>
   );
 };

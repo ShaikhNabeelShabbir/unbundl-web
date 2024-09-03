@@ -128,11 +128,11 @@ const MyCompany: React.FC = () => {
                   </div>
 
                   <div>
-                    <div className="mt-5 font-semibold w-fit text-lg">
+                    <div className="mt-5 font-semibold w-fit text-lg ml-5">
                       Project Description
                     </div>
                     <br />
-                    <div className="font-normal text-sm pr-5">
+                    <div className="font-normal text-sm pr-5 ml-5 mb-5">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Magni, eos architecto et impedit sed assumenda,
                       voluptates, ipsum a quod quas aliquam nesciunt eligendi
@@ -325,13 +325,13 @@ const MyCompany: React.FC = () => {
                     Edit Privacy
                   </Button>
                 </div>{" "}
-                <div className="w-full h-[159px] border px-5 py-5 bg-black/5">
+                <div className="w-full h-fit border px-5 py-5 bg-black/5">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Fugit ullam ab fugiat illo sed qui sequi eius! Temporibus
                   consequuntur consequatur doloribus, quam blanditiis, ex odio
                   quibusdam, fuga vero rerum explicabo!
                 </div>
-                <div className="w-full h-[80px] mt-5 border font-semibold text-md px-8 py-5 bg-black/5">
+                <div className="w-full h-fit mt-5 border font-semibold text-md px-8 py-5 bg-black/5">
                   Answer 3 missing questions to increase your chance of getting
                   funded
                 </div>{" "}
@@ -344,13 +344,13 @@ const MyCompany: React.FC = () => {
                     Edit Privacy
                   </Button>
                 </div>{" "}
-                <div className="w-full h-[159px] border px-5 py-5 bg-black/5">
+                <div className="w-full h-fit border px-5 py-5 bg-black/5">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. At
                   quibusdam, veniam voluptate molestias placeat ratione aliquam
                   porro labore nemo aspernatur debitis culpa quisquam minus
                   corrupti illo similique voluptas rem voluptatem?
                 </div>{" "}
-                <div className="w-full h-[80px] mt-5 bg-black/5 border font-semibold text-md px-8 py-5">
+                <div className="w-full h-fit mt-5 bg-black/5 border font-semibold text-md px-8 py-5">
                   Answer 2 missing questions to increase your chance of getting
                   funded
                 </div>{" "}
@@ -363,13 +363,13 @@ const MyCompany: React.FC = () => {
                     Edit Privacy
                   </Button>
                 </div>{" "}
-                <div className="w-full h-[159px] border px-5 py-5 bg-black/5">
+                <div className="w-full h-fit border px-5 py-5 bg-black/5">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Nobis, numquam repellat! Dolore in quidem sunt odit commodi
                   aliquid dicta blanditiis placeat cupiditate explicabo, eos
                   eius nam culpa, harum voluptas aspernatur.
                 </div>{" "}
-                <div className="w-full h-[80px] mt-5 bg-black/5 border font-semibold text-md px-8 py-5">
+                <div className="w-full h-fit mt-5 bg-black/5 border font-semibold text-md px-8 py-5">
                   Answer 2 missing questions to increase your chance of getting
                   funded
                 </div>{" "}
@@ -384,13 +384,13 @@ const MyCompany: React.FC = () => {
                     Edit Privacy
                   </Button>
                 </div>{" "}
-                <div className="w-full h-[159px] border px-5 py-5 bg-black/5">
+                <div className="w-full h-fit border px-5 py-5 bg-black/5">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
                   doloribus nostrum labore praesentium sit non dignissimos
                   saepe, ipsum totam facere quaerat tenetur maiores error odio
                   laborum minus distinctio nihil mollitia?
                 </div>{" "}
-                <div className="w-full h-[80px] mt-5 border bg-black/5 font-semibold text-md px-8 py-5">
+                <div className="w-full h-fit mt-5 border bg-black/5 font-semibold text-md px-8 py-5">
                   Answer 3 missing questions to increase your chance of getting
                   funded
                 </div>{" "}
