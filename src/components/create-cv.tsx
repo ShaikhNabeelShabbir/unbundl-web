@@ -39,12 +39,8 @@ export const CreateCV = () => {
       {renderForm()}
       <br />
       <br />
-      <div className="fixed bottom-0 left-0 right-0 z-50 py-5 flex justify-center gap-[375px]">
-        <Button
-          className="flex text-base bg-white text-blacka"
-          onClick={handleCancel}
-          variant="link"
-        >
+      <div className="fixed inset-x-0 bottom-0 gap-[233px] z-50 py-4 flex justify-between sm:justify-center  bg-white px-4 sm:px-8 lg:px-[233px]">
+        <Button className="flex text-base bg-gray-500" onClick={handleCancel}>
           Cancel
         </Button>
         <Button className="flex text-base" type="submit" form="signupForm">

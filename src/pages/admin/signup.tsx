@@ -68,10 +68,11 @@ const Signup = () => {
 
       {/* Form Section */}
       <div className="px-4 sm:px-8 lg:px-12">{renderForm()}</div>
-
+      <br />
+      <br />
       {/* Conditionally render the buttons based on the step */}
       {step !== 8 && (
-        <div className=" bottom-0 left-0 right-0 z-50 py-4 flex justify-between sm:justify-center gap-4 bg-white px-4 sm:px-8 lg:px-[233px]">
+        <div className="fixed inset-x-0 bottom-0 gap-[233px] z-50 py-4 flex justify-between sm:justify-center  bg-white px-4 sm:px-8 lg:px-[233px]">
           <Button className="flex text-base bg-gray-500" onClick={handleCancel}>
             Cancel
           </Button>
