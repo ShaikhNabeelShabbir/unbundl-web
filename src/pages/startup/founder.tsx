@@ -53,7 +53,7 @@ const Founderdashboard = () => {
   return (
     <div className="flex">
       <Sidebar setCurrentView={setCurrentView} />
-      <div className="flex-1 p-4 lg:p-8">{renderForm()}</div>
+      <div className="flex-1 p-4 lg:p-0">{renderForm()}</div>
     </div>
   );
 };

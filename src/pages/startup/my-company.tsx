@@ -101,7 +101,7 @@ const MyCompany: React.FC = () => {
         <div className="flex items-center justify-between">
           <div className="flex flex-col md:flex-row">
             <div className="Overview w-full">
-              <p className="font-semibold text-5 mb-5">Overview</p>
+              <p className="font-semibold text-lg mb-5 md:text-5">Overview</p>
               <div className="flex flex-col md:flex-row">
                 <div className="flex flex-col md:flex-row w-full h-63 bg-black/5 border mb-5 md:mb-0 md:mr-5">
                   <div className="flex flex-col w-full pb-5">

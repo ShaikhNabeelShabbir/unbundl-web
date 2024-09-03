@@ -65,7 +65,7 @@ export function RequestNewConnectionDataTable<TData, TValue>({
 
   return (
     <>
-      <div className="flex items-center my-5 w-full">
+      <div className="flex items-center w-full">
         <Input
           placeholder="Filter locations..."
           value={
@@ -90,7 +90,7 @@ export function RequestNewConnectionDataTable<TData, TValue>({
         <Button className="w-[170px] h-11 ml-5 ">Filters</Button>
       </div>
       <div className="rounded-md w-full">
-        <Table className="w-full">
+        <Table className="w-full mt-2">
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id}>

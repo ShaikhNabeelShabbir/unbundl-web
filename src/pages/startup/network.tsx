@@ -52,7 +52,7 @@ const Network: React.FC = () => {
         </div>
         <div className="w-full mt-4 border bg-black/5 rounded-lg">
           <NavbarMyNetwork setStep={setStep} currentStep={step} />
-          <div className="p-4">{renderForm()}</div>
+          <div className="px-4 py-0">{renderForm()}</div>
         </div>
       </div>
     </div>
