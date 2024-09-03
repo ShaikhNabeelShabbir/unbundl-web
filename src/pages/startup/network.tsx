@@ -39,7 +39,7 @@ const Network: React.FC = () => {
                 <Dialog>
                   <DialogTrigger asChild>
                     <u className="cursor-pointer text-blue-600 hover:underline">
-                      Invite
+                      <p className="mb-5">Invite </p>
                     </u>
                   </DialogTrigger>
                   <DialogContent className="sm:max-w-[600px]">
