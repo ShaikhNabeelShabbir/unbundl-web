@@ -21,7 +21,7 @@ const Network: React.FC = () => {
 
   return (
     <div className="flex flex-col m-4 sm:m-8">
-      <div className="flex-1 py-4 sm:py-[97px]">
+      <div className="flex-1 py-8 sm:py-[97px]">
         <div className="flex items-center justify-between mb-4">
           <p className="font-semibold text-lg sm:text-5">My Network</p>
         </div>

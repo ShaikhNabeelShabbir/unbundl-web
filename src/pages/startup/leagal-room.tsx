@@ -21,7 +21,7 @@ const LegalRoom: React.FC = () => {
 
   return (
     <div className="flex flex-col p-4 sm:p-8">
-      <div className="flex-1 py-[97px]">
+      <div className="flex-1 py-8 sm:py-[97px]">
         <div className="flex flex-col sm:flex-row items-start sm:items-center sm:justify-between mb-6">
           <p className="font-semibold text-lg sm:text-2xl">Legal Room</p>
           <div className="flex flex-col sm:flex-row sm:space-x-4 mt-4 sm:mt-0">

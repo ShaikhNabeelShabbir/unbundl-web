@@ -28,8 +28,8 @@ import Talentprofile from "./talent-profile";
 const HireTalent: React.FC = () => {
   return (
     <div className="flex flex-col p-4 sm:p-8">
-      <div className="py-6 sm:py-[97px]">
-        <div className="flex flex-col sm:flex-row items-center justify-between">
+      <div className="flex-1 py-8 sm:py-[97px]">
+      <div className="flex flex-col sm:flex-row items-center justify-between">
           <p className="font-semibold text-lg sm:text-2xl">
             Hire Talent For you Team
           </p>

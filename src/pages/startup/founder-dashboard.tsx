@@ -6,7 +6,7 @@ import React from "react";
 const Dashboard: React.FC = () => {
   return (
     <div className="flex flex-wrap m-4 md:m-8">
-      <div className="flex-1 py-[50px] md:py-[97px]">
+      <div className="flex-1 py-8 sm:py-[97px]">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
           <p className="font-semibold text-lg md:text-5">My Company</p>
           <Button

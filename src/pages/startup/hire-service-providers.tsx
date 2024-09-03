@@ -20,7 +20,7 @@ import VladTokenomics from "./vlad-tokenomics";
 const HireServiceProviders: React.FC = () => {
   return (
     <div className="flex flex-col p-4 sm:p-8">
-      <div className="py-6 sm:py-[97px]">
+      <div className="flex-1 py-8 sm:py-[97px]">
         <div className="flex flex-col sm:flex-row items-center justify-between">
           <p className="font-semibold mb-5 text-lg sm:text-2xl">
             Hire freelancers and agencies

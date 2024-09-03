@@ -92,7 +92,7 @@ const MyCompany: React.FC = () => {
 
   return (
     <div className="flex flex-col-reverse md:flex-row m-8">
-      <div className="flex-1 py-[97px]">
+      <div className="flex-1 py-8 sm:py-[97px]">
         <div className="flex items-center justify-between">
           <div className="flex flex-col md:flex-row">
             <div className="Overview w-full">

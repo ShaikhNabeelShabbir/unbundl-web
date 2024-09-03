@@ -19,8 +19,8 @@ const RaiseFunds: React.FC = () => {
 
   return (
     <div className="flex flex-col m-4 lg:flex-row lg:m-8">
-      <div className="flex-1 py-8 lg:py-[97px]">
-        <div className="w-full h-full border mt-5 bg-black/5">
+      <div className="flex-1 py-8 sm:py-[97px]">
+      <div className="w-full h-full border mt-5 bg-black/5">
           <NavbarRaiseFunds setStep={setStep} currentStep={step} />
           <div className="p-2">{renderForm()}</div>
         </div>
