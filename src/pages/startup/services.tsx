@@ -40,7 +40,7 @@ const Services: React.FC = () => {
 
   return (
     <div className="flex flex-wrap m-8">
-      <div className="flex-1 py-[97px]">
+      <div className="flex-1 py-8 sm:py-[97px]">
         <div className="flex flex-col md:flex-row">
           <div className="mt-5 mb-5 font-medium text-base w-full bg-black/5">
             <div className="w-full h-15 border flex flex-col md:flex-row">

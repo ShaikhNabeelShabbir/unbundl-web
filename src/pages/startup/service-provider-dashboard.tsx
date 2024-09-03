@@ -4,7 +4,7 @@ import React from "react";
 const SeeviceProviderDashboard: React.FC = () => {
   return (
     <div className="flex flex-wrap m-4 sm:m-8">
-      <div className="w-full py-8 sm:py-[97px]">
+      <div className="flex-1 py-8 sm:py-[97px]">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between">
           <p className="font-semibold text-lg sm:text-2xl">Analytics</p>
           <Button
