@@ -1,52 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
 import React, { useEffect, useState } from "react";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
+import { Table } from "@/components/ui/table";
 import { Card, CardDescription, CardHeader } from "@/components/ui/card";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import Update from "./update";
 import TeamNavbar from "@/components/team-navbar";
 import ProgressBar from "@/components/progress-bar";
-import { AddATeamMember } from "@/components/forms/add-a-team-member";
-import { Teams } from "@/components/teams/teams-columns";
+import { Teams, teamscolumns } from "@/components/teams/teams-columns";
 import { InvestmentDataTable } from "@/components/investments/investment-data-table";
 import {
   columns,
   Investment,
 } from "@/components/investments/investment-columns";
+import { TeamsDataTable } from "@/components/teams/teams-data-table";
 
-const invoices = [
-  {
-    round: "Seed",
-    amountRaising: "$1,250,000",
-    alreadyRaised: "$800,000",
-    Postmoneyvaluation: "$10,000,000",
-    MinimumTicketSize: "$100,000",
-  },
-];
-const investments = [
-  {
-    Investor: "CFounders + ESOP",
-    Invested: "n/a",
-    Existing_Shares: "1,000,000",
-    Preferred_Shares: "n/a",
-    Price_per_share: "n/a",
-    Ownership: "80.00%",
-  },
-];
 async function fetchData(): Promise<Investment[]> {
   return [
     {
@@ -122,6 +90,17 @@ const MyPortfolio: React.FC = () => {
     const loadData = async () => {
       const investments = await fetchData();
       setData(investments);
+    };
+
+    loadData();
+  }, []);
+  const [teamsData, setTeamsData] = useState<Teams[]>([]);
+
+  useEffect(() => {
+    // Fetch data on component mount
+    const loadData = async () => {
+      const teams = await fetchTeamsData();
+      setTeamsData(teams);
     };
 
     loadData();
@@ -259,19 +238,6 @@ const MyPortfolio: React.FC = () => {
 
                   <div className="flex justify-between items-center">
                     <TeamNavbar />
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <Button className="bg-black text-white">
-                          Add Team Member
-                        </Button>
-                      </DialogTrigger>
-                      <DialogContent>
-                        <DialogHeader>
-                          <DialogTitle>Add Team Member</DialogTitle>
-                        </DialogHeader>
-                        <AddATeamMember />
-                      </DialogContent>
-                    </Dialog>
                   </div>
                   <br />
                   <InvestmentDataTable columns={columns} data={data} />
@@ -287,70 +253,7 @@ const MyPortfolio: React.FC = () => {
                   </Button>
                 </div>
                 <Table className="border  bg-black/5">
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead className="w-[100px]">Round</TableHead>
-                      <TableHead>Amount Raising</TableHead>
-                      <TableHead>Already Raised</TableHead>
-                      <TableHead>Post-Money Valuation</TableHead>
-                      <TableHead className="text-right">
-                        Minimum Ticket Size
-                      </TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    {invoices.map((invoice) => (
-                      <TableRow key={invoice.round}>
-                        <TableCell className="font-medium">
-                          {invoice.round}
-                        </TableCell>
-                        <TableCell>{invoice.amountRaising}</TableCell>
-                        <TableCell>{invoice.alreadyRaised}</TableCell>
-                        <TableCell>{invoice.Postmoneyvaluation}</TableCell>
-                        <TableCell className="text-right">
-                          {invoice.MinimumTicketSize}
-                        </TableCell>
-                      </TableRow>
-                    ))}
-                  </TableBody>
-                </Table>
-              </div>
-              <div className="mt-8">
-                <div className="flex justify-between items-center">
-                  <p className="font-semibold text-5">Cap Table</p>
-                  <Button className="text-sm font-medium" variant="link">
-                    Edit Privacy
-                  </Button>
-                </div>
-                <Table className="border bg-black/5">
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead>Investor</TableHead>
-                      <TableHead>Invested</TableHead>
-                      <TableHead>Existing_Shares</TableHead>
-                      <TableHead className="text-right">
-                        Preferred_Shares
-                      </TableHead>
-                      <TableHead>Price_per_share</TableHead>
-                      <TableHead>Ownership</TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    {investments.map((investment) => (
-                      <TableRow key={investment.Investor}>
-                        <TableCell className="font-medium">
-                          {investment.Investor}
-                        </TableCell>
-                        <TableCell>{investment.Invested}</TableCell>
-                        <TableCell>{investment.Existing_Shares}</TableCell>
-                        <TableCell className="text-right">
-                          {investment.Preferred_Shares}
-                        </TableCell>
-                        <TableCell>{investment.Price_per_share}</TableCell>
-                        <TableCell>{investment.Ownership}</TableCell>
-                      </TableRow>
-                    ))}
-                  </TableBody>
+                  <TeamsDataTable columns={teamscolumns} data={teamsData} />
                 </Table>
               </div>
             </div>
