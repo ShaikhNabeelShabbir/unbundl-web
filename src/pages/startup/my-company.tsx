@@ -9,12 +9,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardDescription } from "@/components/ui/card";
 import {
   Dialog,
   DialogContent,
@@ -403,10 +398,8 @@ const MyCompany: React.FC = () => {
             </div>
 
             <div className="md:w-80 md:ml-6 w-full">
-              <Card className="h-fit">
-                <CardHeader>
-                  <CardTitle>Company Updates</CardTitle>
-                </CardHeader>
+              <div className="flex flex-row mb-5 mt-5">
+                <p>Company Updates</p>
                 <Dialog>
                   <DialogTrigger>
                     <Button variant="link" className=" mr-0 border ml-14">
@@ -417,6 +410,8 @@ const MyCompany: React.FC = () => {
                     <Update onAddUpdate={handleAddUpdate} />
                   </DialogContent>
                 </Dialog>{" "}
+              </div>
+              <Card className="h-fit">
                 <CardDescription>
                   <div className="space-y-4">
                     {updates.map((update, index) => (
